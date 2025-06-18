@@ -31,10 +31,10 @@ git submodule update --init --recursive
 
 ### 2\. Build the Project
 
-Navigate into the newly cloned project directory and use the ESP-IDF command-line tool to build the firmware.
+Navigate into the newly cloned project src directory and use the ESP-IDF command-line tool to build the firmware.
 
 ```bash
-cd NIRDuino-v2
+cd NIRDuino-v2/src
 idf.py build
 ```
 
