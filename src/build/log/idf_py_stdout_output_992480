@@ -1,0 +1,3416 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d14
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18e4
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd90
+load:0x403cc700,len:0x2fcc
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 14 2025 10:23:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=21974h (137588) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0003199c vaddr=3fc9c300 size=04514h ( 17684) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=00035eb8 vaddr=40374000 size=0a160h ( 41312) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=626d0h (403152) map[0m
+[0;32mI (201) esp_image: segment 4: paddr=000a26f8 vaddr=4037e160 size=0e17ch ( 57724) load[0m
+[0;32mI (223) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (223) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (227) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (232) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (238) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (243) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (249) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (254) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (259) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (265) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (271) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (276) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (282) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (288) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (293) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (298) esp_psram: Speed: 80MHz[0m
+[0;32mI (301) cpu_start: Pro cpu up.[0m
+[0;32mI (305) cpu_start: Starting app cpu, entry point is 0x40375890[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (764) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (948) cpu_start: Pro cpu start user code[0m
+[0;32mI (948) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (949) cpu_start: Application information:[0m
+[0;32mI (949) cpu_start: Project name:     app[0m
+[0;32mI (949) cpu_start: App version:      1[0m
+[0;32mI (949) cpu_start: Compile time:     Jun 15 2025 10:51:31[0m
+[0;32mI (949) cpu_start: ELF file SHA256:  1a946fcd56c5b98b...[0m
+[0;32mI (950) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (950) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (950) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (950) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (950) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (950) heap_init: At 3FCA4600 len 00045110 (276 KiB): DRAM[0m
+[0;32mI (951) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (951) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (951) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (952) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (952) spi_flash: detected chip: gd[0m
+[0;32mI (952) spi_flash: flash io: qio[0m
+[0;32mI (953) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (953) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (954) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (954) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (954) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (955) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (955) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (955) coexist: coexist rom version e7ae62f[0m
+[0;32mI (956) app_start: Starting scheduler on CPU0[0m
+[0;32mI (956) app_start: Starting scheduler on CPU1[0m
+[0;32mI (956) main_task: Started on CPU0[0m
+[0;32mI (957) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (957) main_task: Calling app_main()[0m
+[0;32mI (958) NIRduino: Starting NIRduino application...[0m
+[0;32mI (968) NIRduino: Initializing GPIO...[0m
+[0;32mI (968) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (975) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (975) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (976) NIRduino: LED intensities found in NVS[0m
+[0;32mI (976) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (977) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (977) NIRduino: Creating storage task and queue...[0m
+[0;32mI (977) NIRduino: Storage task started[0m
+[0;32mI (977) NIRduino: Initializing BLE...[0m
+[0;32mI (978) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (979) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (979) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1024) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1027) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1027) NimBLE: disc_mode=2[0m
+[0;32mI (1027) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1028) NimBLE: 
+[0m
+[0;32mI (1028) NIRduino: Initializing ADC system...[0m
+[0;32mI (1029) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1029) gpio: GPIO[10]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1030) NIRduino: Initializing ADC1[0m
+[0;32mI (1070) NIRduino: ADC1 initialized and calibrated.[0m
+[0;32mI (1070) NIRduino: Initializing ADC2[0m
+[0;32mI (1110) NIRduino: ADC2 initialized and calibrated.[0m
+[0;32mI (1110) NIRduino: ADC Initialization complete[0m
+[0;32mI (1110) NIRduino: ADC sampling task started.[0m
+[0;32mI (1110) NIRduino: BLE broadcast task started and waiting for data.[0m
+[0;32mI (1110) main_task: Returned from app_main()[0m
+[0;32mI (10936) NIRduino: Client Connected[0m
+[0;32mI (10936) NIRduino: Negotiated MTU: 23 bytes[0m
+[0;32mI (13730) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (13730) NIRduino: ADC sampling timer started for 340 Hz.[0m
+[0;32mI (13732) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13732) NimBLE: att_handle=16
+[0m
+[0;32mI (13736) NIRduino: LED intensities saved successfully[0m
+[0;32mI (13737) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (13829) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13830) NimBLE: att_handle=16
+[0m
+[0;32mI (13836) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13836) NimBLE: att_handle=19
+[0m
+[0;32mI (13842) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13842) NimBLE: att_handle=19
+[0m
+[0;32mI (13849) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13849) NimBLE: att_handle=19
+[0m
+[0;32mI (13855) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13855) NimBLE: att_handle=16
+[0m
+[0;32mI (13926) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13927) NimBLE: att_handle=16
+[0m
+[0;32mI (13933) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13933) NimBLE: att_handle=19
+[0m
+[0;32mI (13939) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13939) NimBLE: att_handle=19
+[0m
+[0;32mI (13945) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13945) NimBLE: att_handle=19
+[0m
+[0;32mI (13952) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (13952) NimBLE: att_handle=16
+[0m
+[0;32mI (14023) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14024) NimBLE: att_handle=16
+[0m
+[0;32mI (14030) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14030) NimBLE: att_handle=19
+[0m
+[0;32mI (14036) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14036) NimBLE: att_handle=19
+[0m
+[0;32mI (14042) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14042) NimBLE: att_handle=19
+[0m
+[0;32mI (14048) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14048) NimBLE: att_handle=16
+[0m
+[0;32mI (14120) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14121) NimBLE: att_handle=16
+[0m
+[0;32mI (14127) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14127) NimBLE: att_handle=19
+[0m
+[0;32mI (14133) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14133) NimBLE: att_handle=19
+[0m
+[0;32mI (14139) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14139) NimBLE: att_handle=19
+[0m
+[0;32mI (14145) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14145) NimBLE: att_handle=16
+[0m
+[0;32mI (14217) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14218) NimBLE: att_handle=16
+[0m
+[0;32mI (14224) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14224) NimBLE: att_handle=19
+[0m
+[0;32mI (14230) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14230) NimBLE: att_handle=19
+[0m
+[0;32mI (14236) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14236) NimBLE: att_handle=19
+[0m
+[0;32mI (14242) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14242) NimBLE: att_handle=16
+[0m
+[0;32mI (14315) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14315) NimBLE: att_handle=16
+[0m
+[0;32mI (14321) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14321) NimBLE: att_handle=19
+[0m
+[0;32mI (14328) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14328) NimBLE: att_handle=19
+[0m
+[0;32mI (14334) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14334) NimBLE: att_handle=19
+[0m
+[0;32mI (14340) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14340) NimBLE: att_handle=16
+[0m
+[0;32mI (14412) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14412) NimBLE: att_handle=16
+[0m
+[0;32mI (14418) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14418) NimBLE: att_handle=19
+[0m
+[0;32mI (14425) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14425) NimBLE: att_handle=19
+[0m
+[0;32mI (14431) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14431) NimBLE: att_handle=19
+[0m
+[0;32mI (14437) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14437) NimBLE: att_handle=16
+[0m
+[0;32mI (14509) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14509) NimBLE: att_handle=16
+[0m
+[0;32mI (14515) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14515) NimBLE: att_handle=19
+[0m
+[0;32mI (14521) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14521) NimBLE: att_handle=19
+[0m
+[0;32mI (14527) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14527) NimBLE: att_handle=19
+[0m
+[0;32mI (14533) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14533) NimBLE: att_handle=16
+[0m
+[0;32mI (14606) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14606) NimBLE: att_handle=16
+[0m
+[0;32mI (14612) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14612) NimBLE: att_handle=19
+[0m
+[0;32mI (14618) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14618) NimBLE: att_handle=19
+[0m
+[0;32mI (14624) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14624) NimBLE: att_handle=19
+[0m
+[0;32mI (14630) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14630) NimBLE: att_handle=16
+[0m
+[0;32mI (14703) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14703) NimBLE: att_handle=16
+[0m
+[0;32mI (14709) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14709) NimBLE: att_handle=19
+[0m
+[0;32mI (14716) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14716) NimBLE: att_handle=19
+[0m
+[0;32mI (14722) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14722) NimBLE: att_handle=19
+[0m
+[0;32mI (14728) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14728) NimBLE: att_handle=16
+[0m
+[0;32mI (14800) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14801) NimBLE: att_handle=16
+[0m
+[0;32mI (14806) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14806) NimBLE: att_handle=19
+[0m
+[0;32mI (14812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14812) NimBLE: att_handle=19
+[0m
+[0;32mI (14818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14818) NimBLE: att_handle=19
+[0m
+[0;32mI (14823) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14823) NimBLE: att_handle=16
+[0m
+[0;32mI (14897) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14897) NimBLE: att_handle=16
+[0m
+[0;32mI (14903) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14903) NimBLE: att_handle=19
+[0m
+[0;32mI (14909) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14909) NimBLE: att_handle=19
+[0m
+[0;32mI (14914) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14914) NimBLE: att_handle=19
+[0m
+[0;32mI (14919) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14919) NimBLE: att_handle=16
+[0m
+[0;32mI (14994) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (14995) NimBLE: att_handle=16
+[0m
+[0;32mI (15001) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15001) NimBLE: att_handle=19
+[0m
+[0;32mI (15006) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15006) NimBLE: att_handle=19
+[0m
+[0;32mI (15012) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15012) NimBLE: att_handle=19
+[0m
+[0;32mI (15017) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15017) NimBLE: att_handle=16
+[0m
+[0;31mE (15017) NIRduino: Failed to send notification. Size: 344 bytes. Is client subscribed?[0m
+[0;32mI (15091) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15092) NimBLE: att_handle=16
+[0m
+[0;32mI (15098) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15098) NimBLE: att_handle=19
+[0m
+[0;32mI (15104) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15104) NimBLE: att_handle=19
+[0m
+[0;32mI (15110) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15110) NimBLE: att_handle=19
+[0m
+[0;32mI (15116) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15116) NimBLE: att_handle=16
+[0m
+[0;32mI (15188) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15189) NimBLE: att_handle=16
+[0m
+[0;32mI (15195) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15195) NimBLE: att_handle=19
+[0m
+[0;32mI (15201) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15201) NimBLE: att_handle=19
+[0m
+[0;32mI (15206) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15206) NimBLE: att_handle=19
+[0m
+[0;32mI (15211) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15211) NimBLE: att_handle=16
+[0m
+[0;31mE (15211) NIRduino: Failed to send notification. Size: 344 bytes. Is client subscribed?[0m
+[0;32mI (15285) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15286) NimBLE: att_handle=16
+[0m
+[0;32mI (15291) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15291) NimBLE: att_handle=19
+[0m
+[0;32mI (15297) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15297) NimBLE: att_handle=19
+[0m
+[0;32mI (15302) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15302) NimBLE: att_handle=19
+[0m
+[0;32mI (15307) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15307) NimBLE: att_handle=16
+[0m
+[0;32mI (15382) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15383) NimBLE: att_handle=16
+[0m
+[0;32mI (15389) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15389) NimBLE: att_handle=19
+[0m
+[0;32mI (15395) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15395) NimBLE: att_handle=19
+[0m
+[0;32mI (15401) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15401) NimBLE: att_handle=19
+[0m
+[0;31mE (15406) NIRduino: Failed to send notification. Size: 344 bytes. Is client subscribed?[0m
+[0;32mI (15479) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15480) NimBLE: att_handle=16
+[0m
+[0;32mI (15485) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15485) NimBLE: att_handle=19
+[0m
+[0;32mI (15491) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15491) NimBLE: att_handle=19
+[0m
+[0;32mI (15497) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15497) NimBLE: att_handle=19
+[0m
+[0;32mI (15502) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15502) NimBLE: att_handle=16
+[0m
+[0;32mI (15576) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15577) NimBLE: att_handle=16
+[0m
+[0;32mI (15583) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15583) NimBLE: att_handle=19
+[0m
+[0;32mI (15589) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15589) NimBLE: att_handle=19
+[0m
+[0;31mE (15594) NIRduino: Failed to send notification. Size: 480 bytes. Is client subscribed?[0m
+[0;32mI (15600) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15600) NimBLE: att_handle=16
+[0m
+[0;32mI (15673) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15674) NimBLE: att_handle=16
+[0m
+[0;32mI (15680) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15680) NimBLE: att_handle=19
+[0m
+[0;32mI (15686) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15686) NimBLE: att_handle=19
+[0m
+[0;32mI (15691) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15691) NimBLE: att_handle=19
+[0m
+[0;32mI (15696) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15696) NimBLE: att_handle=16
+[0m
+[0;32mI (15770) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15771) NimBLE: att_handle=16
+[0m
+[0;32mI (15777) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15777) NimBLE: att_handle=19
+[0m
+[0;32mI (15783) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15783) NimBLE: att_handle=19
+[0m
+[0;32mI (15788) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15788) NimBLE: att_handle=19
+[0m
+[0;32mI (15793) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15793) NimBLE: att_handle=16
+[0m
+[0;32mI (15867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15868) NimBLE: att_handle=16
+[0m
+[0;32mI (15874) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15874) NimBLE: att_handle=19
+[0m
+[0;32mI (15880) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15880) NimBLE: att_handle=19
+[0m
+[0;32mI (15885) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15885) NimBLE: att_handle=19
+[0m
+[0;32mI (15890) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15890) NimBLE: att_handle=16
+[0m
+[0;32mI (15965) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15965) NimBLE: att_handle=16
+[0m
+[0;32mI (15971) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15971) NimBLE: att_handle=19
+[0m
+[0;32mI (15977) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15977) NimBLE: att_handle=19
+[0m
+[0;32mI (15982) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15982) NimBLE: att_handle=19
+[0m
+[0;32mI (15988) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15988) NimBLE: att_handle=16
+[0m
+[0;32mI (16062) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16062) NimBLE: att_handle=16
+[0m
+[0;32mI (16068) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16068) NimBLE: att_handle=19
+[0m
+[0;32mI (16074) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16074) NimBLE: att_handle=19
+[0m
+[0;32mI (16079) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16079) NimBLE: att_handle=19
+[0m
+[0;32mI (16084) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16084) NimBLE: att_handle=16
+[0m
+[0;32mI (16159) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16159) NimBLE: att_handle=16
+[0m
+[0;32mI (16165) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16165) NimBLE: att_handle=19
+[0m
+[0;32mI (16171) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16171) NimBLE: att_handle=19
+[0m
+[0;32mI (16177) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16177) NimBLE: att_handle=19
+[0m
+[0;32mI (16183) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16183) NimBLE: att_handle=16
+[0m
+[0;32mI (16256) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16256) NimBLE: att_handle=16
+[0m
+[0;32mI (16263) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16263) NimBLE: att_handle=19
+[0m
+[0;32mI (16269) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16269) NimBLE: att_handle=19
+[0m
+[0;32mI (16275) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16276) NimBLE: att_handle=19
+[0m
+[0;32mI (16282) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16282) NimBLE: att_handle=16
+[0m
+[0;32mI (16353) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16353) NimBLE: att_handle=16
+[0m
+[0;32mI (16359) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16359) NimBLE: att_handle=19
+[0m
+[0;32mI (16365) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16365) NimBLE: att_handle=19
+[0m
+[0;32mI (16371) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16371) NimBLE: att_handle=19
+[0m
+[0;32mI (16377) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16377) NimBLE: att_handle=16
+[0m
+[0;32mI (16450) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16450) NimBLE: att_handle=16
+[0m
+[0;32mI (16457) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16457) NimBLE: att_handle=19
+[0m
+[0;32mI (16463) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16463) NimBLE: att_handle=19
+[0m
+[0;32mI (16468) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16468) NimBLE: att_handle=19
+[0m
+[0;32mI (16473) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16473) NimBLE: att_handle=16
+[0m
+[0;32mI (16547) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16547) NimBLE: att_handle=16
+[0m
+[0;32mI (16553) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16553) NimBLE: att_handle=19
+[0m
+[0;32mI (16560) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16560) NimBLE: att_handle=19
+[0m
+[0;32mI (16566) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16566) NimBLE: att_handle=19
+[0m
+[0;32mI (16571) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16571) NimBLE: att_handle=16
+[0m
+[0;32mI (16644) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16644) NimBLE: att_handle=16
+[0m
+[0;32mI (16651) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16651) NimBLE: att_handle=19
+[0m
+[0;32mI (16657) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16657) NimBLE: att_handle=19
+[0m
+[0;32mI (16663) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16663) NimBLE: att_handle=19
+[0m
+[0;32mI (16668) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16668) NimBLE: att_handle=16
+[0m
+[0;32mI (16741) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16741) NimBLE: att_handle=16
+[0m
+[0;32mI (16747) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16747) NimBLE: att_handle=19
+[0m
+[0;32mI (16754) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16754) NimBLE: att_handle=19
+[0m
+[0;32mI (16760) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16760) NimBLE: att_handle=19
+[0m
+[0;32mI (16765) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16765) NimBLE: att_handle=16
+[0m
+[0;32mI (16838) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16838) NimBLE: att_handle=16
+[0m
+[0;32mI (16845) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16845) NimBLE: att_handle=19
+[0m
+[0;32mI (16851) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16851) NimBLE: att_handle=19
+[0m
+[0;32mI (16857) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16857) NimBLE: att_handle=19
+[0m
+[0;32mI (16862) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16862) NimBLE: att_handle=16
+[0m
+[0;32mI (16935) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16935) NimBLE: att_handle=16
+[0m
+[0;32mI (16941) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16941) NimBLE: att_handle=19
+[0m
+[0;32mI (16947) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16947) NimBLE: att_handle=19
+[0m
+[0;32mI (16953) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16953) NimBLE: att_handle=19
+[0m
+[0;32mI (16958) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16958) NimBLE: att_handle=16
+[0m
+[0;32mI (17032) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17033) NimBLE: att_handle=16
+[0m
+[0;32mI (17039) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17039) NimBLE: att_handle=19
+[0m
+[0;32mI (17045) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17045) NimBLE: att_handle=19
+[0m
+[0;32mI (17051) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17051) NimBLE: att_handle=19
+[0m
+[0;32mI (17057) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17057) NimBLE: att_handle=16
+[0m
+[0;32mI (17129) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17130) NimBLE: att_handle=16
+[0m
+[0;32mI (17136) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17136) NimBLE: att_handle=19
+[0m
+[0;32mI (17142) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17142) NimBLE: att_handle=19
+[0m
+[0;32mI (17149) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17149) NimBLE: att_handle=19
+[0m
+[0;32mI (17155) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17155) NimBLE: att_handle=16
+[0m
+[0;32mI (17226) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17227) NimBLE: att_handle=16
+[0m
+[0;32mI (17233) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17233) NimBLE: att_handle=19
+[0m
+[0;32mI (17239) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17239) NimBLE: att_handle=19
+[0m
+[0;32mI (17245) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17245) NimBLE: att_handle=19
+[0m
+[0;32mI (17251) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17251) NimBLE: att_handle=16
+[0m
+[0;32mI (17323) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17324) NimBLE: att_handle=16
+[0m
+[0;32mI (17330) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17330) NimBLE: att_handle=19
+[0m
+[0;32mI (17336) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17336) NimBLE: att_handle=19
+[0m
+[0;32mI (17342) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17342) NimBLE: att_handle=19
+[0m
+[0;32mI (17348) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17348) NimBLE: att_handle=16
+[0m
+[0;32mI (17420) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17421) NimBLE: att_handle=16
+[0m
+[0;32mI (17427) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17427) NimBLE: att_handle=19
+[0m
+[0;32mI (17433) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17433) NimBLE: att_handle=19
+[0m
+[0;32mI (17439) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17439) NimBLE: att_handle=19
+[0m
+[0;32mI (17445) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17445) NimBLE: att_handle=16
+[0m
+[0;32mI (17517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17518) NimBLE: att_handle=16
+[0m
+[0;32mI (17524) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17524) NimBLE: att_handle=19
+[0m
+[0;32mI (17530) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17530) NimBLE: att_handle=19
+[0m
+[0;32mI (17536) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17536) NimBLE: att_handle=19
+[0m
+[0;32mI (17542) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17542) NimBLE: att_handle=16
+[0m
+[0;32mI (17614) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17615) NimBLE: att_handle=16
+[0m
+[0;32mI (17621) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17621) NimBLE: att_handle=19
+[0m
+[0;32mI (17627) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17627) NimBLE: att_handle=19
+[0m
+[0;32mI (17633) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17633) NimBLE: att_handle=19
+[0m
+[0;32mI (17639) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17639) NimBLE: att_handle=16
+[0m
+[0;32mI (17711) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17712) NimBLE: att_handle=16
+[0m
+[0;32mI (17718) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17718) NimBLE: att_handle=19
+[0m
+[0;32mI (17724) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17724) NimBLE: att_handle=19
+[0m
+[0;32mI (17730) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17730) NimBLE: att_handle=19
+[0m
+[0;32mI (17737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17737) NimBLE: att_handle=16
+[0m
+[0;32mI (17808) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17809) NimBLE: att_handle=16
+[0m
+[0;32mI (17816) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17816) NimBLE: att_handle=19
+[0m
+[0;32mI (17822) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17822) NimBLE: att_handle=19
+[0m
+[0;32mI (17828) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17828) NimBLE: att_handle=19
+[0m
+[0;32mI (17834) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17834) NimBLE: att_handle=16
+[0m
+[0;32mI (17906) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17906) NimBLE: att_handle=16
+[0m
+[0;32mI (17912) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17912) NimBLE: att_handle=19
+[0m
+[0;32mI (17918) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17918) NimBLE: att_handle=19
+[0m
+[0;32mI (17924) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17924) NimBLE: att_handle=19
+[0m
+[0;32mI (17930) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17930) NimBLE: att_handle=16
+[0m
+[0;32mI (18003) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18003) NimBLE: att_handle=16
+[0m
+[0;32mI (18009) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18009) NimBLE: att_handle=19
+[0m
+[0;32mI (18015) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18015) NimBLE: att_handle=19
+[0m
+[0;32mI (18021) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18021) NimBLE: att_handle=19
+[0m
+[0;32mI (18027) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18027) NimBLE: att_handle=16
+[0m
+[0;32mI (18100) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18100) NimBLE: att_handle=16
+[0m
+[0;32mI (18106) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18106) NimBLE: att_handle=19
+[0m
+[0;32mI (18112) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18112) NimBLE: att_handle=19
+[0m
+[0;32mI (18118) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18118) NimBLE: att_handle=19
+[0m
+[0;32mI (18124) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18124) NimBLE: att_handle=16
+[0m
+[0;32mI (18197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18197) NimBLE: att_handle=16
+[0m
+[0;32mI (18203) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18203) NimBLE: att_handle=19
+[0m
+[0;32mI (18210) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18210) NimBLE: att_handle=19
+[0m
+[0;32mI (18216) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18216) NimBLE: att_handle=19
+[0m
+[0;32mI (18222) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18222) NimBLE: att_handle=16
+[0m
+[0;32mI (18294) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18294) NimBLE: att_handle=16
+[0m
+[0;32mI (18300) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18300) NimBLE: att_handle=19
+[0m
+[0;32mI (18306) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18306) NimBLE: att_handle=19
+[0m
+[0;32mI (18312) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18312) NimBLE: att_handle=19
+[0m
+[0;32mI (18318) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18318) NimBLE: att_handle=16
+[0m
+[0;32mI (18391) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18391) NimBLE: att_handle=16
+[0m
+[0;32mI (18397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18397) NimBLE: att_handle=19
+[0m
+[0;32mI (18403) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18403) NimBLE: att_handle=19
+[0m
+[0;32mI (18409) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18409) NimBLE: att_handle=19
+[0m
+[0;32mI (18415) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18415) NimBLE: att_handle=16
+[0m
+[0;32mI (18488) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18488) NimBLE: att_handle=16
+[0m
+[0;32mI (18494) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18494) NimBLE: att_handle=19
+[0m
+[0;32mI (18500) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18500) NimBLE: att_handle=19
+[0m
+[0;32mI (18506) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18506) NimBLE: att_handle=19
+[0m
+[0;32mI (18512) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18512) NimBLE: att_handle=16
+[0m
+[0;32mI (18585) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18585) NimBLE: att_handle=16
+[0m
+[0;32mI (18592) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18592) NimBLE: att_handle=19
+[0m
+[0;32mI (18598) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18598) NimBLE: att_handle=19
+[0m
+[0;32mI (18604) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18604) NimBLE: att_handle=19
+[0m
+[0;32mI (18610) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18610) NimBLE: att_handle=16
+[0m
+[0;32mI (18682) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18683) NimBLE: att_handle=16
+[0m
+[0;32mI (18689) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18689) NimBLE: att_handle=19
+[0m
+[0;32mI (18695) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18695) NimBLE: att_handle=19
+[0m
+[0;32mI (18701) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18701) NimBLE: att_handle=19
+[0m
+[0;32mI (18708) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18708) NimBLE: att_handle=16
+[0m
+[0;32mI (18779) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18779) NimBLE: att_handle=16
+[0m
+[0;32mI (18785) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18785) NimBLE: att_handle=19
+[0m
+[0;32mI (18791) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18791) NimBLE: att_handle=19
+[0m
+[0;32mI (18798) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18798) NimBLE: att_handle=19
+[0m
+[0;32mI (18804) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18804) NimBLE: att_handle=16
+[0m
+[0;32mI (18876) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18877) NimBLE: att_handle=16
+[0m
+[0;32mI (18883) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18883) NimBLE: att_handle=19
+[0m
+[0;32mI (18889) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18890) NimBLE: att_handle=19
+[0m
+[0;32mI (18895) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18895) NimBLE: att_handle=19
+[0m
+[0;32mI (18901) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18901) NimBLE: att_handle=16
+[0m
+[0;32mI (18973) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18974) NimBLE: att_handle=16
+[0m
+[0;32mI (18980) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18980) NimBLE: att_handle=19
+[0m
+[0;32mI (18986) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18986) NimBLE: att_handle=19
+[0m
+[0;32mI (18992) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18992) NimBLE: att_handle=19
+[0m
+[0;32mI (18998) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18998) NimBLE: att_handle=16
+[0m
+[0;32mI (19070) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19071) NimBLE: att_handle=16
+[0m
+[0;32mI (19077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19077) NimBLE: att_handle=19
+[0m
+[0;32mI (19083) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19083) NimBLE: att_handle=19
+[0m
+[0;32mI (19089) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19089) NimBLE: att_handle=19
+[0m
+[0;32mI (19095) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19095) NimBLE: att_handle=16
+[0m
+[0;32mI (19167) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19168) NimBLE: att_handle=16
+[0m
+[0;32mI (19174) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19174) NimBLE: att_handle=19
+[0m
+[0;32mI (19180) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19180) NimBLE: att_handle=19
+[0m
+[0;32mI (19186) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19186) NimBLE: att_handle=19
+[0m
+[0;32mI (19192) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19192) NimBLE: att_handle=16
+[0m
+[0;32mI (19264) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19265) NimBLE: att_handle=16
+[0m
+[0;32mI (19271) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19271) NimBLE: att_handle=19
+[0m
+[0;32mI (19277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19277) NimBLE: att_handle=19
+[0m
+[0;32mI (19283) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19283) NimBLE: att_handle=19
+[0m
+[0;32mI (19289) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19289) NimBLE: att_handle=16
+[0m
+[0;32mI (19361) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19362) NimBLE: att_handle=16
+[0m
+[0;32mI (19368) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19368) NimBLE: att_handle=19
+[0m
+[0;32mI (19374) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19374) NimBLE: att_handle=19
+[0m
+[0;32mI (19380) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19380) NimBLE: att_handle=19
+[0m
+[0;32mI (19386) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19386) NimBLE: att_handle=16
+[0m
+[0;32mI (19458) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19459) NimBLE: att_handle=16
+[0m
+[0;32mI (19465) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19465) NimBLE: att_handle=19
+[0m
+[0;32mI (19471) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19471) NimBLE: att_handle=19
+[0m
+[0;32mI (19477) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19477) NimBLE: att_handle=19
+[0m
+[0;32mI (19483) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19483) NimBLE: att_handle=16
+[0m
+[0;32mI (19555) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19556) NimBLE: att_handle=16
+[0m
+[0;32mI (19562) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19562) NimBLE: att_handle=19
+[0m
+[0;32mI (19568) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19568) NimBLE: att_handle=19
+[0m
+[0;32mI (19574) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19574) NimBLE: att_handle=19
+[0m
+[0;32mI (19580) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19580) NimBLE: att_handle=16
+[0m
+[0;32mI (19652) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19653) NimBLE: att_handle=16
+[0m
+[0;32mI (19659) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19659) NimBLE: att_handle=19
+[0m
+[0;32mI (19665) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19665) NimBLE: att_handle=19
+[0m
+[0;32mI (19671) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19671) NimBLE: att_handle=19
+[0m
+[0;32mI (19677) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19677) NimBLE: att_handle=16
+[0m
+[0;32mI (19750) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19750) NimBLE: att_handle=16
+[0m
+[0;32mI (19756) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19756) NimBLE: att_handle=19
+[0m
+[0;32mI (19762) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19762) NimBLE: att_handle=19
+[0m
+[0;32mI (19768) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19768) NimBLE: att_handle=19
+[0m
+[0;32mI (19774) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19774) NimBLE: att_handle=16
+[0m
+[0;32mI (19847) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19847) NimBLE: att_handle=16
+[0m
+[0;32mI (19853) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19853) NimBLE: att_handle=19
+[0m
+[0;32mI (19860) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19860) NimBLE: att_handle=19
+[0m
+[0;32mI (19866) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19866) NimBLE: att_handle=19
+[0m
+[0;32mI (19872) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19872) NimBLE: att_handle=16
+[0m
+[0;32mI (19944) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19944) NimBLE: att_handle=16
+[0m
+[0;32mI (19950) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19950) NimBLE: att_handle=19
+[0m
+[0;32mI (19956) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19956) NimBLE: att_handle=19
+[0m
+[0;32mI (19962) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19962) NimBLE: att_handle=19
+[0m
+[0;32mI (19968) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19968) NimBLE: att_handle=16
+[0m
+[0;32mI (20041) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20041) NimBLE: att_handle=16
+[0m
+[0;32mI (20047) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20047) NimBLE: att_handle=19
+[0m
+[0;32mI (20053) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20053) NimBLE: att_handle=19
+[0m
+[0;32mI (20059) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20059) NimBLE: att_handle=19
+[0m
+[0;32mI (20065) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20065) NimBLE: att_handle=16
+[0m
+[0;32mI (20138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20139) NimBLE: att_handle=16
+[0m
+[0;32mI (20144) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20144) NimBLE: att_handle=19
+[0m
+[0;32mI (20150) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20150) NimBLE: att_handle=19
+[0m
+[0;32mI (20156) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20156) NimBLE: att_handle=19
+[0m
+[0;32mI (20162) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20162) NimBLE: att_handle=16
+[0m
+[0;32mI (20235) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20235) NimBLE: att_handle=16
+[0m
+[0;32mI (20241) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20241) NimBLE: att_handle=19
+[0m
+[0;32mI (20247) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20247) NimBLE: att_handle=19
+[0m
+[0;32mI (20253) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20253) NimBLE: att_handle=19
+[0m
+[0;32mI (20260) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20260) NimBLE: att_handle=16
+[0m
+[0;32mI (20332) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20332) NimBLE: att_handle=16
+[0m
+[0;32mI (20339) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20339) NimBLE: att_handle=19
+[0m
+[0;32mI (20345) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20345) NimBLE: att_handle=19
+[0m
+[0;32mI (20351) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20351) NimBLE: att_handle=19
+[0m
+[0;32mI (20357) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20357) NimBLE: att_handle=16
+[0m
+[0;32mI (20429) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20429) NimBLE: att_handle=16
+[0m
+[0;32mI (20435) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20435) NimBLE: att_handle=19
+[0m
+[0;32mI (20441) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20441) NimBLE: att_handle=19
+[0m
+[0;32mI (20447) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20447) NimBLE: att_handle=19
+[0m
+[0;32mI (20453) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20453) NimBLE: att_handle=16
+[0m
+[0;32mI (20526) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20526) NimBLE: att_handle=16
+[0m
+[0;32mI (20532) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20532) NimBLE: att_handle=19
+[0m
+[0;32mI (20538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20538) NimBLE: att_handle=19
+[0m
+[0;32mI (20544) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20544) NimBLE: att_handle=19
+[0m
+[0;32mI (20550) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20550) NimBLE: att_handle=16
+[0m
+[0;32mI (20623) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20624) NimBLE: att_handle=16
+[0m
+[0;32mI (20630) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20630) NimBLE: att_handle=19
+[0m
+[0;32mI (20636) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20636) NimBLE: att_handle=19
+[0m
+[0;32mI (20642) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20642) NimBLE: att_handle=19
+[0m
+[0;32mI (20648) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20648) NimBLE: att_handle=16
+[0m
+[0;32mI (20720) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20721) NimBLE: att_handle=16
+[0m
+[0;32mI (20727) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20727) NimBLE: att_handle=19
+[0m
+[0;32mI (20733) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20733) NimBLE: att_handle=19
+[0m
+[0;32mI (20739) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20739) NimBLE: att_handle=19
+[0m
+[0;32mI (20745) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20745) NimBLE: att_handle=16
+[0m
+[0;32mI (20817) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20818) NimBLE: att_handle=16
+[0m
+[0;32mI (20824) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20824) NimBLE: att_handle=19
+[0m
+[0;32mI (20830) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20830) NimBLE: att_handle=19
+[0m
+[0;32mI (20836) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20836) NimBLE: att_handle=19
+[0m
+[0;32mI (20842) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20842) NimBLE: att_handle=16
+[0m
+[0;32mI (20914) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20915) NimBLE: att_handle=16
+[0m
+[0;32mI (20921) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20921) NimBLE: att_handle=19
+[0m
+[0;32mI (20928) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20929) NimBLE: att_handle=19
+[0m
+[0;32mI (20935) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20935) NimBLE: att_handle=19
+[0m
+[0;32mI (20941) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20941) NimBLE: att_handle=16
+[0m
+[0;32mI (21011) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21012) NimBLE: att_handle=16
+[0m
+[0;32mI (21018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21018) NimBLE: att_handle=19
+[0m
+[0;32mI (21024) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21024) NimBLE: att_handle=19
+[0m
+[0;32mI (21030) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21031) NimBLE: att_handle=19
+[0m
+[0;32mI (21036) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21036) NimBLE: att_handle=16
+[0m
+[0;32mI (21108) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21109) NimBLE: att_handle=16
+[0m
+[0;32mI (21115) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21115) NimBLE: att_handle=19
+[0m
+[0;32mI (21121) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21121) NimBLE: att_handle=19
+[0m
+[0;32mI (21128) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21128) NimBLE: att_handle=19
+[0m
+[0;32mI (21134) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21134) NimBLE: att_handle=16
+[0m
+[0;32mI (21205) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21206) NimBLE: att_handle=16
+[0m
+[0;32mI (21212) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21212) NimBLE: att_handle=19
+[0m
+[0;32mI (21218) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21218) NimBLE: att_handle=19
+[0m
+[0;32mI (21224) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21224) NimBLE: att_handle=19
+[0m
+[0;32mI (21230) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21230) NimBLE: att_handle=16
+[0m
+[0;32mI (21302) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21303) NimBLE: att_handle=16
+[0m
+[0;32mI (21309) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21309) NimBLE: att_handle=19
+[0m
+[0;32mI (21315) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21315) NimBLE: att_handle=19
+[0m
+[0;32mI (21321) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21321) NimBLE: att_handle=19
+[0m
+[0;32mI (21327) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21327) NimBLE: att_handle=16
+[0m
+[0;32mI (21399) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21400) NimBLE: att_handle=16
+[0m
+[0;32mI (21407) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21407) NimBLE: att_handle=19
+[0m
+[0;32mI (21413) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21413) NimBLE: att_handle=19
+[0m
+[0;32mI (21419) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21419) NimBLE: att_handle=19
+[0m
+[0;32mI (21425) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21425) NimBLE: att_handle=16
+[0m
+[0;32mI (21496) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21497) NimBLE: att_handle=16
+[0m
+[0;32mI (21503) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21503) NimBLE: att_handle=19
+[0m
+[0;32mI (21509) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21509) NimBLE: att_handle=19
+[0m
+[0;32mI (21515) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21515) NimBLE: att_handle=19
+[0m
+[0;32mI (21521) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21521) NimBLE: att_handle=16
+[0m
+[0;32mI (21594) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21594) NimBLE: att_handle=16
+[0m
+[0;32mI (21600) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21600) NimBLE: att_handle=19
+[0m
+[0;32mI (21606) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21606) NimBLE: att_handle=19
+[0m
+[0;32mI (21612) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21612) NimBLE: att_handle=19
+[0m
+[0;32mI (21618) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21618) NimBLE: att_handle=16
+[0m
+[0;32mI (21691) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21691) NimBLE: att_handle=16
+[0m
+[0;32mI (21697) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21697) NimBLE: att_handle=19
+[0m
+[0;32mI (21703) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21703) NimBLE: att_handle=19
+[0m
+[0;32mI (21709) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21709) NimBLE: att_handle=19
+[0m
+[0;32mI (21716) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21716) NimBLE: att_handle=16
+[0m
+[0;32mI (21788) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21788) NimBLE: att_handle=16
+[0m
+[0;32mI (21794) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21794) NimBLE: att_handle=19
+[0m
+[0;32mI (21800) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21800) NimBLE: att_handle=19
+[0m
+[0;32mI (21806) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21806) NimBLE: att_handle=19
+[0m
+[0;32mI (21812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21812) NimBLE: att_handle=16
+[0m
+[0;32mI (21885) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21885) NimBLE: att_handle=16
+[0m
+[0;32mI (21891) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21891) NimBLE: att_handle=19
+[0m
+[0;32mI (21897) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21897) NimBLE: att_handle=19
+[0m
+[0;32mI (21903) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21903) NimBLE: att_handle=19
+[0m
+[0;32mI (21909) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21909) NimBLE: att_handle=16
+[0m
+[0;32mI (21982) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21982) NimBLE: att_handle=16
+[0m
+[0;32mI (21988) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21988) NimBLE: att_handle=19
+[0m
+[0;32mI (21995) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21995) NimBLE: att_handle=19
+[0m
+[0;32mI (22001) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22001) NimBLE: att_handle=19
+[0m
+[0;32mI (22007) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22007) NimBLE: att_handle=16
+[0m
+[0;32mI (22079) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22079) NimBLE: att_handle=16
+[0m
+[0;32mI (22086) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22086) NimBLE: att_handle=19
+[0m
+[0;32mI (22092) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22092) NimBLE: att_handle=19
+[0m
+[0;32mI (22098) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22098) NimBLE: att_handle=19
+[0m
+[0;32mI (22104) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22104) NimBLE: att_handle=16
+[0m
+[0;32mI (22176) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22176) NimBLE: att_handle=16
+[0m
+[0;32mI (22182) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22182) NimBLE: att_handle=19
+[0m
+[0;32mI (22188) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22188) NimBLE: att_handle=19
+[0m
+[0;32mI (22194) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22194) NimBLE: att_handle=19
+[0m
+[0;32mI (22200) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22200) NimBLE: att_handle=16
+[0m
+[0;32mI (22273) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22274) NimBLE: att_handle=16
+[0m
+[0;32mI (22280) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22280) NimBLE: att_handle=19
+[0m
+[0;32mI (22286) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22286) NimBLE: att_handle=19
+[0m
+[0;32mI (22292) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22292) NimBLE: att_handle=19
+[0m
+[0;32mI (22298) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22298) NimBLE: att_handle=16
+[0m
+[0;32mI (22370) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22370) NimBLE: att_handle=16
+[0m
+[0;32mI (22376) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22376) NimBLE: att_handle=19
+[0m
+[0;32mI (22382) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22382) NimBLE: att_handle=19
+[0m
+[0;32mI (22389) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22389) NimBLE: att_handle=19
+[0m
+[0;32mI (22395) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22395) NimBLE: att_handle=16
+[0m
+[0;32mI (22467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22468) NimBLE: att_handle=16
+[0m
+[0;32mI (22474) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22474) NimBLE: att_handle=19
+[0m
+[0;32mI (22480) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22480) NimBLE: att_handle=19
+[0m
+[0;32mI (22486) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22486) NimBLE: att_handle=19
+[0m
+[0;32mI (22492) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22492) NimBLE: att_handle=16
+[0m
+[0;32mI (22564) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22565) NimBLE: att_handle=16
+[0m
+[0;32mI (22571) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22571) NimBLE: att_handle=19
+[0m
+[0;32mI (22577) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22577) NimBLE: att_handle=19
+[0m
+[0;32mI (22583) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22583) NimBLE: att_handle=19
+[0m
+[0;32mI (22589) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22589) NimBLE: att_handle=16
+[0m
+[0;32mI (22661) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22662) NimBLE: att_handle=16
+[0m
+[0;32mI (22668) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22668) NimBLE: att_handle=19
+[0m
+[0;32mI (22674) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22674) NimBLE: att_handle=19
+[0m
+[0;32mI (22680) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22680) NimBLE: att_handle=19
+[0m
+[0;32mI (22687) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22687) NimBLE: att_handle=16
+[0m
+[0;32mI (22758) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22759) NimBLE: att_handle=16
+[0m
+[0;32mI (22765) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22765) NimBLE: att_handle=19
+[0m
+[0;32mI (22771) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22771) NimBLE: att_handle=19
+[0m
+[0;32mI (22777) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22777) NimBLE: att_handle=19
+[0m
+[0;32mI (22783) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22783) NimBLE: att_handle=16
+[0m
+[0;32mI (22855) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22856) NimBLE: att_handle=16
+[0m
+[0;32mI (22862) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22862) NimBLE: att_handle=19
+[0m
+[0;32mI (22868) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22868) NimBLE: att_handle=19
+[0m
+[0;32mI (22874) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22874) NimBLE: att_handle=19
+[0m
+[0;32mI (22880) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22880) NimBLE: att_handle=16
+[0m
+[0;32mI (22952) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22953) NimBLE: att_handle=16
+[0m
+[0;32mI (22959) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22959) NimBLE: att_handle=19
+[0m
+[0;32mI (22965) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22965) NimBLE: att_handle=19
+[0m
+[0;32mI (22971) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22971) NimBLE: att_handle=19
+[0m
+[0;32mI (22977) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (22977) NimBLE: att_handle=16
+[0m
+[0;32mI (23049) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23050) NimBLE: att_handle=16
+[0m
+[0;32mI (23056) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23056) NimBLE: att_handle=19
+[0m
+[0;32mI (23062) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23062) NimBLE: att_handle=19
+[0m
+[0;32mI (23068) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23068) NimBLE: att_handle=19
+[0m
+[0;32mI (23074) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23074) NimBLE: att_handle=16
+[0m
+[0;32mI (23146) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23147) NimBLE: att_handle=16
+[0m
+[0;32mI (23153) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23153) NimBLE: att_handle=19
+[0m
+[0;32mI (23159) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23159) NimBLE: att_handle=19
+[0m
+[0;32mI (23165) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23165) NimBLE: att_handle=19
+[0m
+[0;32mI (23171) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23171) NimBLE: att_handle=16
+[0m
+[0;32mI (23243) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23244) NimBLE: att_handle=16
+[0m
+[0;32mI (23250) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23250) NimBLE: att_handle=19
+[0m
+[0;32mI (23256) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23256) NimBLE: att_handle=19
+[0m
+[0;32mI (23263) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23263) NimBLE: att_handle=19
+[0m
+[0;32mI (23269) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23269) NimBLE: att_handle=16
+[0m
+[0;32mI (23341) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23341) NimBLE: att_handle=16
+[0m
+[0;32mI (23347) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23347) NimBLE: att_handle=19
+[0m
+[0;32mI (23353) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23353) NimBLE: att_handle=19
+[0m
+[0;32mI (23359) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23359) NimBLE: att_handle=19
+[0m
+[0;32mI (23365) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23365) NimBLE: att_handle=16
+[0m
+[0;32mI (23438) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23438) NimBLE: att_handle=16
+[0m
+[0;32mI (23445) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23445) NimBLE: att_handle=19
+[0m
+[0;32mI (23451) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23451) NimBLE: att_handle=19
+[0m
+[0;32mI (23457) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23458) NimBLE: att_handle=19
+[0m
+[0;32mI (23464) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23464) NimBLE: att_handle=16
+[0m
+[0;32mI (23535) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23535) NimBLE: att_handle=16
+[0m
+[0;32mI (23541) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23541) NimBLE: att_handle=19
+[0m
+[0;32mI (23547) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23547) NimBLE: att_handle=19
+[0m
+[0;32mI (23553) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23553) NimBLE: att_handle=19
+[0m
+[0;32mI (23559) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23559) NimBLE: att_handle=16
+[0m
+[0;32mI (23632) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23632) NimBLE: att_handle=16
+[0m
+[0;32mI (23638) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23638) NimBLE: att_handle=19
+[0m
+[0;32mI (23644) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23644) NimBLE: att_handle=19
+[0m
+[0;32mI (23650) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23650) NimBLE: att_handle=19
+[0m
+[0;32mI (23656) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23656) NimBLE: att_handle=16
+[0m
+[0;32mI (23729) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23729) NimBLE: att_handle=16
+[0m
+[0;32mI (23735) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23735) NimBLE: att_handle=19
+[0m
+[0;32mI (23741) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23741) NimBLE: att_handle=19
+[0m
+[0;32mI (23748) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23748) NimBLE: att_handle=19
+[0m
+[0;32mI (23754) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23754) NimBLE: att_handle=16
+[0m
+[0;32mI (23826) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23826) NimBLE: att_handle=16
+[0m
+[0;32mI (23832) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23832) NimBLE: att_handle=19
+[0m
+[0;32mI (23839) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23839) NimBLE: att_handle=19
+[0m
+[0;32mI (23846) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23846) NimBLE: att_handle=19
+[0m
+[0;32mI (23852) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23852) NimBLE: att_handle=16
+[0m
+[0;32mI (23923) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23923) NimBLE: att_handle=16
+[0m
+[0;32mI (23929) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23929) NimBLE: att_handle=19
+[0m
+[0;32mI (23935) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23935) NimBLE: att_handle=19
+[0m
+[0;32mI (23941) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23941) NimBLE: att_handle=19
+[0m
+[0;32mI (23948) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (23948) NimBLE: att_handle=16
+[0m
+[0;32mI (24020) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24020) NimBLE: att_handle=16
+[0m
+[0;32mI (24027) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24027) NimBLE: att_handle=19
+[0m
+[0;32mI (24033) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24033) NimBLE: att_handle=19
+[0m
+[0;32mI (24039) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24039) NimBLE: att_handle=19
+[0m
+[0;32mI (24045) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24045) NimBLE: att_handle=16
+[0m
+[0;32mI (24117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24117) NimBLE: att_handle=16
+[0m
+[0;32mI (24124) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24124) NimBLE: att_handle=19
+[0m
+[0;32mI (24130) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24130) NimBLE: att_handle=19
+[0m
+[0;32mI (24136) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24136) NimBLE: att_handle=19
+[0m
+[0;32mI (24142) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24142) NimBLE: att_handle=16
+[0m
+[0;32mI (24214) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24215) NimBLE: att_handle=16
+[0m
+[0;32mI (24221) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24221) NimBLE: att_handle=19
+[0m
+[0;32mI (24227) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24227) NimBLE: att_handle=19
+[0m
+[0;32mI (24233) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24233) NimBLE: att_handle=19
+[0m
+[0;32mI (24239) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24240) NimBLE: att_handle=16
+[0m
+[0;32mI (24311) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24312) NimBLE: att_handle=16
+[0m
+[0;32mI (24317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24317) NimBLE: att_handle=19
+[0m
+[0;32mI (24324) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24324) NimBLE: att_handle=19
+[0m
+[0;32mI (24330) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24330) NimBLE: att_handle=19
+[0m
+[0;32mI (24336) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24336) NimBLE: att_handle=16
+[0m
+[0;32mI (24408) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24409) NimBLE: att_handle=16
+[0m
+[0;32mI (24415) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24415) NimBLE: att_handle=19
+[0m
+[0;32mI (24421) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24421) NimBLE: att_handle=19
+[0m
+[0;32mI (24427) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24427) NimBLE: att_handle=19
+[0m
+[0;32mI (24433) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24433) NimBLE: att_handle=16
+[0m
+[0;32mI (24505) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24506) NimBLE: att_handle=16
+[0m
+[0;32mI (24512) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24512) NimBLE: att_handle=19
+[0m
+[0;32mI (24518) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24518) NimBLE: att_handle=19
+[0m
+[0;32mI (24524) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24524) NimBLE: att_handle=19
+[0m
+[0;32mI (24530) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24530) NimBLE: att_handle=16
+[0m
+[0;32mI (24602) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24603) NimBLE: att_handle=16
+[0m
+[0;32mI (24609) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24609) NimBLE: att_handle=19
+[0m
+[0;32mI (24615) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24615) NimBLE: att_handle=19
+[0m
+[0;32mI (24621) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24621) NimBLE: att_handle=19
+[0m
+[0;32mI (24627) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24627) NimBLE: att_handle=16
+[0m
+[0;32mI (24699) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24700) NimBLE: att_handle=16
+[0m
+[0;32mI (24706) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24706) NimBLE: att_handle=19
+[0m
+[0;32mI (24712) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24712) NimBLE: att_handle=19
+[0m
+[0;32mI (24718) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24718) NimBLE: att_handle=19
+[0m
+[0;32mI (24724) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24724) NimBLE: att_handle=16
+[0m
+[0;32mI (24796) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24797) NimBLE: att_handle=16
+[0m
+[0;32mI (24803) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24803) NimBLE: att_handle=19
+[0m
+[0;32mI (24809) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24809) NimBLE: att_handle=19
+[0m
+[0;32mI (24815) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24815) NimBLE: att_handle=19
+[0m
+[0;32mI (24821) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24821) NimBLE: att_handle=16
+[0m
+[0;32mI (24893) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24894) NimBLE: att_handle=16
+[0m
+[0;32mI (24900) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24900) NimBLE: att_handle=19
+[0m
+[0;32mI (24906) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24906) NimBLE: att_handle=19
+[0m
+[0;32mI (24912) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24912) NimBLE: att_handle=19
+[0m
+[0;32mI (24918) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24918) NimBLE: att_handle=16
+[0m
+[0;32mI (24990) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24991) NimBLE: att_handle=16
+[0m
+[0;32mI (24997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (24997) NimBLE: att_handle=19
+[0m
+[0;32mI (25003) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25003) NimBLE: att_handle=19
+[0m
+[0;32mI (25009) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25009) NimBLE: att_handle=19
+[0m
+[0;32mI (25015) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25015) NimBLE: att_handle=16
+[0m
+[0;32mI (25088) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25088) NimBLE: att_handle=16
+[0m
+[0;32mI (25094) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25094) NimBLE: att_handle=19
+[0m
+[0;32mI (25100) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25100) NimBLE: att_handle=19
+[0m
+[0;32mI (25106) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25106) NimBLE: att_handle=19
+[0m
+[0;32mI (25112) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25112) NimBLE: att_handle=16
+[0m
+[0;32mI (25185) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25185) NimBLE: att_handle=16
+[0m
+[0;32mI (25192) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25192) NimBLE: att_handle=19
+[0m
+[0;32mI (25198) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25198) NimBLE: att_handle=19
+[0m
+[0;32mI (25204) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25204) NimBLE: att_handle=19
+[0m
+[0;32mI (25210) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25210) NimBLE: att_handle=16
+[0m
+[0;32mI (25282) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25282) NimBLE: att_handle=16
+[0m
+[0;32mI (25288) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25288) NimBLE: att_handle=19
+[0m
+[0;32mI (25294) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25294) NimBLE: att_handle=19
+[0m
+[0;32mI (25301) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25301) NimBLE: att_handle=19
+[0m
+[0;32mI (25307) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25307) NimBLE: att_handle=16
+[0m
+[0;32mI (25379) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25379) NimBLE: att_handle=16
+[0m
+[0;32mI (25385) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25385) NimBLE: att_handle=19
+[0m
+[0;32mI (25391) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25391) NimBLE: att_handle=19
+[0m
+[0;32mI (25397) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25397) NimBLE: att_handle=19
+[0m
+[0;32mI (25403) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25403) NimBLE: att_handle=16
+[0m
+[0;32mI (25476) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25476) NimBLE: att_handle=16
+[0m
+[0;32mI (25482) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25482) NimBLE: att_handle=19
+[0m
+[0;32mI (25488) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25488) NimBLE: att_handle=19
+[0m
+[0;32mI (25494) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25494) NimBLE: att_handle=19
+[0m
+[0;32mI (25500) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25500) NimBLE: att_handle=16
+[0m
+[0;32mI (25573) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25573) NimBLE: att_handle=16
+[0m
+[0;32mI (25579) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25579) NimBLE: att_handle=19
+[0m
+[0;32mI (25585) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25585) NimBLE: att_handle=19
+[0m
+[0;32mI (25591) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25591) NimBLE: att_handle=19
+[0m
+[0;32mI (25597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25597) NimBLE: att_handle=16
+[0m
+[0;32mI (25670) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25670) NimBLE: att_handle=16
+[0m
+[0;32mI (25676) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25676) NimBLE: att_handle=19
+[0m
+[0;32mI (25683) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25683) NimBLE: att_handle=19
+[0m
+[0;32mI (25689) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25689) NimBLE: att_handle=19
+[0m
+[0;32mI (25695) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25695) NimBLE: att_handle=16
+[0m
+[0;32mI (25767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25767) NimBLE: att_handle=16
+[0m
+[0;32mI (25773) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25773) NimBLE: att_handle=19
+[0m
+[0;32mI (25779) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25779) NimBLE: att_handle=19
+[0m
+[0;32mI (25785) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25785) NimBLE: att_handle=19
+[0m
+[0;32mI (25791) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25791) NimBLE: att_handle=16
+[0m
+[0;32mI (25864) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25864) NimBLE: att_handle=16
+[0m
+[0;32mI (25870) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25870) NimBLE: att_handle=19
+[0m
+[0;32mI (25877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25877) NimBLE: att_handle=19
+[0m
+[0;32mI (25883) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25883) NimBLE: att_handle=19
+[0m
+[0;32mI (25889) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25889) NimBLE: att_handle=16
+[0m
+[0;32mI (25961) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25962) NimBLE: att_handle=16
+[0m
+[0;32mI (25967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25967) NimBLE: att_handle=19
+[0m
+[0;32mI (25973) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25973) NimBLE: att_handle=19
+[0m
+[0;32mI (25979) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25979) NimBLE: att_handle=19
+[0m
+[0;32mI (25985) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (25985) NimBLE: att_handle=16
+[0m
+[0;32mI (26058) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26059) NimBLE: att_handle=16
+[0m
+[0;32mI (26065) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26065) NimBLE: att_handle=19
+[0m
+[0;32mI (26071) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26071) NimBLE: att_handle=19
+[0m
+[0;32mI (26077) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26077) NimBLE: att_handle=19
+[0m
+[0;32mI (26083) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26083) NimBLE: att_handle=16
+[0m
+[0;32mI (26155) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26156) NimBLE: att_handle=16
+[0m
+[0;32mI (26162) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26162) NimBLE: att_handle=19
+[0m
+[0;32mI (26168) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26168) NimBLE: att_handle=19
+[0m
+[0;32mI (26174) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26174) NimBLE: att_handle=19
+[0m
+[0;32mI (26180) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26180) NimBLE: att_handle=16
+[0m
+[0;32mI (26252) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26253) NimBLE: att_handle=16
+[0m
+[0;32mI (26259) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26259) NimBLE: att_handle=19
+[0m
+[0;32mI (26265) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26265) NimBLE: att_handle=19
+[0m
+[0;32mI (26271) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26271) NimBLE: att_handle=19
+[0m
+[0;32mI (26277) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26277) NimBLE: att_handle=16
+[0m
+[0;32mI (26349) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26350) NimBLE: att_handle=16
+[0m
+[0;32mI (26356) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26356) NimBLE: att_handle=19
+[0m
+[0;32mI (26363) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26363) NimBLE: att_handle=19
+[0m
+[0;32mI (26369) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26369) NimBLE: att_handle=19
+[0m
+[0;32mI (26375) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26375) NimBLE: att_handle=16
+[0m
+[0;32mI (26446) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26447) NimBLE: att_handle=16
+[0m
+[0;32mI (26453) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26453) NimBLE: att_handle=19
+[0m
+[0;32mI (26459) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26459) NimBLE: att_handle=19
+[0m
+[0;32mI (26465) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26465) NimBLE: att_handle=19
+[0m
+[0;32mI (26471) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26471) NimBLE: att_handle=16
+[0m
+[0;32mI (26543) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26544) NimBLE: att_handle=16
+[0m
+[0;32mI (26550) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26550) NimBLE: att_handle=19
+[0m
+[0;32mI (26556) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26556) NimBLE: att_handle=19
+[0m
+[0;32mI (26562) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26562) NimBLE: att_handle=19
+[0m
+[0;32mI (26568) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26569) NimBLE: att_handle=16
+[0m
+[0;32mI (26640) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26641) NimBLE: att_handle=16
+[0m
+[0;32mI (26647) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26647) NimBLE: att_handle=19
+[0m
+[0;32mI (26653) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26653) NimBLE: att_handle=19
+[0m
+[0;32mI (26659) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26659) NimBLE: att_handle=19
+[0m
+[0;32mI (26665) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26665) NimBLE: att_handle=16
+[0m
+[0;32mI (26737) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26738) NimBLE: att_handle=16
+[0m
+[0;32mI (26744) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26744) NimBLE: att_handle=19
+[0m
+[0;32mI (26750) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26750) NimBLE: att_handle=19
+[0m
+[0;32mI (26757) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26757) NimBLE: att_handle=19
+[0m
+[0;32mI (26763) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26763) NimBLE: att_handle=16
+[0m
+[0;32mI (26834) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26835) NimBLE: att_handle=16
+[0m
+[0;32mI (26841) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26841) NimBLE: att_handle=19
+[0m
+[0;32mI (26848) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26848) NimBLE: att_handle=19
+[0m
+[0;32mI (26854) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26854) NimBLE: att_handle=19
+[0m
+[0;32mI (26860) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26860) NimBLE: att_handle=16
+[0m
+[0;32mI (26932) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26932) NimBLE: att_handle=16
+[0m
+[0;32mI (26938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26938) NimBLE: att_handle=19
+[0m
+[0;32mI (26944) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26944) NimBLE: att_handle=19
+[0m
+[0;32mI (26950) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26950) NimBLE: att_handle=19
+[0m
+[0;32mI (26956) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (26956) NimBLE: att_handle=16
+[0m
+[0;32mI (27029) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27029) NimBLE: att_handle=16
+[0m
+[0;32mI (27035) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27035) NimBLE: att_handle=19
+[0m
+[0;32mI (27041) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27041) NimBLE: att_handle=19
+[0m
+[0;32mI (27047) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27047) NimBLE: att_handle=19
+[0m
+[0;32mI (27053) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27053) NimBLE: att_handle=16
+[0m
+[0;32mI (27126) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27126) NimBLE: att_handle=16
+[0m
+[0;32mI (27132) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27132) NimBLE: att_handle=19
+[0m
+[0;32mI (27138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27138) NimBLE: att_handle=19
+[0m
+[0;32mI (27144) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27144) NimBLE: att_handle=19
+[0m
+[0;32mI (27150) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27151) NimBLE: att_handle=16
+[0m
+[0;32mI (27223) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27223) NimBLE: att_handle=16
+[0m
+[0;32mI (27230) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27230) NimBLE: att_handle=19
+[0m
+[0;32mI (27236) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27236) NimBLE: att_handle=19
+[0m
+[0;32mI (27242) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27242) NimBLE: att_handle=19
+[0m
+[0;32mI (27248) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27248) NimBLE: att_handle=16
+[0m
+[0;32mI (27320) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27320) NimBLE: att_handle=16
+[0m
+[0;32mI (27327) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27327) NimBLE: att_handle=19
+[0m
+[0;32mI (27333) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27333) NimBLE: att_handle=19
+[0m
+[0;32mI (27339) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27339) NimBLE: att_handle=19
+[0m
+[0;32mI (27345) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27345) NimBLE: att_handle=16
+[0m
+[0;32mI (27417) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27417) NimBLE: att_handle=16
+[0m
+[0;32mI (27423) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27423) NimBLE: att_handle=19
+[0m
+[0;32mI (27429) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27429) NimBLE: att_handle=19
+[0m
+[0;32mI (27435) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27435) NimBLE: att_handle=19
+[0m
+[0;32mI (27441) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27441) NimBLE: att_handle=16
+[0m
+[0;32mI (27514) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27514) NimBLE: att_handle=16
+[0m
+[0;32mI (27520) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27520) NimBLE: att_handle=19
+[0m
+[0;32mI (27526) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27526) NimBLE: att_handle=19
+[0m
+[0;32mI (27532) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27532) NimBLE: att_handle=19
+[0m
+[0;32mI (27538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27538) NimBLE: att_handle=16
+[0m
+[0;32mI (27611) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27611) NimBLE: att_handle=16
+[0m
+[0;32mI (27617) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27617) NimBLE: att_handle=19
+[0m
+[0;32mI (27624) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27624) NimBLE: att_handle=19
+[0m
+[0;32mI (27630) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27630) NimBLE: att_handle=19
+[0m
+[0;32mI (27636) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27636) NimBLE: att_handle=16
+[0m
+[0;32mI (27708) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27708) NimBLE: att_handle=16
+[0m
+[0;32mI (27714) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27714) NimBLE: att_handle=19
+[0m
+[0;32mI (27720) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27720) NimBLE: att_handle=19
+[0m
+[0;32mI (27727) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27727) NimBLE: att_handle=19
+[0m
+[0;32mI (27733) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27733) NimBLE: att_handle=16
+[0m
+[0;32mI (27805) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27806) NimBLE: att_handle=16
+[0m
+[0;32mI (27812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27812) NimBLE: att_handle=19
+[0m
+[0;32mI (27818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27818) NimBLE: att_handle=19
+[0m
+[0;32mI (27824) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27824) NimBLE: att_handle=19
+[0m
+[0;32mI (27830) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27830) NimBLE: att_handle=16
+[0m
+[0;32mI (27902) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27902) NimBLE: att_handle=16
+[0m
+[0;32mI (27909) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27909) NimBLE: att_handle=19
+[0m
+[0;32mI (27915) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27915) NimBLE: att_handle=19
+[0m
+[0;32mI (27921) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27921) NimBLE: att_handle=19
+[0m
+[0;32mI (27927) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (27927) NimBLE: att_handle=16
+[0m
+[0;32mI (27999) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28000) NimBLE: att_handle=16
+[0m
+[0;32mI (28006) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28006) NimBLE: att_handle=19
+[0m
+[0;32mI (28013) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28013) NimBLE: att_handle=19
+[0m
+[0;32mI (28018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28018) NimBLE: att_handle=19
+[0m
+[0;32mI (28023) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28023) NimBLE: att_handle=16
+[0m
+[0;32mI (28096) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28097) NimBLE: att_handle=16
+[0m
+[0;32mI (28102) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28102) NimBLE: att_handle=19
+[0m
+[0;32mI (28108) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28108) NimBLE: att_handle=19
+[0m
+[0;32mI (28113) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28113) NimBLE: att_handle=19
+[0m
+[0;32mI (28118) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28118) NimBLE: att_handle=16
+[0m
+[0;32mI (28193) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28194) NimBLE: att_handle=16
+[0m
+[0;32mI (28200) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28200) NimBLE: att_handle=19
+[0m
+[0;32mI (28206) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28207) NimBLE: att_handle=19
+[0m
+[0;32mI (28212) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28212) NimBLE: att_handle=19
+[0m
+[0;32mI (28217) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28217) NimBLE: att_handle=16
+[0m
+[0;32mI (28290) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28291) NimBLE: att_handle=16
+[0m
+[0;32mI (28296) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28296) NimBLE: att_handle=19
+[0m
+[0;32mI (28302) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28302) NimBLE: att_handle=19
+[0m
+[0;32mI (28308) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28308) NimBLE: att_handle=19
+[0m
+[0;32mI (28313) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28313) NimBLE: att_handle=16
+[0m
+[0;31mE (28313) NIRduino: Failed to send notification. Size: 344 bytes. Is client subscribed?[0m
+[0;32mI (28387) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28388) NimBLE: att_handle=16
+[0m
+[0;32mI (28393) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28393) NimBLE: att_handle=19
+[0m
+[0;32mI (28399) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28399) NimBLE: att_handle=19
+[0m
+[0;32mI (28404) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28404) NimBLE: att_handle=19
+[0m
+[0;32mI (28409) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28409) NimBLE: att_handle=16
+[0m
+[0;32mI (28484) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28485) NimBLE: att_handle=16
+[0m
+[0;32mI (28491) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28491) NimBLE: att_handle=19
+[0m
+[0;32mI (28498) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28498) NimBLE: att_handle=19
+[0m
+[0;32mI (28504) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28504) NimBLE: att_handle=19
+[0m
+[0;32mI (28509) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28509) NimBLE: att_handle=16
+[0m
+[0;32mI (28581) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28582) NimBLE: att_handle=16
+[0m
+[0;32mI (28588) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28588) NimBLE: att_handle=19
+[0m
+[0;32mI (28594) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28594) NimBLE: att_handle=19
+[0m
+[0;32mI (28599) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28599) NimBLE: att_handle=19
+[0m
+[0;32mI (28604) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28604) NimBLE: att_handle=16
+[0m
+[0;32mI (28678) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28679) NimBLE: att_handle=16
+[0m
+[0;32mI (28685) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28685) NimBLE: att_handle=19
+[0m
+[0;32mI (28691) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28691) NimBLE: att_handle=19
+[0m
+[0;32mI (28697) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28697) NimBLE: att_handle=19
+[0m
+[0;32mI (28702) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28702) NimBLE: att_handle=16
+[0m
+[0;32mI (28775) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28776) NimBLE: att_handle=16
+[0m
+[0;32mI (28782) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28782) NimBLE: att_handle=19
+[0m
+[0;32mI (28788) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28788) NimBLE: att_handle=19
+[0m
+[0;32mI (28794) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28794) NimBLE: att_handle=19
+[0m
+[0;32mI (28800) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28800) NimBLE: att_handle=16
+[0m
+[0;32mI (28873) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28873) NimBLE: att_handle=16
+[0m
+[0;32mI (28879) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28879) NimBLE: att_handle=19
+[0m
+[0;32mI (28885) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28885) NimBLE: att_handle=19
+[0m
+[0;32mI (28891) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28891) NimBLE: att_handle=19
+[0m
+[0;32mI (28897) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28897) NimBLE: att_handle=16
+[0m
+[0;32mI (28970) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28970) NimBLE: att_handle=16
+[0m
+[0;32mI (28976) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28976) NimBLE: att_handle=19
+[0m
+[0;32mI (28982) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28982) NimBLE: att_handle=19
+[0m
+[0;32mI (28988) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28988) NimBLE: att_handle=19
+[0m
+[0;32mI (28994) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (28994) NimBLE: att_handle=16
+[0m
+[0;32mI (29067) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29067) NimBLE: att_handle=16
+[0m
+[0;32mI (29073) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29073) NimBLE: att_handle=19
+[0m
+[0;32mI (29079) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29079) NimBLE: att_handle=19
+[0m
+[0;32mI (29085) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29085) NimBLE: att_handle=19
+[0m
+[0;32mI (29091) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29091) NimBLE: att_handle=16
+[0m
+[0;32mI (29164) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29164) NimBLE: att_handle=16
+[0m
+[0;32mI (29170) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29170) NimBLE: att_handle=19
+[0m
+[0;32mI (29176) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29176) NimBLE: att_handle=19
+[0m
+[0;32mI (29182) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29182) NimBLE: att_handle=19
+[0m
+[0;32mI (29188) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29188) NimBLE: att_handle=16
+[0m
+[0;32mI (29261) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29261) NimBLE: att_handle=16
+[0m
+[0;32mI (29268) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29268) NimBLE: att_handle=19
+[0m
+[0;32mI (29274) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29274) NimBLE: att_handle=19
+[0m
+[0;32mI (29280) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29280) NimBLE: att_handle=19
+[0m
+[0;32mI (29286) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29286) NimBLE: att_handle=16
+[0m
+[0;32mI (29358) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29358) NimBLE: att_handle=16
+[0m
+[0;32mI (29365) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29365) NimBLE: att_handle=19
+[0m
+[0;32mI (29371) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29371) NimBLE: att_handle=19
+[0m
+[0;32mI (29377) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29377) NimBLE: att_handle=19
+[0m
+[0;32mI (29383) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29383) NimBLE: att_handle=16
+[0m
+[0;32mI (29455) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29456) NimBLE: att_handle=16
+[0m
+[0;32mI (29462) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29462) NimBLE: att_handle=19
+[0m
+[0;32mI (29468) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29468) NimBLE: att_handle=19
+[0m
+[0;32mI (29474) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29474) NimBLE: att_handle=19
+[0m
+[0;32mI (29480) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29480) NimBLE: att_handle=16
+[0m
+[0;32mI (29552) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29552) NimBLE: att_handle=16
+[0m
+[0;32mI (29558) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29558) NimBLE: att_handle=19
+[0m
+[0;32mI (29564) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29564) NimBLE: att_handle=19
+[0m
+[0;32mI (29571) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29571) NimBLE: att_handle=19
+[0m
+[0;32mI (29577) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29577) NimBLE: att_handle=16
+[0m
+[0;32mI (29649) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29650) NimBLE: att_handle=16
+[0m
+[0;32mI (29655) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29655) NimBLE: att_handle=19
+[0m
+[0;32mI (29661) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29661) NimBLE: att_handle=19
+[0m
+[0;32mI (29667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29667) NimBLE: att_handle=19
+[0m
+[0;32mI (29673) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29673) NimBLE: att_handle=16
+[0m
+[0;32mI (29746) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29747) NimBLE: att_handle=16
+[0m
+[0;32mI (29753) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29753) NimBLE: att_handle=19
+[0m
+[0;32mI (29759) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29759) NimBLE: att_handle=19
+[0m
+[0;32mI (29765) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29765) NimBLE: att_handle=19
+[0m
+[0;32mI (29771) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29771) NimBLE: att_handle=16
+[0m
+[0;32mI (29843) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29844) NimBLE: att_handle=16
+[0m
+[0;32mI (29850) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29850) NimBLE: att_handle=19
+[0m
+[0;32mI (29856) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29856) NimBLE: att_handle=19
+[0m
+[0;32mI (29862) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29862) NimBLE: att_handle=19
+[0m
+[0;32mI (29868) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29868) NimBLE: att_handle=16
+[0m
+[0;32mI (29940) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29941) NimBLE: att_handle=16
+[0m
+[0;32mI (29947) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29947) NimBLE: att_handle=19
+[0m
+[0;32mI (29954) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29954) NimBLE: att_handle=19
+[0m
+[0;32mI (29960) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29960) NimBLE: att_handle=19
+[0m
+[0;32mI (29966) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (29966) NimBLE: att_handle=16
+[0m
+[0;32mI (30037) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30038) NimBLE: att_handle=16
+[0m
+[0;32mI (30044) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30044) NimBLE: att_handle=19
+[0m
+[0;32mI (30051) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30051) NimBLE: att_handle=19
+[0m
+[0;32mI (30057) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30057) NimBLE: att_handle=19
+[0m
+[0;32mI (30063) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30064) NimBLE: att_handle=16
+[0m
+[0;32mI (30134) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30135) NimBLE: att_handle=16
+[0m
+[0;32mI (30141) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30141) NimBLE: att_handle=19
+[0m
+[0;32mI (30147) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30147) NimBLE: att_handle=19
+[0m
+[0;32mI (30153) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30153) NimBLE: att_handle=19
+[0m
+[0;32mI (30159) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30159) NimBLE: att_handle=16
+[0m
+[0;32mI (30231) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30232) NimBLE: att_handle=16
+[0m
+[0;32mI (30238) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30238) NimBLE: att_handle=19
+[0m
+[0;32mI (30244) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30244) NimBLE: att_handle=19
+[0m
+[0;32mI (30250) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30250) NimBLE: att_handle=19
+[0m
+[0;32mI (30256) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30256) NimBLE: att_handle=16
+[0m
+[0;32mI (30328) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30329) NimBLE: att_handle=16
+[0m
+[0;32mI (30335) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30335) NimBLE: att_handle=19
+[0m
+[0;32mI (30341) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30341) NimBLE: att_handle=19
+[0m
+[0;32mI (30348) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30349) NimBLE: att_handle=19
+[0m
+[0;32mI (30355) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30355) NimBLE: att_handle=16
+[0m
+[0;32mI (30425) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30426) NimBLE: att_handle=16
+[0m
+[0;32mI (30432) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30432) NimBLE: att_handle=19
+[0m
+[0;32mI (30438) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30438) NimBLE: att_handle=19
+[0m
+[0;32mI (30444) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30444) NimBLE: att_handle=19
+[0m
+[0;32mI (30450) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30450) NimBLE: att_handle=16
+[0m
+[0;32mI (30523) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30523) NimBLE: att_handle=16
+[0m
+[0;32mI (30529) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30529) NimBLE: att_handle=19
+[0m
+[0;32mI (30535) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30535) NimBLE: att_handle=19
+[0m
+[0;32mI (30541) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30541) NimBLE: att_handle=19
+[0m
+[0;32mI (30548) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30548) NimBLE: att_handle=16
+[0m
+[0;32mI (30620) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30620) NimBLE: att_handle=16
+[0m
+[0;32mI (30626) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30626) NimBLE: att_handle=19
+[0m
+[0;32mI (30633) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30634) NimBLE: att_handle=19
+[0m
+[0;32mI (30640) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30640) NimBLE: att_handle=19
+[0m
+[0;32mI (30647) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30647) NimBLE: att_handle=16
+[0m
+[0;32mI (30717) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30717) NimBLE: att_handle=16
+[0m
+[0;32mI (30723) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30723) NimBLE: att_handle=19
+[0m
+[0;32mI (30729) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30729) NimBLE: att_handle=19
+[0m
+[0;32mI (30736) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30736) NimBLE: att_handle=19
+[0m
+[0;32mI (30742) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30742) NimBLE: att_handle=16
+[0m
+[0;32mI (30814) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30814) NimBLE: att_handle=16
+[0m
+[0;32mI (30820) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30820) NimBLE: att_handle=19
+[0m
+[0;32mI (30826) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30826) NimBLE: att_handle=19
+[0m
+[0;32mI (30832) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30832) NimBLE: att_handle=19
+[0m
+[0;32mI (30838) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30838) NimBLE: att_handle=16
+[0m
+[0;32mI (30911) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30911) NimBLE: att_handle=16
+[0m
+[0;32mI (30917) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30917) NimBLE: att_handle=19
+[0m
+[0;32mI (30923) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30923) NimBLE: att_handle=19
+[0m
+[0;32mI (30929) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30929) NimBLE: att_handle=19
+[0m
+[0;32mI (30935) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (30935) NimBLE: att_handle=16
+[0m
+[0;32mI (31008) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31008) NimBLE: att_handle=16
+[0m
+[0;32mI (31014) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31014) NimBLE: att_handle=19
+[0m
+[0;32mI (31020) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31020) NimBLE: att_handle=19
+[0m
+[0;32mI (31026) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31026) NimBLE: att_handle=19
+[0m
+[0;32mI (31032) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31032) NimBLE: att_handle=16
+[0m
+[0;32mI (31105) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31105) NimBLE: att_handle=16
+[0m
+[0;32mI (31111) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31111) NimBLE: att_handle=19
+[0m
+[0;32mI (31117) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31117) NimBLE: att_handle=19
+[0m
+[0;32mI (31123) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31123) NimBLE: att_handle=19
+[0m
+[0;32mI (31129) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31129) NimBLE: att_handle=16
+[0m
+[0;32mI (31202) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31202) NimBLE: att_handle=16
+[0m
+[0;32mI (31208) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31208) NimBLE: att_handle=19
+[0m
+[0;32mI (31214) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31214) NimBLE: att_handle=19
+[0m
+[0;32mI (31220) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31220) NimBLE: att_handle=19
+[0m
+[0;32mI (31226) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31226) NimBLE: att_handle=16
+[0m
+[0;32mI (31299) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31299) NimBLE: att_handle=16
+[0m
+[0;32mI (31305) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31305) NimBLE: att_handle=19
+[0m
+[0;32mI (31311) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31311) NimBLE: att_handle=19
+[0m
+[0;32mI (31317) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31317) NimBLE: att_handle=19
+[0m
+[0;32mI (31323) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31323) NimBLE: att_handle=16
+[0m
+[0;32mI (31396) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31396) NimBLE: att_handle=16
+[0m
+[0;32mI (31402) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31402) NimBLE: att_handle=19
+[0m
+[0;32mI (31408) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31408) NimBLE: att_handle=19
+[0m
+[0;32mI (31414) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31414) NimBLE: att_handle=19
+[0m
+[0;32mI (31420) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31420) NimBLE: att_handle=16
+[0m
+[0;32mI (31493) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31494) NimBLE: att_handle=16
+[0m
+[0;32mI (31499) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31499) NimBLE: att_handle=19
+[0m
+[0;32mI (31505) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31505) NimBLE: att_handle=19
+[0m
+[0;32mI (31511) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31511) NimBLE: att_handle=19
+[0m
+[0;32mI (31517) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31517) NimBLE: att_handle=16
+[0m
+[0;32mI (31590) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31591) NimBLE: att_handle=16
+[0m
+[0;32mI (31597) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31597) NimBLE: att_handle=19
+[0m
+[0;32mI (31603) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31603) NimBLE: att_handle=19
+[0m
+[0;32mI (31609) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31609) NimBLE: att_handle=19
+[0m
+[0;32mI (31615) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31615) NimBLE: att_handle=16
+[0m
+[0;32mI (31687) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31688) NimBLE: att_handle=16
+[0m
+[0;32mI (31693) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31693) NimBLE: att_handle=19
+[0m
+[0;32mI (31699) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31699) NimBLE: att_handle=19
+[0m
+[0;32mI (31705) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31705) NimBLE: att_handle=19
+[0m
+[0;32mI (31711) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31711) NimBLE: att_handle=16
+[0m
+[0;32mI (31784) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31785) NimBLE: att_handle=16
+[0m
+[0;32mI (31791) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31791) NimBLE: att_handle=19
+[0m
+[0;32mI (31797) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31797) NimBLE: att_handle=19
+[0m
+[0;32mI (31803) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31803) NimBLE: att_handle=19
+[0m
+[0;32mI (31809) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31809) NimBLE: att_handle=16
+[0m
+[0;32mI (31881) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31882) NimBLE: att_handle=16
+[0m
+[0;32mI (31888) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31888) NimBLE: att_handle=19
+[0m
+[0;32mI (31895) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31895) NimBLE: att_handle=19
+[0m
+[0;32mI (31901) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31901) NimBLE: att_handle=19
+[0m
+[0;32mI (31907) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31907) NimBLE: att_handle=16
+[0m
+[0;32mI (31978) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31979) NimBLE: att_handle=16
+[0m
+[0;32mI (31985) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31985) NimBLE: att_handle=19
+[0m
+[0;32mI (31991) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31991) NimBLE: att_handle=19
+[0m
+[0;32mI (31997) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31997) NimBLE: att_handle=19
+[0m
+[0;32mI (32003) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32003) NimBLE: att_handle=16
+[0m
+[0;32mI (32075) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32076) NimBLE: att_handle=16
+[0m
+[0;32mI (32082) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32082) NimBLE: att_handle=19
+[0m
+[0;32mI (32088) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32088) NimBLE: att_handle=19
+[0m
+[0;32mI (32094) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32094) NimBLE: att_handle=19
+[0m
+[0;32mI (32100) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32100) NimBLE: att_handle=16
+[0m
+[0;32mI (32172) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32173) NimBLE: att_handle=16
+[0m
+[0;32mI (32179) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32179) NimBLE: att_handle=19
+[0m
+[0;32mI (32185) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32185) NimBLE: att_handle=19
+[0m
+[0;32mI (32191) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32191) NimBLE: att_handle=19
+[0m
+[0;32mI (32197) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32197) NimBLE: att_handle=16
+[0m
+[0;32mI (32269) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32270) NimBLE: att_handle=16
+[0m
+[0;32mI (32276) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32276) NimBLE: att_handle=19
+[0m
+[0;32mI (32283) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32283) NimBLE: att_handle=19
+[0m
+[0;32mI (32289) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32289) NimBLE: att_handle=19
+[0m
+[0;32mI (32295) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32295) NimBLE: att_handle=16
+[0m
+[0;32mI (32366) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32367) NimBLE: att_handle=16
+[0m
+[0;32mI (32373) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32373) NimBLE: att_handle=19
+[0m
+[0;32mI (32379) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32379) NimBLE: att_handle=19
+[0m
+[0;32mI (32385) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32385) NimBLE: att_handle=19
+[0m
+[0;32mI (32391) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32391) NimBLE: att_handle=16
+[0m
+[0;32mI (32464) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32464) NimBLE: att_handle=16
+[0m
+[0;32mI (32470) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32470) NimBLE: att_handle=19
+[0m
+[0;32mI (32476) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32476) NimBLE: att_handle=19
+[0m
+[0;32mI (32482) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32482) NimBLE: att_handle=19
+[0m
+[0;32mI (32488) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32488) NimBLE: att_handle=16
+[0m
+[0;32mI (32561) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32561) NimBLE: att_handle=16
+[0m
+[0;32mI (32567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32567) NimBLE: att_handle=19
+[0m
+[0;32mI (32573) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32573) NimBLE: att_handle=19
+[0m
+[0;32mI (32579) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32579) NimBLE: att_handle=19
+[0m
+[0;32mI (32585) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32585) NimBLE: att_handle=16
+[0m
+[0;32mI (32658) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32658) NimBLE: att_handle=16
+[0m
+[0;32mI (32664) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32664) NimBLE: att_handle=19
+[0m
+[0;32mI (32670) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32670) NimBLE: att_handle=19
+[0m
+[0;32mI (32676) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32676) NimBLE: att_handle=19
+[0m
+[0;32mI (32682) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32682) NimBLE: att_handle=16
+[0m
+[0;32mI (32755) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32755) NimBLE: att_handle=16
+[0m
+[0;32mI (32761) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32761) NimBLE: att_handle=19
+[0m
+[0;32mI (32767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32767) NimBLE: att_handle=19
+[0m
+[0;32mI (32773) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32773) NimBLE: att_handle=19
+[0m
+[0;32mI (32779) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32779) NimBLE: att_handle=16
+[0m
+[0;32mI (32852) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32852) NimBLE: att_handle=16
+[0m
+[0;32mI (32858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32858) NimBLE: att_handle=19
+[0m
+[0;32mI (32864) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32864) NimBLE: att_handle=19
+[0m
+[0;32mI (32871) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32871) NimBLE: att_handle=19
+[0m
+[0;32mI (32877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32877) NimBLE: att_handle=16
+[0m
+[0;32mI (32949) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32949) NimBLE: att_handle=16
+[0m
+[0;32mI (32955) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32955) NimBLE: att_handle=19
+[0m
+[0;32mI (32961) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32961) NimBLE: att_handle=19
+[0m
+[0;32mI (32967) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32967) NimBLE: att_handle=19
+[0m
+[0;32mI (32973) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32973) NimBLE: att_handle=16
+[0m
+[0;32mI (33046) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33046) NimBLE: att_handle=16
+[0m
+[0;32mI (33052) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33052) NimBLE: att_handle=19
+[0m
+[0;32mI (33059) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33059) NimBLE: att_handle=19
+[0m
+[0;32mI (33065) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33065) NimBLE: att_handle=19
+[0m
+[0;32mI (33071) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33071) NimBLE: att_handle=16
+[0m
+[0;32mI (33143) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33144) NimBLE: att_handle=16
+[0m
+[0;32mI (33150) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33150) NimBLE: att_handle=19
+[0m
+[0;32mI (33156) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33156) NimBLE: att_handle=19
+[0m
+[0;32mI (33162) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33162) NimBLE: att_handle=19
+[0m
+[0;32mI (33168) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33168) NimBLE: att_handle=16
+[0m
+[0;32mI (33240) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33240) NimBLE: att_handle=16
+[0m
+[0;32mI (33246) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33246) NimBLE: att_handle=19
+[0m
+[0;32mI (33252) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33252) NimBLE: att_handle=19
+[0m
+[0;32mI (33258) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33258) NimBLE: att_handle=19
+[0m
+[0;32mI (33264) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33264) NimBLE: att_handle=16
+[0m
+[0;32mI (33337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33338) NimBLE: att_handle=16
+[0m
+[0;32mI (33343) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33343) NimBLE: att_handle=19
+[0m
+[0;32mI (33349) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33349) NimBLE: att_handle=19
+[0m
+[0;32mI (33355) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33355) NimBLE: att_handle=19
+[0m
+[0;32mI (33361) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33361) NimBLE: att_handle=16
+[0m
+[0;32mI (33434) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33434) NimBLE: att_handle=16
+[0m
+[0;32mI (33440) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33440) NimBLE: att_handle=19
+[0m
+[0;32mI (33446) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33446) NimBLE: att_handle=19
+[0m
+[0;32mI (33452) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33452) NimBLE: att_handle=19
+[0m
+[0;32mI (33458) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33458) NimBLE: att_handle=16
+[0m
+[0;32mI (33531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33532) NimBLE: att_handle=16
+[0m
+[0;32mI (33538) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33538) NimBLE: att_handle=19
+[0m
+[0;32mI (33544) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33544) NimBLE: att_handle=19
+[0m
+[0;32mI (33550) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33550) NimBLE: att_handle=19
+[0m
+[0;32mI (33556) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33556) NimBLE: att_handle=16
+[0m
+[0;32mI (33628) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33629) NimBLE: att_handle=16
+[0m
+[0;32mI (33635) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33635) NimBLE: att_handle=19
+[0m
+[0;32mI (33641) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33641) NimBLE: att_handle=19
+[0m
+[0;32mI (33647) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33647) NimBLE: att_handle=19
+[0m
+[0;32mI (33653) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33653) NimBLE: att_handle=16
+[0m
+[0;32mI (33725) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33726) NimBLE: att_handle=16
+[0m
+[0;32mI (33732) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33732) NimBLE: att_handle=19
+[0m
+[0;32mI (33738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33738) NimBLE: att_handle=19
+[0m
+[0;32mI (33744) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33744) NimBLE: att_handle=19
+[0m
+[0;32mI (33750) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33750) NimBLE: att_handle=16
+[0m
+[0;32mI (33822) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33823) NimBLE: att_handle=16
+[0m
+[0;32mI (33829) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33829) NimBLE: att_handle=19
+[0m
+[0;32mI (33835) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33835) NimBLE: att_handle=19
+[0m
+[0;32mI (33841) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33841) NimBLE: att_handle=19
+[0m
+[0;32mI (33847) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33847) NimBLE: att_handle=16
+[0m
+[0;32mI (33919) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33920) NimBLE: att_handle=16
+[0m
+[0;32mI (33926) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33926) NimBLE: att_handle=19
+[0m
+[0;32mI (33932) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33932) NimBLE: att_handle=19
+[0m
+[0;32mI (33938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33938) NimBLE: att_handle=19
+[0m
+[0;32mI (33944) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33944) NimBLE: att_handle=16
+[0m
+[0;32mI (34016) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34017) NimBLE: att_handle=16
+[0m
+[0;32mI (34023) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34023) NimBLE: att_handle=19
+[0m
+[0;32mI (34029) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34029) NimBLE: att_handle=19
+[0m
+[0;32mI (34035) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34035) NimBLE: att_handle=19
+[0m
+[0;32mI (34041) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34041) NimBLE: att_handle=16
+[0m
+[0;32mI (34113) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34114) NimBLE: att_handle=16
+[0m
+[0;32mI (34120) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34120) NimBLE: att_handle=19
+[0m
+[0;32mI (34126) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34126) NimBLE: att_handle=19
+[0m
+[0;32mI (34132) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34132) NimBLE: att_handle=19
+[0m
+[0;32mI (34138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34138) NimBLE: att_handle=16
+[0m
+[0;32mI (34210) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34211) NimBLE: att_handle=16
+[0m
+[0;32mI (34217) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34217) NimBLE: att_handle=19
+[0m
+[0;32mI (34223) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34223) NimBLE: att_handle=19
+[0m
+[0;32mI (34229) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34229) NimBLE: att_handle=19
+[0m
+[0;32mI (34235) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34235) NimBLE: att_handle=16
+[0m
+[0;32mI (34307) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34308) NimBLE: att_handle=16
+[0m
+[0;32mI (34314) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34314) NimBLE: att_handle=19
+[0m
+[0;32mI (34321) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34321) NimBLE: att_handle=19
+[0m
+[0;32mI (34327) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34327) NimBLE: att_handle=19
+[0m
+[0;32mI (34333) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34333) NimBLE: att_handle=16
+[0m
+[0;32mI (34405) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34405) NimBLE: att_handle=16
+[0m
+[0;32mI (34412) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34412) NimBLE: att_handle=19
+[0m
+[0;32mI (34418) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34419) NimBLE: att_handle=19
+[0m
+[0;32mI (34424) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34424) NimBLE: att_handle=19
+[0m
+[0;32mI (34430) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34430) NimBLE: att_handle=16
+[0m
+[0;32mI (34502) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34502) NimBLE: att_handle=16
+[0m
+[0;32mI (34509) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34509) NimBLE: att_handle=19
+[0m
+[0;32mI (34515) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34515) NimBLE: att_handle=19
+[0m
+[0;32mI (34521) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34521) NimBLE: att_handle=19
+[0m
+[0;32mI (34527) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34527) NimBLE: att_handle=16
+[0m
+[0;32mI (34599) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34599) NimBLE: att_handle=16
+[0m
+[0;32mI (34605) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34605) NimBLE: att_handle=19
+[0m
+[0;32mI (34611) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34611) NimBLE: att_handle=19
+[0m
+[0;32mI (34617) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34617) NimBLE: att_handle=19
+[0m
+[0;32mI (34623) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34623) NimBLE: att_handle=16
+[0m
+[0;32mI (34696) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34696) NimBLE: att_handle=16
+[0m
+[0;32mI (34702) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34702) NimBLE: att_handle=19
+[0m
+[0;32mI (34708) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34709) NimBLE: att_handle=19
+[0m
+[0;32mI (34715) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34715) NimBLE: att_handle=19
+[0m
+[0;32mI (34721) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34721) NimBLE: att_handle=16
+[0m
+[0;32mI (34793) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34794) NimBLE: att_handle=16
+[0m
+[0;32mI (34800) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34800) NimBLE: att_handle=19
+[0m
+[0;32mI (34806) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34806) NimBLE: att_handle=19
+[0m
+[0;32mI (34812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34812) NimBLE: att_handle=19
+[0m
+[0;32mI (34818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34818) NimBLE: att_handle=16
+[0m
+[0;32mI (34890) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34890) NimBLE: att_handle=16
+[0m
+[0;32mI (34896) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34896) NimBLE: att_handle=19
+[0m
+[0;32mI (34902) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34902) NimBLE: att_handle=19
+[0m
+[0;32mI (34908) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34908) NimBLE: att_handle=19
+[0m
+[0;32mI (34914) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34914) NimBLE: att_handle=16
+[0m
+[0;32mI (34956) NIRduino: Command: STOP DATA ACQUISITION[0m
+[0;32mI (34957) NIRduino: ADC sampling timer stopped.[0m
+[0;32mI (34957) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (34958) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34958) NIRduino: LED intensities saved successfully[0m
+[0;32mI (34959) NimBLE: att_handle=16
+[0m
+[0;32mI (34959) NIRduino: Storage Task: LED intensities saved successfully[0m

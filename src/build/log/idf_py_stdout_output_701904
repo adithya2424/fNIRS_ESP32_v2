@@ -1,0 +1,7 @@
+[1/4] cd /home/adithyapamulaparthi/nimble_test_nirduino/build/esp-idf/esptool_py && /home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/adithyapamulaparthi/nimble_test_nirduino/build/partition_table/partition-table.bin /home/adithyapamulaparthi/nimble_test_nirduino/build/app.bin
+app.bin binary size 0x9fdf0 bytes. Smallest app partition is 0x100000 bytes. 0x60210 bytes (38%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader/esp-idf/esptool_py && /home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader/bootloader.bin
+Bootloader binary size 0x56a0 bytes. 0x2960 bytes (32%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

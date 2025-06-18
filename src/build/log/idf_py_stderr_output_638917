@@ -1,0 +1,6 @@
+warning: default on the choice symbol BT_NIMBLE_ENABLED (defined at /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/bt/Kconfig:23, /home/adithyapamulaparthi/nimble_test_nirduino/components/esp-nimble-cpp/Kconfig:217) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/bt/Kconfig:23, /home/adithyapamulaparthi/nimble_test_nirduino/components/esp-nimble-cpp/Kconfig:217) is defined with a prompt outside the choice
+Compiler supported targets: xtensa-esp32s3-elf
+
+ESP Insights Project commit: HEAD-HASH-NOTFOUND
+ESP RainMaker Project commit: HEAD-HASH-NOTFOUND

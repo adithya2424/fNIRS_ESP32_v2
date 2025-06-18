@@ -1,0 +1,63 @@
+[1/5] cd /home/adithyapamulaparthi/nimble_test_nirduino/build/esp-idf/esptool_py && /home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/adithyapamulaparthi/nimble_test_nirduino/build/partition_table/partition-table.bin /home/adithyapamulaparthi/nimble_test_nirduino/build/app.bin
+app.bin binary size 0x9a3d0 bytes. Smallest app partition is 0x100000 bytes. 0x65c30 bytes (40%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader/esp-idf/esptool_py && /home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader/bootloader.bin
+Bootloader binary size 0x56a0 bytes. 0x2960 bytes (32%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/adithyapamulaparthi/esp/v5.1.4/esp-idf -D "SERIAL_TOOL=/home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python;;/home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/adithyapamulaparthi/nimble_test_nirduino/build -P /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 app.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 74:4d:bd:75:25:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000aafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22176 bytes to 14053...
+Writing at 0x00000000... (100 %)
+Wrote 22176 bytes (14053 compressed) at 0x00000000 in 0.4 seconds (effective 466.8 kbit/s)...
+Hash of data verified.
+Compressed 631760 bytes to 375891...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001c45b... (8 %)
+Writing at 0x00025ad0... (13 %)
+Writing at 0x0002a7c6... (17 %)
+Writing at 0x000359cb... (21 %)
+Writing at 0x0003ae4e... (26 %)
+Writing at 0x00040ba9... (30 %)
+Writing at 0x00046d8e... (34 %)
+Writing at 0x0004cdf6... (39 %)
+Writing at 0x00052d3c... (43 %)
+Writing at 0x000592f4... (47 %)
+Writing at 0x0005f19b... (52 %)
+Writing at 0x00064ce6... (56 %)
+Writing at 0x0006a373... (60 %)
+Writing at 0x000703eb... (65 %)
+Writing at 0x0007652b... (69 %)
+Writing at 0x0007c1e1... (73 %)
+Writing at 0x00082684... (78 %)
+Writing at 0x00088414... (82 %)
+Writing at 0x0008daa6... (86 %)
+Writing at 0x00096578... (91 %)
+Writing at 0x0009ea08... (95 %)
+Writing at 0x000a4643... (100 %)
+Wrote 631760 bytes (375891 compressed) at 0x00010000 in 4.2 seconds (effective 1189.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 544.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

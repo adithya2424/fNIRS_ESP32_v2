@@ -1,0 +1,1228 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048ee2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18e4
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd90
+load:0x403cc700,len:0x2fcc
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 14 2025 10:23:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=21a6ch (137836) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031a94 vaddr=3fc9c200 size=04514h ( 17684) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=00035fb0 vaddr=40374000 size=0a068h ( 41064) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=62470h (402544) map[0m
+[0;32mI (201) esp_image: segment 4: paddr=000a2498 vaddr=4037e068 size=0e104h ( 57604) load[0m
+[0;32mI (223) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (223) boot: Disabling RNG early entropy source...[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (227) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (232) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (238) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (243) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (248) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (254) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (259) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (265) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (270) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (276) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (282) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (288) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (293) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (297) esp_psram: Speed: 80MHz[0m
+[0;32mI (301) cpu_start: Pro cpu up.[0m
+[0;32mI (305) cpu_start: Starting app cpu, entry point is 0x40375884[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (764) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (948) cpu_start: Pro cpu start user code[0m
+[0;32mI (948) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (948) cpu_start: Application information:[0m
+[0;32mI (948) cpu_start: Project name:     app[0m
+[0;32mI (949) cpu_start: App version:      1[0m
+[0;32mI (949) cpu_start: Compile time:     Jun 15 2025 10:51:31[0m
+[0;32mI (949) cpu_start: ELF file SHA256:  1082c7b9cea0e38f...[0m
+[0;32mI (949) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (949) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (950) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (950) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (950) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (950) heap_init: At 3FCA44F0 len 00045220 (276 KiB): DRAM[0m
+[0;32mI (951) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (951) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (951) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (952) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (952) spi_flash: detected chip: gd[0m
+[0;32mI (952) spi_flash: flash io: qio[0m
+[0;32mI (953) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (953) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (954) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (954) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (954) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (955) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (955) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (955) coexist: coexist rom version e7ae62f[0m
+[0;32mI (955) app_start: Starting scheduler on CPU0[0m
+[0;32mI (956) app_start: Starting scheduler on CPU1[0m
+[0;32mI (956) main_task: Started on CPU0[0m
+[0;32mI (957) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (957) main_task: Calling app_main()[0m
+[0;32mI (958) NIRduino: Starting NIRduino application...[0m
+[0;32mI (968) NIRduino: Initializing GPIO...[0m
+[0;32mI (968) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) NIRduino: DAC init successful![0m
+[0;32mI (975) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (975) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (976) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (976) NIRduino: LED intensities found in NVS[0m
+[0;32mI (976) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (977) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (977) NIRduino: Creating storage task and queue...[0m
+[0;32mI (978) NIRduino: Storage task started[0m
+[0;32mI (978) NIRduino: Storage task created successfully[0m
+[0;32mI (978) NIRduino: Initializing BLE...[0m
+[0;32mI (978) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (979) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (980) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1021) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1024) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1024) NimBLE: disc_mode=2[0m
+[0;32mI (1024) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1025) NimBLE: 
+[0m
+[0;32mI (1025) NIRduino: BLE initialized and advertising started[0m
+[0;32mI (1026) NIRduino: Initializing ADC system...[0m
+[0;32mI (1026) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1026) gpio: GPIO[10]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1027) NIRduino: Initializing ADC1[0m
+[0;32mI (1027) gpio: GPIO[6]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1027) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1068) NIRduino: ADC1 initialized and calibrated.[0m
+[0;32mI (1068) NIRduino: Initializing ADC2[0m
+[0;32mI (1068) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1068) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1108) NIRduino: ADC2 initialized and calibrated.[0m
+[0;32mI (1108) NIRduino: ADC Initialization complete[0m
+[0;32mI (1108) NIRduino: ADC sampling task started.[0m
+[0;32mI (1108) NIRduino: BLE broadcast task started and waiting for data.[0m
+[0;32mI (1108) NIRduino: NIRduino initialization complete[0m
+[0;32mI (1108) main_task: Returned from app_main()[0m
+[0;32mI (28860) NIRduino: Client Connected[0m
+[0;32mI (28860) NIRduino: Negotiated MTU: 23 bytes[0m
+[0;32mI (31156) NIRduino: Command: START DATA ACQUISITION[0m
+[0;32mI (31156) NIRduino: ADC sampling timer started for 150 Hz.[0m
+[0;32mI (31156) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (31157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31157) NIRduino: LED intensities saved successfully[0m
+[0;32mI (31158) NimBLE: att_handle=16
+[0m
+[0;32mI (31158) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (31381) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (31382) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31382) NimBLE: att_handle=16
+[0m
+[0;32mI (31387) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31387) NimBLE: att_handle=19
+[0m
+[0;32mI (31393) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31393) NimBLE: att_handle=19
+[0m
+[0;32mI (31399) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31399) NimBLE: att_handle=19
+[0m
+[0;32mI (31405) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31405) NimBLE: att_handle=16
+[0m
+[0;32mI (31411) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (31601) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (31601) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31602) NimBLE: att_handle=16
+[0m
+[0;32mI (31607) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31607) NimBLE: att_handle=19
+[0m
+[0;32mI (31613) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31613) NimBLE: att_handle=19
+[0m
+[0;32mI (31619) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31619) NimBLE: att_handle=19
+[0m
+[0;32mI (31625) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31625) NimBLE: att_handle=16
+[0m
+[0;32mI (31631) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (31821) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (31821) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31822) NimBLE: att_handle=16
+[0m
+[0;32mI (31827) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31827) NimBLE: att_handle=19
+[0m
+[0;32mI (31833) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31833) NimBLE: att_handle=19
+[0m
+[0;32mI (31839) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31839) NimBLE: att_handle=19
+[0m
+[0;32mI (31845) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (31845) NimBLE: att_handle=16
+[0m
+[0;32mI (31851) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (32041) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (32041) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32042) NimBLE: att_handle=16
+[0m
+[0;32mI (32047) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32047) NimBLE: att_handle=19
+[0m
+[0;32mI (32053) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32053) NimBLE: att_handle=19
+[0m
+[0;32mI (32059) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32059) NimBLE: att_handle=19
+[0m
+[0;32mI (32065) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32065) NimBLE: att_handle=16
+[0m
+[0;32mI (32071) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (32261) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (32261) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32262) NimBLE: att_handle=16
+[0m
+[0;32mI (32267) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32267) NimBLE: att_handle=19
+[0m
+[0;32mI (32273) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32273) NimBLE: att_handle=19
+[0m
+[0;32mI (32279) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32279) NimBLE: att_handle=19
+[0m
+[0;32mI (32285) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32285) NimBLE: att_handle=16
+[0m
+[0;32mI (32291) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (32481) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (32481) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32482) NimBLE: att_handle=16
+[0m
+[0;32mI (32487) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32487) NimBLE: att_handle=19
+[0m
+[0;32mI (32493) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32493) NimBLE: att_handle=19
+[0m
+[0;32mI (32499) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32499) NimBLE: att_handle=19
+[0m
+[0;32mI (32505) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32505) NimBLE: att_handle=16
+[0m
+[0;32mI (32511) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (32701) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (32701) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32701) NimBLE: att_handle=16
+[0m
+[0;32mI (32707) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32707) NimBLE: att_handle=19
+[0m
+[0;32mI (32713) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32713) NimBLE: att_handle=19
+[0m
+[0;32mI (32719) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32719) NimBLE: att_handle=19
+[0m
+[0;32mI (32725) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32725) NimBLE: att_handle=16
+[0m
+[0;32mI (32731) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (32921) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (32921) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32922) NimBLE: att_handle=16
+[0m
+[0;32mI (32927) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32927) NimBLE: att_handle=19
+[0m
+[0;32mI (32933) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32933) NimBLE: att_handle=19
+[0m
+[0;32mI (32939) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32939) NimBLE: att_handle=19
+[0m
+[0;32mI (32945) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (32945) NimBLE: att_handle=16
+[0m
+[0;32mI (32951) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (33141) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (33141) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33141) NimBLE: att_handle=16
+[0m
+[0;32mI (33147) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33147) NimBLE: att_handle=19
+[0m
+[0;32mI (33153) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33153) NimBLE: att_handle=19
+[0m
+[0;32mI (33159) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33159) NimBLE: att_handle=19
+[0m
+[0;32mI (33165) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33165) NimBLE: att_handle=16
+[0m
+[0;32mI (33171) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (33361) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (33361) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33361) NimBLE: att_handle=16
+[0m
+[0;32mI (33367) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33367) NimBLE: att_handle=19
+[0m
+[0;32mI (33373) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33373) NimBLE: att_handle=19
+[0m
+[0;32mI (33379) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33379) NimBLE: att_handle=19
+[0m
+[0;32mI (33385) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33385) NimBLE: att_handle=16
+[0m
+[0;32mI (33391) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (33581) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (33581) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33581) NimBLE: att_handle=16
+[0m
+[0;32mI (33587) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33587) NimBLE: att_handle=19
+[0m
+[0;32mI (33593) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33593) NimBLE: att_handle=19
+[0m
+[0;32mI (33599) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33599) NimBLE: att_handle=19
+[0m
+[0;32mI (33605) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33605) NimBLE: att_handle=16
+[0m
+[0;32mI (33611) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (33801) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (33801) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33801) NimBLE: att_handle=16
+[0m
+[0;32mI (33807) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33807) NimBLE: att_handle=19
+[0m
+[0;32mI (33813) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33813) NimBLE: att_handle=19
+[0m
+[0;32mI (33819) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33819) NimBLE: att_handle=19
+[0m
+[0;32mI (33825) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (33825) NimBLE: att_handle=16
+[0m
+[0;32mI (33831) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (34021) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34021) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34021) NimBLE: att_handle=16
+[0m
+[0;32mI (34027) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34027) NimBLE: att_handle=19
+[0m
+[0;32mI (34033) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34033) NimBLE: att_handle=19
+[0m
+[0;32mI (34039) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34039) NimBLE: att_handle=19
+[0m
+[0;32mI (34045) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34045) NimBLE: att_handle=16
+[0m
+[0;32mI (34051) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (34241) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34241) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34241) NimBLE: att_handle=16
+[0m
+[0;32mI (34247) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34247) NimBLE: att_handle=19
+[0m
+[0;32mI (34253) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34253) NimBLE: att_handle=19
+[0m
+[0;32mI (34259) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34259) NimBLE: att_handle=19
+[0m
+[0;32mI (34265) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34265) NimBLE: att_handle=16
+[0m
+[0;32mI (34271) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (34461) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34461) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34461) NimBLE: att_handle=16
+[0m
+[0;32mI (34467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34467) NimBLE: att_handle=19
+[0m
+[0;32mI (34473) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34473) NimBLE: att_handle=19
+[0m
+[0;32mI (34479) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34479) NimBLE: att_handle=19
+[0m
+[0;32mI (34485) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34485) NimBLE: att_handle=16
+[0m
+[0;32mI (34491) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (34681) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34681) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34681) NimBLE: att_handle=16
+[0m
+[0;32mI (34687) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34687) NimBLE: att_handle=19
+[0m
+[0;32mI (34693) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34693) NimBLE: att_handle=19
+[0m
+[0;32mI (34699) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34699) NimBLE: att_handle=19
+[0m
+[0;32mI (34705) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34705) NimBLE: att_handle=16
+[0m
+[0;32mI (34711) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (34901) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34901) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34901) NimBLE: att_handle=16
+[0m
+[0;32mI (34907) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34907) NimBLE: att_handle=19
+[0m
+[0;32mI (34913) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34913) NimBLE: att_handle=19
+[0m
+[0;32mI (34919) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34919) NimBLE: att_handle=19
+[0m
+[0;32mI (34925) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34925) NimBLE: att_handle=16
+[0m
+[0;32mI (34931) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (35121) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35121) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35121) NimBLE: att_handle=16
+[0m
+[0;32mI (35127) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35127) NimBLE: att_handle=19
+[0m
+[0;32mI (35133) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35133) NimBLE: att_handle=19
+[0m
+[0;32mI (35139) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35139) NimBLE: att_handle=19
+[0m
+[0;32mI (35145) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35145) NimBLE: att_handle=16
+[0m
+[0;32mI (35151) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (35341) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35341) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35341) NimBLE: att_handle=16
+[0m
+[0;32mI (35347) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35347) NimBLE: att_handle=19
+[0m
+[0;32mI (35353) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35353) NimBLE: att_handle=19
+[0m
+[0;32mI (35359) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35359) NimBLE: att_handle=19
+[0m
+[0;32mI (35365) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35365) NimBLE: att_handle=16
+[0m
+[0;32mI (35371) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (35561) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35561) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35561) NimBLE: att_handle=16
+[0m
+[0;32mI (35567) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35567) NimBLE: att_handle=19
+[0m
+[0;32mI (35573) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35573) NimBLE: att_handle=19
+[0m
+[0;32mI (35579) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35579) NimBLE: att_handle=19
+[0m
+[0;32mI (35585) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35585) NimBLE: att_handle=16
+[0m
+[0;32mI (35591) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (35781) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35781) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35781) NimBLE: att_handle=16
+[0m
+[0;32mI (35787) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35787) NimBLE: att_handle=19
+[0m
+[0;32mI (35793) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35793) NimBLE: att_handle=19
+[0m
+[0;32mI (35799) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35799) NimBLE: att_handle=19
+[0m
+[0;32mI (35805) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35805) NimBLE: att_handle=16
+[0m
+[0;32mI (35811) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (36001) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36001) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36001) NimBLE: att_handle=16
+[0m
+[0;32mI (36007) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36007) NimBLE: att_handle=19
+[0m
+[0;32mI (36013) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36013) NimBLE: att_handle=19
+[0m
+[0;32mI (36019) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36019) NimBLE: att_handle=19
+[0m
+[0;32mI (36025) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36025) NimBLE: att_handle=16
+[0m
+[0;32mI (36031) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (36221) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36221) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36221) NimBLE: att_handle=16
+[0m
+[0;32mI (36227) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36227) NimBLE: att_handle=19
+[0m
+[0;32mI (36233) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36233) NimBLE: att_handle=19
+[0m
+[0;32mI (36239) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36239) NimBLE: att_handle=19
+[0m
+[0;32mI (36245) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36245) NimBLE: att_handle=16
+[0m
+[0;32mI (36251) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (36441) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36441) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36441) NimBLE: att_handle=16
+[0m
+[0;32mI (36447) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36447) NimBLE: att_handle=19
+[0m
+[0;32mI (36453) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36453) NimBLE: att_handle=19
+[0m
+[0;32mI (36459) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36459) NimBLE: att_handle=19
+[0m
+[0;32mI (36465) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36465) NimBLE: att_handle=16
+[0m
+[0;32mI (36471) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (36661) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36661) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36661) NimBLE: att_handle=16
+[0m
+[0;32mI (36667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36667) NimBLE: att_handle=19
+[0m
+[0;32mI (36673) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36673) NimBLE: att_handle=19
+[0m
+[0;32mI (36679) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36679) NimBLE: att_handle=19
+[0m
+[0;32mI (36685) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36685) NimBLE: att_handle=16
+[0m
+[0;32mI (36691) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (36881) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36881) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36881) NimBLE: att_handle=16
+[0m
+[0;32mI (36887) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36887) NimBLE: att_handle=19
+[0m
+[0;32mI (36893) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36893) NimBLE: att_handle=19
+[0m
+[0;32mI (36899) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36899) NimBLE: att_handle=19
+[0m
+[0;32mI (36905) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36905) NimBLE: att_handle=16
+[0m
+[0;32mI (36911) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (37101) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (37101) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37101) NimBLE: att_handle=16
+[0m
+[0;32mI (37107) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37107) NimBLE: att_handle=19
+[0m
+[0;32mI (37113) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37113) NimBLE: att_handle=19
+[0m
+[0;32mI (37119) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37119) NimBLE: att_handle=19
+[0m
+[0;32mI (37125) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37125) NimBLE: att_handle=16
+[0m
+[0;32mI (37131) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (37321) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (37321) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37321) NimBLE: att_handle=16
+[0m
+[0;32mI (37327) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37327) NimBLE: att_handle=19
+[0m
+[0;32mI (37333) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37333) NimBLE: att_handle=19
+[0m
+[0;32mI (37339) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37339) NimBLE: att_handle=19
+[0m
+[0;32mI (37345) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37345) NimBLE: att_handle=16
+[0m
+[0;32mI (37351) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (37540) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (37541) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37541) NimBLE: att_handle=16
+[0m
+[0;32mI (37547) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37547) NimBLE: att_handle=19
+[0m
+[0;32mI (37553) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37553) NimBLE: att_handle=19
+[0m
+[0;32mI (37559) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37559) NimBLE: att_handle=19
+[0m
+[0;32mI (37565) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37565) NimBLE: att_handle=16
+[0m
+[0;32mI (37571) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (37760) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (37761) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37761) NimBLE: att_handle=16
+[0m
+[0;32mI (37767) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37767) NimBLE: att_handle=19
+[0m
+[0;32mI (37773) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37773) NimBLE: att_handle=19
+[0m
+[0;32mI (37779) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37779) NimBLE: att_handle=19
+[0m
+[0;32mI (37785) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37785) NimBLE: att_handle=16
+[0m
+[0;32mI (37791) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (37980) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (37981) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37981) NimBLE: att_handle=16
+[0m
+[0;32mI (37987) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37987) NimBLE: att_handle=19
+[0m
+[0;32mI (37993) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37993) NimBLE: att_handle=19
+[0m
+[0;32mI (37999) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37999) NimBLE: att_handle=19
+[0m
+[0;32mI (38005) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38005) NimBLE: att_handle=16
+[0m
+[0;32mI (38011) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (38200) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (38201) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38201) NimBLE: att_handle=16
+[0m
+[0;32mI (38207) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38207) NimBLE: att_handle=19
+[0m
+[0;32mI (38213) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38213) NimBLE: att_handle=19
+[0m
+[0;32mI (38219) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38219) NimBLE: att_handle=19
+[0m
+[0;32mI (38225) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38225) NimBLE: att_handle=16
+[0m
+[0;32mI (38231) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (38420) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (38421) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38421) NimBLE: att_handle=16
+[0m
+[0;32mI (38427) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38427) NimBLE: att_handle=19
+[0m
+[0;32mI (38433) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38433) NimBLE: att_handle=19
+[0m
+[0;32mI (38439) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38439) NimBLE: att_handle=19
+[0m
+[0;32mI (38445) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38445) NimBLE: att_handle=16
+[0m
+[0;32mI (38451) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (38640) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (38641) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38641) NimBLE: att_handle=16
+[0m
+[0;32mI (38647) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38647) NimBLE: att_handle=19
+[0m
+[0;32mI (38653) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38653) NimBLE: att_handle=19
+[0m
+[0;32mI (38659) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38659) NimBLE: att_handle=19
+[0m
+[0;32mI (38665) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38665) NimBLE: att_handle=16
+[0m
+[0;32mI (38671) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (38860) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (38861) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38861) NimBLE: att_handle=16
+[0m
+[0;32mI (38867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38867) NimBLE: att_handle=19
+[0m
+[0;32mI (38873) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38873) NimBLE: att_handle=19
+[0m
+[0;32mI (38879) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38879) NimBLE: att_handle=19
+[0m
+[0;32mI (38885) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (38885) NimBLE: att_handle=16
+[0m
+[0;32mI (38891) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (39080) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (39081) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39081) NimBLE: att_handle=16
+[0m
+[0;32mI (39087) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39087) NimBLE: att_handle=19
+[0m
+[0;32mI (39093) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39093) NimBLE: att_handle=19
+[0m
+[0;32mI (39099) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39099) NimBLE: att_handle=19
+[0m
+[0;32mI (39105) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39105) NimBLE: att_handle=16
+[0m
+[0;32mI (39111) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (39300) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (39301) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39301) NimBLE: att_handle=16
+[0m
+[0;32mI (39307) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39307) NimBLE: att_handle=19
+[0m
+[0;32mI (39313) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39313) NimBLE: att_handle=19
+[0m
+[0;32mI (39319) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39319) NimBLE: att_handle=19
+[0m
+[0;32mI (39325) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39325) NimBLE: att_handle=16
+[0m
+[0;32mI (39331) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (39520) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (39521) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39521) NimBLE: att_handle=16
+[0m
+[0;32mI (39527) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39527) NimBLE: att_handle=19
+[0m
+[0;32mI (39533) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39533) NimBLE: att_handle=19
+[0m
+[0;32mI (39539) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39539) NimBLE: att_handle=19
+[0m
+[0;32mI (39545) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39545) NimBLE: att_handle=16
+[0m
+[0;32mI (39551) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (39740) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (39741) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39741) NimBLE: att_handle=16
+[0m
+[0;32mI (39747) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39747) NimBLE: att_handle=19
+[0m
+[0;32mI (39753) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39753) NimBLE: att_handle=19
+[0m
+[0;32mI (39759) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39759) NimBLE: att_handle=19
+[0m
+[0;32mI (39765) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39765) NimBLE: att_handle=16
+[0m
+[0;32mI (39771) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (39960) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (39961) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39961) NimBLE: att_handle=16
+[0m
+[0;32mI (39966) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39966) NimBLE: att_handle=19
+[0m
+[0;32mI (39972) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39972) NimBLE: att_handle=19
+[0m
+[0;32mI (39978) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39978) NimBLE: att_handle=19
+[0m
+[0;32mI (39984) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39984) NimBLE: att_handle=16
+[0m
+[0;32mI (39990) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (40180) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (40181) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40181) NimBLE: att_handle=16
+[0m
+[0;32mI (40187) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40187) NimBLE: att_handle=19
+[0m
+[0;32mI (40193) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40193) NimBLE: att_handle=19
+[0m
+[0;32mI (40199) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40199) NimBLE: att_handle=19
+[0m
+[0;32mI (40205) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40205) NimBLE: att_handle=16
+[0m
+[0;32mI (40211) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (40400) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (40401) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40401) NimBLE: att_handle=16
+[0m
+[0;32mI (40407) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40407) NimBLE: att_handle=19
+[0m
+[0;32mI (40413) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40413) NimBLE: att_handle=19
+[0m
+[0;32mI (40419) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40419) NimBLE: att_handle=19
+[0m
+[0;32mI (40425) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40425) NimBLE: att_handle=16
+[0m
+[0;32mI (40431) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (40620) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (40621) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40621) NimBLE: att_handle=16
+[0m
+[0;32mI (40627) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40627) NimBLE: att_handle=19
+[0m
+[0;32mI (40633) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40633) NimBLE: att_handle=19
+[0m
+[0;32mI (40639) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40639) NimBLE: att_handle=19
+[0m
+[0;32mI (40645) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40645) NimBLE: att_handle=16
+[0m
+[0;32mI (40651) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (40840) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (40841) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40841) NimBLE: att_handle=16
+[0m
+[0;32mI (40846) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40846) NimBLE: att_handle=19
+[0m
+[0;32mI (40852) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40852) NimBLE: att_handle=19
+[0m
+[0;32mI (40858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40858) NimBLE: att_handle=19
+[0m
+[0;32mI (40864) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (40864) NimBLE: att_handle=16
+[0m
+[0;32mI (40870) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (41060) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (41061) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41061) NimBLE: att_handle=16
+[0m
+[0;32mI (41066) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41066) NimBLE: att_handle=19
+[0m
+[0;32mI (41072) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41072) NimBLE: att_handle=19
+[0m
+[0;32mI (41078) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41078) NimBLE: att_handle=19
+[0m
+[0;32mI (41084) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41084) NimBLE: att_handle=16
+[0m
+[0;32mI (41090) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (41280) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (41281) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41281) NimBLE: att_handle=16
+[0m
+[0;32mI (41286) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41286) NimBLE: att_handle=19
+[0m
+[0;32mI (41292) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41292) NimBLE: att_handle=19
+[0m
+[0;32mI (41298) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41298) NimBLE: att_handle=19
+[0m
+[0;32mI (41304) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41304) NimBLE: att_handle=16
+[0m
+[0;32mI (41310) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (41500) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (41500) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41501) NimBLE: att_handle=16
+[0m
+[0;32mI (41506) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41506) NimBLE: att_handle=19
+[0m
+[0;32mI (41512) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41512) NimBLE: att_handle=19
+[0m
+[0;32mI (41518) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41518) NimBLE: att_handle=19
+[0m
+[0;32mI (41524) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41524) NimBLE: att_handle=16
+[0m
+[0;32mI (41530) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (41720) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (41720) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41721) NimBLE: att_handle=16
+[0m
+[0;32mI (41726) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41726) NimBLE: att_handle=19
+[0m
+[0;32mI (41732) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41732) NimBLE: att_handle=19
+[0m
+[0;32mI (41738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41738) NimBLE: att_handle=19
+[0m
+[0;32mI (41744) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41744) NimBLE: att_handle=16
+[0m
+[0;32mI (41750) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (41940) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (41940) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41941) NimBLE: att_handle=16
+[0m
+[0;32mI (41946) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41946) NimBLE: att_handle=19
+[0m
+[0;32mI (41952) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41952) NimBLE: att_handle=19
+[0m
+[0;32mI (41958) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41958) NimBLE: att_handle=19
+[0m
+[0;32mI (41964) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41964) NimBLE: att_handle=16
+[0m
+[0;32mI (41970) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (42160) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (42160) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42161) NimBLE: att_handle=16
+[0m
+[0;32mI (42166) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42166) NimBLE: att_handle=19
+[0m
+[0;32mI (42172) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42172) NimBLE: att_handle=19
+[0m
+[0;32mI (42178) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42178) NimBLE: att_handle=19
+[0m
+[0;32mI (42184) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42184) NimBLE: att_handle=16
+[0m
+[0;32mI (42190) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (42380) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (42380) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42381) NimBLE: att_handle=16
+[0m
+[0;32mI (42386) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42386) NimBLE: att_handle=19
+[0m
+[0;32mI (42392) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42392) NimBLE: att_handle=19
+[0m
+[0;32mI (42398) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42398) NimBLE: att_handle=19
+[0m
+[0;32mI (42404) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42404) NimBLE: att_handle=16
+[0m
+[0;32mI (42410) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (42600) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (42600) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42601) NimBLE: att_handle=16
+[0m
+[0;32mI (42606) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42606) NimBLE: att_handle=19
+[0m
+[0;32mI (42612) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42612) NimBLE: att_handle=19
+[0m
+[0;32mI (42618) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42618) NimBLE: att_handle=19
+[0m
+[0;32mI (42624) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42624) NimBLE: att_handle=16
+[0m
+[0;32mI (42630) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (42820) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (42820) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42820) NimBLE: att_handle=16
+[0m
+[0;32mI (42826) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42826) NimBLE: att_handle=19
+[0m
+[0;32mI (42832) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42832) NimBLE: att_handle=19
+[0m
+[0;32mI (42838) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42838) NimBLE: att_handle=19
+[0m
+[0;32mI (42844) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (42844) NimBLE: att_handle=16
+[0m
+[0;32mI (42850) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (43040) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (43040) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43040) NimBLE: att_handle=16
+[0m
+[0;32mI (43046) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43046) NimBLE: att_handle=19
+[0m
+[0;32mI (43052) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43052) NimBLE: att_handle=19
+[0m
+[0;32mI (43058) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43058) NimBLE: att_handle=19
+[0m
+[0;32mI (43064) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43064) NimBLE: att_handle=16
+[0m
+[0;32mI (43070) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (43260) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (43260) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43261) NimBLE: att_handle=16
+[0m
+[0;32mI (43266) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43266) NimBLE: att_handle=19
+[0m
+[0;32mI (43272) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43272) NimBLE: att_handle=19
+[0m
+[0;32mI (43278) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43278) NimBLE: att_handle=19
+[0m
+[0;32mI (43284) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43284) NimBLE: att_handle=16
+[0m
+[0;32mI (43290) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (43480) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (43480) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43480) NimBLE: att_handle=16
+[0m
+[0;32mI (43486) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43486) NimBLE: att_handle=19
+[0m
+[0;32mI (43492) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43492) NimBLE: att_handle=19
+[0m
+[0;32mI (43498) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43498) NimBLE: att_handle=19
+[0m
+[0;32mI (43504) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43504) NimBLE: att_handle=16
+[0m
+[0;32mI (43510) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (43700) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (43700) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43700) NimBLE: att_handle=16
+[0m
+[0;32mI (43706) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43706) NimBLE: att_handle=19
+[0m
+[0;32mI (43712) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43712) NimBLE: att_handle=19
+[0m
+[0;32mI (43718) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43718) NimBLE: att_handle=19
+[0m
+[0;32mI (43724) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43724) NimBLE: att_handle=16
+[0m
+[0;32mI (43730) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (43920) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (43920) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43921) NimBLE: att_handle=16
+[0m
+[0;32mI (43926) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43926) NimBLE: att_handle=19
+[0m
+[0;32mI (43932) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43932) NimBLE: att_handle=19
+[0m
+[0;32mI (43938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43938) NimBLE: att_handle=19
+[0m
+[0;32mI (43944) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43944) NimBLE: att_handle=16
+[0m
+[0;32mI (43950) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (44140) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (44140) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44140) NimBLE: att_handle=16
+[0m
+[0;32mI (44146) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44146) NimBLE: att_handle=19
+[0m
+[0;32mI (44152) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44152) NimBLE: att_handle=19
+[0m
+[0;32mI (44158) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44158) NimBLE: att_handle=19
+[0m
+[0;32mI (44164) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44164) NimBLE: att_handle=16
+[0m
+[0;32mI (44170) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (44360) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (44360) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44360) NimBLE: att_handle=16
+[0m
+[0;32mI (44366) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44366) NimBLE: att_handle=19
+[0m
+[0;32mI (44372) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44372) NimBLE: att_handle=19
+[0m
+[0;32mI (44378) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44378) NimBLE: att_handle=19
+[0m
+[0;32mI (44384) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44384) NimBLE: att_handle=16
+[0m
+[0;32mI (44390) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (44580) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (44580) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44580) NimBLE: att_handle=16
+[0m
+[0;32mI (44586) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44586) NimBLE: att_handle=19
+[0m
+[0;32mI (44592) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44592) NimBLE: att_handle=19
+[0m
+[0;32mI (44598) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44598) NimBLE: att_handle=19
+[0m
+[0;32mI (44604) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44604) NimBLE: att_handle=16
+[0m
+[0;32mI (44610) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (44800) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (44800) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44800) NimBLE: att_handle=16
+[0m
+[0;32mI (44806) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44806) NimBLE: att_handle=19
+[0m
+[0;32mI (44812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44812) NimBLE: att_handle=19
+[0m
+[0;32mI (44818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44818) NimBLE: att_handle=19
+[0m
+[0;32mI (44824) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (44824) NimBLE: att_handle=16
+[0m
+[0;32mI (44830) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (45020) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (45020) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45020) NimBLE: att_handle=16
+[0m
+[0;32mI (45026) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45026) NimBLE: att_handle=19
+[0m
+[0;32mI (45032) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45032) NimBLE: att_handle=19
+[0m
+[0;32mI (45038) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45038) NimBLE: att_handle=19
+[0m
+[0;32mI (45044) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45044) NimBLE: att_handle=16
+[0m
+[0;32mI (45050) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+[0;32mI (45121) NIRduino: Command: STOP DATA ACQUISITION[0m
+[0;32mI (45122) NIRduino: ADC sampling timer stopped.[0m
+[0;32mI (45122) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (45123) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45123) NimBLE: att_handle=16
+[0m
+[0;32mI (45125) NIRduino: LED intensities saved successfully[0m
+[0;32mI (45125) NIRduino: Storage Task: LED intensities saved successfully[0m

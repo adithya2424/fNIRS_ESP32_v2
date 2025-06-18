@@ -1,0 +1,1077 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048df0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18e4
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd90
+load:0x403cc700,len:0x2fcc
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 14 2025 10:23:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=2171ch (136988) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031744 vaddr=3fc9c200 size=044d4h ( 17620) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00035c20 vaddr=40374000 size=0a3f8h ( 41976) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=62194h (401812) map[0m
+[0;32mI (201) esp_image: segment 4: paddr=000a21bc vaddr=4037e3f8 size=0dd54h ( 56660) load[0m
+[0;32mI (222) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (223) boot: Disabling RNG early entropy source...[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (227) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (232) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (238) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (243) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (248) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (254) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (259) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (264) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (270) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (276) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (282) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (288) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (292) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (297) esp_psram: Speed: 80MHz[0m
+[0;32mI (301) cpu_start: Pro cpu up.[0m
+[0;32mI (305) cpu_start: Starting app cpu, entry point is 0x40375880[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (763) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (948) cpu_start: Pro cpu start user code[0m
+[0;32mI (948) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (948) cpu_start: Application information:[0m
+[0;32mI (948) cpu_start: Project name:     app[0m
+[0;32mI (948) cpu_start: App version:      1[0m
+[0;32mI (949) cpu_start: Compile time:     Jun 15 2025 04:08:08[0m
+[0;32mI (949) cpu_start: ELF file SHA256:  527977a8a4e80a1d...[0m
+[0;32mI (949) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (949) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (949) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (950) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (950) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (950) heap_init: At 3FCA32E0 len 00046430 (281 KiB): DRAM[0m
+[0;32mI (950) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (951) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (951) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (951) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (952) spi_flash: detected chip: gd[0m
+[0;32mI (952) spi_flash: flash io: qio[0m
+[0;32mI (953) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (953) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (953) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (954) coexist: coexist rom version e7ae62f[0m
+[0;32mI (954) app_start: Starting scheduler on CPU0[0m
+[0;32mI (954) app_start: Starting scheduler on CPU1[0m
+[0;32mI (954) main_task: Started on CPU0[0m
+[0;32mI (955) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (955) main_task: Calling app_main()[0m
+[0;32mI (956) NIRduino: Starting NIRduino application...[0m
+[0;32mI (966) NIRduino: Initializing GPIO...[0m
+[0;32mI (966) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (966) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) NIRduino: DAC init successful![0m
+[0;32mI (973) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (973) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (974) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (974) NIRduino: LED intensities found in NVS[0m
+[0;32mI (974) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (975) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (975) NIRduino: Creating storage task and queue...[0m
+[0;32mI (976) NIRduino: Storage task started[0m
+[0;32mI (976) NIRduino: Storage task created successfully[0m
+[0;32mI (976) NIRduino: Initializing BLE...[0m
+[0;32mI (976) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (977) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (978) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1016) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1019) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1019) NimBLE: disc_mode=2[0m
+[0;32mI (1019) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1020) NimBLE: 
+[0m
+[0;32mI (1020) NIRduino: BLE initialized and advertising started[0m
+configured, starting
+AIN0      AIN1      AIN2      AIN3      AIN4      AIN5      AIN6      AIN7      | Timing
+-------------------------------------------------------------------------------------
+| 1562 us
+| 1553 us
+| 1557 us
+| 1549 us
+| 1561 us
+| 1538 us
+| 1545 us
+| 1553 us
+| 1536 us
+| 1538 us (Avg: 1549 us, 1.55 ms)
+| 1545 us
+| 1557 us
+| 1549 us
+| 1553 us
+| 1546 us
+| 1546 us
+| 1552 us
+| 1547 us
+| 1552 us
+| 1543 us (Avg: 1549 us, 1.55 ms)
+| 1541 us
+| 1539 us
+| 1553 us
+| 1549 us
+| 1561 us
+| 1552 us
+| 1531 us
+| 1543 us
+| 1542 us
+| 1553 us (Avg: 1548 us, 1.55 ms)
+| 1549 us
+| 1547 us
+| 1540 us
+| 1551 us
+| 1538 us
+| 1553 us
+| 1540 us
+| 1546 us
+| 1549 us
+| 1550 us (Avg: 1547 us, 1.55 ms)
+| 1548 us
+| 1536 us
+| 1563 us
+| 1547 us
+| 1547 us
+| 1546 us
+| 1541 us
+| 1540 us
+| 1537 us
+| 1543 us (Avg: 1547 us, 1.55 ms)
+| 1551 us
+| 1521 us
+| 1546 us
+| 1548 us
+| 1565 us
+| 1535 us
+| 1539 us
+| 1565 us
+| 1558 us
+| 1543 us (Avg: 1547 us, 1.55 ms)
+| 1574 us
+| 1917 us
+| 1916 us
+| 1946 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1595 us, 1.59 ms)
+| 1918 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1635 us, 1.64 ms)
+| 1919 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1666 us, 1.67 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1970 us
+| 1916 us
+| 1916 us (Avg: 1692 us, 1.69 ms)
+| 1917 us
+| 1959 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1713 us, 1.71 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1917 us
+| 1917 us
+| 1917 us
+| 1959 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1730 us, 1.73 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1744 us, 1.74 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1756 us, 1.76 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1767 us, 1.77 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1956 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1777 us, 1.78 ms)
+| 1917 us
+| 1972 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1785 us, 1.78 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1918 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1792 us, 1.79 ms)
+| 1919 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1799 us, 1.80 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1805 us, 1.80 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1978 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1810 us, 1.81 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1815 us, 1.81 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1961 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1820 us, 1.82 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1824 us, 1.82 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1827 us, 1.83 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1831 us, 1.83 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1834 us, 1.83 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1837 us, 1.84 ms)
+| 1965 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1917 us (Avg: 1840 us, 1.84 ms)
+| 1918 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1842 us, 1.84 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1845 us, 1.84 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1976 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1847 us, 1.85 ms)
+| 1919 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1849 us, 1.85 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1851 us, 1.85 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1917 us
+| 1917 us (Avg: 1853 us, 1.85 ms)
+| 1919 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1855 us, 1.85 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1856 us, 1.86 ms)
+| 1919 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1858 us, 1.86 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1859 us, 1.86 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1861 us, 1.86 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1917 us
+| 1917 us
+| 1917 us (Avg: 1862 us, 1.86 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1946 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1864 us, 1.86 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1865 us, 1.86 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1866 us, 1.87 ms)
+| 1919 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1917 us
+| 1916 us (Avg: 1867 us, 1.87 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1868 us, 1.87 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1917 us (Avg: 1869 us, 1.87 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1870 us, 1.87 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1977 us (Avg: 1871 us, 1.87 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1872 us, 1.87 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1873 us, 1.87 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us
+[0;32mI (953) cpu_start: Pro cpu start user code[0m
+[0;32mI (953) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (953) cpu_start: Application information:[0m
+[0;32mI (953) cpu_start: Project name:     app[0m
+[0;32mI (954) cpu_start: App version:      1[0m
+[0;32mI (954) cpu_start: Compile time:     Jun 15 2025 04:08:08[0m
+[0;32mI (954) cpu_start: ELF file SHA256:  527977a8a4e80a1d...[0m
+[0;32mI (954) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (954) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (954) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (955) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (955) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (955) heap_init: At 3FCA32E0 len 00046430 (281 KiB): DRAM[0m
+[0;32mI (955) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (956) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (956) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (956) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (957) spi_flash: detected chip: gd[0m
+[0;32mI (957) spi_flash: flash io: qio[0m
+[0;32mI (958) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (958) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (958) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (959) coexist: coexist rom version e7ae62f[0m
+[0;32mI (959) app_start: Starting scheduler on CPU0[0m
+[0;32mI (959) app_start: Starting scheduler on CPU1[0m
+[0;32mI (959) main_task: Started on CPU0[0m
+[0;32mI (960) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (960) main_task: Calling app_main()[0m
+[0;32mI (961) NIRduino: Starting NIRduino application...[0m
+[0;32mI (971) NIRduino: Initializing GPIO...[0m
+[0;32mI (971) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (975) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (975) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (976) NIRduino: DAC init successful![0m
+[0;32mI (978) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (978) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (979) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (979) NIRduino: LED intensities found in NVS[0m
+[0;32mI (979) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (980) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (980) NIRduino: Creating storage task and queue...[0m
+[0;32mI (981) NIRduino: Storage task started[0m
+[0;32mI (981) NIRduino: Storage task created successfully[0m
+[0;32mI (981) NIRduino: Initializing BLE...[0m
+[0;32mI (981) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (982) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (983) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1022) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1025) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1025) NimBLE: disc_mode=2[0m
+[0;32mI (1025) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1026) NimBLE: 
+[0m
+[0;32mI (1026) NIRduino: BLE initialized and advertising started[0m
+configured, starting
+AIN0      AIN1      AIN2      AIN3      AIN4      AIN5      AIN6      AIN7      | Timing
+-------------------------------------------------------------------------------------
+| 1566 us
+| 1614 us
+| 1554 us
+| 1555 us
+| 1564 us
+| 1562 us
+| 1542 us
+| 1538 us
+| 1543 us
+| 1560 us (Avg: 1559 us, 1.56 ms)
+| 1544 us
+| 1557 us
+| 1559 us
+| 1565 us
+| 1558 us
+| 1542 us
+| 1546 us
+| 1552 us
+| 1550 us
+| 1541 us (Avg: 1555 us, 1.55 ms)
+| 1562 us
+| 1542 us
+| 1545 us
+| 1558 us
+| 1539 us
+| 1551 us
+| 2109260 us
+| 2891886 us
+| 2856460 us
+| 2651404 us (Avg: 351647 us, 351.65 ms)
+[0;32mI (953) cpu_start: Pro cpu start user code[0m
+[0;32mI (953) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (953) cpu_start: Application information:[0m
+[0;32mI (953) cpu_start: Project name:     app[0m
+[0;32mI (954) cpu_start: App version:      1[0m
+[0;32mI (954) cpu_start: Compile time:     Jun 15 2025 04:08:08[0m
+[0;32mI (954) cpu_start: ELF file SHA256:  527977a8a4e80a1d...[0m
+[0;32mI (954) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (954) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (955) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (955) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (955) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (955) heap_init: At 3FCA32E0 len 00046430 (281 KiB): DRAM[0m
+[0;32mI (956) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (956) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (956) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (957) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (957) spi_flash: detected chip: gd[0m
+[0;32mI (957) spi_flash: flash io: qio[0m
+[0;32mI (958) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (958) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (958) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (959) coexist: coexist rom version e7ae62f[0m
+[0;32mI (959) app_start: Starting scheduler on CPU0[0m
+[0;32mI (959) app_start: Starting scheduler on CPU1[0m
+[0;32mI (959) main_task: Started on CPU0[0m
+[0;32mI (960) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (960) main_task: Calling app_main()[0m
+[0;32mI (961) NIRduino: Starting NIRduino application...[0m
+[0;32mI (971) NIRduino: Initializing GPIO...[0m
+[0;32mI (971) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (972) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (973) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (974) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (975) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (975) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (976) NIRduino: DAC init successful![0m
+[0;32mI (978) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (978) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (979) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (979) NIRduino: LED intensities found in NVS[0m
+[0;32mI (979) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (980) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (980) NIRduino: Creating storage task and queue...[0m
+[0;32mI (981) NIRduino: Storage task started[0m
+[0;32mI (981) NIRduino: Storage task created successfully[0m
+[0;32mI (981) NIRduino: Initializing BLE...[0m
+[0;32mI (981) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (982) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (983) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1023) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1026) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1026) NimBLE: disc_mode=2[0m
+[0;32mI (1026) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1027) NimBLE: 
+[0m
+[0;32mI (1027) NIRduino: BLE initialized and advertising started[0m
+configured, starting
+AIN0      AIN1      AIN2      AIN3      AIN4      AIN5      AIN6      AIN7      | Timing
+-------------------------------------------------------------------------------------
+| 1923 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1916 us, 1.92 ms)
+| 1919 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1964 us
+| 1916 us (Avg: 1919 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1972 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1919 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1919 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1918 us, 1.92 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1918 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1972 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us (Avg: 1918 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1918 us, 1.92 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1918 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us (Avg: 1917 us, 1.92 ms)
+| 1919 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1961 us
+| 1917 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1919 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1964 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1972 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1917 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1972 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us (Avg: 1917 us, 1.92 ms)
+| 1917 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1916 us
+| 1917 us
+| 1916 us
+| 1916 us
+| 1964 us

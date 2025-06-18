@@ -1,0 +1,282 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490e9
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18e4
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd90
+load:0x403cc700,len:0x2fcc
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 14 2025 10:23:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=2158ch (136588) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000315b4 vaddr=3fc9c200 size=044d4h ( 17620) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00035a90 vaddr=40374000 size=0a588h ( 42376) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=61ed0h (401104) map[0m
+[0;32mI (201) esp_image: segment 4: paddr=000a1ef8 vaddr=4037e588 size=0dbc4h ( 56260) load[0m
+[0;32mI (222) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (222) boot: Disabling RNG early entropy source...[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (227) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (231) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (237) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (243) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (248) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (253) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (258) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (264) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (270) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (276) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (282) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (287) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (292) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (297) esp_psram: Speed: 80MHz[0m
+[0;32mI (301) cpu_start: Pro cpu up.[0m
+[0;32mI (304) cpu_start: Starting app cpu, entry point is 0x40375880[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (763) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (948) cpu_start: Pro cpu start user code[0m
+[0;32mI (948) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (948) cpu_start: Application information:[0m
+[0;32mI (948) cpu_start: Project name:     app[0m
+[0;32mI (948) cpu_start: App version:      1[0m
+[0;32mI (948) cpu_start: Compile time:     Jun 15 2025 04:08:08[0m
+[0;32mI (949) cpu_start: ELF file SHA256:  58006e99a1125aa4...[0m
+[0;32mI (949) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (949) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (949) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (949) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (950) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (950) heap_init: At 3FCA32E0 len 00046430 (281 KiB): DRAM[0m
+[0;32mI (950) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (950) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (951) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (951) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (952) spi_flash: detected chip: gd[0m
+[0;32mI (952) spi_flash: flash io: qio[0m
+[0;32mI (952) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (953) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (953) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (953) coexist: coexist rom version e7ae62f[0m
+[0;32mI (954) app_start: Starting scheduler on CPU0[0m
+[0;32mI (954) app_start: Starting scheduler on CPU1[0m
+[0;32mI (954) main_task: Started on CPU0[0m
+[0;32mI (955) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (955) main_task: Calling app_main()[0m
+[0;32mI (956) NIRduino: Starting NIRduino application...[0m
+[0;32mI (966) NIRduino: Initializing GPIO...[0m
+[0;32mI (966) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (967) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (968) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (969) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (970) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (971) NIRduino: DAC init successful![0m
+[0;32mI (973) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (973) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (974) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (974) NIRduino: LED intensities found in NVS[0m
+[0;32mI (974) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (975) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (975) NIRduino: Creating storage task and queue...[0m
+[0;32mI (976) NIRduino: Storage task started[0m
+[0;32mI (976) NIRduino: Storage task created successfully[0m
+[0;32mI (976) NIRduino: Initializing BLE...[0m
+[0;32mI (976) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (977) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (978) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1017) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (1020) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1020) NimBLE: disc_mode=2[0m
+[0;32mI (1020) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (1021) NimBLE: 
+[0m
+[0;32mI (1021) NIRduino: BLE initialized and advertising started[0m
+[0;32mI (1022) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1022) gpio: GPIO[10]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1023) NIRduino: Initializing ADC1[0m
+[0;32mI (1023) gpio: GPIO[6]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1023) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1067) NIRduino: ADC1 initialized and calibrated.[0m
+[0;32mI (1067) NIRduino: Initializing ADC2[0m
+[0;32mI (1067) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1068) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1111) NIRduino: ADC2 initialized and calibrated.[0m
+
+--- Dual ADS1256 Test with Manual CS Control ---
+
+ADC1: 2036143   2035650   2036176   2036837   2036448   2035959   2035655   2035454   
+ADC2: 2019927   2019927   2019073   2020063   2019260   2020083   2018840   2017408   | Cycle Time: 5596 us
+
+ADC1: 2035877   2035590   2035255   2035569   2035464   2036177   2036207   2035281   
+ADC2: 2019811   2019559   2019916   2019337   2019946   2019781   2019668   2019643   | Cycle Time: 5594 us
+
+ADC1: 2036360   2035397   2035245   2035691   2035622   2035854   2036443   2035674   
+ADC2: 2019194   2020269   2019522   2019168   2019776   2019996   2020085   2019611   | Cycle Time: 5590 us
+
+ADC1: 2037752   2034492   2035240   2035480   2035288   2035387   2035372   2035907   
+ADC2: 2019501   2020210   2019074   2020295   2019598   2019273   2019911   2020127   | Cycle Time: 5593 us
+
+ADC1: 2036013   2035924   2047208   2036146   2034670   2035333   2034759   2035547   
+ADC2: 2020091   2019768   2019632   2019757   2019857   2020027   2020197   2019075   | Cycle Time: 5590 us
+
+ADC1: 2036422   2035316   2035689   2035492   2041489   2033145   2034220   2034633   
+ADC2: 2020130   2019622   2019713   2019604   2019912   2019787   2019475   2019695   | Cycle Time: 5597 us
+
+ADC1: 2036234   2036282   2036224   2035307   2035791   2035675   2035775   2035961   
+ADC2: 2018063   2019725   2026795   2019339   2019683   2020056   2020108   2019828   | Cycle Time: 5592 us
+
+ADC1: 2036199   2035755   2035521   2035361   2036148   2035470   2035901   2035498   
+ADC2: 2018557   2020295   2018630   2017345   2024440   2020449   2019895   2020045   | Cycle Time: 5590 us
+
+ADC1: 2036405   2036019   2036721   2035385   2036008   2036432   2035430   2036003   
+ADC2: 2019965   2019848   2019372   2019310   2019961   2019661   2020127   2020423   | Cycle Time: 5591 us
+
+ADC1: 2035825   2035812   2035975   2036413   2035922   2035627   2034985   2035505   
+ADC2: 2019495   2019696   2019826   2020091   2019646   2019437   2019090   2018780   | Cycle Time: 5590 us
+
+ADC1: 2035819   2036020   2034364   2033716   2033174   2032970   2035645   2035298   
+ADC2: 2019163   2020729   2017455   2014983   2011390   2017949   2019108   2018452   | Cycle Time: 5640 us
+
+ADC1: 2035501   2035103   2035515   2035781   2035562   2035254   2035944   2035665   
+ADC2: 2019772   2019848   2018998   2020139   2020016   2020305   2019777   2019602   | Cycle Time: 5590 us
+
+ADC1: 2036522   2034224   2035435   2036103   2035498   2035789   2035712   2035802   
+ADC2: 2019687   2019540   2019522   2020380   2018913   2019886   2020310   2019909   | Cycle Time: 5590 us
+
+ADC1: 2035613   2036748   2034837   2035716   2035362   2036014   2035767   2035645   
+ADC2: 2019344   2019702   2019998   2019713   2019365   2020106   2019764   2019692   | Cycle Time: 5590 us
+
+ADC1: 2036033   2035373   2035938   2036086   2040339   2035554   2034861   2034107   
+ADC2: 2019119   2019846   2019644   2020055   2019733   2019661   2017178   2015119   | Cycle Time: 5631 us
+
+ADC1: 2036049   2035954   2035468   2035701   2035707   2035373   2035941   2033985   
+ADC2: 2017313   2019617   2020116   2019373   2020159   2020123   2020350   2019372   | Cycle Time: 5590 us
+
+ADC1: 2036410   2035553   2035694   2035100   2035794   2035935   2036020   2035700   
+ADC2: 2019141   2018931   2017916   2019033   2020299   2019702   2020083   2019401   | Cycle Time: 5591 us
+
+ADC1: 2036185   2035932   2036207   2035528   2036467   2035322   2036169   2035541   
+ADC2: 2019701   2020020   2018968   2019474   2017834   2020047   2019921   2019754   | Cycle Time: 5590 us
+
+ADC1: 2036701   2036108   2037305   2036216   2035455   2035427   2035848   2035844   
+ADC2: 2019451   2019171   2020089   2019043   2019901   2019184   2019754   2019943   | Cycle Time: 5590 us
+
+ADC1: 2036551   2035145   2036006   2035864   2035672   2035773   2035842   2035647   
+ADC2: 2019803   2019681   2019612   2019581   2018961   2019835   2018524   2018872   | Cycle Time: 5590 us
+
+ADC1: 2034807   2035691   2036324   2034430   2032807   2031971   2033519   2037125   
+ADC2: 2019345   2019124   2020524   2017578   2015698   2012005   2019017   2019296   | Cycle Time: 5640 us
+
+ADC1: 2035968   2034824   2035510   2035571   2035481   2035955   2035531   2035831   
+ADC2: 2019950   2021336   2019993   2019235   2020330   2019346   2019996   2019188   | Cycle Time: 5590 us
+
+ADC1: 2041116   2033190   2034745   2035555   2034891   2035939   2035558   2035552   
+ADC2: 2019757   2019595   2019804   2019455   2020252   2019292   2019739   2019940   | Cycle Time: 5590 us
+
+ADC1: 2036459   2035507   2036198   2035863   2034064   2035621   2035786   2035189   
+ADC2: 2019984   2020128   2020563   2019507   2019757   2019352   2020054   2019214   | Cycle Time: 5590 us
+
+ADC1: 2035503   2035673   2035658   2035487   2035884   2035717   2035250   2034874   
+ADC2: 2027420   2019758   2020229   2019764   2020301   2020010   2020067   2019334   | Cycle Time: 5643 us
+
+ADC1: 2035246   2035433   2035732   2035897   2036327   2035327   2035797   2039335   
+ADC2: 2019630   2018153   2028435   2019959   2019624   2020040   2020049   2020146   | Cycle Time: 5590 us
+
+ADC1: 2036387   2035132   2034976   2035591   2036153   2036275   2035543   2035335   
+ADC2: 2018599   2020036   2018689   2018026   2020272   2020219   2020056   2020039   | Cycle Time: 5591 us
+
+ADC1: 2035721   2035620   2035569   2035376   2035850   2035707   2035956   2036393   
+ADC2: 2019656   2019638   2018798   2018978   2019928   2017349   2021669   2019939   | Cycle Time: 5590 us
+
+ADC1: 2036119   2035445   2036341   2036148   2036174   2035623   2035787   2035525   
+ADC2: 2019494   2019970   2019649   2019837   2019989   2019354   2019197   2019704   | Cycle Time: 5590 us
+
+ADC1: 2033769   2031652   2035227   2035884   2035306   2036198   2036556   2035358   
+ADC2: 2012111   2018385   2019825   2019732   2019416   2019963   2019526   2019011   | Cycle Time: 5590 us
+
+ADC1: 2035828   2035341   2036109   2035733   2035855   2036069   2035534   2036513   
+ADC2: 2019899   2020023   2019914   2019844   2019791   2019750   2019738   2020022   | Cycle Time: 5590 us
+
+ADC1: 2035068   2034801   2035504   2034944   2035950   2035791   2035407   2035240   
+ADC2: 2020101   2019361   2019881   2019817   2019145   2019875   2019688   2019930   | Cycle Time: 5590 us
+
+ADC1: 2036311   2034865   2034389   2035403   2035696   2035608   2036054   2035498   
+ADC2: 2020582   2020042   2019390   2019820   2019808   2019730   2019021   2020927   | Cycle Time: 5590 us
+
+ADC1: 2036047   2035938   2035462   2035579   2033910   2035935   2035511   2034447   
+ADC2: 2019957   2019966   2019503   2019852   2020237   2019817   2019581   2019788   | Cycle Time: 5590 us
+
+ADC1: 2036226   2035626   2035866   2036314   2035424   2040803   2035483   2034010   
+ADC2: 2020262   2020328   2019445   2019835   2019568   2019696   2020011   2019941   | Cycle Time: 5590 us
+
+ADC1: 2036660   2035870   2034647   2033550   2033296   2032273   2035417   2040183   
+ADC2: 2019197   2020146   2017773   2015302   2011192   2018788   2019395   2020313   | Cycle Time: 5640 us
+
+ADC1: 2037880   2035419   2035987   2035537   2035541   2035986   2035215   2035593   
+ADC2: 2019016   2019991   2019477   2018966   2019406   2027400   2019097   2019897   | Cycle Time: 5590 us
+
+ADC1: 2035358   2035572   2036365   2035673   2035856   2035510   2035254   2035581   
+ADC2: 2019587   2020011   2019635   2019288   2019167   2019745   2017481   2020105   | Cycle Time: 5590 us
+
+ADC1: 2036327   2035776   2036307   2035852   2036097   2035671   2035191   2035841   
+ADC2: 2019629   2019983   2019497   2020259   2020093   2019665   2019115   2020105   | Cycle Time: 5591 us
+
+ADC1: 2036125   2035234   2035881   2035691   2035607   2035607   2036006   2036119   
+ADC2: 2019612   2019630   2019689   2019104   2019467   2019783   2020244   2020020   | Cycle Time: 5590 us
+
+ADC1: 2035299   2034482   2035304   2035465   2035655   2035164   2035921   2035253   
+ADC2: 2019443   2019648   2019575   2020267   2019591   2019387   2019838   2019686   | Cycle Time: 5590 us
+
+ADC1: 2034977   2034553   2035057   2036155   2035374   2035792   2035506   2035313   
+ADC2: 2019524   2019729   2019892   2019902   2019478   2019991   2020040   2019505   | Cycle Time: 5590 us
+
+ADC1: 2035533   2036092   2033364   2035728   2035263   2035209   2036162   2035873   
+ADC2: 2019596   2020222   2020464   2019890   2019981   2019757   2019128   2019663   | Cycle Time: 5590 us
+
+ADC1: 2035483   2035553   2036156   2036025   2032947   2035347   2035259   2034735   
+ADC2: 2019314   2019893   2019604   2019720   2020044   2019667   2019160   2020205   | Cycle Time: 5590 us
+
+ADC1: 2036134   2035339   2034855   2032998   2030905   2027858   2034335   2034328   
+ADC2: 2019735   2023146   2018429   2017894   2017872   2015892   2018602   2019822   | Cycle Time: 5590 us
+
+ADC1: 2036043   2035606   2035969   2035746   2035523   2035660   2035848   2035473   
+ADC2: 2019025   2018493   2016963   2020429   2020181   2020198   2019941   2020298   | Cycle Time: 5590 us
+
+ADC1: 2036881   2036062   2036417   2035550   2035470   2036762   2035859   2035476   
+ADC2: 2018901   2019932   2018924   2017952   2020221   2021141   2018660   2019399   | Cycle Time: 5590 us
+
+ADC1: 2035336   2036703   2036127   2035679   2035926   2035614   2036172   2035659   
+ADC2: 2019838   2020066   2019270   2019151   2019844   2018499   2016496   2019982   | Cycle Time: 5590 us
+
+ADC1: 2036095   2035575   2035743   2035923   2036247   2035460   2036167   2035048   
+ADC2: 2020060   2019494   2020083   2019995   2019628   2019945   2018953   2018542   | Cycle Time: 5590 us
+
+ADC1: 2036424   2035540   2036040   2035788   2035445   2035748   2035896   2035379   
+ADC2: 2020208   2018791   2019295   2019342   2019237   2020056   2019180   2019459   | Cycle Time: 5590 us
+

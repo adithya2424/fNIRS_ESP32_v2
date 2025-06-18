@@ -1,0 +1,3635 @@
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c07002ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008c63
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18e4
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd90
+load:0x403cc700,len:0x2fcc
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 18 2025 03:09:54[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=214fch (136444) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031524 vaddr=3fc9b100 size=043f0h ( 17392) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0003591c vaddr=40374000 size=0a6fch ( 42748) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=60f98h (397208) map[0m
+[0;32mI (201) esp_image: segment 4: paddr=000a0fc0 vaddr=4037e6fc size=0c940h ( 51520) load[0m
+[0;32mI (220) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (221) boot: Disabling RNG early entropy source...[0m
+[0;32mI (221) cpu_start: Multicore app[0m
+[0;32mI (225) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (230) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (235) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (241) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (246) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (251) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (256) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (262) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (268) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (274) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (280) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (286) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (290) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (295) esp_psram: Speed: 80MHz[0m
+[0;32mI (299) cpu_start: Pro cpu up.[0m
+[0;32mI (303) cpu_start: Starting app cpu, entry point is 0x40375888[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (722) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (907) cpu_start: Pro cpu start user code[0m
+[0;32mI (907) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (907) cpu_start: Application information:[0m
+[0;32mI (907) cpu_start: Project name:     app[0m
+[0;32mI (907) cpu_start: App version:      1[0m
+[0;32mI (907) cpu_start: Compile time:     Jun 18 2025 03:09:52[0m
+[0;32mI (907) cpu_start: ELF file SHA256:  a2609b7900706529...[0m
+[0;32mI (908) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (908) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (908) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (908) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (908) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (909) heap_init: At 3FCA32D0 len 00046440 (281 KiB): DRAM[0m
+[0;32mI (909) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (909) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (910) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (910) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (911) spi_flash: detected chip: gd[0m
+[0;32mI (911) spi_flash: flash io: qio[0m
+[0;32mI (911) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (913) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (913) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (913) coexist: coexist rom version e7ae62f[0m
+[0;32mI (914) app_start: Starting scheduler on CPU0[0m
+[0;32mI (914) app_start: Starting scheduler on CPU1[0m
+[0;32mI (914) main_task: Started on CPU0[0m
+[0;32mI (915) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (915) main_task: Calling app_main()[0m
+[0;32mI (916) NIRduino: Starting NIRduino application...[0m
+[0;32mI (925) NIRduino: Initializing GPIO...[0m
+[0;32mI (926) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (926) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (926) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (926) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (932) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (932) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (932) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (933) NIRduino: LED intensities found in NVS[0m
+[0;32mI (933) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (934) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (934) NIRduino: Loaded LED intensities:[0m
+[0;32mI (934) NIRduino: LED[0] = 255[0m
+[0;32mI (934) NIRduino: LED[1] = 255[0m
+[0;32mI (934) NIRduino: LED[2] = 255[0m
+[0;32mI (934) NIRduino: LED[3] = 255[0m
+[0;32mI (934) NIRduino: LED[4] = 255[0m
+[0;32mI (935) NIRduino: LED[5] = 255[0m
+[0;32mI (935) NIRduino: LED[6] = 255[0m
+[0;32mI (935) NIRduino: LED[7] = 255[0m
+[0;32mI (935) NIRduino: LED[8] = 255[0m
+[0;32mI (935) NIRduino: LED[9] = 255[0m
+[0;32mI (935) NIRduino: LED[10] = 255[0m
+[0;32mI (935) NIRduino: LED[11] = 255[0m
+[0;32mI (935) NIRduino: LED[12] = 255[0m
+[0;32mI (935) NIRduino: LED[13] = 255[0m
+[0;32mI (936) NIRduino: LED[14] = 255[0m
+[0;32mI (936) NIRduino: LED[15] = 255[0m
+[0;32mI (936) NIRduino: LED[16] = 75[0m
+[0;32mI (936) NIRduino: LED[17] = 64[0m
+[0;32mI (936) NIRduino: LED[18] = 75[0m
+[0;32mI (936) NIRduino: LED[19] = 64[0m
+[0;32mI (936) NIRduino: LED[20] = 75[0m
+[0;32mI (936) NIRduino: LED[21] = 64[0m
+[0;32mI (936) NIRduino: LED[22] = 75[0m
+[0;32mI (937) NIRduino: LED[23] = 64[0m
+[0;32mI (937) NIRduino: LED[24] = 75[0m
+[0;32mI (937) NIRduino: LED[25] = 64[0m
+[0;32mI (937) NIRduino: LED[26] = 75[0m
+[0;32mI (937) NIRduino: LED[27] = 64[0m
+[0;32mI (937) NIRduino: LED[28] = 75[0m
+[0;32mI (937) NIRduino: LED[29] = 64[0m
+[0;32mI (937) NIRduino: LED[30] = 75[0m
+[0;32mI (937) NIRduino: LED[31] = 64[0m
+[0;32mI (937) NIRduino: Creating storage task and queue...[0m
+[0;32mI (938) NIRduino: Storage task started[0m
+[0;32mI (938) NIRduino: Storage task created successfully[0m
+[0;32mI (938) NIRduino: Initializing BLE...[0m
+[0;32mI (938) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (939) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (940) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (977) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (980) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (980) NimBLE: disc_mode=2[0m
+[0;32mI (980) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (980) NimBLE: 
+[0m
+[0;32mI (981) NIRduino: BLE initialized and advertising started[0m
+[0;32mI (981) NIRduino: Initializing ADC system...[0m
+[0;32mI (981) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (982) gpio: GPIO[10]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (983) NIRduino: Initializing ADC1[0m
+[0;32mI (1023) NIRduino: ADC1 initialized and calibrated.[0m
+[0;32mI (1023) NIRduino: Initializing ADC2[0m
+[0;32mI (1063) NIRduino: ADC2 initialized and calibrated.[0m
+[0;32mI (1063) NIRduino: ADC Initialization complete[0m
+[0;32mI (1063) NIRduino: ADC sampling task started.[0m
+[0;32mI (1063) NIRduino: BLE broadcast task started and waiting for data.[0m
+[0;32mI (1063) NIRduino: NIRduino initialization complete[0m
+[0;32mI (1063) main_task: Returned from app_main()[0m
+[0;32mI (11891) NIRduino: Client Connected[0m
+[0;32mI (11891) NIRduino: Negotiated MTU: 23 bytes[0m
+[0;32mI (15410) NIRduino: LEDCallback: Received command code 1 with 32 bytes of data[0m
+[0;32mI (15410) NIRduino: LEDCallback: Updated 32 LED intensity values.[0m
+[0;32mI (15410) NIRduino: New intensities: LED[0]=255, LED[1]=255, LED[2]=255, LED[3]=255[0m
+[0;32mI (15410) NIRduino: Command: START DATA ACQUISITION[0m
+[0;32mI (15411) NIRduino: Storage Task: Received command 1[0m
+[0;32mI (15411) NIRduino: ADC sampling timer started for 222 Hz.[0m
+[0;32mI (15411) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (15411) NIRduino: Sending battery level over BLE![0m
+[0;32mI (15412) NIRduino: LED intensities saved successfully[0m
+[0;32mI (15412) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (15412) NIRduino: Battery level: 29[0m
+[0;32mI (15413) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15413) NimBLE: att_handle=16
+[0m
+Source: 0  | Cycle Time: 3879 us
+Source: 1  | Cycle Time: 3765 us
+Source: 2  | Cycle Time: 3763 us
+Source: 3  | Cycle Time: 3779 us
+Source: 4  | Cycle Time: 3756 us
+Source: 5  | Cycle Time: 3748 us
+Source: 6  | Cycle Time: 3753 us
+Source: 7  | Cycle Time: 3744 us
+Source: 8  | Cycle Time: 3804 us
+Source: 9  | Cycle Time: 3867 us
+Source: 10 | Cycle Time: 3752 us
+Source: 11 | Cycle Time: 3751 us
+Source: 12 | Cycle Time: 3761 us
+Source: 13 | Cycle Time: 3806 us
+Source: 14 | Cycle Time: 3748 us
+Source: 15 | Cycle Time: 3750 us
+Source: 16 | Cycle Time: 3750 us
+Source: 17 | Cycle Time: 3746 us
+Source: 18 | Cycle Time: 3746 us
+Source: 19 | Cycle Time: 3739 us
+Source: 20 | Cycle Time: 3745 us
+Source: 21 | Cycle Time: 3751 us
+Source: 22 | Cycle Time: 3743 us
+Source: 23 | Cycle Time: 3745 us
+Source: 24 | Cycle Time: 3751 us
+Source: 25 | Cycle Time: 3748 us
+Source: 26 | Cycle Time: 3746 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3755 us
+Source: 29 | Cycle Time: 3744 us
+Source: 30 | Cycle Time: 3756 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3248 us
+[0;32mI (15563) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (15563) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15563) NimBLE: att_handle=16
+[0m
+[0;32mI (15564) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3847 us
+[0;32mI (15569) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15569) NimBLE: att_handle=19
+[0m
+[0;32mI (15570) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3808 us
+[0;32mI (15575) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15575) NimBLE: att_handle=19
+[0m
+[0;32mI (15576) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3873 us
+[0;32mI (15581) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15581) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3908 us
+[0;32mI (15582) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3872 us
+[0;32mI (15588) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15588) NimBLE: att_handle=16
+[0m
+[0;32mI (15588) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3796 us
+[0;32mI (15594) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3886 us
+Source: 7  | Cycle Time: 3819 us
+Source: 8  | Cycle Time: 3769 us
+Source: 9  | Cycle Time: 3769 us
+Source: 10 | Cycle Time: 3806 us
+Source: 11 | Cycle Time: 3772 us
+Source: 12 | Cycle Time: 3778 us
+Source: 13 | Cycle Time: 3761 us
+Source: 14 | Cycle Time: 3760 us
+Source: 15 | Cycle Time: 3768 us
+Source: 16 | Cycle Time: 3774 us
+Source: 17 | Cycle Time: 3852 us
+Source: 18 | Cycle Time: 3779 us
+Source: 19 | Cycle Time: 3767 us
+Source: 20 | Cycle Time: 3775 us
+Source: 21 | Cycle Time: 3757 us
+Source: 22 | Cycle Time: 3751 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3745 us
+Source: 25 | Cycle Time: 3763 us
+Source: 26 | Cycle Time: 3746 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3749 us
+Source: 30 | Cycle Time: 3810 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3244 us
+[0;32mI (15711) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (15712) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15712) NimBLE: att_handle=16
+[0m
+[0;32mI (15713) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3834 us
+[0;32mI (15718) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15718) NimBLE: att_handle=19
+[0m
+[0;32mI (15719) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3821 us
+[0;32mI (15724) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15724) NimBLE: att_handle=19
+[0m
+[0;32mI (15725) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3879 us
+[0;32mI (15730) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15730) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3883 us
+[0;32mI (15731) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3883 us
+[0;32mI (15736) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15736) NimBLE: att_handle=16
+[0m
+[0;32mI (15737) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3855 us
+[0;32mI (15742) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3907 us
+Source: 7  | Cycle Time: 3852 us
+Source: 8  | Cycle Time: 3804 us
+Source: 9  | Cycle Time: 3776 us
+Source: 10 | Cycle Time: 3761 us
+Source: 11 | Cycle Time: 3773 us
+Source: 12 | Cycle Time: 3776 us
+Source: 13 | Cycle Time: 3772 us
+Source: 14 | Cycle Time: 3766 us
+Source: 15 | Cycle Time: 3762 us
+Source: 16 | Cycle Time: 3806 us
+Source: 17 | Cycle Time: 3800 us
+Source: 18 | Cycle Time: 3776 us
+Source: 19 | Cycle Time: 3765 us
+Source: 20 | Cycle Time: 3764 us
+Source: 21 | Cycle Time: 3781 us
+Source: 22 | Cycle Time: 3746 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3747 us
+Source: 25 | Cycle Time: 3761 us
+Source: 26 | Cycle Time: 3742 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3739 us
+Source: 29 | Cycle Time: 3751 us
+Source: 30 | Cycle Time: 3747 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3243 us
+[0;32mI (15860) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (15860) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15860) NimBLE: att_handle=16
+[0m
+[0;32mI (15861) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3840 us
+[0;32mI (15867) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15867) NimBLE: att_handle=19
+[0m
+[0;32mI (15867) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3809 us
+[0;32mI (15873) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15873) NimBLE: att_handle=19
+[0m
+[0;32mI (15874) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3884 us
+Source: 3  | Cycle Time: 3883 us
+[0;32mI (15879) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15879) NimBLE: att_handle=19
+[0m
+[0;32mI (15880) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3847 us
+[0;32mI (15885) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (15885) NimBLE: att_handle=16
+[0m
+[0;32mI (15886) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3880 us
+[0;32mI (15891) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3898 us
+Source: 7  | Cycle Time: 3789 us
+Source: 8  | Cycle Time: 3754 us
+Source: 9  | Cycle Time: 3778 us
+Source: 10 | Cycle Time: 3779 us
+Source: 11 | Cycle Time: 3792 us
+Source: 12 | Cycle Time: 3767 us
+Source: 13 | Cycle Time: 3796 us
+Source: 14 | Cycle Time: 3766 us
+Source: 15 | Cycle Time: 3808 us
+Source: 16 | Cycle Time: 3787 us
+Source: 17 | Cycle Time: 3828 us
+Source: 18 | Cycle Time: 3997 us
+Source: 19 | Cycle Time: 3747 us
+Source: 20 | Cycle Time: 3764 us
+Source: 21 | Cycle Time: 3781 us
+Source: 22 | Cycle Time: 3746 us
+Source: 23 | Cycle Time: 3754 us
+Source: 24 | Cycle Time: 3745 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3774 us
+Source: 27 | Cycle Time: 3762 us
+Source: 28 | Cycle Time: 3753 us
+Source: 29 | Cycle Time: 3749 us
+Source: 30 | Cycle Time: 3748 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (16009) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16009) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16009) NimBLE: att_handle=16
+[0m
+[0;32mI (16010) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3886 us
+[0;32mI (16016) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16016) NimBLE: att_handle=19
+[0m
+[0;32mI (16017) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3799 us
+[0;32mI (16022) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16022) NimBLE: att_handle=19
+[0m
+[0;32mI (16023) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3870 us
+Source: 3  | Cycle Time: 3850 us
+[0;32mI (16028) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16028) NimBLE: att_handle=19
+[0m
+[0;32mI (16029) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3874 us
+[0;32mI (16034) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16034) NimBLE: att_handle=16
+[0m
+[0;32mI (16035) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3852 us
+[0;32mI (16040) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3854 us
+Source: 7  | Cycle Time: 4001 us
+Source: 8  | Cycle Time: 3799 us
+Source: 9  | Cycle Time: 3782 us
+Source: 10 | Cycle Time: 3756 us
+Source: 11 | Cycle Time: 3826 us
+Source: 12 | Cycle Time: 3749 us
+Source: 13 | Cycle Time: 3754 us
+Source: 14 | Cycle Time: 3791 us
+Source: 15 | Cycle Time: 3833 us
+Source: 16 | Cycle Time: 3806 us
+Source: 17 | Cycle Time: 3798 us
+Source: 18 | Cycle Time: 3773 us
+Source: 19 | Cycle Time: 3753 us
+Source: 20 | Cycle Time: 3790 us
+Source: 21 | Cycle Time: 3780 us
+Source: 22 | Cycle Time: 3777 us
+Source: 23 | Cycle Time: 3795 us
+Source: 24 | Cycle Time: 3783 us
+Source: 25 | Cycle Time: 3768 us
+Source: 26 | Cycle Time: 3756 us
+Source: 27 | Cycle Time: 3760 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3766 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3897 us
+Source: 32 | Cycle Time: 3235 us
+[0;32mI (16157) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16157) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16158) NimBLE: att_handle=16
+[0m
+[0;32mI (16159) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3889 us
+[0;32mI (16164) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16164) NimBLE: att_handle=19
+[0m
+[0;32mI (16165) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3814 us
+[0;32mI (16170) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16170) NimBLE: att_handle=19
+[0m
+[0;32mI (16171) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3877 us
+[0;32mI (16176) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3873 us
+[0;32mI (16176) NimBLE: att_handle=19
+[0m
+[0;32mI (16177) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3957 us
+[0;32mI (16182) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16182) NimBLE: att_handle=16
+[0m
+[0;32mI (16183) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3829 us
+[0;32mI (16188) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3888 us
+Source: 7  | Cycle Time: 3787 us
+Source: 8  | Cycle Time: 3792 us
+Source: 9  | Cycle Time: 3768 us
+Source: 10 | Cycle Time: 3797 us
+Source: 11 | Cycle Time: 3774 us
+Source: 12 | Cycle Time: 3768 us
+Source: 13 | Cycle Time: 3769 us
+Source: 14 | Cycle Time: 3751 us
+Source: 15 | Cycle Time: 3745 us
+Source: 16 | Cycle Time: 3746 us
+Source: 17 | Cycle Time: 3838 us
+Source: 18 | Cycle Time: 3771 us
+Source: 19 | Cycle Time: 3772 us
+Source: 20 | Cycle Time: 3799 us
+Source: 21 | Cycle Time: 3746 us
+Source: 22 | Cycle Time: 3750 us
+Source: 23 | Cycle Time: 3766 us
+Source: 24 | Cycle Time: 3760 us
+Source: 25 | Cycle Time: 3778 us
+Source: 26 | Cycle Time: 3775 us
+Source: 27 | Cycle Time: 3751 us
+Source: 28 | Cycle Time: 3746 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3750 us
+Source: 31 | Cycle Time: 3751 us
+Source: 32 | Cycle Time: 3242 us
+[0;32mI (16306) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16306) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16306) NimBLE: att_handle=16
+[0m
+[0;32mI (16307) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3862 us
+[0;32mI (16312) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16312) NimBLE: att_handle=19
+[0m
+[0;32mI (16313) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3843 us
+[0;32mI (16318) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16318) NimBLE: att_handle=19
+[0m
+[0;32mI (16319) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3937 us
+[0;32mI (16324) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16324) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3871 us
+[0;32mI (16325) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3937 us
+[0;32mI (16330) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16330) NimBLE: att_handle=16
+[0m
+[0;32mI (16331) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3800 us
+[0;32mI (16336) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3885 us
+Source: 7  | Cycle Time: 3752 us
+Source: 8  | Cycle Time: 3769 us
+Source: 9  | Cycle Time: 3821 us
+Source: 10 | Cycle Time: 3768 us
+Source: 11 | Cycle Time: 3748 us
+Source: 12 | Cycle Time: 3749 us
+Source: 13 | Cycle Time: 3746 us
+Source: 14 | Cycle Time: 3858 us
+Source: 15 | Cycle Time: 3798 us
+Source: 16 | Cycle Time: 3754 us
+Source: 17 | Cycle Time: 3794 us
+Source: 18 | Cycle Time: 3800 us
+Source: 19 | Cycle Time: 3786 us
+Source: 20 | Cycle Time: 3747 us
+Source: 21 | Cycle Time: 3782 us
+Source: 22 | Cycle Time: 3773 us
+Source: 23 | Cycle Time: 3751 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3750 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3772 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3755 us
+Source: 30 | Cycle Time: 3771 us
+Source: 31 | Cycle Time: 3755 us
+Source: 32 | Cycle Time: 3241 us
+[0;32mI (16454) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16455) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16455) NimBLE: att_handle=16
+[0m
+[0;32mI (16456) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3844 us
+[0;32mI (16461) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16461) NimBLE: att_handle=19
+[0m
+[0;32mI (16462) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3860 us
+[0;32mI (16467) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16467) NimBLE: att_handle=19
+[0m
+[0;32mI (16468) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3880 us
+[0;32mI (16473) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16473) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 4035 us
+[0;32mI (16474) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3931 us
+[0;32mI (16479) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16479) NimBLE: att_handle=16
+[0m
+[0;32mI (16480) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3864 us
+[0;32mI (16485) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3917 us
+Source: 7  | Cycle Time: 3753 us
+Source: 8  | Cycle Time: 3756 us
+Source: 9  | Cycle Time: 3791 us
+Source: 10 | Cycle Time: 3752 us
+Source: 11 | Cycle Time: 3775 us
+Source: 12 | Cycle Time: 3823 us
+Source: 13 | Cycle Time: 3743 us
+Source: 14 | Cycle Time: 3844 us
+Source: 15 | Cycle Time: 3798 us
+Source: 16 | Cycle Time: 3757 us
+Source: 17 | Cycle Time: 3825 us
+Source: 18 | Cycle Time: 3777 us
+Source: 19 | Cycle Time: 3761 us
+Source: 20 | Cycle Time: 3753 us
+Source: 21 | Cycle Time: 3747 us
+Source: 22 | Cycle Time: 3750 us
+Source: 23 | Cycle Time: 3751 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3751 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3746 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3246 us
+[0;32mI (16603) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16603) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16604) NimBLE: att_handle=16
+[0m
+[0;32mI (16604) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3906 us
+[0;32mI (16610) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16610) NimBLE: att_handle=19
+[0m
+[0;32mI (16610) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3814 us
+[0;32mI (16616) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16616) NimBLE: att_handle=19
+[0m
+[0;32mI (16617) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3899 us
+[0;32mI (16622) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3864 us
+[0;32mI (16622) NimBLE: att_handle=19
+[0m
+[0;32mI (16623) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3914 us
+[0;32mI (16628) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16628) NimBLE: att_handle=16
+[0m
+[0;32mI (16629) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3878 us
+[0;32mI (16634) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3892 us
+Source: 7  | Cycle Time: 3813 us
+Source: 8  | Cycle Time: 3789 us
+Source: 9  | Cycle Time: 3763 us
+Source: 10 | Cycle Time: 3762 us
+Source: 11 | Cycle Time: 3765 us
+Source: 12 | Cycle Time: 3783 us
+Source: 13 | Cycle Time: 3769 us
+Source: 14 | Cycle Time: 3821 us
+Source: 15 | Cycle Time: 3819 us
+Source: 16 | Cycle Time: 3773 us
+Source: 17 | Cycle Time: 3774 us
+Source: 18 | Cycle Time: 3765 us
+Source: 19 | Cycle Time: 3769 us
+Source: 20 | Cycle Time: 3775 us
+Source: 21 | Cycle Time: 3835 us
+Source: 22 | Cycle Time: 3753 us
+Source: 23 | Cycle Time: 3749 us
+Source: 24 | Cycle Time: 3747 us
+Source: 25 | Cycle Time: 3748 us
+Source: 26 | Cycle Time: 3754 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3824 us
+Source: 29 | Cycle Time: 3754 us
+Source: 30 | Cycle Time: 3754 us
+Source: 31 | Cycle Time: 3752 us
+Source: 32 | Cycle Time: 3243 us
+[0;32mI (16752) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16752) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16752) NimBLE: att_handle=16
+[0m
+[0;32mI (16753) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3899 us
+[0;32mI (16758) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16758) NimBLE: att_handle=19
+[0m
+[0;32mI (16759) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3831 us
+[0;32mI (16764) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16764) NimBLE: att_handle=19
+[0m
+[0;32mI (16764) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3919 us
+[0;32mI (16770) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16770) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3916 us
+[0;32mI (16771) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3818 us
+[0;32mI (16776) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16776) NimBLE: att_handle=16
+[0m
+[0;32mI (16777) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3780 us
+[0;32mI (16782) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3904 us
+Source: 7  | Cycle Time: 3758 us
+Source: 8  | Cycle Time: 3785 us
+Source: 9  | Cycle Time: 3788 us
+Source: 10 | Cycle Time: 3754 us
+Source: 11 | Cycle Time: 3781 us
+Source: 12 | Cycle Time: 3808 us
+Source: 13 | Cycle Time: 3784 us
+Source: 14 | Cycle Time: 3786 us
+Source: 15 | Cycle Time: 3827 us
+Source: 16 | Cycle Time: 3754 us
+Source: 17 | Cycle Time: 3813 us
+Source: 18 | Cycle Time: 3765 us
+Source: 19 | Cycle Time: 3777 us
+Source: 20 | Cycle Time: 3770 us
+Source: 21 | Cycle Time: 3748 us
+Source: 22 | Cycle Time: 3745 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3742 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3744 us
+Source: 31 | Cycle Time: 3778 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (16900) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (16901) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16901) NimBLE: att_handle=16
+[0m
+[0;32mI (16902) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3845 us
+[0;32mI (16908) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16908) NimBLE: att_handle=19
+[0m
+[0;32mI (16908) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3845 us
+[0;32mI (16914) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16914) NimBLE: att_handle=19
+[0m
+Source: 2  | Cycle Time: 3894 us
+[0;32mI (16915) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | Cycle Time: 3862 us
+[0;32mI (16920) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16920) NimBLE: att_handle=19
+[0m
+[0;32mI (16921) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3819 us
+[0;32mI (16926) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (16926) NimBLE: att_handle=16
+[0m
+[0;32mI (16927) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3882 us
+[0;32mI (16932) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3891 us
+Source: 7  | Cycle Time: 3762 us
+Source: 8  | Cycle Time: 3790 us
+Source: 9  | Cycle Time: 3769 us
+Source: 10 | Cycle Time: 3788 us
+Source: 11 | Cycle Time: 3800 us
+Source: 12 | Cycle Time: 3746 us
+Source: 13 | Cycle Time: 3806 us
+Source: 14 | Cycle Time: 3808 us
+Source: 15 | Cycle Time: 3775 us
+Source: 16 | Cycle Time: 3842 us
+Source: 17 | Cycle Time: 3832 us
+Source: 18 | Cycle Time: 3759 us
+Source: 19 | Cycle Time: 3842 us
+Source: 20 | Cycle Time: 3777 us
+Source: 21 | Cycle Time: 3757 us
+Source: 22 | Cycle Time: 3746 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3753 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3752 us
+Source: 27 | Cycle Time: 3744 us
+Source: 28 | Cycle Time: 3774 us
+Source: 29 | Cycle Time: 3755 us
+Source: 30 | Cycle Time: 3746 us
+Source: 31 | Cycle Time: 3776 us
+Source: 32 | Cycle Time: 3241 us
+[0;32mI (17049) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17049) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17049) NimBLE: att_handle=16
+[0m
+[0;32mI (17050) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3909 us
+[0;32mI (17056) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17056) NimBLE: att_handle=19
+[0m
+[0;32mI (17056) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3822 us
+[0;32mI (17062) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17062) NimBLE: att_handle=19
+[0m
+[0;32mI (17063) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3935 us
+Source: 3  | Cycle Time: 3867 us
+[0;32mI (17068) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17068) NimBLE: att_handle=19
+[0m
+[0;32mI (17069) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3882 us
+[0;32mI (17074) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17074) NimBLE: att_handle=16
+[0m
+[0;32mI (17075) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3873 us
+[0;32mI (17080) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3866 us
+Source: 7  | Cycle Time: 3769 us
+Source: 8  | Cycle Time: 3821 us
+Source: 9  | Cycle Time: 3800 us
+Source: 10 | Cycle Time: 3788 us
+Source: 11 | Cycle Time: 3853 us
+Source: 12 | Cycle Time: 3805 us
+Source: 13 | Cycle Time: 3810 us
+Source: 14 | Cycle Time: 3792 us
+Source: 15 | Cycle Time: 3793 us
+Source: 16 | Cycle Time: 3793 us
+Source: 17 | Cycle Time: 3755 us
+Source: 18 | Cycle Time: 3828 us
+Source: 19 | Cycle Time: 3795 us
+Source: 20 | Cycle Time: 3780 us
+Source: 21 | Cycle Time: 3753 us
+Source: 22 | Cycle Time: 3744 us
+Source: 23 | Cycle Time: 3749 us
+Source: 24 | Cycle Time: 3752 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3748 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3766 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3747 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (17198) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17198) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17198) NimBLE: att_handle=16
+[0m
+[0;32mI (17199) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3902 us
+[0;32mI (17204) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17204) NimBLE: att_handle=19
+[0m
+[0;32mI (17205) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3805 us
+[0;32mI (17210) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17210) NimBLE: att_handle=19
+[0m
+[0;32mI (17211) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3859 us
+[0;32mI (17216) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3897 us
+[0;32mI (17216) NimBLE: att_handle=19
+[0m
+[0;32mI (17217) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3884 us
+[0;32mI (17223) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17223) NimBLE: att_handle=16
+[0m
+[0;32mI (17223) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3795 us
+[0;32mI (17229) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3878 us
+Source: 7  | Cycle Time: 3816 us
+Source: 8  | Cycle Time: 3770 us
+Source: 9  | Cycle Time: 3775 us
+Source: 10 | Cycle Time: 3805 us
+Source: 11 | Cycle Time: 3775 us
+Source: 12 | Cycle Time: 3771 us
+Source: 13 | Cycle Time: 3786 us
+Source: 14 | Cycle Time: 3769 us
+Source: 15 | Cycle Time: 3835 us
+Source: 16 | Cycle Time: 3803 us
+Source: 17 | Cycle Time: 3790 us
+Source: 18 | Cycle Time: 3773 us
+Source: 19 | Cycle Time: 3814 us
+Source: 20 | Cycle Time: 3774 us
+Source: 21 | Cycle Time: 3761 us
+Source: 22 | Cycle Time: 3763 us
+Source: 23 | Cycle Time: 3756 us
+Source: 24 | Cycle Time: 3750 us
+Source: 25 | Cycle Time: 3761 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3752 us
+Source: 28 | Cycle Time: 3747 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3743 us
+Source: 31 | Cycle Time: 3749 us
+Source: 32 | Cycle Time: 3242 us
+[0;32mI (17346) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17346) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17347) NimBLE: att_handle=16
+[0m
+[0;32mI (17348) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3876 us
+[0;32mI (17353) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17353) NimBLE: att_handle=19
+[0m
+[0;32mI (17354) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3808 us
+[0;32mI (17359) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17359) NimBLE: att_handle=19
+[0m
+[0;32mI (17360) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3856 us
+[0;32mI (17365) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3862 us
+[0;32mI (17365) NimBLE: att_handle=19
+[0m
+[0;32mI (17366) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3834 us
+[0;32mI (17372) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17372) NimBLE: att_handle=16
+[0m
+[0;32mI (17372) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3791 us
+[0;32mI (17378) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3932 us
+Source: 7  | Cycle Time: 3827 us
+Source: 8  | Cycle Time: 3783 us
+Source: 9  | Cycle Time: 3801 us
+Source: 10 | Cycle Time: 3775 us
+Source: 11 | Cycle Time: 3791 us
+Source: 12 | Cycle Time: 3775 us
+Source: 13 | Cycle Time: 3797 us
+Source: 14 | Cycle Time: 3781 us
+Source: 15 | Cycle Time: 3776 us
+Source: 16 | Cycle Time: 3773 us
+Source: 17 | Cycle Time: 3787 us
+Source: 18 | Cycle Time: 3775 us
+Source: 19 | Cycle Time: 3759 us
+Source: 20 | Cycle Time: 3819 us
+Source: 21 | Cycle Time: 3775 us
+Source: 22 | Cycle Time: 3753 us
+Source: 23 | Cycle Time: 3807 us
+Source: 24 | Cycle Time: 3771 us
+Source: 25 | Cycle Time: 3757 us
+Source: 26 | Cycle Time: 3792 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3751 us
+Source: 30 | Cycle Time: 3743 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3238 us
+[0;32mI (17495) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17495) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17495) NimBLE: att_handle=16
+[0m
+[0;32mI (17496) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3843 us
+[0;32mI (17502) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17502) NimBLE: att_handle=19
+[0m
+[0;32mI (17503) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3814 us
+[0;32mI (17508) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17508) NimBLE: att_handle=19
+[0m
+[0;32mI (17508) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3979 us
+Source: 3  | Cycle Time: 3875 us
+[0;32mI (17514) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17514) NimBLE: att_handle=19
+[0m
+[0;32mI (17515) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3832 us
+[0;32mI (17520) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17520) NimBLE: att_handle=16
+[0m
+[0;32mI (17521) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3870 us
+[0;32mI (17526) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3905 us
+Source: 7  | Cycle Time: 3829 us
+Source: 8  | Cycle Time: 3799 us
+Source: 9  | Cycle Time: 3798 us
+Source: 10 | Cycle Time: 3759 us
+Source: 11 | Cycle Time: 3828 us
+Source: 12 | Cycle Time: 3774 us
+Source: 13 | Cycle Time: 3784 us
+Source: 14 | Cycle Time: 3762 us
+Source: 15 | Cycle Time: 3770 us
+Source: 16 | Cycle Time: 3831 us
+Source: 17 | Cycle Time: 3815 us
+Source: 18 | Cycle Time: 3806 us
+Source: 19 | Cycle Time: 3758 us
+Source: 20 | Cycle Time: 3831 us
+Source: 21 | Cycle Time: 3763 us
+Source: 22 | Cycle Time: 3779 us
+Source: 23 | Cycle Time: 3748 us
+Source: 24 | Cycle Time: 3743 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3747 us
+Source: 30 | Cycle Time: 3743 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (17643) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17644) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17644) NimBLE: att_handle=16
+[0m
+[0;32mI (17645) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3840 us
+[0;32mI (17650) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17650) NimBLE: att_handle=19
+[0m
+[0;32mI (17651) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3818 us
+[0;32mI (17656) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17656) NimBLE: att_handle=19
+[0m
+[0;32mI (17657) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3855 us
+[0;32mI (17662) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17662) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3862 us
+[0;32mI (17663) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3929 us
+[0;32mI (17668) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17668) NimBLE: att_handle=16
+[0m
+[0;32mI (17669) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3861 us
+[0;32mI (17674) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3898 us
+Source: 7  | Cycle Time: 3863 us
+Source: 8  | Cycle Time: 3794 us
+Source: 9  | Cycle Time: 3767 us
+Source: 10 | Cycle Time: 3783 us
+Source: 11 | Cycle Time: 3788 us
+Source: 12 | Cycle Time: 3766 us
+Source: 13 | Cycle Time: 3799 us
+Source: 14 | Cycle Time: 3783 us
+Source: 15 | Cycle Time: 3768 us
+Source: 16 | Cycle Time: 3793 us
+Source: 17 | Cycle Time: 3780 us
+Source: 18 | Cycle Time: 3769 us
+Source: 19 | Cycle Time: 3755 us
+Source: 20 | Cycle Time: 3786 us
+Source: 21 | Cycle Time: 3771 us
+Source: 22 | Cycle Time: 3758 us
+Source: 23 | Cycle Time: 3745 us
+Source: 24 | Cycle Time: 3813 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3738 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3751 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3746 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (17792) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17792) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17793) NimBLE: att_handle=16
+[0m
+[0;32mI (17793) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3851 us
+[0;32mI (17799) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17799) NimBLE: att_handle=19
+[0m
+[0;32mI (17800) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3818 us
+[0;32mI (17805) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17805) NimBLE: att_handle=19
+[0m
+[0;32mI (17806) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3875 us
+[0;32mI (17811) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3878 us
+[0;32mI (17811) NimBLE: att_handle=19
+[0m
+[0;32mI (17812) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3897 us
+[0;32mI (17817) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17817) NimBLE: att_handle=16
+[0m
+[0;32mI (17817) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3833 us
+[0;32mI (17823) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3922 us
+Source: 7  | Cycle Time: 3802 us
+Source: 8  | Cycle Time: 3793 us
+Source: 9  | Cycle Time: 3767 us
+Source: 10 | Cycle Time: 3815 us
+Source: 11 | Cycle Time: 3788 us
+Source: 12 | Cycle Time: 3781 us
+Source: 13 | Cycle Time: 3763 us
+Source: 14 | Cycle Time: 3773 us
+Source: 15 | Cycle Time: 3773 us
+Source: 16 | Cycle Time: 3767 us
+Source: 17 | Cycle Time: 3795 us
+Source: 18 | Cycle Time: 3774 us
+Source: 19 | Cycle Time: 3754 us
+Source: 20 | Cycle Time: 3742 us
+Source: 21 | Cycle Time: 3747 us
+Source: 22 | Cycle Time: 3749 us
+Source: 23 | Cycle Time: 3776 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3778 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3748 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3744 us
+Source: 31 | Cycle Time: 3739 us
+Source: 32 | Cycle Time: 3238 us
+[0;32mI (17941) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17941) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17941) NimBLE: att_handle=16
+[0m
+[0;32mI (17942) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 4082 us
+[0;32mI (17947) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17947) NimBLE: att_handle=19
+[0m
+[0;32mI (17948) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3841 us
+[0;32mI (17953) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17953) NimBLE: att_handle=19
+[0m
+[0;32mI (17954) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3877 us
+[0;32mI (17959) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17959) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 4044 us
+[0;32mI (17960) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3909 us
+[0;32mI (17965) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17965) NimBLE: att_handle=16
+[0m
+[0;32mI (17966) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3798 us
+[0;32mI (17971) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3877 us
+Source: 7  | Cycle Time: 3757 us
+Source: 8  | Cycle Time: 3862 us
+Source: 9  | Cycle Time: 3767 us
+Source: 10 | Cycle Time: 3781 us
+Source: 11 | Cycle Time: 3754 us
+Source: 12 | Cycle Time: 3798 us
+Source: 13 | Cycle Time: 3773 us
+Source: 14 | Cycle Time: 3785 us
+Source: 15 | Cycle Time: 3783 us
+Source: 16 | Cycle Time: 3778 us
+Source: 17 | Cycle Time: 3769 us
+Source: 18 | Cycle Time: 3796 us
+Source: 19 | Cycle Time: 3751 us
+Source: 20 | Cycle Time: 3750 us
+Source: 21 | Cycle Time: 3747 us
+Source: 22 | Cycle Time: 3750 us
+Source: 23 | Cycle Time: 3747 us
+Source: 24 | Cycle Time: 3743 us
+Source: 25 | Cycle Time: 3741 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3751 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3242 us
+[0;32mI (18089) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18090) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18090) NimBLE: att_handle=16
+[0m
+[0;32mI (18091) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3932 us
+[0;32mI (18096) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18096) NimBLE: att_handle=19
+[0m
+[0;32mI (18097) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3805 us
+[0;32mI (18102) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18102) NimBLE: att_handle=19
+[0m
+[0;32mI (18103) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3939 us
+[0;32mI (18108) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18108) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3882 us
+[0;32mI (18109) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3883 us
+[0;32mI (18114) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18114) NimBLE: att_handle=16
+[0m
+[0;32mI (18115) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3853 us
+[0;32mI (18120) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3920 us
+Source: 7  | Cycle Time: 3909 us
+Source: 8  | Cycle Time: 3776 us
+Source: 9  | Cycle Time: 3790 us
+Source: 10 | Cycle Time: 3761 us
+Source: 11 | Cycle Time: 3777 us
+Source: 12 | Cycle Time: 3814 us
+Source: 13 | Cycle Time: 3752 us
+Source: 14 | Cycle Time: 3802 us
+Source: 15 | Cycle Time: 3812 us
+Source: 16 | Cycle Time: 3775 us
+Source: 17 | Cycle Time: 3782 us
+Source: 18 | Cycle Time: 3778 us
+Source: 19 | Cycle Time: 3755 us
+Source: 20 | Cycle Time: 3816 us
+Source: 21 | Cycle Time: 3746 us
+Source: 22 | Cycle Time: 3743 us
+Source: 23 | Cycle Time: 3745 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3748 us
+Source: 31 | Cycle Time: 3749 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (18238) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18238) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18238) NimBLE: att_handle=16
+[0m
+[0;32mI (18239) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3952 us
+[0;32mI (18245) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18245) NimBLE: att_handle=19
+[0m
+[0;32mI (18246) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3803 us
+[0;32mI (18251) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18251) NimBLE: att_handle=19
+[0m
+[0;32mI (18252) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3886 us
+Source: 3  | Cycle Time: 3861 us
+[0;32mI (18257) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18257) NimBLE: att_handle=19
+[0m
+[0;32mI (18258) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3842 us
+[0;32mI (18263) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18263) NimBLE: att_handle=16
+[0m
+[0;32mI (18264) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3873 us
+[0;32mI (18269) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3877 us
+Source: 7  | Cycle Time: 3788 us
+Source: 8  | Cycle Time: 3780 us
+Source: 9  | Cycle Time: 3764 us
+Source: 10 | Cycle Time: 3771 us
+Source: 11 | Cycle Time: 3764 us
+Source: 12 | Cycle Time: 3773 us
+Source: 13 | Cycle Time: 3771 us
+Source: 14 | Cycle Time: 3820 us
+Source: 15 | Cycle Time: 3762 us
+Source: 16 | Cycle Time: 3779 us
+Source: 17 | Cycle Time: 3799 us
+Source: 18 | Cycle Time: 3769 us
+Source: 19 | Cycle Time: 3765 us
+Source: 20 | Cycle Time: 3761 us
+Source: 21 | Cycle Time: 3744 us
+Source: 22 | Cycle Time: 3745 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3761 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3757 us
+Source: 28 | Cycle Time: 3752 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3748 us
+Source: 31 | Cycle Time: 3769 us
+Source: 32 | Cycle Time: 3239 us
+[0;32mI (18387) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18387) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18387) NimBLE: att_handle=16
+[0m
+[0;32mI (18388) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 4069 us
+[0;32mI (18393) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18393) NimBLE: att_handle=19
+[0m
+[0;32mI (18394) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3828 us
+[0;32mI (18399) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18399) NimBLE: att_handle=19
+[0m
+[0;32mI (18400) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3922 us
+[0;32mI (18405) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18405) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3866 us
+[0;32mI (18406) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3863 us
+[0;32mI (18411) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18411) NimBLE: att_handle=16
+[0m
+[0;32mI (18412) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3779 us
+[0;32mI (18417) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3874 us
+Source: 7  | Cycle Time: 3820 us
+Source: 8  | Cycle Time: 3804 us
+Source: 9  | Cycle Time: 3785 us
+Source: 10 | Cycle Time: 3755 us
+Source: 11 | Cycle Time: 3778 us
+Source: 12 | Cycle Time: 3784 us
+Source: 13 | Cycle Time: 3783 us
+Source: 14 | Cycle Time: 3782 us
+Source: 15 | Cycle Time: 3820 us
+Source: 16 | Cycle Time: 3762 us
+Source: 17 | Cycle Time: 3786 us
+Source: 18 | Cycle Time: 3755 us
+Source: 19 | Cycle Time: 3780 us
+Source: 20 | Cycle Time: 3761 us
+Source: 21 | Cycle Time: 3751 us
+Source: 22 | Cycle Time: 3745 us
+Source: 23 | Cycle Time: 3745 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3805 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3747 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (18535) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18536) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18536) NimBLE: att_handle=16
+[0m
+[0;32mI (18537) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3908 us
+[0;32mI (18542) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18542) NimBLE: att_handle=19
+[0m
+[0;32mI (18542) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3840 us
+[0;32mI (18548) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18548) NimBLE: att_handle=19
+[0m
+[0;32mI (18549) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3889 us
+[0;32mI (18554) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3874 us
+[0;32mI (18554) NimBLE: att_handle=19
+[0m
+[0;32mI (18555) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3897 us
+[0;32mI (18560) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18560) NimBLE: att_handle=16
+[0m
+[0;32mI (18560) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3787 us
+[0;32mI (18566) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3846 us
+Source: 7  | Cycle Time: 3758 us
+Source: 8  | Cycle Time: 3793 us
+Source: 9  | Cycle Time: 3756 us
+Source: 10 | Cycle Time: 3759 us
+Source: 11 | Cycle Time: 3802 us
+Source: 12 | Cycle Time: 3804 us
+Source: 13 | Cycle Time: 3799 us
+Source: 14 | Cycle Time: 3759 us
+Source: 15 | Cycle Time: 3766 us
+Source: 16 | Cycle Time: 3790 us
+Source: 17 | Cycle Time: 3795 us
+Source: 18 | Cycle Time: 3773 us
+Source: 19 | Cycle Time: 3781 us
+Source: 20 | Cycle Time: 3785 us
+Source: 21 | Cycle Time: 3758 us
+Source: 22 | Cycle Time: 3801 us
+Source: 23 | Cycle Time: 3766 us
+Source: 24 | Cycle Time: 3760 us
+Source: 25 | Cycle Time: 3753 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3749 us
+Source: 28 | Cycle Time: 3754 us
+Source: 29 | Cycle Time: 3749 us
+Source: 30 | Cycle Time: 3751 us
+Source: 31 | Cycle Time: 3751 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (18684) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18684) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18684) NimBLE: att_handle=16
+[0m
+[0;32mI (18685) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3851 us
+[0;32mI (18691) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18691) NimBLE: att_handle=19
+[0m
+[0;32mI (18691) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3805 us
+[0;32mI (18697) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18697) NimBLE: att_handle=19
+[0m
+[0;32mI (18698) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 4085 us
+Source: 3  | Cycle Time: 3851 us
+[0;32mI (18703) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18703) NimBLE: att_handle=19
+[0m
+[0;32mI (18704) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3890 us
+[0;32mI (18709) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18709) NimBLE: att_handle=16
+[0m
+[0;32mI (18710) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 4044 us
+[0;32mI (18715) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3916 us
+Source: 7  | Cycle Time: 3762 us
+Source: 8  | Cycle Time: 3815 us
+Source: 9  | Cycle Time: 3856 us
+Source: 10 | Cycle Time: 3776 us
+Source: 11 | Cycle Time: 3768 us
+Source: 12 | Cycle Time: 3804 us
+Source: 13 | Cycle Time: 3928 us
+Source: 14 | Cycle Time: 3779 us
+Source: 15 | Cycle Time: 3793 us
+Source: 16 | Cycle Time: 3788 us
+Source: 17 | Cycle Time: 3773 us
+Source: 18 | Cycle Time: 3777 us
+Source: 19 | Cycle Time: 3797 us
+Source: 20 | Cycle Time: 3784 us
+Source: 21 | Cycle Time: 3812 us
+Source: 22 | Cycle Time: 3746 us
+Source: 23 | Cycle Time: 3747 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3787 us
+Source: 26 | Cycle Time: 3750 us
+Source: 27 | Cycle Time: 3748 us
+Source: 28 | Cycle Time: 3787 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3750 us
+Source: 31 | Cycle Time: 3753 us
+Source: 32 | Cycle Time: 3238 us
+[0;32mI (18833) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18833) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18833) NimBLE: att_handle=16
+[0m
+[0;32mI (18834) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3863 us
+[0;32mI (18839) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18839) NimBLE: att_handle=19
+[0m
+[0;32mI (18840) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3807 us
+[0;32mI (18845) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18845) NimBLE: att_handle=19
+[0m
+[0;32mI (18846) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3861 us
+[0;32mI (18851) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18851) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3880 us
+[0;32mI (18852) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3934 us
+[0;32mI (18858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18858) NimBLE: att_handle=16
+[0m
+[0;32mI (18858) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3804 us
+[0;32mI (18864) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3938 us
+Source: 7  | Cycle Time: 3891 us
+Source: 8  | Cycle Time: 3796 us
+Source: 9  | Cycle Time: 3830 us
+Source: 10 | Cycle Time: 3763 us
+Source: 11 | Cycle Time: 3843 us
+Source: 12 | Cycle Time: 3769 us
+Source: 13 | Cycle Time: 3765 us
+Source: 14 | Cycle Time: 3766 us
+Source: 15 | Cycle Time: 3757 us
+Source: 16 | Cycle Time: 3799 us
+Source: 17 | Cycle Time: 3789 us
+Source: 18 | Cycle Time: 3763 us
+Source: 19 | Cycle Time: 3788 us
+Source: 20 | Cycle Time: 3775 us
+Source: 21 | Cycle Time: 3758 us
+Source: 22 | Cycle Time: 3761 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3750 us
+Source: 25 | Cycle Time: 3754 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3748 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3744 us
+Source: 30 | Cycle Time: 3750 us
+Source: 31 | Cycle Time: 3757 us
+Source: 32 | Cycle Time: 3273 us
+[0;32mI (18981) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18981) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18982) NimBLE: att_handle=16
+[0m
+[0;32mI (18983) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3842 us
+[0;32mI (18989) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18989) NimBLE: att_handle=19
+[0m
+[0;32mI (18990) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3803 us
+[0;32mI (18995) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18995) NimBLE: att_handle=19
+[0m
+Source: 2  | Cycle Time: 3881 us
+[0;32mI (18996) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | Cycle Time: 3856 us
+[0;32mI (19001) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19001) NimBLE: att_handle=19
+[0m
+[0;32mI (19002) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3778 us
+[0;32mI (19007) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19007) NimBLE: att_handle=16
+[0m
+[0;32mI (19008) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3880 us
+[0;32mI (19013) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3875 us
+Source: 7  | Cycle Time: 3912 us
+Source: 8  | Cycle Time: 3779 us
+Source: 9  | Cycle Time: 3764 us
+Source: 10 | Cycle Time: 3752 us
+Source: 11 | Cycle Time: 3772 us
+Source: 12 | Cycle Time: 3780 us
+Source: 13 | Cycle Time: 3787 us
+Source: 14 | Cycle Time: 3813 us
+Source: 15 | Cycle Time: 3761 us
+Source: 16 | Cycle Time: 3811 us
+Source: 17 | Cycle Time: 3795 us
+Source: 18 | Cycle Time: 3779 us
+Source: 19 | Cycle Time: 3819 us
+Source: 20 | Cycle Time: 3786 us
+Source: 21 | Cycle Time: 3770 us
+Source: 22 | Cycle Time: 3765 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3750 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3748 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3750 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3742 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (19130) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19130) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19130) NimBLE: att_handle=16
+[0m
+[0;32mI (19131) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3955 us
+[0;32mI (19137) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19137) NimBLE: att_handle=19
+[0m
+[0;32mI (19137) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3802 us
+[0;32mI (19143) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19143) NimBLE: att_handle=19
+[0m
+[0;32mI (19144) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 4022 us
+Source: 3  | Cycle Time: 3875 us
+[0;32mI (19149) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19149) NimBLE: att_handle=19
+[0m
+[0;32mI (19150) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3833 us
+[0;32mI (19155) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19155) NimBLE: att_handle=16
+[0m
+[0;32mI (19156) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3878 us
+[0;32mI (19161) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3881 us
+Source: 7  | Cycle Time: 3767 us
+Source: 8  | Cycle Time: 3824 us
+Source: 9  | Cycle Time: 3791 us
+Source: 10 | Cycle Time: 3752 us
+Source: 11 | Cycle Time: 3745 us
+Source: 12 | Cycle Time: 3742 us
+Source: 13 | Cycle Time: 3802 us
+Source: 14 | Cycle Time: 3826 us
+Source: 15 | Cycle Time: 3785 us
+Source: 16 | Cycle Time: 3777 us
+Source: 17 | Cycle Time: 3781 us
+Source: 18 | Cycle Time: 3817 us
+Source: 19 | Cycle Time: 3810 us
+Source: 20 | Cycle Time: 3773 us
+Source: 21 | Cycle Time: 3797 us
+Source: 22 | Cycle Time: 3751 us
+Source: 23 | Cycle Time: 3786 us
+Source: 24 | Cycle Time: 3780 us
+Source: 25 | Cycle Time: 3750 us
+Source: 26 | Cycle Time: 3753 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3741 us
+Source: 29 | Cycle Time: 3763 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3752 us
+Source: 32 | Cycle Time: 3337 us
+[0;32mI (19279) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19279) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19279) NimBLE: att_handle=16
+[0m
+[0;32mI (19280) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3938 us
+[0;32mI (19285) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19285) NimBLE: att_handle=19
+[0m
+[0;32mI (19286) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3775 us
+[0;32mI (19291) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19291) NimBLE: att_handle=19
+[0m
+[0;32mI (19291) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3847 us
+[0;32mI (19297) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19297) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3905 us
+[0;32mI (19298) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3895 us
+[0;32mI (19303) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19303) NimBLE: att_handle=16
+[0m
+[0;32mI (19304) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3852 us
+[0;32mI (19309) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3899 us
+Source: 7  | Cycle Time: 3768 us
+Source: 8  | Cycle Time: 3795 us
+Source: 9  | Cycle Time: 3775 us
+Source: 10 | Cycle Time: 3754 us
+Source: 11 | Cycle Time: 3779 us
+Source: 12 | Cycle Time: 3770 us
+Source: 13 | Cycle Time: 3796 us
+Source: 14 | Cycle Time: 3785 us
+Source: 15 | Cycle Time: 3790 us
+Source: 16 | Cycle Time: 3869 us
+Source: 17 | Cycle Time: 3777 us
+Source: 18 | Cycle Time: 3768 us
+Source: 19 | Cycle Time: 3777 us
+Source: 20 | Cycle Time: 3768 us
+Source: 21 | Cycle Time: 3791 us
+Source: 22 | Cycle Time: 3773 us
+Source: 23 | Cycle Time: 3756 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3745 us
+Source: 29 | Cycle Time: 3753 us
+Source: 30 | Cycle Time: 3747 us
+Source: 31 | Cycle Time: 3719 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (19427) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19427) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19428) NimBLE: att_handle=16
+[0m
+[0;32mI (19428) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3847 us
+[0;32mI (19434) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19434) NimBLE: att_handle=19
+[0m
+[0;32mI (19435) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3878 us
+[0;32mI (19440) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19440) NimBLE: att_handle=19
+[0m
+[0;32mI (19441) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3880 us
+[0;32mI (19446) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3871 us
+[0;32mI (19446) NimBLE: att_handle=19
+[0m
+[0;32mI (19447) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3895 us
+[0;32mI (19453) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19453) NimBLE: att_handle=16
+[0m
+[0;32mI (19454) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3879 us
+[0;32mI (19459) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3912 us
+Source: 7  | Cycle Time: 3760 us
+Source: 8  | Cycle Time: 3802 us
+Source: 9  | Cycle Time: 3788 us
+Source: 10 | Cycle Time: 3754 us
+Source: 11 | Cycle Time: 3820 us
+Source: 12 | Cycle Time: 3768 us
+Source: 13 | Cycle Time: 3821 us
+Source: 14 | Cycle Time: 3837 us
+Source: 15 | Cycle Time: 3785 us
+Source: 16 | Cycle Time: 3775 us
+Source: 17 | Cycle Time: 3752 us
+Source: 18 | Cycle Time: 3785 us
+Source: 19 | Cycle Time: 3769 us
+Source: 20 | Cycle Time: 3752 us
+Source: 21 | Cycle Time: 3753 us
+Source: 22 | Cycle Time: 3745 us
+Source: 23 | Cycle Time: 3751 us
+Source: 24 | Cycle Time: 3742 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3773 us
+Source: 27 | Cycle Time: 3744 us
+Source: 28 | Cycle Time: 3750 us
+Source: 29 | Cycle Time: 3751 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3747 us
+Source: 32 | Cycle Time: 3242 us
+[0;32mI (19576) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19576) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19576) NimBLE: att_handle=16
+[0m
+[0;32mI (19577) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3902 us
+[0;32mI (19582) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19582) NimBLE: att_handle=19
+[0m
+[0;32mI (19583) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3833 us
+[0;32mI (19588) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19588) NimBLE: att_handle=19
+[0m
+[0;32mI (19589) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3880 us
+[0;32mI (19594) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19594) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3900 us
+[0;32mI (19595) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3907 us
+[0;32mI (19600) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19600) NimBLE: att_handle=16
+[0m
+[0;32mI (19601) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3803 us
+[0;32mI (19606) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3882 us
+Source: 7  | Cycle Time: 3755 us
+Source: 8  | Cycle Time: 3801 us
+Source: 9  | Cycle Time: 3789 us
+Source: 10 | Cycle Time: 3824 us
+Source: 11 | Cycle Time: 3763 us
+Source: 12 | Cycle Time: 3792 us
+Source: 13 | Cycle Time: 3768 us
+Source: 14 | Cycle Time: 3782 us
+Source: 15 | Cycle Time: 3781 us
+Source: 16 | Cycle Time: 3786 us
+Source: 17 | Cycle Time: 3757 us
+Source: 18 | Cycle Time: 3787 us
+Source: 19 | Cycle Time: 3761 us
+Source: 20 | Cycle Time: 3781 us
+Source: 21 | Cycle Time: 3750 us
+Source: 22 | Cycle Time: 3750 us
+Source: 23 | Cycle Time: 3785 us
+Source: 24 | Cycle Time: 3751 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3708 us
+Source: 28 | Cycle Time: 3745 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3753 us
+Source: 31 | Cycle Time: 3814 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (19724) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19725) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19725) NimBLE: att_handle=16
+[0m
+[0;32mI (19726) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3848 us
+[0;32mI (19732) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19732) NimBLE: att_handle=19
+[0m
+[0;32mI (19733) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3853 us
+[0;32mI (19738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19738) NimBLE: att_handle=19
+[0m
+Source: 2  | Cycle Time: 3861 us
+[0;32mI (19739) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | Cycle Time: 3868 us
+[0;32mI (19744) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19744) NimBLE: att_handle=19
+[0m
+[0;32mI (19745) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3804 us
+[0;32mI (19750) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19750) NimBLE: att_handle=16
+[0m
+[0;32mI (19751) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3916 us
+[0;32mI (19756) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3872 us
+Source: 7  | Cycle Time: 3798 us
+Source: 8  | Cycle Time: 3792 us
+Source: 9  | Cycle Time: 3780 us
+Source: 10 | Cycle Time: 3816 us
+Source: 11 | Cycle Time: 3789 us
+Source: 12 | Cycle Time: 3793 us
+Source: 13 | Cycle Time: 3755 us
+Source: 14 | Cycle Time: 3767 us
+Source: 15 | Cycle Time: 3788 us
+Source: 16 | Cycle Time: 3809 us
+Source: 17 | Cycle Time: 3768 us
+Source: 18 | Cycle Time: 3784 us
+Source: 19 | Cycle Time: 3785 us
+Source: 20 | Cycle Time: 3767 us
+Source: 21 | Cycle Time: 3803 us
+Source: 22 | Cycle Time: 3754 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3752 us
+Source: 25 | Cycle Time: 3744 us
+Source: 26 | Cycle Time: 3748 us
+Source: 27 | Cycle Time: 3772 us
+Source: 28 | Cycle Time: 3747 us
+Source: 29 | Cycle Time: 3747 us
+Source: 30 | Cycle Time: 3744 us
+Source: 31 | Cycle Time: 3896 us
+Source: 32 | Cycle Time: 3239 us
+[0;32mI (19873) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19873) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19873) NimBLE: att_handle=16
+[0m
+[0;32mI (19874) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3918 us
+[0;32mI (19880) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19880) NimBLE: att_handle=19
+[0m
+[0;32mI (19881) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3870 us
+[0;32mI (19886) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19886) NimBLE: att_handle=19
+[0m
+[0;32mI (19887) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3864 us
+Source: 3  | Cycle Time: 3872 us
+[0;32mI (19892) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19892) NimBLE: att_handle=19
+[0m
+[0;32mI (19893) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3876 us
+[0;32mI (19898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19898) NimBLE: att_handle=16
+[0m
+[0;32mI (19898) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3874 us
+[0;32mI (19904) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3912 us
+Source: 7  | Cycle Time: 3774 us
+Source: 8  | Cycle Time: 3850 us
+Source: 9  | Cycle Time: 3779 us
+Source: 10 | Cycle Time: 3762 us
+Source: 11 | Cycle Time: 3783 us
+Source: 12 | Cycle Time: 3845 us
+Source: 13 | Cycle Time: 3771 us
+Source: 14 | Cycle Time: 3767 us
+Source: 15 | Cycle Time: 3809 us
+Source: 16 | Cycle Time: 3799 us
+Source: 17 | Cycle Time: 3762 us
+Source: 18 | Cycle Time: 3774 us
+Source: 19 | Cycle Time: 3764 us
+Source: 20 | Cycle Time: 3764 us
+Source: 21 | Cycle Time: 3750 us
+Source: 22 | Cycle Time: 3751 us
+Source: 23 | Cycle Time: 3781 us
+Source: 24 | Cycle Time: 3757 us
+Source: 25 | Cycle Time: 3747 us
+Source: 26 | Cycle Time: 3746 us
+Source: 27 | Cycle Time: 3756 us
+Source: 28 | Cycle Time: 3727 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3746 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (20022) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20022) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20022) NimBLE: att_handle=16
+[0m
+[0;32mI (20023) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3848 us
+[0;32mI (20028) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20028) NimBLE: att_handle=19
+[0m
+[0;32mI (20029) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3839 us
+[0;32mI (20034) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20034) NimBLE: att_handle=19
+[0m
+[0;32mI (20035) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3878 us
+[0;32mI (20040) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20040) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3873 us
+[0;32mI (20041) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3880 us
+[0;32mI (20046) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20046) NimBLE: att_handle=16
+[0m
+[0;32mI (20047) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3784 us
+[0;32mI (20052) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3946 us
+Source: 7  | Cycle Time: 3820 us
+Source: 8  | Cycle Time: 3762 us
+Source: 9  | Cycle Time: 3791 us
+Source: 10 | Cycle Time: 3759 us
+Source: 11 | Cycle Time: 3804 us
+Source: 12 | Cycle Time: 3785 us
+Source: 13 | Cycle Time: 3786 us
+Source: 14 | Cycle Time: 3780 us
+Source: 15 | Cycle Time: 3770 us
+Source: 16 | Cycle Time: 3777 us
+Source: 17 | Cycle Time: 3778 us
+Source: 18 | Cycle Time: 3801 us
+Source: 19 | Cycle Time: 3791 us
+Source: 20 | Cycle Time: 3770 us
+Source: 21 | Cycle Time: 3761 us
+Source: 22 | Cycle Time: 3753 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3753 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3751 us
+Source: 28 | Cycle Time: 3760 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3752 us
+Source: 32 | Cycle Time: 3247 us
+[0;32mI (20170) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20171) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20171) NimBLE: att_handle=16
+[0m
+[0;32mI (20172) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3909 us
+[0;32mI (20177) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20177) NimBLE: att_handle=19
+[0m
+[0;32mI (20177) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3827 us
+[0;32mI (20183) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20183) NimBLE: att_handle=19
+[0m
+[0;32mI (20184) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3878 us
+[0;32mI (20189) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3878 us
+[0;32mI (20189) NimBLE: att_handle=19
+[0m
+[0;32mI (20190) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3889 us
+[0;32mI (20196) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20196) NimBLE: att_handle=16
+[0m
+[0;32mI (20197) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3815 us
+[0;32mI (20202) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3944 us
+Source: 7  | Cycle Time: 3805 us
+Source: 8  | Cycle Time: 3790 us
+Source: 9  | Cycle Time: 3795 us
+Source: 10 | Cycle Time: 3817 us
+Source: 11 | Cycle Time: 3768 us
+Source: 12 | Cycle Time: 3807 us
+Source: 13 | Cycle Time: 3795 us
+Source: 14 | Cycle Time: 3761 us
+Source: 15 | Cycle Time: 3752 us
+Source: 16 | Cycle Time: 3779 us
+Source: 17 | Cycle Time: 3847 us
+Source: 18 | Cycle Time: 3756 us
+Source: 19 | Cycle Time: 3777 us
+Source: 20 | Cycle Time: 3765 us
+Source: 21 | Cycle Time: 3748 us
+Source: 22 | Cycle Time: 3750 us
+Source: 23 | Cycle Time: 3751 us
+Source: 24 | Cycle Time: 3746 us
+Source: 25 | Cycle Time: 3848 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3766 us
+Source: 29 | Cycle Time: 3748 us
+Source: 30 | Cycle Time: 3743 us
+Source: 31 | Cycle Time: 3744 us
+Source: 32 | Cycle Time: 3239 us
+[0;32mI (20319) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20319) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20319) NimBLE: att_handle=16
+[0m
+[0;32mI (20320) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3718 us
+[0;32mI (20325) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20325) NimBLE: att_handle=19
+[0m
+[0;32mI (20326) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3837 us
+[0;32mI (20331) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20331) NimBLE: att_handle=19
+[0m
+[0;32mI (20332) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3885 us
+[0;32mI (20337) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20337) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3861 us
+[0;32mI (20338) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3882 us
+[0;32mI (20343) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20343) NimBLE: att_handle=16
+[0m
+[0;32mI (20344) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3816 us
+[0;32mI (20349) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3865 us
+Source: 7  | Cycle Time: 3819 us
+Source: 8  | Cycle Time: 3750 us
+Source: 9  | Cycle Time: 3760 us
+Source: 10 | Cycle Time: 3813 us
+Source: 11 | Cycle Time: 3755 us
+Source: 12 | Cycle Time: 3780 us
+Source: 13 | Cycle Time: 3800 us
+Source: 14 | Cycle Time: 3938 us
+Source: 15 | Cycle Time: 3761 us
+Source: 16 | Cycle Time: 3808 us
+Source: 17 | Cycle Time: 3779 us
+Source: 18 | Cycle Time: 3779 us
+Source: 19 | Cycle Time: 3834 us
+Source: 20 | Cycle Time: 3786 us
+Source: 21 | Cycle Time: 3761 us
+Source: 22 | Cycle Time: 3749 us
+Source: 23 | Cycle Time: 3776 us
+Source: 24 | Cycle Time: 3746 us
+Source: 25 | Cycle Time: 3780 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3754 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3744 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (20467) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20468) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20468) NimBLE: att_handle=16
+[0m
+[0;32mI (20469) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3837 us
+[0;32mI (20475) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20475) NimBLE: att_handle=19
+[0m
+[0;32mI (20475) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3813 us
+[0;32mI (20481) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20481) NimBLE: att_handle=19
+[0m
+Source: 2  | Cycle Time: 3860 us
+[0;32mI (20482) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | Cycle Time: 3911 us
+[0;32mI (20487) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20487) NimBLE: att_handle=19
+[0m
+[0;32mI (20488) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3843 us
+[0;32mI (20493) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20493) NimBLE: att_handle=16
+[0m
+[0;32mI (20494) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3876 us
+[0;32mI (20499) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3873 us
+Source: 7  | Cycle Time: 3796 us
+Source: 8  | Cycle Time: 3791 us
+Source: 9  | Cycle Time: 3766 us
+Source: 10 | Cycle Time: 3773 us
+Source: 11 | Cycle Time: 3754 us
+Source: 12 | Cycle Time: 3774 us
+Source: 13 | Cycle Time: 3755 us
+Source: 14 | Cycle Time: 3811 us
+Source: 15 | Cycle Time: 3778 us
+Source: 16 | Cycle Time: 3811 us
+Source: 17 | Cycle Time: 3794 us
+Source: 18 | Cycle Time: 3769 us
+Source: 19 | Cycle Time: 3798 us
+Source: 20 | Cycle Time: 3783 us
+Source: 21 | Cycle Time: 3756 us
+Source: 22 | Cycle Time: 3743 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3745 us
+Source: 25 | Cycle Time: 3760 us
+Source: 26 | Cycle Time: 3747 us
+Source: 27 | Cycle Time: 3749 us
+Source: 28 | Cycle Time: 3763 us
+Source: 29 | Cycle Time: 3749 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3755 us
+Source: 32 | Cycle Time: 3242 us
+[0;32mI (20616) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20616) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20617) NimBLE: att_handle=16
+[0m
+[0;32mI (20617) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3893 us
+[0;32mI (20623) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20623) NimBLE: att_handle=19
+[0m
+[0;32mI (20623) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 4039 us
+[0;32mI (20629) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20629) NimBLE: att_handle=19
+[0m
+[0;32mI (20630) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3850 us
+[0;32mI (20635) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3848 us
+[0;32mI (20635) NimBLE: att_handle=19
+[0m
+[0;32mI (20636) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3969 us
+[0;32mI (20642) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20642) NimBLE: att_handle=16
+[0m
+[0;32mI (20643) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3853 us
+[0;32mI (20648) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3989 us
+Source: 7  | Cycle Time: 3784 us
+Source: 8  | Cycle Time: 3782 us
+Source: 9  | Cycle Time: 3726 us
+Source: 10 | Cycle Time: 3778 us
+Source: 11 | Cycle Time: 3791 us
+Source: 12 | Cycle Time: 3775 us
+Source: 13 | Cycle Time: 3767 us
+Source: 14 | Cycle Time: 3814 us
+Source: 15 | Cycle Time: 3783 us
+Source: 16 | Cycle Time: 3833 us
+Source: 17 | Cycle Time: 3755 us
+Source: 18 | Cycle Time: 3775 us
+Source: 19 | Cycle Time: 3788 us
+Source: 20 | Cycle Time: 3810 us
+Source: 21 | Cycle Time: 3807 us
+Source: 22 | Cycle Time: 3756 us
+Source: 23 | Cycle Time: 3793 us
+Source: 24 | Cycle Time: 3807 us
+Source: 25 | Cycle Time: 3783 us
+Source: 26 | Cycle Time: 3751 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3745 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3748 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (20765) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20765) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20765) NimBLE: att_handle=16
+[0m
+[0;32mI (20766) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3849 us
+[0;32mI (20772) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20772) NimBLE: att_handle=19
+[0m
+[0;32mI (20772) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3830 us
+[0;32mI (20778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20778) NimBLE: att_handle=19
+[0m
+[0;32mI (20778) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3871 us
+Source: 3  | Cycle Time: 3865 us
+[0;32mI (20784) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20784) NimBLE: att_handle=19
+[0m
+[0;32mI (20785) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3893 us
+[0;32mI (20790) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20790) NimBLE: att_handle=16
+[0m
+[0;32mI (20791) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3819 us
+[0;32mI (20796) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3928 us
+Source: 7  | Cycle Time: 3821 us
+Source: 8  | Cycle Time: 3886 us
+Source: 9  | Cycle Time: 3777 us
+Source: 10 | Cycle Time: 3802 us
+Source: 11 | Cycle Time: 3783 us
+Source: 12 | Cycle Time: 3775 us
+Source: 13 | Cycle Time: 3781 us
+Source: 14 | Cycle Time: 3788 us
+Source: 15 | Cycle Time: 3770 us
+Source: 16 | Cycle Time: 3760 us
+Source: 17 | Cycle Time: 3821 us
+Source: 18 | Cycle Time: 3771 us
+Source: 19 | Cycle Time: 3762 us
+Source: 20 | Cycle Time: 3750 us
+Source: 21 | Cycle Time: 3774 us
+Source: 22 | Cycle Time: 3755 us
+Source: 23 | Cycle Time: 3749 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3757 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3756 us
+Source: 30 | Cycle Time: 3747 us
+Source: 31 | Cycle Time: 3751 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (20913) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (20914) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20914) NimBLE: att_handle=16
+[0m
+[0;32mI (20914) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3893 us
+[0;32mI (20920) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20920) NimBLE: att_handle=19
+[0m
+[0;32mI (20920) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3777 us
+[0;32mI (20926) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20926) NimBLE: att_handle=19
+[0m
+[0;32mI (20927) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3868 us
+[0;32mI (20932) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20932) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3895 us
+[0;32mI (20933) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3910 us
+[0;32mI (20938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (20938) NimBLE: att_handle=16
+[0m
+[0;32mI (20939) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3860 us
+[0;32mI (20944) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3895 us
+Source: 7  | Cycle Time: 3780 us
+Source: 8  | Cycle Time: 3787 us
+Source: 9  | Cycle Time: 3770 us
+Source: 10 | Cycle Time: 3794 us
+Source: 11 | Cycle Time: 3777 us
+Source: 12 | Cycle Time: 3756 us
+Source: 13 | Cycle Time: 3793 us
+Source: 14 | Cycle Time: 3863 us
+Source: 15 | Cycle Time: 3795 us
+Source: 16 | Cycle Time: 3782 us
+Source: 17 | Cycle Time: 3830 us
+Source: 18 | Cycle Time: 3807 us
+Source: 19 | Cycle Time: 3790 us
+Source: 20 | Cycle Time: 3764 us
+Source: 21 | Cycle Time: 3782 us
+Source: 22 | Cycle Time: 3751 us
+Source: 23 | Cycle Time: 3745 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3746 us
+Source: 26 | Cycle Time: 3753 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3749 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (21062) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (21062) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21062) NimBLE: att_handle=16
+[0m
+[0;32mI (21063) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3928 us
+[0;32mI (21069) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21069) NimBLE: att_handle=19
+[0m
+[0;32mI (21069) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3779 us
+[0;32mI (21075) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21075) NimBLE: att_handle=19
+[0m
+[0;32mI (21076) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3887 us
+Source: 3  | Cycle Time: 3857 us
+[0;32mI (21081) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21081) NimBLE: att_handle=19
+[0m
+[0;32mI (21082) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3847 us
+[0;32mI (21087) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21087) NimBLE: att_handle=16
+[0m
+[0;32mI (21088) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3932 us
+[0;32mI (21093) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3907 us
+Source: 7  | Cycle Time: 3753 us
+Source: 8  | Cycle Time: 3803 us
+Source: 9  | Cycle Time: 3765 us
+Source: 10 | Cycle Time: 3754 us
+Source: 11 | Cycle Time: 3781 us
+Source: 12 | Cycle Time: 3833 us
+Source: 13 | Cycle Time: 3870 us
+Source: 14 | Cycle Time: 3758 us
+Source: 15 | Cycle Time: 3784 us
+Source: 16 | Cycle Time: 3742 us
+Source: 17 | Cycle Time: 3778 us
+Source: 18 | Cycle Time: 3785 us
+Source: 19 | Cycle Time: 3765 us
+Source: 20 | Cycle Time: 3780 us
+Source: 21 | Cycle Time: 3797 us
+Source: 22 | Cycle Time: 3757 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3757 us
+Source: 25 | Cycle Time: 3743 us
+Source: 26 | Cycle Time: 3755 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3754 us
+Source: 29 | Cycle Time: 3707 us
+Source: 30 | Cycle Time: 3755 us
+Source: 31 | Cycle Time: 3747 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (21211) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (21211) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21211) NimBLE: att_handle=16
+[0m
+[0;32mI (21212) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3908 us
+[0;32mI (21217) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21217) NimBLE: att_handle=19
+[0m
+[0;32mI (21218) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3805 us
+[0;32mI (21223) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21223) NimBLE: att_handle=19
+[0m
+[0;32mI (21224) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3893 us
+[0;32mI (21229) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21229) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3931 us
+[0;32mI (21230) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3924 us
+[0;32mI (21235) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21235) NimBLE: att_handle=16
+[0m
+[0;32mI (21236) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3837 us
+[0;32mI (21241) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3879 us
+Source: 7  | Cycle Time: 3753 us
+Source: 8  | Cycle Time: 3855 us
+Source: 9  | Cycle Time: 3786 us
+Source: 10 | Cycle Time: 3771 us
+Source: 11 | Cycle Time: 3805 us
+Source: 12 | Cycle Time: 3783 us
+Source: 13 | Cycle Time: 3765 us
+Source: 14 | Cycle Time: 3839 us
+Source: 15 | Cycle Time: 3787 us
+Source: 16 | Cycle Time: 3769 us
+Source: 17 | Cycle Time: 3803 us
+Source: 18 | Cycle Time: 3786 us
+Source: 19 | Cycle Time: 3752 us
+Source: 20 | Cycle Time: 3773 us
+Source: 21 | Cycle Time: 3758 us
+Source: 22 | Cycle Time: 3744 us
+Source: 23 | Cycle Time: 3776 us
+Source: 24 | Cycle Time: 3736 us
+Source: 25 | Cycle Time: 3750 us
+Source: 26 | Cycle Time: 3742 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3830 us
+Source: 29 | Cycle Time: 3751 us
+Source: 30 | Cycle Time: 3750 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3242 us
+[0;32mI (21359) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (21360) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21360) NimBLE: att_handle=16
+[0m
+[0;32mI (21361) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3908 us
+[0;32mI (21366) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21366) NimBLE: att_handle=19
+[0m
+[0;32mI (21367) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3804 us
+[0;32mI (21372) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21372) NimBLE: att_handle=19
+[0m
+[0;32mI (21373) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3879 us
+[0;32mI (21378) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21378) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3891 us
+[0;32mI (21379) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3886 us
+[0;32mI (21384) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21384) NimBLE: att_handle=16
+[0m
+[0;32mI (21385) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3874 us
+[0;32mI (21390) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3887 us
+Source: 7  | Cycle Time: 3786 us
+Source: 8  | Cycle Time: 3758 us
+Source: 9  | Cycle Time: 3831 us
+Source: 10 | Cycle Time: 3768 us
+Source: 11 | Cycle Time: 3769 us
+Source: 12 | Cycle Time: 3762 us
+Source: 13 | Cycle Time: 3909 us
+Source: 14 | Cycle Time: 3762 us
+Source: 15 | Cycle Time: 3785 us
+Source: 16 | Cycle Time: 3780 us
+Source: 17 | Cycle Time: 3750 us
+Source: 18 | Cycle Time: 3802 us
+Source: 19 | Cycle Time: 3760 us
+Source: 20 | Cycle Time: 3759 us
+Source: 21 | Cycle Time: 3752 us
+Source: 22 | Cycle Time: 3752 us
+Source: 23 | Cycle Time: 3747 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3750 us
+Source: 26 | Cycle Time: 3762 us
+Source: 27 | Cycle Time: 3748 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3740 us
+Source: 30 | Cycle Time: 3774 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (21508) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (21508) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21508) NimBLE: att_handle=16
+[0m
+[0;32mI (21509) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3847 us
+[0;32mI (21515) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21515) NimBLE: att_handle=19
+[0m
+[0;32mI (21516) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3827 us
+[0;32mI (21521) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21521) NimBLE: att_handle=19
+[0m
+[0;32mI (21522) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3895 us
+Source: 3  | Cycle Time: 3884 us
+[0;32mI (21527) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21527) NimBLE: att_handle=19
+[0m
+[0;32mI (21527) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3820 us
+[0;32mI (21533) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21533) NimBLE: att_handle=16
+[0m
+[0;32mI (21534) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3900 us
+[0;32mI (21539) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3912 us
+Source: 7  | Cycle Time: 3794 us
+Source: 8  | Cycle Time: 3763 us
+Source: 9  | Cycle Time: 3820 us
+Source: 10 | Cycle Time: 3747 us
+Source: 11 | Cycle Time: 3777 us
+Source: 12 | Cycle Time: 3748 us
+Source: 13 | Cycle Time: 3812 us
+Source: 14 | Cycle Time: 3771 us
+Source: 15 | Cycle Time: 3770 us
+Source: 16 | Cycle Time: 3759 us
+Source: 17 | Cycle Time: 3742 us
+Source: 18 | Cycle Time: 3783 us
+Source: 19 | Cycle Time: 3782 us
+Source: 20 | Cycle Time: 3765 us
+Source: 21 | Cycle Time: 3780 us
+Source: 22 | Cycle Time: 3764 us
+Source: 23 | Cycle Time: 3759 us
+Source: 24 | Cycle Time: 3755 us
+Source: 25 | Cycle Time: 3751 us
+Source: 26 | Cycle Time: 3752 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3751 us
+Source: 29 | Cycle Time: 3743 us
+Source: 30 | Cycle Time: 3748 us
+Source: 31 | Cycle Time: 3750 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (21657) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (21657) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21657) NimBLE: att_handle=16
+[0m
+[0;32mI (21658) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3842 us
+[0;32mI (21663) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21663) NimBLE: att_handle=19
+[0m
+[0;32mI (21664) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3838 us
+[0;32mI (21669) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21669) NimBLE: att_handle=19
+[0m
+[0;32mI (21670) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3873 us
+[0;32mI (21675) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21675) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3917 us
+[0;32mI (21676) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3895 us
+[0;32mI (21681) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21681) NimBLE: att_handle=16
+[0m
+[0;32mI (21682) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3777 us
+[0;32mI (21687) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3867 us
+Source: 7  | Cycle Time: 3821 us
+Source: 8  | Cycle Time: 3858 us
+Source: 9  | Cycle Time: 3838 us
+Source: 10 | Cycle Time: 3761 us
+Source: 11 | Cycle Time: 3810 us
+Source: 12 | Cycle Time: 3776 us
+Source: 13 | Cycle Time: 3782 us
+Source: 14 | Cycle Time: 3751 us
+Source: 15 | Cycle Time: 3789 us
+Source: 16 | Cycle Time: 3753 us
+Source: 17 | Cycle Time: 3803 us
+Source: 18 | Cycle Time: 3755 us
+Source: 19 | Cycle Time: 3798 us
+Source: 20 | Cycle Time: 3794 us
+Source: 21 | Cycle Time: 3913 us
+Source: 22 | Cycle Time: 3766 us
+Source: 23 | Cycle Time: 3759 us
+Source: 24 | Cycle Time: 3753 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3750 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3774 us
+Source: 29 | Cycle Time: 3762 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3770 us
+Source: 32 | Cycle Time: 3250 us
+[0;32mI (21805) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (21805) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21806) NimBLE: att_handle=16
+[0m
+[0;32mI (21806) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3899 us
+[0;32mI (21812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21812) NimBLE: att_handle=19
+[0m
+[0;32mI (21812) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3811 us
+[0;32mI (21818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21818) NimBLE: att_handle=19
+[0m
+[0;32mI (21819) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3882 us
+[0;32mI (21824) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3870 us
+[0;32mI (21824) NimBLE: att_handle=19
+[0m
+[0;32mI (21825) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3866 us
+[0;32mI (21831) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21831) NimBLE: att_handle=16
+[0m
+[0;32mI (21832) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3828 us
+[0;32mI (21837) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3885 us
+Source: 7  | Cycle Time: 3791 us
+Source: 8  | Cycle Time: 3858 us
+Source: 9  | Cycle Time: 3781 us
+Source: 10 | Cycle Time: 3808 us
+Source: 11 | Cycle Time: 3785 us
+Source: 12 | Cycle Time: 3773 us
+Source: 13 | Cycle Time: 3797 us
+Source: 14 | Cycle Time: 3784 us
+Source: 15 | Cycle Time: 3788 us
+[0;32mI (21880) NIRduino: LEDCallback: Received command code 3 with 0 bytes of data[0m
+[0;32mI (21881) NIRduino: Command: STOP DATA ACQUISITION[0m
+[0;32mI (21881) NIRduino: ADC sampling timer stopped.[0m
+[0;32mI (21881) NIRduino: Storage Task: Received command 1[0m
+[0;32mI (21882) NIRduino: Sending battery level over BLE![0m
+[0;32mI (21882) NIRduino: Saving LED intensities to NVS...[0m
+Source: 16 | Cycle Time: 4150 us
+[0;32mI (21883) NIRduino: Battery level: 29[0m
+[0;32mI (21883) NIRduino: LED intensities saved successfully[0m
+[0;32mI (21883) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (21883) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (21884) NimBLE: att_handle=16
+[0m
+[0;32mI (34355) NIRduino: LEDCallback: Received command code 1 with 32 bytes of data[0m
+[0;32mI (34355) NIRduino: LEDCallback: Updated 32 LED intensity values.[0m
+[0;32mI (34355) NIRduino: New intensities: LED[0]=255, LED[1]=255, LED[2]=255, LED[3]=255[0m
+[0;32mI (34356) NIRduino: Command: START DATA ACQUISITION[0m
+[0;32mI (34356) NIRduino: Storage Task: Received command 1[0m
+[0;32mI (34356) NIRduino: ADC sampling timer started for 222 Hz.[0m
+[0;32mI (34356) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (34356) NIRduino: Sending battery level over BLE![0m
+[0;32mI (34357) NIRduino: LED intensities saved successfully[0m
+[0;32mI (34357) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (34358) NIRduino: Battery level: 29[0m
+[0;32mI (34358) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34358) NimBLE: att_handle=16
+[0m
+Source: 17 | Cycle Time: 3874 us
+Source: 18 | Cycle Time: 3783 us
+Source: 19 | Cycle Time: 3755 us
+Source: 20 | Cycle Time: 3780 us
+Source: 21 | Cycle Time: 3750 us
+Source: 22 | Cycle Time: 3740 us
+Source: 23 | Cycle Time: 3872 us
+Source: 24 | Cycle Time: 3746 us
+Source: 25 | Cycle Time: 3773 us
+Source: 26 | Cycle Time: 3782 us
+Source: 27 | Cycle Time: 3760 us
+Source: 28 | Cycle Time: 3754 us
+Source: 29 | Cycle Time: 3755 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3746 us
+Source: 32 | Cycle Time: 3241 us
+[0;32mI (34431) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34431) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34432) NimBLE: att_handle=16
+[0m
+[0;32mI (34432) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3894 us
+[0;32mI (34438) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34438) NimBLE: att_handle=19
+[0m
+[0;32mI (34438) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3803 us
+[0;32mI (34444) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34444) NimBLE: att_handle=19
+[0m
+[0;32mI (34445) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3946 us
+[0;32mI (34450) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3843 us
+[0;32mI (34450) NimBLE: att_handle=19
+[0m
+[0;32mI (34451) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3864 us
+[0;32mI (34456) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34456) NimBLE: att_handle=16
+[0m
+[0;32mI (34456) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3860 us
+[0;32mI (34462) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3869 us
+Source: 7  | Cycle Time: 3783 us
+Source: 8  | Cycle Time: 3771 us
+Source: 9  | Cycle Time: 3804 us
+Source: 10 | Cycle Time: 3825 us
+Source: 11 | Cycle Time: 3769 us
+Source: 12 | Cycle Time: 3771 us
+Source: 13 | Cycle Time: 3753 us
+Source: 14 | Cycle Time: 3809 us
+Source: 15 | Cycle Time: 3757 us
+Source: 16 | Cycle Time: 3789 us
+Source: 17 | Cycle Time: 3903 us
+Source: 18 | Cycle Time: 3954 us
+Source: 19 | Cycle Time: 3759 us
+Source: 20 | Cycle Time: 3770 us
+Source: 21 | Cycle Time: 3775 us
+Source: 22 | Cycle Time: 3760 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3747 us
+Source: 25 | Cycle Time: 3748 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3744 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3757 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3746 us
+Source: 32 | Cycle Time: 3247 us
+[0;32mI (34580) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34580) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34580) NimBLE: att_handle=16
+[0m
+[0;32mI (34581) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3904 us
+[0;32mI (34586) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34586) NimBLE: att_handle=19
+[0m
+[0;32mI (34587) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3811 us
+[0;32mI (34592) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34592) NimBLE: att_handle=19
+[0m
+[0;32mI (34593) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3870 us
+[0;32mI (34598) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34598) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3922 us
+[0;32mI (34599) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3936 us
+[0;32mI (34604) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34604) NimBLE: att_handle=16
+[0m
+[0;32mI (34605) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3807 us
+[0;32mI (34610) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3929 us
+Source: 7  | Cycle Time: 3784 us
+Source: 8  | Cycle Time: 3775 us
+Source: 9  | Cycle Time: 3769 us
+Source: 10 | Cycle Time: 3764 us
+Source: 11 | Cycle Time: 3791 us
+Source: 12 | Cycle Time: 3782 us
+Source: 13 | Cycle Time: 3749 us
+Source: 14 | Cycle Time: 3743 us
+Source: 15 | Cycle Time: 3738 us
+Source: 16 | Cycle Time: 3756 us
+Source: 17 | Cycle Time: 3751 us
+Source: 18 | Cycle Time: 3769 us
+Source: 19 | Cycle Time: 3769 us
+Source: 20 | Cycle Time: 3765 us
+Source: 21 | Cycle Time: 3796 us
+Source: 22 | Cycle Time: 3768 us
+Source: 23 | Cycle Time: 3759 us
+Source: 24 | Cycle Time: 3775 us
+Source: 25 | Cycle Time: 3758 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3750 us
+Source: 31 | Cycle Time: 3744 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (34728) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34729) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34729) NimBLE: att_handle=16
+[0m
+[0;32mI (34730) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3835 us
+[0;32mI (34735) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34735) NimBLE: att_handle=19
+[0m
+[0;32mI (34736) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3823 us
+[0;32mI (34741) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34741) NimBLE: att_handle=19
+[0m
+[0;32mI (34742) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3831 us
+[0;32mI (34747) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34747) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3871 us
+[0;32mI (34748) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3916 us
+[0;32mI (34753) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34753) NimBLE: att_handle=16
+[0m
+[0;32mI (34754) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3860 us
+[0;32mI (34759) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3868 us
+Source: 7  | Cycle Time: 3781 us
+Source: 8  | Cycle Time: 3818 us
+Source: 9  | Cycle Time: 3765 us
+Source: 10 | Cycle Time: 3785 us
+Source: 11 | Cycle Time: 3813 us
+Source: 12 | Cycle Time: 3784 us
+Source: 13 | Cycle Time: 3774 us
+Source: 14 | Cycle Time: 3781 us
+Source: 15 | Cycle Time: 3777 us
+Source: 16 | Cycle Time: 3823 us
+Source: 17 | Cycle Time: 3806 us
+Source: 18 | Cycle Time: 3760 us
+Source: 19 | Cycle Time: 3768 us
+Source: 20 | Cycle Time: 3788 us
+Source: 21 | Cycle Time: 3780 us
+Source: 22 | Cycle Time: 3755 us
+Source: 23 | Cycle Time: 3752 us
+Source: 24 | Cycle Time: 3747 us
+Source: 25 | Cycle Time: 3750 us
+Source: 26 | Cycle Time: 3751 us
+Source: 27 | Cycle Time: 3747 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3752 us
+Source: 30 | Cycle Time: 3759 us
+Source: 31 | Cycle Time: 3753 us
+Source: 32 | Cycle Time: 3245 us
+[0;32mI (34877) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (34877) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34878) NimBLE: att_handle=16
+[0m
+[0;32mI (34878) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3922 us
+[0;32mI (34884) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34884) NimBLE: att_handle=19
+[0m
+[0;32mI (34885) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3837 us
+[0;32mI (34890) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34890) NimBLE: att_handle=19
+[0m
+[0;32mI (34891) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3901 us
+[0;32mI (34896) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3879 us
+[0;32mI (34896) NimBLE: att_handle=19
+[0m
+[0;32mI (34897) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3837 us
+[0;32mI (34902) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (34902) NimBLE: att_handle=16
+[0m
+[0;32mI (34903) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3898 us
+[0;32mI (34908) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3878 us
+Source: 7  | Cycle Time: 3969 us
+Source: 8  | Cycle Time: 3819 us
+Source: 9  | Cycle Time: 3756 us
+Source: 10 | Cycle Time: 3797 us
+Source: 11 | Cycle Time: 3834 us
+Source: 12 | Cycle Time: 3739 us
+Source: 13 | Cycle Time: 3779 us
+Source: 14 | Cycle Time: 3824 us
+Source: 15 | Cycle Time: 3805 us
+Source: 16 | Cycle Time: 3775 us
+Source: 17 | Cycle Time: 3759 us
+Source: 18 | Cycle Time: 3796 us
+Source: 19 | Cycle Time: 3746 us
+Source: 20 | Cycle Time: 3755 us
+Source: 21 | Cycle Time: 3751 us
+Source: 22 | Cycle Time: 3776 us
+Source: 23 | Cycle Time: 3760 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3750 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3748 us
+Source: 28 | Cycle Time: 3753 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3754 us
+Source: 31 | Cycle Time: 3755 us
+Source: 32 | Cycle Time: 3238 us
+[0;32mI (35026) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35026) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35026) NimBLE: att_handle=16
+[0m
+[0;32mI (35027) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3891 us
+[0;32mI (35032) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35032) NimBLE: att_handle=19
+[0m
+[0;32mI (35033) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3816 us
+[0;32mI (35038) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35038) NimBLE: att_handle=19
+[0m
+[0;32mI (35038) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3866 us
+[0;32mI (35044) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35044) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3845 us
+[0;32mI (35045) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3927 us
+[0;32mI (35050) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35050) NimBLE: att_handle=16
+[0m
+[0;32mI (35051) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3806 us
+[0;32mI (35056) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3889 us
+Source: 7  | Cycle Time: 3790 us
+Source: 8  | Cycle Time: 3767 us
+Source: 9  | Cycle Time: 3800 us
+Source: 10 | Cycle Time: 3761 us
+Source: 11 | Cycle Time: 3839 us
+Source: 12 | Cycle Time: 3763 us
+Source: 13 | Cycle Time: 3804 us
+Source: 14 | Cycle Time: 3752 us
+Source: 15 | Cycle Time: 3790 us
+Source: 16 | Cycle Time: 3768 us
+Source: 17 | Cycle Time: 3769 us
+Source: 18 | Cycle Time: 3719 us
+Source: 19 | Cycle Time: 3780 us
+Source: 20 | Cycle Time: 3816 us
+Source: 21 | Cycle Time: 3761 us
+Source: 22 | Cycle Time: 3772 us
+Source: 23 | Cycle Time: 3755 us
+Source: 24 | Cycle Time: 3748 us
+Source: 25 | Cycle Time: 3749 us
+Source: 26 | Cycle Time: 3743 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3772 us
+Source: 31 | Cycle Time: 3772 us
+Source: 32 | Cycle Time: 3244 us
+[0;32mI (35174) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35175) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35175) NimBLE: att_handle=16
+[0m
+[0;32mI (35176) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3936 us
+[0;32mI (35181) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35181) NimBLE: att_handle=19
+[0m
+[0;32mI (35182) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3856 us
+[0;32mI (35187) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35187) NimBLE: att_handle=19
+[0m
+[0;32mI (35188) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3876 us
+[0;32mI (35193) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3878 us
+[0;32mI (35193) NimBLE: att_handle=19
+[0m
+[0;32mI (35194) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3867 us
+[0;32mI (35199) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35199) NimBLE: att_handle=16
+[0m
+[0;32mI (35200) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3923 us
+[0;32mI (35205) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3881 us
+Source: 7  | Cycle Time: 4003 us
+Source: 8  | Cycle Time: 3792 us
+Source: 9  | Cycle Time: 3870 us
+Source: 10 | Cycle Time: 3803 us
+Source: 11 | Cycle Time: 3799 us
+Source: 12 | Cycle Time: 3768 us
+Source: 13 | Cycle Time: 3792 us
+Source: 14 | Cycle Time: 3785 us
+Source: 15 | Cycle Time: 3780 us
+Source: 16 | Cycle Time: 3772 us
+Source: 17 | Cycle Time: 3766 us
+Source: 18 | Cycle Time: 3793 us
+Source: 19 | Cycle Time: 3772 us
+Source: 20 | Cycle Time: 3761 us
+Source: 21 | Cycle Time: 3745 us
+Source: 22 | Cycle Time: 3747 us
+Source: 23 | Cycle Time: 3749 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3748 us
+Source: 26 | Cycle Time: 3754 us
+Source: 27 | Cycle Time: 3746 us
+Source: 28 | Cycle Time: 3750 us
+Source: 29 | Cycle Time: 3749 us
+Source: 30 | Cycle Time: 3758 us
+Source: 31 | Cycle Time: 3747 us
+Source: 32 | Cycle Time: 3241 us
+[0;32mI (35323) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35323) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35323) NimBLE: att_handle=16
+[0m
+[0;32mI (35324) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3913 us
+[0;32mI (35330) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35330) NimBLE: att_handle=19
+[0m
+[0;32mI (35331) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3878 us
+[0;32mI (35336) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35336) NimBLE: att_handle=19
+[0m
+[0;32mI (35337) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3925 us
+Source: 3  | Cycle Time: 3859 us
+[0;32mI (35342) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35342) NimBLE: att_handle=19
+[0m
+[0;32mI (35342) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3816 us
+[0;32mI (35348) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35348) NimBLE: att_handle=16
+[0m
+[0;32mI (35349) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3865 us
+[0;32mI (35354) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3876 us
+Source: 7  | Cycle Time: 3789 us
+Source: 8  | Cycle Time: 3760 us
+Source: 9  | Cycle Time: 3795 us
+Source: 10 | Cycle Time: 3854 us
+Source: 11 | Cycle Time: 3817 us
+Source: 12 | Cycle Time: 3749 us
+Source: 13 | Cycle Time: 3799 us
+Source: 14 | Cycle Time: 3760 us
+Source: 15 | Cycle Time: 3769 us
+Source: 16 | Cycle Time: 3795 us
+Source: 17 | Cycle Time: 3766 us
+Source: 18 | Cycle Time: 3985 us
+Source: 19 | Cycle Time: 3773 us
+Source: 20 | Cycle Time: 3753 us
+Source: 21 | Cycle Time: 3759 us
+Source: 22 | Cycle Time: 3745 us
+Source: 23 | Cycle Time: 3748 us
+Source: 24 | Cycle Time: 3751 us
+Source: 25 | Cycle Time: 3747 us
+Source: 26 | Cycle Time: 3750 us
+Source: 27 | Cycle Time: 3744 us
+Source: 28 | Cycle Time: 3746 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3756 us
+Source: 32 | Cycle Time: 3241 us
+[0;32mI (35472) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35472) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35472) NimBLE: att_handle=16
+[0m
+[0;32mI (35473) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3850 us
+[0;32mI (35479) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35479) NimBLE: att_handle=19
+[0m
+[0;32mI (35480) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3822 us
+[0;32mI (35485) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35485) NimBLE: att_handle=19
+[0m
+[0;32mI (35486) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3876 us
+Source: 3  | Cycle Time: 3872 us
+[0;32mI (35491) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35491) NimBLE: att_handle=19
+[0m
+[0;32mI (35492) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3777 us
+[0;32mI (35497) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35497) NimBLE: att_handle=16
+[0m
+[0;32mI (35498) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3888 us
+[0;32mI (35503) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3896 us
+Source: 7  | Cycle Time: 3821 us
+Source: 8  | Cycle Time: 3900 us
+Source: 9  | Cycle Time: 3814 us
+Source: 10 | Cycle Time: 3753 us
+Source: 11 | Cycle Time: 3783 us
+Source: 12 | Cycle Time: 3769 us
+Source: 13 | Cycle Time: 3768 us
+Source: 14 | Cycle Time: 3754 us
+Source: 15 | Cycle Time: 3764 us
+Source: 16 | Cycle Time: 3791 us
+Source: 17 | Cycle Time: 3788 us
+Source: 18 | Cycle Time: 3768 us
+Source: 19 | Cycle Time: 3786 us
+Source: 20 | Cycle Time: 3767 us
+Source: 21 | Cycle Time: 3758 us
+Source: 22 | Cycle Time: 3753 us
+Source: 23 | Cycle Time: 3750 us
+Source: 24 | Cycle Time: 3753 us
+Source: 25 | Cycle Time: 3791 us
+Source: 26 | Cycle Time: 3751 us
+Source: 27 | Cycle Time: 3764 us
+Source: 28 | Cycle Time: 3747 us
+Source: 29 | Cycle Time: 3752 us
+Source: 30 | Cycle Time: 3800 us
+Source: 31 | Cycle Time: 3751 us
+Source: 32 | Cycle Time: 3246 us
+[0;32mI (35620) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35620) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35621) NimBLE: att_handle=16
+[0m
+[0;32mI (35622) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3925 us
+[0;32mI (35627) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35627) NimBLE: att_handle=19
+[0m
+[0;32mI (35627) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3815 us
+[0;32mI (35633) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35633) NimBLE: att_handle=19
+[0m
+[0;32mI (35634) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3889 us
+[0;32mI (35639) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3910 us
+[0;32mI (35639) NimBLE: att_handle=19
+[0m
+[0;32mI (35640) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3881 us
+[0;32mI (35646) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35646) NimBLE: att_handle=16
+[0m
+[0;32mI (35647) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 4305 us
+[0;32mI (35652) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3870 us
+Source: 7  | Cycle Time: 3738 us
+Source: 8  | Cycle Time: 3778 us
+Source: 9  | Cycle Time: 3770 us
+Source: 10 | Cycle Time: 3778 us
+Source: 11 | Cycle Time: 3783 us
+Source: 12 | Cycle Time: 3746 us
+Source: 13 | Cycle Time: 3813 us
+Source: 14 | Cycle Time: 3765 us
+Source: 15 | Cycle Time: 3789 us
+Source: 16 | Cycle Time: 3803 us
+Source: 17 | Cycle Time: 3800 us
+Source: 18 | Cycle Time: 3782 us
+Source: 19 | Cycle Time: 3781 us
+Source: 20 | Cycle Time: 3775 us
+Source: 21 | Cycle Time: 3777 us
+Source: 22 | Cycle Time: 3745 us
+Source: 23 | Cycle Time: 3746 us
+Source: 24 | Cycle Time: 3770 us
+Source: 25 | Cycle Time: 3717 us
+Source: 26 | Cycle Time: 3750 us
+Source: 27 | Cycle Time: 3750 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3750 us
+Source: 30 | Cycle Time: 3747 us
+Source: 31 | Cycle Time: 3749 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (35769) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35769) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35769) NimBLE: att_handle=16
+[0m
+[0;32mI (35770) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3838 us
+[0;32mI (35776) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35776) NimBLE: att_handle=19
+[0m
+[0;32mI (35776) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3815 us
+[0;32mI (35782) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35782) NimBLE: att_handle=19
+[0m
+[0;32mI (35782) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3905 us
+Source: 3  | Cycle Time: 3836 us
+[0;32mI (35788) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35788) NimBLE: att_handle=19
+[0m
+[0;32mI (35789) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3820 us
+[0;32mI (35794) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35794) NimBLE: att_handle=16
+[0m
+[0;32mI (35794) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3889 us
+[0;32mI (35800) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3905 us
+Source: 7  | Cycle Time: 3799 us
+Source: 8  | Cycle Time: 3801 us
+Source: 9  | Cycle Time: 3775 us
+Source: 10 | Cycle Time: 3760 us
+Source: 11 | Cycle Time: 3803 us
+Source: 12 | Cycle Time: 3801 us
+Source: 13 | Cycle Time: 3780 us
+Source: 14 | Cycle Time: 3835 us
+Source: 15 | Cycle Time: 3805 us
+Source: 16 | Cycle Time: 3797 us
+Source: 17 | Cycle Time: 3770 us
+Source: 18 | Cycle Time: 3804 us
+Source: 19 | Cycle Time: 3764 us
+Source: 20 | Cycle Time: 3768 us
+Source: 21 | Cycle Time: 3768 us
+Source: 22 | Cycle Time: 3777 us
+Source: 23 | Cycle Time: 3769 us
+Source: 24 | Cycle Time: 3770 us
+Source: 25 | Cycle Time: 3789 us
+Source: 26 | Cycle Time: 3751 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (35917) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (35918) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35918) NimBLE: att_handle=16
+[0m
+[0;32mI (35919) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3881 us
+[0;32mI (35924) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35924) NimBLE: att_handle=19
+[0m
+[0;32mI (35925) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3802 us
+[0;32mI (35930) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35930) NimBLE: att_handle=19
+[0m
+[0;32mI (35931) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3848 us
+[0;32mI (35936) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3876 us
+[0;32mI (35936) NimBLE: att_handle=19
+[0m
+[0;32mI (35937) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3892 us
+[0;32mI (35943) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35943) NimBLE: att_handle=16
+[0m
+[0;32mI (35943) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3826 us
+[0;32mI (35949) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3852 us
+Source: 7  | Cycle Time: 3758 us
+Source: 8  | Cycle Time: 3747 us
+Source: 9  | Cycle Time: 3794 us
+Source: 10 | Cycle Time: 3787 us
+Source: 11 | Cycle Time: 3749 us
+Source: 12 | Cycle Time: 3802 us
+Source: 13 | Cycle Time: 3919 us
+Source: 14 | Cycle Time: 3829 us
+Source: 15 | Cycle Time: 3921 us
+Source: 16 | Cycle Time: 3806 us
+Source: 17 | Cycle Time: 3775 us
+Source: 18 | Cycle Time: 3753 us
+Source: 19 | Cycle Time: 3787 us
+Source: 20 | Cycle Time: 3776 us
+Source: 21 | Cycle Time: 3776 us
+Source: 22 | Cycle Time: 3816 us
+Source: 23 | Cycle Time: 3806 us
+Source: 24 | Cycle Time: 3775 us
+Source: 25 | Cycle Time: 3758 us
+Source: 26 | Cycle Time: 3744 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3745 us
+Source: 30 | Cycle Time: 3745 us
+Source: 31 | Cycle Time: 3749 us
+Source: 32 | Cycle Time: 3261 us
+[0;32mI (36066) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36066) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36067) NimBLE: att_handle=16
+[0m
+[0;32mI (36067) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3845 us
+[0;32mI (36074) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36074) NimBLE: att_handle=19
+[0m
+[0;32mI (36075) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3819 us
+[0;32mI (36080) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36080) NimBLE: att_handle=19
+[0m
+Source: 2  | Cycle Time: 3851 us
+[0;32mI (36081) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | Cycle Time: 3884 us
+[0;32mI (36086) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36086) NimBLE: att_handle=19
+[0m
+[0;32mI (36087) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3831 us
+[0;32mI (36092) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36092) NimBLE: att_handle=16
+[0m
+[0;32mI (36092) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3876 us
+[0;32mI (36098) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3908 us
+Source: 7  | Cycle Time: 3791 us
+Source: 8  | Cycle Time: 3762 us
+Source: 9  | Cycle Time: 3765 us
+Source: 10 | Cycle Time: 3828 us
+Source: 11 | Cycle Time: 3822 us
+Source: 12 | Cycle Time: 3774 us
+Source: 13 | Cycle Time: 3804 us
+Source: 14 | Cycle Time: 3794 us
+Source: 15 | Cycle Time: 3828 us
+Source: 16 | Cycle Time: 3797 us
+Source: 17 | Cycle Time: 3799 us
+Source: 18 | Cycle Time: 3781 us
+Source: 19 | Cycle Time: 3752 us
+Source: 20 | Cycle Time: 3755 us
+Source: 21 | Cycle Time: 3763 us
+Source: 22 | Cycle Time: 3761 us
+Source: 23 | Cycle Time: 3768 us
+Source: 24 | Cycle Time: 3770 us
+Source: 25 | Cycle Time: 3759 us
+Source: 26 | Cycle Time: 3747 us
+Source: 27 | Cycle Time: 3739 us
+Source: 28 | Cycle Time: 3749 us
+Source: 29 | Cycle Time: 3752 us
+Source: 30 | Cycle Time: 3748 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3241 us
+[0;32mI (36215) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36215) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36215) NimBLE: att_handle=16
+[0m
+[0;32mI (36216) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3857 us
+[0;32mI (36221) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36221) NimBLE: att_handle=19
+[0m
+[0;32mI (36222) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3820 us
+[0;32mI (36227) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36227) NimBLE: att_handle=19
+[0m
+[0;32mI (36228) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3858 us
+[0;32mI (36233) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36233) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3864 us
+[0;32mI (36234) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3884 us
+[0;32mI (36239) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36239) NimBLE: att_handle=16
+[0m
+[0;32mI (36240) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3808 us
+[0;32mI (36245) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3880 us
+Source: 7  | Cycle Time: 3767 us
+Source: 8  | Cycle Time: 3775 us
+Source: 9  | Cycle Time: 3763 us
+Source: 10 | Cycle Time: 3785 us
+Source: 11 | Cycle Time: 3777 us
+Source: 12 | Cycle Time: 3785 us
+Source: 13 | Cycle Time: 3788 us
+Source: 14 | Cycle Time: 3732 us
+Source: 15 | Cycle Time: 3767 us
+Source: 16 | Cycle Time: 3772 us
+Source: 17 | Cycle Time: 3786 us
+Source: 18 | Cycle Time: 3801 us
+Source: 19 | Cycle Time: 3779 us
+Source: 20 | Cycle Time: 3786 us
+Source: 21 | Cycle Time: 3760 us
+Source: 22 | Cycle Time: 3787 us
+Source: 23 | Cycle Time: 3706 us
+Source: 24 | Cycle Time: 3756 us
+Source: 25 | Cycle Time: 3748 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3744 us
+Source: 29 | Cycle Time: 3761 us
+Source: 30 | Cycle Time: 3750 us
+Source: 31 | Cycle Time: 3745 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (36363) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36364) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36364) NimBLE: att_handle=16
+[0m
+[0;32mI (36365) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3839 us
+[0;32mI (36370) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36370) NimBLE: att_handle=19
+[0m
+[0;32mI (36370) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3818 us
+[0;32mI (36376) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36376) NimBLE: att_handle=19
+[0m
+[0;32mI (36376) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3870 us
+[0;32mI (36382) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36382) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3861 us
+[0;32mI (36383) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3899 us
+[0;32mI (36388) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36388) NimBLE: att_handle=16
+[0m
+[0;32mI (36388) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3785 us
+[0;32mI (36394) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3874 us
+Source: 7  | Cycle Time: 3755 us
+Source: 8  | Cycle Time: 3835 us
+Source: 9  | Cycle Time: 3755 us
+Source: 10 | Cycle Time: 3758 us
+Source: 11 | Cycle Time: 3838 us
+Source: 12 | Cycle Time: 3808 us
+Source: 13 | Cycle Time: 3780 us
+Source: 14 | Cycle Time: 3767 us
+Source: 15 | Cycle Time: 3759 us
+Source: 16 | Cycle Time: 3791 us
+Source: 17 | Cycle Time: 3800 us
+Source: 18 | Cycle Time: 3774 us
+Source: 19 | Cycle Time: 3770 us
+Source: 20 | Cycle Time: 3778 us
+Source: 21 | Cycle Time: 3755 us
+Source: 22 | Cycle Time: 3732 us
+Source: 23 | Cycle Time: 3759 us
+Source: 24 | Cycle Time: 3748 us
+Source: 25 | Cycle Time: 3743 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3734 us
+Source: 28 | Cycle Time: 3781 us
+Source: 29 | Cycle Time: 3774 us
+Source: 30 | Cycle Time: 3761 us
+Source: 31 | Cycle Time: 3773 us
+Source: 32 | Cycle Time: 3265 us
+[0;32mI (36512) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36512) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36513) NimBLE: att_handle=16
+[0m
+[0;32mI (36513) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3942 us
+[0;32mI (36519) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36519) NimBLE: att_handle=19
+[0m
+[0;32mI (36520) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3831 us
+[0;32mI (36525) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36525) NimBLE: att_handle=19
+[0m
+[0;32mI (36526) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3889 us
+Source: 3  | Cycle Time: 3877 us
+[0;32mI (36531) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36531) NimBLE: att_handle=19
+[0m
+[0;32mI (36532) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3852 us
+[0;32mI (36537) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36537) NimBLE: att_handle=16
+[0m
+[0;32mI (36537) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3896 us
+[0;32mI (36543) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3865 us
+Source: 7  | Cycle Time: 3763 us
+Source: 8  | Cycle Time: 3818 us
+Source: 9  | Cycle Time: 3763 us
+Source: 10 | Cycle Time: 3781 us
+Source: 11 | Cycle Time: 3778 us
+Source: 12 | Cycle Time: 3772 us
+Source: 13 | Cycle Time: 3768 us
+Source: 14 | Cycle Time: 3766 us
+Source: 15 | Cycle Time: 3788 us
+Source: 16 | Cycle Time: 3774 us
+Source: 17 | Cycle Time: 3793 us
+Source: 18 | Cycle Time: 3755 us
+Source: 19 | Cycle Time: 3780 us
+Source: 20 | Cycle Time: 3820 us
+Source: 21 | Cycle Time: 3745 us
+Source: 22 | Cycle Time: 3744 us
+Source: 23 | Cycle Time: 3745 us
+Source: 24 | Cycle Time: 3749 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3745 us
+Source: 28 | Cycle Time: 3754 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3751 us
+Source: 31 | Cycle Time: 3743 us
+Source: 32 | Cycle Time: 3240 us
+[0;32mI (36661) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36661) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36661) NimBLE: att_handle=16
+[0m
+[0;32mI (36662) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3891 us
+[0;32mI (36667) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36667) NimBLE: att_handle=19
+[0m
+[0;32mI (36668) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3835 us
+[0;32mI (36673) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36673) NimBLE: att_handle=19
+[0m
+[0;32mI (36674) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3998 us
+[0;32mI (36679) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36679) NimBLE: att_handle=19
+[0m
+Source: 3  | Cycle Time: 3905 us
+[0;32mI (36680) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3873 us
+[0;32mI (36685) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36685) NimBLE: att_handle=16
+[0m
+[0;32mI (36686) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3832 us
+[0;32mI (36691) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3882 us
+Source: 7  | Cycle Time: 3787 us
+Source: 8  | Cycle Time: 3774 us
+Source: 9  | Cycle Time: 3806 us
+Source: 10 | Cycle Time: 3790 us
+Source: 11 | Cycle Time: 3803 us
+Source: 12 | Cycle Time: 3786 us
+Source: 13 | Cycle Time: 3752 us
+Source: 14 | Cycle Time: 3826 us
+Source: 15 | Cycle Time: 3783 us
+Source: 16 | Cycle Time: 3767 us
+Source: 17 | Cycle Time: 3754 us
+Source: 18 | Cycle Time: 3793 us
+Source: 19 | Cycle Time: 3762 us
+Source: 20 | Cycle Time: 3749 us
+Source: 21 | Cycle Time: 3750 us
+Source: 22 | Cycle Time: 3743 us
+Source: 23 | Cycle Time: 3749 us
+Source: 24 | Cycle Time: 3744 us
+Source: 25 | Cycle Time: 3745 us
+Source: 26 | Cycle Time: 3745 us
+Source: 27 | Cycle Time: 3751 us
+Source: 28 | Cycle Time: 3748 us
+Source: 29 | Cycle Time: 3749 us
+Source: 30 | Cycle Time: 3751 us
+Source: 31 | Cycle Time: 3751 us
+Source: 32 | Cycle Time: 3247 us
+[0;32mI (36809) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36810) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36810) NimBLE: att_handle=16
+[0m
+[0;32mI (36811) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3873 us
+[0;32mI (36816) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36816) NimBLE: att_handle=19
+[0m
+[0;32mI (36817) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3835 us
+[0;32mI (36822) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36822) NimBLE: att_handle=19
+[0m
+[0;32mI (36823) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3878 us
+[0;32mI (36828) NimBLE: GATT procedure initiated: notify; [0m
+Source: 3  | Cycle Time: 3889 us
+[0;32mI (36828) NimBLE: att_handle=19
+[0m
+[0;32mI (36829) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3876 us
+[0;32mI (36834) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36834) NimBLE: att_handle=16
+[0m
+[0;32mI (36835) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3861 us
+[0;32mI (36840) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3990 us
+Source: 7  | Cycle Time: 3806 us
+Source: 8  | Cycle Time: 3785 us
+Source: 9  | Cycle Time: 3783 us
+Source: 10 | Cycle Time: 3752 us
+Source: 11 | Cycle Time: 3787 us
+Source: 12 | Cycle Time: 3768 us
+Source: 13 | Cycle Time: 3771 us
+Source: 14 | Cycle Time: 3713 us
+Source: 15 | Cycle Time: 3762 us
+Source: 16 | Cycle Time: 3747 us
+Source: 17 | Cycle Time: 3751 us
+Source: 18 | Cycle Time: 3792 us
+Source: 19 | Cycle Time: 3772 us
+Source: 20 | Cycle Time: 3766 us
+Source: 21 | Cycle Time: 3790 us
+Source: 22 | Cycle Time: 3774 us
+Source: 23 | Cycle Time: 3754 us
+Source: 24 | Cycle Time: 3757 us
+Source: 25 | Cycle Time: 3748 us
+Source: 26 | Cycle Time: 3749 us
+Source: 27 | Cycle Time: 3775 us
+Source: 28 | Cycle Time: 3751 us
+Source: 29 | Cycle Time: 3747 us
+Source: 30 | Cycle Time: 3774 us
+Source: 31 | Cycle Time: 3746 us
+Source: 32 | Cycle Time: 3239 us
+[0;32mI (36958) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (36958) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36958) NimBLE: att_handle=16
+[0m
+[0;32mI (36959) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3835 us
+[0;32mI (36965) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36965) NimBLE: att_handle=19
+[0m
+[0;32mI (36966) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3851 us
+[0;32mI (36971) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36971) NimBLE: att_handle=19
+[0m
+[0;32mI (36972) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3899 us
+Source: 3  | Cycle Time: 3849 us
+[0;32mI (36977) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36977) NimBLE: att_handle=19
+[0m
+[0;32mI (36977) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 4  | Cycle Time: 3846 us
+[0;32mI (36983) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36983) NimBLE: att_handle=16
+[0m
+[0;32mI (36984) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | Cycle Time: 3905 us
+[0;32mI (36989) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | Cycle Time: 3943 us
+Source: 7  | Cycle Time: 3790 us
+Source: 8  | Cycle Time: 3723 us
+Source: 9  | Cycle Time: 3832 us
+Source: 10 | Cycle Time: 3769 us
+Source: 11 | Cycle Time: 3906 us
+Source: 12 | Cycle Time: 3803 us
+Source: 13 | Cycle Time: 3768 us
+Source: 14 | Cycle Time: 3766 us
+Source: 15 | Cycle Time: 3753 us
+Source: 16 | Cycle Time: 3769 us
+Source: 17 | Cycle Time: 3761 us
+Source: 18 | Cycle Time: 3757 us
+Source: 19 | Cycle Time: 3841 us
+Source: 20 | Cycle Time: 3775 us
+Source: 21 | Cycle Time: 3756 us
+Source: 22 | Cycle Time: 3743 us
+Source: 23 | Cycle Time: 3751 us
+Source: 24 | Cycle Time: 3743 us
+Source: 25 | Cycle Time: 3747 us
+Source: 26 | Cycle Time: 3750 us
+Source: 27 | Cycle Time: 3751 us
+Source: 28 | Cycle Time: 3750 us
+Source: 29 | Cycle Time: 3746 us
+Source: 30 | Cycle Time: 3749 us
+Source: 31 | Cycle Time: 3796 us
+Source: 32 | Cycle Time: 3239 us
+[0;32mI (37107) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (37107) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37107) NimBLE: att_handle=16
+[0m
+[0;32mI (37108) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | Cycle Time: 3851 us
+[0;32mI (37113) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37113) NimBLE: att_handle=19
+[0m
+[0;32mI (37114) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | Cycle Time: 3817 us
+[0;32mI (37119) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37119) NimBLE: att_handle=19
+[0m
+[0;32mI (37120) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | Cycle Time: 3877 us
+[0;32mI (37122) NIRduino: LEDCallback: Received command code 3 with 0 bytes of data[0m
+[0;32mI (37122) NIRduino: Command: STOP DATA ACQUISITION[0m
+[0;32mI (37123) NIRduino: ADC sampling timer stopped.[0m
+[0;32mI (37123) NIRduino: Storage Task: Received command 1[0m
+[0;32mI (37123) NIRduino: Sending battery level over BLE![0m
+[0;32mI (37123) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (37124) NIRduino: Battery level: 29[0m
+[0;32mI (37124) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37125) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37125) NimBLE: att_handle=16
+[0m
+Source: 3  | Cycle Time: 4244 us
+[0;32mI (37125) NimBLE: att_handle=19
+[0m
+[0;32mI (37126) NIRduino: LED intensities saved successfully[0m
+[0;32mI (37126) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (37126) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+[0;32mI (37132) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37132) NimBLE: att_handle=16
+[0m
+[0;32mI (37132) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+[0;32mI (37138) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m

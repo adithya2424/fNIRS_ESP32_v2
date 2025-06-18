@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

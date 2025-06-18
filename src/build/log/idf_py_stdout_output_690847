@@ -1,0 +1,32 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader/esp-idf/esptool_py && /home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/adithyapamulaparthi/nimble_test_nirduino/build/bootloader/bootloader.bin
+Bootloader binary size 0x56a0 bytes. 0x2960 bytes (32%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp: In function 'void dual_adc_test()':
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp:544:5: warning: missing initializer for member 'spi_bus_config_t::data4_io_num' [-Wmissing-field-initializers]
+  544 |     };
+      |     ^
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp:544:5: warning: missing initializer for member 'spi_bus_config_t::data5_io_num' [-Wmissing-field-initializers]
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp:544:5: warning: missing initializer for member 'spi_bus_config_t::data6_io_num' [-Wmissing-field-initializers]
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp:544:5: warning: missing initializer for member 'spi_bus_config_t::data7_io_num' [-Wmissing-field-initializers]
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp:593:5: warning: missing initializer for member 'ads1256_config_t::spi_handle' [-Wmissing-field-initializers]
+  593 |     };
+      |     ^
+/home/adithyapamulaparthi/nimble_test_nirduino/main/main.cpp:600:5: warning: missing initializer for member 'ads1256_config_t::spi_handle' [-Wmissing-field-initializers]
+  600 |     };
+      |     ^
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+warning: default on the choice symbol BT_NIMBLE_ENABLED (defined at /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/bt/Kconfig:23, /home/adithyapamulaparthi/nimble_test_nirduino/components/esp-nimble-cpp/Kconfig:217) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol BT_NIMBLE_ENABLED (defined at /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/bt/Kconfig:23, /home/adithyapamulaparthi/nimble_test_nirduino/components/esp-nimble-cpp/Kconfig:217) is defined with a prompt outside the choice
+[7/9] Linking CXX executable app.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/adithyapamulaparthi/nimble_test_nirduino/build/app.bin
+[9/9] cd /home/adithyapamulaparthi/nimble_test_nirduino/build/esp-idf/esptool_py && /home/adithyapamulaparthi/.espressif/python_env/idf5.1_py3.9_env/bin/python /home/adithyapamulaparthi/esp/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/adithyapamulaparthi/nimble_test_nirduino/build/partition_table/partition-table.bin /home/adithyapamulaparthi/nimble_test_nirduino/build/app.bin
+app.bin binary size 0xa00f0 bytes. Smallest app partition is 0x100000 bytes. 0x5ff10 bytes (37%) free.

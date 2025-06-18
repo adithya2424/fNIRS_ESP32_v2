@@ -1,0 +1,1571 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008c73
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18e4
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd90
+load:0x403cc700,len:0x2fcc
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 18 2025 03:09:54[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=21584h (136580) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000315ac vaddr=3fc9b100 size=043f0h ( 17392) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=000359a4 vaddr=40374000 size=0a674h ( 42612) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=60fd4h (397268) map[0m
+[0;32mI (201) esp_image: segment 4: paddr=000a0ffc vaddr=4037e674 size=0c9c8h ( 51656) load[0m
+[0;32mI (220) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (221) boot: Disabling RNG early entropy source...[0m
+[0;32mI (221) cpu_start: Multicore app[0m
+[0;32mI (225) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (230) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (236) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (241) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (246) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (252) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (257) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (262) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (268) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (274) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (280) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (286) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (290) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (295) esp_psram: Speed: 80MHz[0m
+[0;32mI (299) cpu_start: Pro cpu up.[0m
+[0;32mI (303) cpu_start: Starting app cpu, entry point is 0x40375888[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (722) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (907) cpu_start: Pro cpu start user code[0m
+[0;32mI (907) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (907) cpu_start: Application information:[0m
+[0;32mI (907) cpu_start: Project name:     app[0m
+[0;32mI (907) cpu_start: App version:      1[0m
+[0;32mI (907) cpu_start: Compile time:     Jun 18 2025 03:09:52[0m
+[0;32mI (908) cpu_start: ELF file SHA256:  1edb4a89c5baa227...[0m
+[0;32mI (908) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (908) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (908) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (909) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (909) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (909) heap_init: At 3FCA32D0 len 00046440 (281 KiB): DRAM[0m
+[0;32mI (909) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (909) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (910) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (910) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (911) spi_flash: detected chip: gd[0m
+[0;32mI (911) spi_flash: flash io: qio[0m
+[0;32mI (911) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (912) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (913) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (913) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (913) coexist: coex firmware version: d96c1e51f[0m
+[0;32mI (913) coexist: coexist rom version e7ae62f[0m
+[0;32mI (914) app_start: Starting scheduler on CPU0[0m
+[0;32mI (914) app_start: Starting scheduler on CPU1[0m
+[0;32mI (914) main_task: Started on CPU0[0m
+[0;32mI (915) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (915) main_task: Calling app_main()[0m
+[0;32mI (916) NIRduino: Starting NIRduino application...[0m
+[0;32mI (925) NIRduino: Initializing GPIO...[0m
+[0;32mI (926) gpio: GPIO[45]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (926) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (926) gpio: GPIO[46]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (926) gpio: GPIO[3]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) gpio: GPIO[13]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) gpio: GPIO[8]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[10]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[17]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (932) NIRduino: MAX17044 detected. Success[0m
+[0;32mI (932) NIRduino: Initializing NVS and LED intensities...[0m
+[0;32mI (932) NIRduino: Checking NVS for LED intensities...[0m
+[0;32mI (933) NIRduino: LED intensities found in NVS[0m
+[0;32mI (933) NIRduino: Loading LED intensities from NVS...[0m
+[0;32mI (934) NIRduino: LED intensities loaded successfully[0m
+[0;32mI (934) NIRduino: Loaded LED intensities:[0m
+[0;32mI (934) NIRduino: LED[0] = 255[0m
+[0;32mI (934) NIRduino: LED[1] = 255[0m
+[0;32mI (934) NIRduino: LED[2] = 255[0m
+[0;32mI (934) NIRduino: LED[3] = 255[0m
+[0;32mI (935) NIRduino: LED[4] = 255[0m
+[0;32mI (935) NIRduino: LED[5] = 255[0m
+[0;32mI (935) NIRduino: LED[6] = 255[0m
+[0;32mI (935) NIRduino: LED[7] = 255[0m
+[0;32mI (935) NIRduino: LED[8] = 255[0m
+[0;32mI (935) NIRduino: LED[9] = 255[0m
+[0;32mI (935) NIRduino: LED[10] = 255[0m
+[0;32mI (935) NIRduino: LED[11] = 255[0m
+[0;32mI (935) NIRduino: LED[12] = 255[0m
+[0;32mI (935) NIRduino: LED[13] = 255[0m
+[0;32mI (936) NIRduino: LED[14] = 255[0m
+[0;32mI (936) NIRduino: LED[15] = 255[0m
+[0;32mI (936) NIRduino: LED[16] = 75[0m
+[0;32mI (936) NIRduino: LED[17] = 64[0m
+[0;32mI (936) NIRduino: LED[18] = 75[0m
+[0;32mI (936) NIRduino: LED[19] = 64[0m
+[0;32mI (936) NIRduino: LED[20] = 75[0m
+[0;32mI (936) NIRduino: LED[21] = 64[0m
+[0;32mI (936) NIRduino: LED[22] = 75[0m
+[0;32mI (937) NIRduino: LED[23] = 64[0m
+[0;32mI (937) NIRduino: LED[24] = 75[0m
+[0;32mI (937) NIRduino: LED[25] = 64[0m
+[0;32mI (937) NIRduino: LED[26] = 75[0m
+[0;32mI (937) NIRduino: LED[27] = 64[0m
+[0;32mI (937) NIRduino: LED[28] = 75[0m
+[0;32mI (937) NIRduino: LED[29] = 64[0m
+[0;32mI (937) NIRduino: LED[30] = 75[0m
+[0;32mI (938) NIRduino: LED[31] = 64[0m
+[0;32mI (938) NIRduino: Creating storage task and queue...[0m
+[0;32mI (938) NIRduino: Storage task started[0m
+[0;32mI (938) NIRduino: Storage task created successfully[0m
+[0;32mI (938) NIRduino: Initializing BLE...[0m
+[0;32mI (938) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (939) BLE_INIT: Bluetooth MAC: 74:4d:bd:75:25:e2
+[0m
+[0;32mI (940) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (977) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (980) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (980) NimBLE: disc_mode=2[0m
+[0;32mI (980) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (980) NimBLE: 
+[0m
+[0;32mI (981) NIRduino: BLE initialized and advertising started[0m
+[0;32mI (981) NIRduino: Initializing ADC system...[0m
+[0;32mI (982) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (982) gpio: GPIO[10]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (983) NIRduino: Initializing ADC1[0m
+[0;32mI (1023) NIRduino: ADC1 initialized and calibrated.[0m
+[0;32mI (1023) NIRduino: Initializing ADC2[0m
+[0;32mI (1063) NIRduino: ADC2 initialized and calibrated.[0m
+[0;32mI (1063) NIRduino: ADC Initialization complete[0m
+[0;32mI (1063) NIRduino: ADC sampling task started.[0m
+[0;32mI (1063) NIRduino: BLE broadcast task started and waiting for data.[0m
+[0;32mI (1063) NIRduino: NIRduino initialization complete[0m
+[0;32mI (1063) main_task: Returned from app_main()[0m
+[0;32mI (15200) NIRduino: Client Connected[0m
+[0;32mI (15200) NIRduino: Negotiated MTU: 23 bytes[0m
+[0;32mI (17599) NIRduino: LEDCallback: Received command code 1 with 32 bytes of data[0m
+[0;32mI (17600) NIRduino: LEDCallback: Updated 32 LED intensity values.[0m
+[0;32mI (17600) NIRduino: New intensities: LED[0]=255, LED[1]=255, LED[2]=255, LED[3]=255[0m
+[0;32mI (17600) NIRduino: Command: START DATA ACQUISITION[0m
+[0;32mI (17600) NIRduino: Storage Task: Received command 1[0m
+[0;32mI (17600) NIRduino: ADC sampling timer started for 195 Hz.[0m
+[0;32mI (17601) NIRduino: Saving LED intensities to NVS...[0m
+[0;32mI (17601) NIRduino: Sending battery level over BLE![0m
+[0;32mI (17602) NIRduino: LED intensities saved successfully[0m
+[0;32mI (17602) NIRduino: Storage Task: LED intensities saved successfully[0m
+[0;32mI (17602) NIRduino: Battery level: 29[0m
+[0;32mI (17602) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17603) NimBLE: att_handle=16
+[0m
+Source: 0  | ADC1: 1921424   7851124   1912709   7875615   4786162   2708483   2647917   7885186   
+            | ADC2: 62        1904407   1897913   7876129   2531755   7877549   1899966   1899790   | Stored Interval: 0    ms | Cycle Time: 3507 us
+
+Source: 1  | ADC1: 8388607   8388607   2046625   8388607   4775462   2701404   2646868   8380508   
+            | ADC2: 2037509   2033506   2030129   8388607   2533083   8388607   2022708   2020130   | Stored Interval: 5    ms | Cycle Time: 3395 us
+
+Source: 2  | ADC1: 7866773   7905163   1918898   7893971   4773347   2700055   2651546   7902864   
+            | ADC2: 1903020   1904204   1902162   7894596   2533811   7893657   1903242   1902838   | Stored Interval: 5    ms | Cycle Time: 3422 us
+
+Source: 3  | ADC1: 7840787   7840134   7843104   7843666   4784732   2702064   2648260   7836499   
+            | ADC2: 1889211   1889248   1889455   7842958   2533760   7842001   1888647   1888808   | Stored Interval: 6    ms | Cycle Time: 3621 us
+
+Source: 4  | ADC1: 7899313   7899945   1917566   7888483   4776414   2702271   2650173   7897570   
+            | ADC2: 1903660   1903725   1902752   7888576   2534149   7888706   1902900   1903073   | Stored Interval: 4    ms | Cycle Time: 3377 us
+
+Source: 5  | ADC1: 7829868   7828858   1900472   7831446   4782904   2703071   2646816   7829240   
+            | ADC2: 1886050   1886288   1885255   7828306   2531983   7859220   1886746   1886062   | Stored Interval: 6    ms | Cycle Time: 3375 us
+
+Source: 6  | ADC1: 8388607   8388607   2046277   8388607   4772494   2697583   2645472   8381236   
+            | ADC2: 2037218   2033482   2030415   8388607   2532970   8388607   2021948   2020800   | Stored Interval: 5    ms | Cycle Time: 3372 us
+
+Source: 7  | ADC1: 7785852   7811254   1895227   7804435   4786560   2703204   2646456   7810420   
+            | ADC2: 1881720   1881735   1881170   7806212   2533676   7805997   1881485   1881228   | Stored Interval: 5    ms | Cycle Time: 3407 us
+
+Source: 8  | ADC1: 7897245   7896027   1915767   7884009   7883276   2720950   2654277   7894107   
+            | ADC2: 1903071   1903787   1900050   7886085   2533974   7885298   1901842   1901874   | Stored Interval: 5    ms | Cycle Time: 3482 us
+
+Source: 9  | ADC1: 7822861   7822562   1898889   7844491   7635171   2717203   2648730   7822129   
+            | ADC2: 1885012   1885148   1884875   7827050   2532919   7824936   1885168   1884021   | Stored Interval: 5    ms | Cycle Time: 3337 us
+
+Source: 10 | ADC1: 8388607   8388607   2047401   8388607   4772759   2695327   2645029   8372858   
+            | ADC2: 2037181   2033384   2029584   8388607   2533082   8382374   2018395   2019133   | Stored Interval: 5    ms | Cycle Time: 3409 us
+
+Source: 11 | ADC1: 7819726   7838540   1903341   7842832   5011972   2943520   3045901   7836616   
+            | ADC2: 1888620   1888553   1888736   7842031   2534532   7841686   1888506   1888276   | Stored Interval: 5    ms | Cycle Time: 3416 us
+
+Source: 12 | ADC1: 8388607   8388607   2046920   8388607   4772810   2699380   2646217   8381389   
+            | ADC2: 2036766   2033570   2030433   8388607   2533811   8388607   2021349   2020250   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 13 | ADC1: 7807590   7830798   1900727   7834112   6994346   4632111   2717843   7828845   
+            | ADC2: 1885813   1885626   1885341   7798602   2525975   7835422   1886441   1886109   | Stored Interval: 6    ms | Cycle Time: 3405 us
+
+Source: 14 | ADC1: 7862858   7865962   1909936   7858234   5878169   2706492   2650948   7864482   
+            | ADC2: 1895723   1895390   1895155   7859196   2535042   7860123   1894959   1895124   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 15 | ADC1: 7807003   7805458   1894934   7798478   6143489   2705580   2650370   7806690   
+            | ADC2: 1880849   1880775   1880366   7802497   2534242   7800251   1880059   1880318   | Stored Interval: 5    ms | Cycle Time: 3362 us
+
+Source: 16 | ADC1: 7896048   8388607   2047902   8388607   4759579   2693211   2645636   8383991   
+            | ADC2: 1985401   2034560   2031482   8388607   2530620   8388607   2022713   2020821   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 17 | ADC1: 8363693   8367577   2032134   8359430   4769874   2700113   2645886   8363703   
+            | ADC2: 2017635   2017660   2016794   8361167   2535026   8362707   2016458   2016352   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 18 | ADC1: 8362787   8362385   2031659   8359303   4768602   2701249   2645435   8364011   
+            | ADC2: 2016429   2016045   2015603   8359993   2533788   8361446   2016630   2014395   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 19 | ADC1: 8343748   8369930   2032687   8359740   4763374   2700740   2645750   8362455   
+            | ADC2: 2017276   2017885   2016325   8361713   2533988   8362717   2016616   2016462   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 20 | ADC1: 8362529   8362544   2031348   8358517   4768494   2701156   2646436   8363796   
+            | ADC2: 2016302   2015972   2016227   8359658   2533672   8361900   2016388   2016326   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 21 | ADC1: 8343148   8371244   2032997   8362997   4767395   2700191   2646134   8363632   
+            | ADC2: 2017722   2016392   2015488   8368581   2539157   8363466   2016995   2016582   | Stored Interval: 6    ms | Cycle Time: 3373 us
+
+Source: 22 | ADC1: 8364159   8364087   2031090   8358605   4766916   2701224   2646408   8362544   
+            | ADC2: 2016558   2015990   2015875   8360353   2533639   8363093   2016958   2016656   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 23 | ADC1: 8341259   8368855   2032998   8361875   4767181   2700344   2646251   8367743   
+            | ADC2: 2017175   2017694   2017483   8362428   2534599   8361899   2016390   2016607   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 24 | ADC1: 8364145   8363771   2031628   8358114   4771618   2700781   2649046   8367771   
+            | ADC2: 2016931   2016532   2016462   8360441   2534043   8362635   2016621   2016324   | Stored Interval: 5    ms | Cycle Time: 3384 us
+
+Source: 25 | ADC1: 8334357   8367030   2031886   8360186   4769016   2701022   2645769   8364258   
+            | ADC2: 2015308   2017213   2017173   8362723   2534297   8361909   2016547   2016561   | Stored Interval: 5    ms | Cycle Time: 3380 us
+
+Source: 26 | ADC1: 8364504   8366518   2031845   8359752   4766101   2701728   2645488   8365320   
+            | ADC2: 2016578   2016604   2016299   8358923   2533566   8351611   2014077   2021446   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 27 | ADC1: 8340332   8384384   2033911   8360111   4764736   2699483   2645830   8363924   
+            | ADC2: 2016920   2017933   2017243   8363532   2534858   8363521   2016585   2016714   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 28 | ADC1: 8359837   8363603   2031577   8366783   4765680   2701614   2646333   8367151   
+            | ADC2: 2016347   2016268   2016152   8361257   2533949   8361170   2016235   2016471   | Stored Interval: 6    ms | Cycle Time: 3375 us
+
+Source: 29 | ADC1: 8341465   8370229   2032697   8362110   4765968   2701619   2644826   8362972   
+            | ADC2: 2015179   2015923   2017864   8384410   2533857   8362305   2016646   2016671   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 30 | ADC1: 8357769   8361905   2031515   8358016   4772724   2713447   2646599   8362920   
+            | ADC2: 2016235   2016442   2015933   8361731   2534203   8361474   2016342   2017213   | Stored Interval: 5    ms | Cycle Time: 3387 us
+
+Source: 31 | ADC1: 8340810   8371853   2033087   8363135   4765594   2701131   2645237   8365974   
+            | ADC2: 2017670   2018041   2017638   8363775   2534381   8363158   2016522   2016889   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 32 | ADC1: 8361611   8379082   2034598   8370988   4761914   2701570   2655470   8365313   
+            | ADC2: 2016145   2020003   2018966   8370972   2533983   8368212   2016870   2017218   | Stored Interval: 5    ms | Cycle Time: 3248 us
+
+[0;32mI (17774) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17774) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17774) NimBLE: att_handle=16
+[0m
+[0;32mI (17775) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8171659   7850233   1914976   7876488   4781275   2707823   2650846   7885724   
+            | ADC2: 1864041   1899234   7878106   7877268   2533845   7876304   1899893   1899641   | Stored Interval: 5    ms | Cycle Time: 3583 us
+
+[0;32mI (17781) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17781) NimBLE: att_handle=19
+[0m
+[0;32mI (17782) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2043241   8388607   4762289   2704381   2643048   8356662   
+            | ADC2: 2034690   2031541   2026479   8388607   2532653   8366916   2015936   2013962   | Stored Interval: 5    ms | Cycle Time: 3453 us
+
+[0;32mI (17787) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17787) NimBLE: att_handle=19
+[0m
+[0;32mI (17788) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7880809   7906168   1916822   7892599   4764406   2697019   2645639   7901697   
+            | ADC2: 1902559   1904297   1903358   7896129   2533755   7892419   1903625   1903539   | Stored Interval: 6    ms | Cycle Time: 3528 us
+
+[0;32mI (17793) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17793) NimBLE: att_handle=19
+[0m
+[0;32mI (17794) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7840431   7841798   1903159   7841972   4775692   2702307   2646299   7839519   
+            | ADC2: 1888944   1889213   1889106   7843223   2533430   7842612   1888850   1888291   | Stored Interval: 5    ms | Cycle Time: 3520 us
+
+[0;32mI (17799) NimBLE: GATT procedure initiated: notify; [0m
+Source: 4  | ADC1: 7898861   7898999   1917571   7888104   4766153   2702176   [0;32mI (17799) NimBLE: att_handle=16
+[0m
+2647552   7896002   
+            | ADC2: 1903248   1903434   1903605   7890136   2533262   7887970   1902375   1902707   | Stored Interval: 5    ms | Cycle Time: 3504 us
+
+[0;32mI (17800) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7830054   7826213   1900065   7832589   4775953   2701860   2643916   7828402   
+            | ADC2: 1886286   1886543   1886240   7833559   2533138   7833141   1886283   1886712   | Stored Interval: 5    ms | Cycle Time: 3496 us
+
+[0;32mI (17805) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2047268   8388607   4766785   2699981   2645237   8380580   
+            | ADC2: 2037224   2032984   2029973   8388607   2533071   8388607   2021207   2019690   | Stored Interval: 5    ms | Cycle Time: 3431 us
+
+Source: 7  | ADC1: 7790749   7810560   1895270   7804559   4779718   2696008   2643255   7803030   
+            | ADC2: 1881136   1881771   1881969   7803664   2535954   7802972   1881288   1881049   | Stored Interval: 5    ms | Cycle Time: 3489 us
+
+Source: 8  | ADC1: 7895804   7896355   1916320   7885146   7881782   2727713   2649237   7892546   
+            | ADC2: 1902228   1902677   1902541   7884918   2533666   7884880   1901672   1901239   | Stored Interval: 5    ms | Cycle Time: 3433 us
+
+Source: 9  | ADC1: 7823765   7823700   1898816   7823867   7580494   2716087   2648980   7818136   
+            | ADC2: 1884252   1884785   1884476   7825664   2533144   7823320   1884625   1883956   | Stored Interval: 5    ms | Cycle Time: 3417 us
+
+Source: 10 | ADC1: 8388607   8388607   2043618   8388607   4767003   2694854   2634389   8355543   
+            | ADC2: 2035845   2031308   2027271   8388607   2534302   8369840   2014938   2015049   | Stored Interval: 5    ms | Cycle Time: 3423 us
+
+Source: 11 | ADC1: 7786591   7835896   1902417   7837749   5000005   2944864   3047940   7833922   
+            | ADC2: 1887703   1887905   1888494   7838343   2533207   7839047   1888137   1887754   | Stored Interval: 6    ms | Cycle Time: 3418 us
+
+Source: 12 | ADC1: 8388607   8388607   2047010   8388607   4764160   2698168   2642516   8375254   
+            | ADC2: 2036756   2034116   2032015   8388607   2533784   8388607   2019740   2018575   | Stored Interval: 5    ms | Cycle Time: 3403 us
+
+Source: 13 | ADC1: 7792319   7826704   1900459   7830337   6986327   4625412   2717675   7828824   
+            | ADC2: 1885778   1885824   1886458   7832840   2533537   7832556   1885788   1886139   | Stored Interval: 5    ms | Cycle Time: 3435 us
+
+Source: 14 | ADC1: 7863974   7867342   1909544   5866402   5870820   2707889   2651743   7862999   
+            | ADC2: 1895521   1895096   1895169   7857244   2534342   7861236   1894808   1894248   | Stored Interval: 5    ms | Cycle Time: 3559 us
+
+Source: 15 | ADC1: 7807291   7805418   1894850   6136432   6141561   2703931   2650454   7804153   
+            | ADC2: 1880738   1880738   1880894   7802401   2534102   7800345   1879782   1880778   | Stored Interval: 5    ms | Cycle Time: 3586 us
+
+Source: 16 | ADC1: 7958769   8388607   2045554   8388607   4752356   2693458   2645320   8379815   
+            | ADC2: 2023144   2034214   2029762   8388607   2530826   8387778   2021177   2020163   | Stored Interval: 5    ms | Cycle Time: 3422 us
+
+Source: 17 | ADC1: 8368648   8366491   2032321   8360512   4761290   2700994   2644447   8364124   
+            | ADC2: 2017603   2016787   2015854   8362476   2531366   8362131   2016589   2016809   | Stored Interval: 5    ms | Cycle Time: 3401 us
+
+Source: 18 | ADC1: 8361864   8362116   2030724   8357313   4760764   2700947   2642738   8364109   
+            | ADC2: 2016354   2016130   2016172   8360019   2533669   8360135   2015847   2016415   | Stored Interval: 5    ms | Cycle Time: 3384 us
+
+Source: 19 | ADC1: 8345784   8369662   2032297   8362576   4761926   2699986   2645104   8364137   
+            | ADC2: 2017506   2017657   2017538   8363030   2534212   8363029   2015851   2016110   | Stored Interval: 6    ms | Cycle Time: 3380 us
+
+Source: 20 | ADC1: 8363702   8360895   2031196   8358007   4760416   2700806   2644072   8364401   
+            | ADC2: 2021730   2016481   2016262   8359544   2533637   8361079   2015931   2016503   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 21 | ADC1: 8343449   8370644   2032374   8362276   4761422   2701214   2645622   8363439   
+            | ADC2: 2017448   2018376   2017655   8359326   2534650   8362072   2016432   2016337   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 22 | ADC1: 8362488   8365979   2032368   4758922   4760071   2700518   2644832   8364047   
+            | ADC2: 2016959   2016287   2016004   8361386   2533684   8362711   2016737   2014768   | Stored Interval: 5    ms | Cycle Time: 3535 us
+
+Source: 23 | ADC1: 8339301   8368378   2032927   4770684   4759487   2700125   2645574   8367388   
+            | ADC2: 2017549   2017702   2017237   8363987   2533898   8363055   2016940   2016295   | Stored Interval: 5    ms | Cycle Time: 3525 us
+
+Source: 24 | ADC1: 8363248   8364060   2030873   8356709   4764640   2698868   2644676   8363398   
+            | ADC2: 2017184   2016493   2015701   8358117   2534208   8360127   2015516   2016469   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 25 | ADC1: 8339826   8370026   2032763   8362787   4761592   2699979   2644772   8364857   
+            | ADC2: 2016995   2018144   2017661   8362956   2544823   8364776   2015990   2016486   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 26 | ADC1: 8359324   8365820   2031856   8359390   4759853   2700866   2645504   8363948   
+            | ADC2: 2017088   2016836   2016612   8360658   2534143   8362669   2016093   2016606   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 27 | ADC1: 8342068   8362933   2031883   8360328   4758196   2700872   2645844   8364746   
+            | ADC2: 2017068   2016852   2016658   8361332   2536020   8361239   2015329   2016468   | Stored Interval: 6    ms | Cycle Time: 3379 us
+
+Source: 28 | ADC1: 8364285   8364656   2031925   8359865   4759186   2700702   2646301   8388607   
+            | ADC2: 2017269   2016490   2016772   8360727   2534166   8361285   2015898   2016569   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 29 | ADC1: 8340420   8370374   2032684   8363347   4759932   2701855   2645235   8364493   
+            | ADC2: 2017129   2018058   2017421   8364808   2533998   8363164   2015340   2016521   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 30 | ADC1: 8359743   8360468   2031152   8357129   4766149   2700568   2645297   8364551   
+            | ADC2: 2015071   2015707   2015284   8368336   2532483   8354858   2013833   2016716   | Stored Interval: 5    ms | Cycle Time: 3390 us
+
+Source: 31 | ADC1: 8343174   8372826   2040029   8354625   4757905   2700065   2643723   8364323   
+            | ADC2: 2017819   2018251   2017527   8363870   2534122   8363579   2015963   2016785   | Stored Interval: 5    ms | Cycle Time: 3382 us
+
+Source: 32 | ADC1: 8360709   8379702   2034342   8371859   4755849   2699744   2644993   8368053   
+            | ADC2: 2014933   2019758   2019021   8372419   2533712   8368698   2016825   2017762   | Stored Interval: 5    ms | Cycle Time: 3258 us
+
+[0;32mI (17943) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (17943) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17944) NimBLE: att_handle=16
+[0m
+[0;32mI (17944) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8167641   7851225   1914721   7876830   4774612   2709132   2645983   7884483   
+            | ADC2: 1862720   1897701   1900572   7877410   2534765   7875792   1899388   1899835   | Stored Interval: 6    ms | Cycle Time: 3498 us
+
+[0;32mI (17950) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17950) NimBLE: att_handle=19
+[0m
+[0;32mI (17951) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046443   8388607   4759873   2702040   2645477   8379085   
+            | ADC2: 2036108   2033248   2030589   8388607   2535099   8388607   2021130   2020236   | Stored Interval: 5    ms | Cycle Time: 3462 us
+
+[0;32mI (17956) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17956) NimBLE: att_handle=19
+[0m
+[0;32mI (17956) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7883956   7904648   1919006   7894096   4758926   2699637   2645068   7902566   
+            | ADC2: 1904419   1903954   1904485   7918512   2537521   7892207   1902972   1903787   | Stored Interval: 5    ms | Cycle Time: 3487 us
+
+[0;32mI (17962) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17962) NimBLE: att_handle=19
+[0m
+[0;32mI (17963) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7838808   7839505   1903342   7839546   4769396   2700621   2651944   7838756   
+            | ADC2: 1889061   1888693   1889110   7842135   2534161   7842335   1888747   1888772   | Stored Interval: 5    ms | Cycle Time: 3489 us
+
+[0;32mI (17968) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (17968) NimBLE: att_handle=16
+[0m
+Source: 4  | ADC1: 7898400   7899919   1917332   7888224   4762350   2702259   2648072   7896287   
+            | ADC2: 1903064   1903406   1905388   7888990   2536027   7886654   1902298   1902590   | Stored Interval: 5    ms | Cycle Time: 3514 us
+
+[0;32mI (17969) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7830848   7829759   1900571   7829279   4769149   2701936   2646596   7828983   
+            | ADC2: 1885970   1886028   1886227   7831494   2538382   7829353   1886154   1891384   | Stored Interval: 5    ms | Cycle Time: 3489 us
+
+[0;32mI (17974) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2046324   8388607   4758830   2698829   2642669   8373312   
+            | ADC2: 2037120   2033157   2029188   8388607   2533711   8384457   2018937   2019512   | Stored Interval: 5    ms | Cycle Time: 3418 us
+
+Source: 7  | ADC1: 7793610   7809791   1895850   7805203   4769135   2702520   2645473   7809215   
+            | ADC2: 1881752   1881717   1881895   7808348   2534448   7805002   1880387   1881817   | Stored Interval: 5    ms | Cycle Time: 3436 us
+
+Source: 8  | ADC1: 7896376   7897483   1916759   7886737   7883615   2723643   2649192   7894777   
+            | ADC2: 1901301   1902581   1908456   7889520   2535046   7884015   1899716   1902214   | Stored Interval: 5    ms | Cycle Time: 3419 us
+
+Source: 9  | ADC1: 7819206   1898765   1899332   7821490   7584281   2716439   2649182   7819534   
+            | ADC2: 1885000   1884551   1884506   7824619   2533958   7821107   1884214   1884762   | Stored Interval: 6    ms | Cycle Time: 3536 us
+
+Source: 10 | ADC1: 8388607   8388607   2047239   8388607   4757153   2701531   2643289   8372678   
+            | ADC2: 2036160   2032951   2029166   8388607   2533857   8381376   2018908   2017818   | Stored Interval: 5    ms | Cycle Time: 3478 us
+
+Source: 11 | ADC1: 7824200   7838984   1902619   7839248   4991514   2943864   3053718   7829935   
+            | ADC2: 1888659   1888525   1888470   7842648   2533626   7840943   1888606   1888216   | Stored Interval: 5    ms | Cycle Time: 3458 us
+
+Source: 12 | ADC1: 8388607   8388607   2044520   8388607   4756493   2699354   2642261   8365613   
+            | ADC2: 2035650   2032213   2028492   8388607   2533438   8375794   2016487   2015243   | Stored Interval: 5    ms | Cycle Time: 3436 us
+
+Source: 13 | ADC1: 7828690   7828827   1900743   7830416   6975327   4625924   2717773   7829626   
+            | ADC2: 1885213   1886066   1886216   7877879   2533014   7832203   1886097   1886532   | Stored Interval: 5    ms | Cycle Time: 3497 us
+
+Source: 14 | ADC1: 7876753   7867161   1908121   5856652   5860121   2706684   2647745   7863803   
+            | ADC2: 1894967   1895257   1895474   7861171   2534734   7858773   1894416   1894584   | Stored Interval: 5    ms | Cycle Time: 3549 us
+
+Source: 15 | ADC1: 7805559   7805014   1894642   7803411   6125446   2707550   2647071   7805454   
+            | ADC2: 1880295   1880722   1880322   7802413   2533457   7800695   1878762   1880167   | Stored Interval: 5    ms | Cycle Time: 3438 us
+
+Source: 16 | ADC1: 8010405   8388607   2046272   8388607   4746705   2692046   2648405   8359331   
+            | ADC2: 2018307   2033635   2034742   8388607   2531074   8374559   2017583   2015509   | Stored Interval: 5    ms | Cycle Time: 3429 us
+
+Source: 17 | ADC1: 8359126   8363166   2030612   8361104   4754647   2702198   2645560   8359024   
+            | ADC2: 2016940   2016795   2016625   8360362   2534919   8360636   2015225   2015569   | Stored Interval: 6    ms | Cycle Time: 3411 us
+
+Source: 18 | ADC1: 8353336   8358219   2029831   8351241   4756213   2700602   2645674   8361292   
+            | ADC2: 2014088   2014148   2014351   8350736   2533846   8354832   2014439   2014615   | Stored Interval: 5    ms | Cycle Time: 3405 us
+
+Source: 19 | ADC1: 8355609   8369669   2032092   4750591   4754016   2700749   2645256   8361420   
+            | ADC2: 2018220   2017620   2017209   8361921   2533630   8361816   2016661   2016475   | Stored Interval: 5    ms | Cycle Time: 3549 us
+
+Source: 20 | ADC1: 8361136   8360545   2031295   8361233   4753846   2700555   2645772   8361090   
+            | ADC2: 2016355   2016082   2014892   8359670   2533938   8359453   2015130   2015321   | Stored Interval: 5    ms | Cycle Time: 3403 us
+
+Source: 21 | ADC1: 8344623   8370138   2032758   8365936   4752788   2700323   2645602   8364983   
+            | ADC2: 2017862   2018292   2016798   8360355   2532137   8374025   2019608   2016902   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 22 | ADC1: 8381218   8358066   2031345   8359696   4752189   2701070   2643100   8363748   
+            | ADC2: 2016773   2016630   2016718   8362308   2532815   8362209   2015455   2016817   | Stored Interval: 5    ms | Cycle Time: 3380 us
+
+Source: 23 | ADC1: 8338979   8369173   2032784   8365704   4752592   2699480   2644734   8364080   
+            | ADC2: 2016890   2017913   2017421   8363874   2532123   8361720   2015025   2015938   | Stored Interval: 5    ms | Cycle Time: 3396 us
+
+Source: 24 | ADC1: 8362937   8364132   2031978   8362691   4758310   2700601   2644422   8363810   
+            | ADC2: 2015937   2017008   2016501   8359963   2533641   8362002   2015679   2016372   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 25 | ADC1: 8340133   8369636   2032301   8365252   4753751   2700500   2645104   8364630   
+            | ADC2: 2017266   2018426   2017579   8363394   2533039   8363345   2016173   2016792   | Stored Interval: 6    ms | Cycle Time: 3373 us
+
+Source: 26 | ADC1: 8365073   8366169   2032011   8363958   4752426   2701737   2645732   8363997   
+            | ADC2: 2017079   2016435   2016654   8305196   2534321   8355328   2014154   2014888   | Stored Interval: 5    ms | Cycle Time: 3380 us
+
+Source: 27 | ADC1: 8341881   8369384   2032546   8386787   4752746   2696175   2644667   8360363   
+            | ADC2: 2017114   2017696   2017278   8364321   2534018   8362964   2015776   2016674   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 28 | ADC1: 8362176   8364753   2031872   8362369   4751362   2701033   2645077   8363789   
+            | ADC2: 2017190   2016851   2016469   8362547   2533450   8362874   2015416   2016800   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 29 | ADC1: 8341277   8368984   2032472   8363111   4753378   2701367   2644412   8363375   
+            | ADC2: 2016947   2017833   2015172   8351202   2533651   8365838   2015614   2016263   | Stored Interval: 5    ms | Cycle Time: 3382 us
+
+Source: 30 | ADC1: 8355205   8361053   2031851   8359258   4757845   2701120   2645197   8362846   
+            | ADC2: 2016138   2016372   2016376   8360946   2533758   8361018   2015596   2016404   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 31 | ADC1: 8341219   8369992   2033078   8366149   4751915   2699414   2645171   8365357   
+            | ADC2: 2017535   2018272   2017507   8364396   2533530   8362084   2016041   2016193   | Stored Interval: 5    ms | Cycle Time: 3380 us
+
+Source: 32 | ADC1: 8358181   8378809   2034105   8370546   4749130   2699469   2645304   8373586   
+            | ADC2: 2022110   2020206   2018239   8371475   2533223   8366431   2016611   2017188   | Stored Interval: 5    ms | Cycle Time: 3256 us
+
+[0;32mI (18112) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18113) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18113) NimBLE: att_handle=16
+[0m
+[0;32mI (18114) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8250075   7850934   1914974   4753113   4767109   2710164   2645393   7886471   
+            | ADC2: 1873201   1899434   1900607   7878104   2535829   7875877   1899709   1899689   | Stored Interval: 6    ms | Cycle Time: 3680 us
+
+[0;32mI (18119) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18119) NimBLE: att_handle=19
+[0m
+[0;32mI (18120) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046612   8388607   4755015   2701660   2644419   8381370   
+            | ADC2: 2036895   2032671   2030357   8388607   2540455   8388607   2020641   2020841   | Stored Interval: 5    ms | Cycle Time: 3443 us
+
+[0;32mI (18125) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18125) NimBLE: att_handle=19
+[0m
+[0;32mI (18126) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7878707   7906058   1923772   7873028   4750526   2701660   2645734   7900131   
+            | ADC2: 1903387   1904412   1904225   7895404   2534817   7892886   1901210   1903556   | Stored Interval: 5    ms | Cycle Time: 3510 us
+
+[0;32mI (18131) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18131) NimBLE: att_handle=19
+[0m
+Source: 3  | ADC1: 7840628   7838974   1903594   7840496   4762231   2700572   2645747   7840117   
+            | ADC2: 1889198   1888333   1889051   [0;32mI (18133) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+7844158   2533359   7842631   1888854   1888752   | Stored Interval: 5    ms | Cycle Time: 3498 us
+
+Source: 4  | ADC1: 7900775   7900240   1917834   7891070   4755184   2701925   2645619   7897739   
+            | ADC2: 1903630   1901942   1902880   7913310   2535144   7887722   1900927   1902987   | Stored Interval: 5    ms | Cycle Time: 3488 us
+
+[0;32mI (18138) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18138) NimBLE: att_handle=16
+[0m
+[0;32mI (18139) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7827155   7828758   1900499   4764648   4763274   2699819   2645618   7829788   
+            | ADC2: 1886215   1886029   1886228   7833001   2533272   7832734   1886368   1888133   | Stored Interval: 5    ms | Cycle Time: 3626 us
+
+[0;32mI (18145) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2045401   8388607   4752580   2703915   2645681   8370733   
+            | ADC2: 2035708   2032485   2029565   8388607   2534428   8379742   2018587   2017903   | Stored Interval: 6    ms | Cycle Time: 3515 us
+
+Source: 7  | ADC1: 7765687   7810965   1896156   7811230   4763506   2702057   2647799   7813418   
+            | ADC2: 1882560   1881803   1881877   7809904   2534015   7806228   1879973   1881386   | Stored Interval: 5    ms | Cycle Time: 3399 us
+
+Source: 8  | ADC1: 7890244   7896899   1916612   7894280   7882730   2725621   2649176   7891354   
+            | ADC2: 1902579   1902600   1902015   7892718   2533553   7883321   1898914   1901492   | Stored Interval: 5    ms | Cycle Time: 3414 us
+
+Source: 9  | ADC1: 7822038   7822734   1899093   7823178   7562395   2715412   2646657   7821062   
+            | ADC2: 1884923   1884044   1884453   7825832   2533568   7824915   1884098   1884325   | Stored Interval: 5    ms | Cycle Time: 3430 us
+
+Source: 10 | ADC1: 8388607   8388607   2047446   8388607   4751034   2699225   2643897   8378922   
+            | ADC2: 2036193   2033429   2030354   8388607   2534185   8388607   2020736   2020008   | Stored Interval: 5    ms | Cycle Time: 3406 us
+
+Source: 11 | ADC1: 7819028   7838783   1902771   7838331   4987591   2944216   3043878   7838532   
+            | ADC2: 1888605   1888501   1888314   7841205   2533863   7840033   1888549   1888089   | Stored Interval: 5    ms | Cycle Time: 3398 us
+
+Source: 12 | ADC1: 8388607   8388607   2045540   8388607   4751654   2699746   2644481   8370863   
+            | ADC2: 2036375   2033359   2029748   8388607   2534830   8381284   2018728   2017835   | Stored Interval: 5    ms | Cycle Time: 3433 us
+
+Source: 13 | ADC1: 7812187   7830302   1900789   7829333   6971380   4633711   2718829   7828474   
+            | ADC2: 1886674   1886334   1886273   7832696   2534538   7834388   1886087   1886003   | Stored Interval: 5    ms | Cycle Time: 3395 us
+
+Source: 14 | ADC1: 7861434   7866778   1910929   7866904   5855063   2707738   2649071   7862187   
+            | ADC2: 1895353   1895476   1895570   7862446   2533809   7858759   1892945   1894513   | Stored Interval: 5    ms | Cycle Time: 3429 us
+
+Source: 15 | ADC1: 7799882   7807070   1894891   7805899   6116008   2705926   2656741   7803842   
+            | ADC2: 1880686   1880633   1880564   7805688   2533360   7800488   1879238   1880495   | Stored Interval: 6    ms | Cycle Time: 3420 us
+
+Source: 16 | ADC1: 7916516   8388607   2047410   4743280   4740463   2687307   2644827   8383132   
+            | ADC2: 2013559   2034421   2031740   8388607   2532509   8388290   2021536   2019615   | Stored Interval: 5    ms | Cycle Time: 3646 us
+
+Source: 17 | ADC1: 8350029   8351484   2029383   8345684   4751538   2698866   2644586   8351597   
+            | ADC2: 2013481   2012464   2013774   8349305   2534178   8348006   2014623   2020410   | Stored Interval: 5    ms | Cycle Time: 3432 us
+
+Source: 18 | ADC1: 8348054   8351929   2028055   8354725   4747811   2699591   2643823   8362364   
+            | ADC2: 2013399   2013784   2014649   8357932   2533491   8359193   2014684   2016313   | Stored Interval: 5    ms | Cycle Time: 3434 us
+
+Source: 19 | ADC1: 8350850   8369449   2032715   8363151   4748494   2700982   2645458   8361147   
+            | ADC2: 2018351   2017617   2017308   8365268   2534167   8361319   2015951   2016612   | Stored Interval: 5    ms | Cycle Time: 3397 us
+
+Source: 20 | ADC1: 8359637   8362506   2031263   8361898   4747377   2700499   2643493   8359331   
+            | ADC2: 2014127   2016191   2020490   8364597   2533086   8360810   2015393   2016453   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 21 | ADC1: 8338810   8370521   2032672   8366634   4745542   2700046   2644408   8362153   
+            | ADC2: 2016599   2018256   2017487   8368923   2532498   8362418   2015997   2017404   | Stored Interval: 5    ms | Cycle Time: 3371 us
+
+Source: 22 | ADC1: 8359894   8366115   2032204   8363933   4747287   2701172   2644644   8357342   
+            | ADC2: 2016869   2016969   2016494   8364978   2533147   8362021   2015656   2015795   | Stored Interval: 5    ms | Cycle Time: 3358 us
+
+Source: 23 | ADC1: 8332371   8369517   2032381   8365927   4749553   2708632   2641158   8362124   
+            | ADC2: 2015459   2017805   2017517   8367396   2533418   8362434   2015878   2016726   | Stored Interval: 6    ms | Cycle Time: 3362 us
+
+Source: 24 | ADC1: 8358809   8363541   2031468   8362106   4751864   2700839   2645797   8362140   
+            | ADC2: 2016484   2016961   2017314   8363903   2532057   8360214   2015674   2016653   | Stored Interval: 5    ms | Cycle Time: 3368 us
+
+Source: 25 | ADC1: 8339799   8370595   2032773   8367072   4747564   2700139   2643865   8360353   
+            | ADC2: 2016357   2017739   2017463   8363108   2532217   8365246   2019224   2016604   | Stored Interval: 5    ms | Cycle Time: 3395 us
+
+Source: 26 | ADC1: 8388607   8366017   2031386   8359840   4744594   2700168   2643788   8362177   
+            | ADC2: 2016775   2016777   2016740   8364362   2533685   8361479   2015499   2017186   | Stored Interval: 5    ms | Cycle Time: 3368 us
+
+Source: 27 | ADC1: 8339806   8369826   2032689   8361810   4747361   2700315   2645167   8360433   
+            | ADC2: 2016763   2017771   2017238   8367473   2533207   8362106   2015664   2016735   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 28 | ADC1: 8360366   8366218   2031976   8363976   4745936   2698416   2645402   8359825   
+            | ADC2: 2017732   2020810   2017078   8364781   2532562   8358469   2014920   2016232   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 29 | ADC1: 8334816   8368815   2032608   8366326   4746677   2701934   2645066   8361588   
+            | ADC2: 2016569   2017845   2017906   8366879   2532660   8363863   2016481   2016447   | Stored Interval: 5    ms | Cycle Time: 3370 us
+
+Source: 30 | ADC1: 8359635   8362489   2032096   8362952   4753257   2700788   2643834   8360269   
+            | ADC2: 2015946   2016332   2015751   8364176   2532787   8357332   2015325   2014661   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 31 | ADC1: 8338556   8371628   2033296   8367777   4743635   2699583   2644141   8356054   
+            | ADC2: 2017169   2018277   2017711   8368547   2531549   8360160   2015391   2016628   | Stored Interval: 6    ms | Cycle Time: 3369 us
+
+Source: 32 | ADC1: 8358745   8379376   2034737   8365993   4745442   2699605   2644379   8364376   
+            | ADC2: 2014778   2020937   2019210   8373459   2533054   8367315   2016910   2016652   | Stored Interval: 5    ms | Cycle Time: 3244 us
+
+[0;32mI (18281) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18282) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18282) NimBLE: att_handle=16
+[0m
+[0;32mI (18283) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8222223   7853628   1915158   7888619   4760602   2710653   2644964   7885258   
+            | ADC2: 1870766   1899952   1900006   7883213   2533183   7896787   1897298   1900027   | Stored Interval: 5    ms | Cycle Time: 3479 us
+
+[0;32mI (18288) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18288) NimBLE: att_handle=19
+[0m
+[0;32mI (18289) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046706   8388607   4748433   2701015   2644147   8370970   
+            | ADC2: 2036012   2033197   2030270   8388607   2532913   8383953   2018859   2018323   | Stored Interval: 5    ms | Cycle Time: 3504 us
+
+[0;32mI (18294) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18294) NimBLE: att_handle=19
+[0m
+[0;32mI (18295) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7886524   7902642   1918257   7904299   4745593   2700123   2644342   7899252   
+            | ADC2: 1904527   1904137   1904569   7900811   2534301   7894444   1900653   1903708   | Stored Interval: 5    ms | Cycle Time: 3527 us
+
+[0;32mI (18300) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18300) NimBLE: att_handle=19
+[0m
+[0;32mI (18301) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7841910   7840761   1903178   7840281   4759083   2700127   2645554   7840230   
+            | ADC2: 1889075   1890668   1888868   7843059   2534007   7843273   1889152   1888806   | Stored Interval: 5    ms | Cycle Time: 3491 us
+
+[0;32mI (18306) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18306) NimBLE: att_handle=16
+[0m
+Source: 4  | ADC1: 7894345   7899501   1917370   7897876   4747830   2702643   2646082   7893823   
+            | ADC2: 1903134   1903001   1903291   7892073   2534053   7887554   1900461   1901900   | Stored Interval: 6    ms | Cycle Time: 3554 us
+
+[0;32mI (18307) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7827369   7830065   1900023   7829199   4757592   2701772   2647015   7828883   
+            | ADC2: 1885759   1886446   1885016   7830183   2533045   7830727   1885292   1884076   | Stored Interval: 5    ms | Cycle Time: 3522 us
+
+[0;32mI (18313) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2044310   8388607   4747521   2700880   2644468   8370502   
+            | ADC2: 2035901   2030786   2027654   8388607   2534692   8378306   2018801   2018624   | Stored Interval: 5    ms | Cycle Time: 3417 us
+
+Source: 7  | ADC1: 7793864   7809854   1895979   7810891   4759294   2702298   2643527   7806657   
+            | ADC2: 1881353   1882024   1881494   7810904   2533544   7807823   1880162   1881358   | Stored Interval: 5    ms | Cycle Time: 3425 us
+
+Source: 8  | ADC1: 7884475   7895761   1916922   7895856   7884532   2723623   2648426   7885217   
+            | ADC2: 1902255   1902781   1901840   7896440   2539783   7888652   1899085   1901591   | Stored Interval: 5    ms | Cycle Time: 3412 us
+
+Source: 9  | ADC1: 7823773   7823245   1897723   7829166   7555299   2715555   2647591   7821561   
+            | ADC2: 1884699   1884734   1884496   7821362   2534136   7825780   1884763   1884053   | Stored Interval: 5    ms | Cycle Time: 3389 us
+
+Source: 10 | ADC1: 8388607   2046840   2045991   8388607   4748989   2702034   2645401   8372156   
+            | ADC2: 2035847   2031107   2028258   8388607   2534222   8376342   2017805   2017387   | Stored Interval: 5    ms | Cycle Time: 3594 us
+
+Source: 11 | ADC1: 7795023   7838656   1902526   7837434   4983928   2942326   3045296   7849041   
+            | ADC2: 1892191   1889088   1888399   7838886   2534303   7840405   1888501   1888127   | Stored Interval: 5    ms | Cycle Time: 3441 us
+
+Source: 12 | ADC1: 8388607   8388607   2046317   8388607   4746633   2699830   2643697   8376888   
+            | ADC2: 2036061   2033806   2030210   8388607   2533825   8388607   2020569   2019811   | Stored Interval: 5    ms | Cycle Time: 3394 us
+
+Source: 13 | ADC1: 7804940   7831178   1900167   7829768   6964282   4622011   2720244   7828145   
+            | ADC2: 1885771   1886059   1885779   7829381   2533951   7826382   1885492   1885645   | Stored Interval: 6    ms | Cycle Time: 3456 us
+
+Source: 14 | ADC1: 7858836   7865537   1909692   7866189   5835873   2718161   2653588   7859939   
+            | ADC2: 1895290   1895595   1894890   7867724   2531957   7859400   1892700   1894709   | Stored Interval: 5    ms | Cycle Time: 3470 us
+
+Source: 15 | ADC1: 7799428   7806485   1895229   7806537   6113806   2703484   2648177   7799993   
+            | ADC2: 1880617   1880924   1880614   7808280   2533298   7801881   1878715   1880544   | Stored Interval: 5    ms | Cycle Time: 3387 us
+
+Source: 16 | ADC1: 8007236   8388607   2046886   8388607   4735854   2692826   2645304   8363145   
+            | ADC2: 2021608   2034052   2029023   8388607   2530238   8381452   2017589   2016939   | Stored Interval: 5    ms | Cycle Time: 3409 us
+
+Source: 17 | ADC1: 8351930   8363220   2031884   8362885   4742644   2701159   2644820   8359098   
+            | ADC2: 2015906   2016634   2016536   8364996   2533271   8362541   2015520   2016021   | Stored Interval: 5    ms | Cycle Time: 3409 us
+
+Source: 18 | ADC1: 8358333   8362872   2031556   8363899   4743770   2700762   2644351   8359370   
+            | ADC2: 2015642   2016296   2016526   8364359   2534844   8359980   2014863   2015725   | Stored Interval: 5    ms | Cycle Time: 3407 us
+
+Source: 19 | ADC1: 8340540   8369848   2032833   8365702   4741122   2699930   2644529   8385607   
+            | ADC2: 2017509   2017794   2017340   8366909   2532974   8362086   2015595   2016270   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 20 | ADC1: 8358086   8362579   2031279   8361400   2699980   2700912   2645516   8359385   
+            | ADC2: 2015376   2016482   2017199   8365313   2533809   8360357   2015140   2016009   | Stored Interval: 6    ms | Cycle Time: 3531 us
+
+Source: 21 | ADC1: 8337317   8371720   2033087   8366252   4741429   2699508   2644453   8361992   
+            | ADC2: 2017192   2017501   2017118   8368087   2530264   8356955   2015683   2016341   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 22 | ADC1: 8358467   8365620   2036627   8354329   4741114   2700055   2643611   8359553   
+            | ADC2: 2015764   2016402   2016513   8365582   2532877   8360865   2015479   2015467   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 23 | ADC1: 8335344   8369564   2032818   8364063   4742165   2699980   2644792   8360925   
+            | ADC2: 2016121   2017385   2017469   8367683   2533054   8361750   2015560   2016101   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 24 | ADC1: 8359060   8365141   2031581   8362571   4746928   2700908   2643779   8359523   
+            | ADC2: 2014185   2014900   2016358   8388607   2532956   8361527   2015471   2016197   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 25 | ADC1: 8331636   8370561   2032526   8365638   4743706   2699900   2643677   8360107   
+            | ADC2: 2015896   2017696   2016758   8368750   2533212   8362708   2015395   2016328   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 26 | ADC1: 8359042   8366594   2032570   8364339   4741439   2700831   2644589   8359110   
+            | ADC2: 2015588   2016719   2016601   8364572   2532853   8359045   2015334   2015641   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 27 | ADC1: 8336270   8369711   2032506   8364061   4740481   2700446   2651429   8358708   
+            | ADC2: 2016043   2017709   2017111   8367514   2532204   8361436   2015566   2015433   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 28 | ADC1: 8358456   8365184   2031475   8361201   4742487   2700255   2644032   8360661   
+            | ADC2: 2015803   2016852   2016636   8364935   2531730   8361163   2015430   2015936   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 29 | ADC1: 8337794   8369436   2032559   8364976   4742964   2701238   2643827   8360086   
+            | ADC2: 2015708   2017464   2017313   8367189   2531642   8356105   2015705   2021440   | Stored Interval: 6    ms | Cycle Time: 3374 us
+
+Source: 30 | ADC1: 8360252   8363227   2029562   8361550   4748974   2701709   2643067   8356081   
+            | ADC2: 2015345   2016027   2016383   8366338   2532804   8359022   2014633   2015641   | Stored Interval: 5    ms | Cycle Time: 3397 us
+
+Source: 31 | ADC1: 8337131   8370923   2032853   8366012   4742197   2699930   2643763   8361239   
+            | ADC2: 2016916   2018120   2017573   8368800   2532218   8361798   2015599   2015982   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 32 | ADC1: 8358373   8379001   2034504   8372070   4742018   2697734   2644860   8364066   
+            | ADC2: 2013388   2020237   2018850   8377088   2533775   8366751   2016479   2016483   | Stored Interval: 5    ms | Cycle Time: 3251 us
+
+[0;32mI (18451) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18451) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18451) NimBLE: att_handle=16
+[0m
+[0;32mI (18452) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8092412   7854534   1915032   7888033   4754402   2709389   2645144   7874766   
+            | ADC2: 1864627   1899255   1900688   7889049   2531810   7875167   1896968   1900046   | Stored Interval: 5    ms | Cycle Time: 3488 us
+
+[0;32mI (18457) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18457) NimBLE: att_handle=19
+[0m
+[0;32mI (18458) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2043473   8388607   4741608   2703996   2638563   8355858   
+            | ADC2: 2035101   2031113   2026004   8388607   2532367   8367946   2013512   2014440   | Stored Interval: 5    ms | Cycle Time: 3527 us
+
+[0;32mI (18463) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18463) NimBLE: att_handle=19
+[0m
+[0;32mI (18464) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7868665   7903045   1918551   7902948   4738817   2702173   2638877   7898208   
+            | ADC2: 1903868   1904415   1903946   7903501   2532335   7895080   1901579   1903972   | Stored Interval: 5    ms | Cycle Time: 3535 us
+
+[0;32mI (18469) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18469) NimBLE: att_handle=19
+[0m
+[0;32mI (18470) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7842524   7840301   1903076   7840511   4756108   2701884   2645416   7841504   
+            | ADC2: 1889142   1889089   1889282   7841887   2533463   7842660   1889009   1888189   | Stored Interval: 6    ms | Cycle Time: 3473 us
+
+[0;32mI (18475) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18475) NimBLE: att_handle=16
+[0m
+[0;32mI (18476) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 4  | ADC1: 7898046   7898607   1917760   7897638   4739401   2702672   2643230   7891060   
+            | ADC2: 1902974   1902749   1902356   7895808   2531204   7887815   1900103   1902875   | Stored Interval: 5    ms | Cycle Time: 3524 us
+
+[0;32mI (18481) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 5  | ADC1: 7833893   7823176   1899816   4754843   4751194   2700860   2626285   7829394   
+            | ADC2: 1886249   1886179   1885750   7832720   2533474   7832954   1885979   1885971   | Stored Interval: 5    ms | Cycle Time: 3725 us
+
+Source: 6  | ADC1: 8388607   8388607   2046450   8388607   4741686   2700011   2645035   8365368   
+            | ADC2: 2036711   2033154   2030760   8388607   2533349   8380542   2018660   2016624   | Stored Interval: 5    ms | Cycle Time: 3391 us
+
+Source: 7  | ADC1: 7770352   7810406   1895868   7809036   2705871   2702449   2645407   7802823   
+            | ADC2: 1879064   1889010   1882507   7810866   2533949   7804944   1880099   1881406   | Stored Interval: 5    ms | Cycle Time: 3616 us
+
+Source: 8  | ADC1: 7886558   7895663   1916239   7893740   7884502   2724576   2647437   7883496   
+            | ADC2: 1900941   1902635   1902288   7897669   2531532   7885117   1899321   1901783   | Stored Interval: 5    ms | Cycle Time: 3458 us
+
+Source: 9  | ADC1: 7825757   7825566   1898058   7823893   7541824   2718691   2648652   7821626   
+            | ADC2: 1885372   1884737   1883937   7824726   2533468   7825678   1884189   1882443   | Stored Interval: 5    ms | Cycle Time: 3443 us
+
+Source: 10 | ADC1: 8388607   8388607   2044321   8388607   4747684   2695810   2645135   8346048   
+            | ADC2: 2034685   2031156   2028391   8388607   2533984   8365911   2014800   2013953   | Stored Interval: 5    ms | Cycle Time: 3406 us
+
+Source: 11 | ADC1: 7801589   7838508   1902161   7837425   4979269   2943052   3044253   7836927   
+            | ADC2: 1887469   1888471   1888683   7841040   2534469   7841642   1888510   1888683   | Stored Interval: 5    ms | Cycle Time: 3409 us
+
+Source: 12 | ADC1: 8388607   8388607   2046241   8388607   4746104   2694243   2642656   8354792   
+            | ADC2: 2035810   2032725   2028860   8388607   2531806   8379283   2014873   2015282   | Stored Interval: 6    ms | Cycle Time: 3427 us
+
+Source: 13 | ADC1: 7842466   7827124   1900783   7824959   4625413   4619827   2717580   7828800   
+            | ADC2: 1885316   1885602   1886162   7831377   2533895   7832765   1885685   1886297   | Stored Interval: 5    ms | Cycle Time: 3562 us
+
+Source: 14 | ADC1: 7856672   7867108   1908229   7866551   5843631   2705304   2647045   7856725   
+            | ADC2: 1893269   1895463   1894783   7868771   2530846   7858874   1893187   1893370   | Stored Interval: 5    ms | Cycle Time: 3405 us
+
+Source: 15 | ADC1: 7797064   7807146   1894336   7806355   2702703   2702934   2648097   7797034   
+            | ADC2: 1879345   1880979   1881185   7807160   2533941   7801500   1878348   1880371   | Stored Interval: 5    ms | Cycle Time: 3570 us
+
+Source: 16 | ADC1: 7901260   8388607   2047030   8388607   4730902   2693302   2644269   8380652   
+            | ADC2: 2012065   2034574   2031579   8388607   2528932   8388607   2022611   2020424   | Stored Interval: 5    ms | Cycle Time: 3414 us
+
+Source: 17 | ADC1: 8361822   8369161   2032930   8364290   4740587   2700323   2643558   8359432   
+            | ADC2: 2016832   2017165   2016559   8365201   2532585   8361656   2014683   2014131   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 18 | ADC1: 8354839   8359027   2030762   8370309   4753791   2694158   2644181   8355163   
+            | ADC2: 2014415   2015580   2016091   8362849   2532919   8359363   2015089   2015343   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 19 | ADC1: 8342803   8369441   2032482   8365902   4738869   2700095   2643203   8361076   
+            | ADC2: 2016733   2018382   2017226   8367341   2532719   8363027   2015472   2015776   | Stored Interval: 5    ms | Cycle Time: 3387 us
+
+Source: 20 | ADC1: 8360185   8362239   2031675   8362244   4739768   2700176   2643425   8359582   
+            | ADC2: 2015152   2016287   2015060   8357908   2532044   8360655   2015451   2015366   | Stored Interval: 6    ms | Cycle Time: 3378 us
+
+Source: 21 | ADC1: 8338724   8369027   2033079   8363089   4740373   2698738   2643628   8359934   
+            | ADC2: 2016321   2018094   2017623   8367887   2531985   8363626   2015563   2015652   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 22 | ADC1: 8359117   8364018   2031732   8364120   4739198   2700146   2644319   8359714   
+            | ADC2: 2015992   2016945   2016607   8364925   2532264   8361320   2015189   2015250   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 23 | ADC1: 8335811   8370728   2032825   8365714   4738530   2698537   2643723   8360738   
+            | ADC2: 2024038   2018290   2017468   8365915   2532583   8362281   2015665   2015533   | Stored Interval: 5    ms | Cycle Time: 3382 us
+
+Source: 24 | ADC1: 8357512   8362067   2031657   8361349   4744526   2700196   2644076   8359796   
+            | ADC2: 2015355   2016349   2016637   8365221   2532505   8361708   2015309   2015181   | Stored Interval: 5    ms | Cycle Time: 3386 us
+
+Source: 25 | ADC1: 8335246   8369628   2033072   8366685   4740206   2698252   2643393   8360902   
+            | ADC2: 2016131   2017978   2016753   8367028   2532984   8364112   2014229   2013708   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 26 | ADC1: 8357320   8364151   2032056   8362714   4736018   2699399   2642866   8356808   
+            | ADC2: 2015719   2016999   2016523   8364604   2532829   8361927   2015326   2015725   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 27 | ADC1: 8337910   8369590   2032513   8367270   4738262   2698400   2644400   8360634   
+            | ADC2: 2016214   2017507   2017078   8375642   2532655   8362215   2015546   2015550   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 28 | ADC1: 8358505   8365565   2031979   8363769   2698248   2699611   2644154   8360133   
+            | ADC2: 2014996   2015222   2015058   8365783   2535327   8360232   2015343   2016509   | Stored Interval: 6    ms | Cycle Time: 3533 us
+
+Source: 29 | ADC1: 8330957   8371416   2032827   8364004   4740842   2699369   2644588   8360705   
+            | ADC2: 2016918   2017791   2017325   8367523   2532910   8364027   2015298   2015659   | Stored Interval: 5    ms | Cycle Time: 3410 us
+
+Source: 30 | ADC1: 8356944   8362227   2031670   8363261   4745647   2698936   2644368   8362155   
+            | ADC2: 2014945   2016465   2016122   8363790   2532585   8359662   2015200   2015494   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 31 | ADC1: 8337258   8371326   2033311   8366026   4738659   2697365   2646804   8369325   
+            | ADC2: 2016205   2018168   2017622   8368218   2533192   8362265   2015754   2015731   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 32 | ADC1: 8358182   8377766   2034806   8372838   4738247   2697133   2644153   8363483   
+            | ADC2: 2015283   2020194   2018740   8374636   2534140   8365895   2016372   2016528   | Stored Interval: 5    ms | Cycle Time: 3253 us
+
+[0;32mI (18620) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18620) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18620) NimBLE: att_handle=16
+[0m
+[0;32mI (18621) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8119548   7856379   1914809   7887136   4749186   2708971   2643762   7873901   
+            | ADC2: 1863904   1899633   1900332   7886534   2528940   7872187   1895776   1898600   | Stored Interval: 5    ms | Cycle Time: 3482 us
+
+[0;32mI (18627) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18627) NimBLE: att_handle=19
+[0m
+[0;32mI (18628) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046534   8388607   4736222   2701206   2646889   8375615   
+            | ADC2: 2035630   2033244   2029863   8388607   2532936   8388607   2020468   2019293   | Stored Interval: 5    ms | Cycle Time: 3430 us
+
+[0;32mI (18633) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18633) NimBLE: att_handle=19
+[0m
+[0;32mI (18634) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7871096   7904696   1918857   7903951   2696529   2698046   2644290   7891864   
+            | ADC2: 1901509   1904539   1904444   7904162   2533965   7893092   1901244   1903771   | Stored Interval: 6    ms | Cycle Time: 3647 us
+
+[0;32mI (18639) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18639) NimBLE: att_handle=19
+[0m
+[0;32mI (18640) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7842307   7841497   1903288   7841476   4752125   2699633   2645310   7841307   
+            | ADC2: 1888520   1889179   1887323   7870594   2535202   7843485   1889026   1889246   | Stored Interval: 5    ms | Cycle Time: 3482 us
+
+[0;32mI (18645) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18645) NimBLE: att_handle=16
+[0m
+Source: 4  | ADC1: 7888672   7900147   1917927   7897439   4736175   2700210   2643685   7886332   
+            | ADC2: 1900806   1903225   1903201   7901452   2531483   7889210   1900187   1900608   | Stored Interval: 5    ms | Cycle Time: 3483 us
+
+[0;32mI (18645) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7828991   7829651   1901313   7829409   4750347   2700326   2647187   7830104   
+            | ADC2: 1886981   1885814   1886128   7830683   2534910   7831765   1886225   1886194   [0;32mI (18651) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+| Stored Interval: 5    ms | Cycle Time: 3481 us
+
+Source: 6  | ADC1: 8388607   8388607   2045426   8388607   4741189   2695900   2648352   8387757   
+            | ADC2: 2036168   2031758   2029300   8388607   2533893   8377167   2017604   2016660   | Stored Interval: 5    ms | Cycle Time: 3410 us
+
+Source: 7  | ADC1: 7764454   7809762   1895897   7808618   4751956   2697463   2644910   7804370   
+            | ADC2: 1879563   1880824   1881140   7812262   2533415   7806479   1880093   1880169   | Stored Interval: 5    ms | Cycle Time: 3429 us
+
+Source: 8  | ADC1: 7886438   7896394   1917249   7895500   7893322   2718900   2647552   7882964   
+            | ADC2: 1899579   1902486   1902291   7895177   2564600   7881096   1898720   1899198   | Stored Interval: 5    ms | Cycle Time: 3411 us
+
+Source: 9  | ADC1: 7825232   7835309   1903762   7791552   7535646   2713845   2651784   7820115   
+            | ADC2: 1885369   1884305   1884583   7822450   2535353   7822931   1884560   1884283   | Stored Interval: 6    ms | Cycle Time: 3411 us
+
+Source: 10 | ADC1: 8388607   8388607   2045381   8388607   4737152   2699139   2641911   8368479   
+            | ADC2: 2034205   2032452   2028737   8388607   2532585   8378094   2017646   2017270   | Stored Interval: 5    ms | Cycle Time: 3408 us
+
+Source: 11 | ADC1: 7823778   7839327   1902767   7838352   4974876   2944003   3045410   7838609   
+            | ADC2: 1887909   1888742   1886783   7866037   2535703   7840060   1888581   1888408   | Stored Interval: 5    ms | Cycle Time: 3421 us
+
+Source: 12 | ADC1: 8388607   8388607   2045767   8388607   4738568   2700693   2641622   8368496   
+            | ADC2: 2035413   2032805   2028722   8388607   2533256   8382534   2018012   2017464   | Stored Interval: 5    ms | Cycle Time: 3451 us
+
+Source: 13 | ADC1: 7824699   7830971   1901495   7829344   6954051   4618991   2717190   7831302   
+            | ADC2: 1887268   1886666   1886427   7830891   2533985   7824022   1886589   1886105   | Stored Interval: 5    ms | Cycle Time: 3481 us
+
+Source: 14 | ADC1: 7858566   7865817   1909636   7866144   5839858   2707786   2647070   7858215   
+            | ADC2: 1893531   1895218   1895170   7868870   2531148   7858940   1892513   1893167   | Stored Interval: 5    ms | Cycle Time: 3440 us
+
+Source: 15 | ADC1: 7798451   7805033   1894757   7804703   6104561   2704027   2647972   7798436   
+            | ADC2: 1879263   1879929   1881030   7808798   2533283   7803257   1878532   1879697   | Stored Interval: 5    ms | Cycle Time: 3457 us
+
+Source: 16 | ADC1: 8132354   8388607   2046524   8388607   4725973   2692457   2644315   8374543   
+            | ADC2: 1978519   2033488   2030545   8388607   2528839   8384122   2020180   2021283   | Stored Interval: 5    ms | Cycle Time: 3415 us
+
+Source: 17 | ADC1: 8364766   8366670   2029485   8352166   4735688   2697749   2647854   8337486   
+            | ADC2: 2016412   2015415   2014228   8349719   2534232   8341322   2011274   2010061   | Stored Interval: 6    ms | Cycle Time: 3434 us
+
+Source: 18 | ADC1: 8341101   8340591   2026676   8342878   4735409   2699236   2638963   8342052   
+            | ADC2: 2010326   2011595   2010913   8345717   2531827   8341841   2009783   2011204   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 19 | ADC1: 8315102   8350561   2027921   8352820   4736726   2698517   2644014   8355596   
+            | ADC2: 2009700   2012209   2020397   8357462   2532938   8356328   2014786   2014914   | Stored Interval: 5    ms | Cycle Time: 3413 us
+
+Source: 20 | ADC1: 8352868   8359395   2030425   8344041   2698571   2700727   2642267   8352391   
+            | ADC2: 2014637   2014992   2014889   8360286   2532390   8351142   2014697   2014053   | Stored Interval: 5    ms | Cycle Time: 3577 us
+
+Source: 21 | ADC1: 8334681   8373896   2032851   8365885   4735901   2698141   2643601   8359343   
+            | ADC2: 2016036   2017890   2017176   8381303   2532373   8363006   2015508   2015688   | Stored Interval: 5    ms | Cycle Time: 3423 us
+
+Source: 22 | ADC1: 8360275   8365525   2031960   8363184   4736422   2708327   2640794   8355185   
+            | ADC2: 2016153   2016872   2017102   8366334   2532508   8361257   2015548   2015417   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 23 | ADC1: 8333120   8368298   2032364   8365563   4736159   2696858   2643664   8359973   
+            | ADC2: 2015204   2020066   2017398   8366476   2532409   8360698   2015522   2015222   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 24 | ADC1: 8361513   8364139   2031854   8363828   4741063   2698327   2643357   8359595   
+            | ADC2: 2015654   2016810   2016020   8366209   2532615   8351966   2015754   2015720   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 25 | ADC1: 8369055   8369928   2031507   8367315   4735959   2695294   2640834   8359320   
+            | ADC2: 2015884   2017649   2017330   8368759   2533386   8361967   2015653   2015642   | Stored Interval: 5    ms | Cycle Time: 3372 us
+
+Source: 26 | ADC1: 8358055   8364476   2031866   8362317   4736553   2699365   2643509   8359544   
+            | ADC2: 2015672   2016716   2016743   8364440   2533038   8361349   2015453   2015460   | Stored Interval: 6    ms | Cycle Time: 3379 us
+
+Source: 27 | ADC1: 8336973   8368377   2032551   8365237   2696426   2697773   2644439   8360012   
+            | ADC2: 2014272   2018050   2017627   8366306   2532930   8362393   2015551   2016175   | Stored Interval: 5    ms | Cycle Time: 3573 us
+
+Source: 28 | ADC1: 8359823   8364688   2031881   8364386   4735247   2697453   2643701   8359921   
+            | ADC2: 2015997   2016853   2017102   8366417   2532542   8361397   2016198   2015672   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 29 | ADC1: 8335196   8369167   2033067   8366391   4738990   2698542   2643189   8359392   
+            | ADC2: 2015747   2017592   2017372   8366616   2533202   8360180   2014744   2015552   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 30 | ADC1: 8357749   8360574   2031213   8367523   4746543   2694822   2643803   8354216   
+            | ADC2: 2015260   2016205   2016398   8364341   2533019   8360512   2015242   2015356   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 31 | ADC1: 8337707   8369874   2033086   8366524   4735547   2697121   2642937   8360424   
+            | ADC2: 2016177   2018859   2017434   8368240   2533437   8362334   2015883   2015447   | Stored Interval: 5    ms | Cycle Time: 3398 us
+
+Source: 32 | ADC1: 8357444   8376315   2034535   8371377   4736207   2696527   2643482   8363881   
+            | ADC2: 2014976   2019323   2018135   8367459   2532371   8366897   2016295   2016686   | Stored Interval: 5    ms | Cycle Time: 3250 us
+
+[0;32mI (18789) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18789) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18790) NimBLE: att_handle=16
+[0m
+[0;32mI (18790) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8200619   7854260   1915227   7884114   4748084   2706783   2644226   7874068   
+            | ADC2: 1869243   1899543   1900571   7889199   2530616   7876556   1897134   1897618   | Stored Interval: 6    ms | Cycle Time: 3517 us
+
+[0;32mI (18796) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18796) NimBLE: att_handle=19
+[0m
+[0;32mI (18797) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046387   8388607   4739062   2699401   2643352   8377172   
+            | ADC2: 2036336   2032907   2030241   8388607   2533460   8388607   2020244   2019001   | Stored Interval: 5    ms | Cycle Time: 3447 us
+
+[0;32mI (18802) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18802) NimBLE: att_handle=19
+[0m
+[0;32mI (18803) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7856328   7902937   1918737   7903342   4733278   2696605   2641744   7891676   
+            | ADC2: 1900700   1904761   1903990   7903977   2531146   7894226   1901357   1901229   | Stored Interval: 5    ms | Cycle Time: 3482 us
+
+[0;32mI (18808) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18808) NimBLE: att_handle=19
+[0m
+[0;32mI (18809) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7840737   7839127   1903319   7839860   4748758   2698388   2641576   7841433   
+            | ADC2: 1889069   1888794   1887513   7841776   2534816   7844544   1888739   1888565   | Stored Interval: 5    ms | Cycle Time: 3569 us
+
+[0;32mI (18814) NimBLE: GATT procedure initiated: notify; [0m
+Source: 4  | ADC1: 7889637   7898393   1917908   7899135   4737101   2697537   2643482   7886434   
+            | ADC2: 1901065   1903240   1903086   7900141   2531503   7889293   1898924   1900245   | Stored Interval: 5    ms | Cycle Time: 3478 us
+
+[0;32mI (18814) NimBLE: att_handle=16
+[0m
+[0;32mI (18816) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7831334   7828645   1901508   7829293   4746518   2698298   2648184   7827724   
+            | ADC2: 1886467   1886117   1885841   7831762   2533461   7832168   1886173   1886235   | Stored Interval: 5    ms | Cycle Time: 3542 us
+
+[0;32mI (18821) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2045883   8388607   4736202   2697514   2643089   8370456   
+            | ADC2: 2036059   2033076   2029702   8388607   2533194   8380760   2019043   2017166   | Stored Interval: 5    ms | Cycle Time: 3437 us
+
+Source: 7  | ADC1: 7785661   7808503   1895631   7810594   4749995   2698684   2643971   7802098   
+            | ADC2: 1880415   1881903   1881610   7811604   2543276   7810166   1880259   1879752   | Stored Interval: 5    ms | Cycle Time: 3405 us
+
+Source: 8  | ADC1: 7878654   7890274   1915869   7894294   7892695   2717877   2646940   7882642   
+            | ADC2: 1899671   1902562   1901848   7893809   2533234   7885965   1899305   1898670   | Stored Interval: 6    ms | Cycle Time: 3398 us
+
+Source: 9  | ADC1: 7824744   7821062   1899237   7820819   7532072   2715354   2644871   7823003   
+            | ADC2: 1885109   1884083   1884616   7822624   2533781   7825132   1883939   1884510   | Stored Interval: 5    ms | Cycle Time: 3407 us
+
+Source: 10 | ADC1: 8388607   8388607   2046652   8388607   4736680   2696368   2641009   8382149   
+            | ADC2: 2035956   2033915   2030749   8388607   2533413   8388607   2018084   2016979   | Stored Interval: 5    ms | Cycle Time: 3393 us
+
+Source: 11 | ADC1: 7793872   7837981   1902672   7838169   4974007   2942035   3044592   7837703   
+            | ADC2: 1887269   1888158   1888634   7837867   2535286   7840972   1888453   1888365   | Stored Interval: 5    ms | Cycle Time: 3412 us
+
+Source: 12 | ADC1: 8388607   8388607   2044254   8388607   2691727   2701798   2642873   8358704   
+            | ADC2: 2034681   2031341   2026488   8388607   2534244   8359076   2014822   2014700   | Stored Interval: 5    ms | Cycle Time: 3623 us
+
+Source: 13 | ADC1: 7781595   7831456   1901926   7852664   6952528   4620528   2716971   7831297   
+            | ADC2: 1886409   1886776   1886732   7832173   2534202   7833140   1886463   1886565   | Stored Interval: 5    ms | Cycle Time: 3413 us
+
+Source: 14 | ADC1: 7857153   7865135   1909913   7870546   5842431   2701483   2649566   7856174   
+            | ADC2: 1893502   1894154   1895255   7868639   2533246   7858688   1893164   1893003   | Stored Interval: 5    ms | Cycle Time: 3468 us
+
+Source: 15 | ADC1: 7799019   7805580   1894868   7806944   6102572   2702103   2646913   7799689   
+            | ADC2: 1879246   1881099   1878998   7808385   2535456   7803352   1879063   1878994   | Stored Interval: 5    ms | Cycle Time: 3429 us
+
+Source: 16 | ADC1: 8051584   8388607   2047626   8388607   4722078   2690530   2642125   8372543   
+            | ADC2: 2025005   2034283   2031506   8388607   2529776   8388607   2019370   2017424   | Stored Interval: 6    ms | Cycle Time: 3379 us
+
+Source: 17 | ADC1: 8348022   8354139   2030208   8357266   4734895   2696620   2643759   8358300   
+            | ADC2: 2013636   2014407   2014916   8358739   2534144   8358561   2014495   2014984   | Stored Interval: 5    ms | Cycle Time: 3435 us
+
+Source: 18 | ADC1: 8357318   8361596   2031680   8362144   4732711   2698004   2643850   8384180   
+            | ADC2: 2015281   2016020   2016173   8363904   2533807   8360565   2015486   2015366   | Stored Interval: 5    ms | Cycle Time: 3394 us
+
+Source: 19 | ADC1: 8340772   8367874   2032882   8360799   4734594   2696025   2644018   8359469   
+            | ADC2: 2016341   2018053   2017059   8365572   2534739   8359038   2015209   2015381   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 20 | ADC1: 8357988   8360948   2031854   8361939   4733333   2697443   2644380   8359694   
+            | ADC2: 2014537   2016171   2015724   8364485   2533766   8353789   2013280   2015255   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 21 | ADC1: 8336190   8371756   2036354   8358659   4728711   2701415   2642870   8358910   
+            | ADC2: 2015570   2018144   2017799   8368564   2534340   8362740   2015532   2015637   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 22 | ADC1: 8358671   8363832   2031248   8359788   4732774   2694934   2644911   8359965   
+            | ADC2: 2015793   2016823   2015804   8362594   2533405   8360708   2015002   2015528   | Stored Interval: 5    ms | Cycle Time: 3370 us
+
+Source: 23 | ADC1: 8333385   8369133   2032680   8366398   4733362   2696728   2643945   8360160   
+            | ADC2: 2013440   2018147   2016633   8388607   2534483   8361341   2015561   2015629   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 24 | ADC1: 8352774   8360020   2031653   8331831   4738480   2697441   2644180   8359096   
+            | ADC2: 2015529   2016720   2016807   8365010   2534610   8361522   2014671   2015477   | Stored Interval: 6    ms | Cycle Time: 3371 us
+
+Source: 25 | ADC1: 8333305   8366780   2032817   8365259   4735944   2696469   2643272   8359628   
+            | ADC2: 2014792   2017395   2017310   8365894   2534184   8362056   2015627   2015242   | Stored Interval: 5    ms | Cycle Time: 3395 us
+
+Source: 26 | ADC1: 8358411   8363060   2032128   8361226   4733204   2697936   2652614   8350354   
+            | ADC2: 2016096   2016861   2016661   8365291   2534055   8360529   2015507   2015480   | Stored Interval: 5    ms | Cycle Time: 3383 us
+
+Source: 27 | ADC1: 8337654   8367201   2032390   8364025   4733305   2696401   2644582   8359670   
+            | ADC2: 2015534   2017652   2018018   8366940   2533905   8361371   2015678   2015470   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 28 | ADC1: 8354605   8360119   2031707   8361719   4735037   2696643   2644332   8358852   
+            | ADC2: 2014415   2015957   2016168   8359284   2532725   8354808   2014756   2021377   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 29 | ADC1: 8337611   8367356   2031008   8362314   4731295   2694953   2643165   8358914   
+            | ADC2: 2015587   2017666   2017365   8368599   2533737   8362099   2015445   2015371   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 30 | ADC1: 8358649   8359824   2031380   8361565   4741096   2697053   2643974   8358590   
+            | ADC2: 2015049   2016270   2016205   8363791   2534183   8359539   2015438   2015099   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 31 | ADC1: 8336793   8366782   2032807   8364988   4734299   2695562   2643506   8359005   
+            | ADC2: 2014130   2016038   2025582   8367375   2534002   8361306   2015648   2015810   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 32 | ADC1: 8352290   8374750   2034647   8372515   4731884   2642160   2643918   8364283   
+            | ADC2: 2014935   2019425   2018996   8374999   2534792   8366499   2016367   2016397   | Stored Interval: 6    ms | Cycle Time: 3403 us
+
+[0;32mI (18958) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (18959) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18959) NimBLE: att_handle=16
+[0m
+[0;32mI (18960) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8214504   7857300   1914951   7887744   2697670   2706441   2644038   7874127   
+            | ADC2: 1863654   1899480   1900376   7889032   2532210   7876200   1896450   1899022   | Stored Interval: 5    ms | Cycle Time: 3669 us
+
+[0;32mI (18965) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18965) NimBLE: att_handle=19
+[0m
+[0;32mI (18966) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2045843   8388607   4736655   2708005   2644291   8363585   
+            | ADC2: 2035785   2032694   2029664   8388607   2534547   8380989   2018882   2017132   | Stored Interval: 5    ms | Cycle Time: 3451 us
+
+[0;32mI (18971) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18971) NimBLE: att_handle=19
+[0m
+[0;32mI (18972) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7866524   7903103   1918794   7895474   4733746   2693665   2643188   7890773   
+            | ADC2: 1902065   1904363   1904759   7904661   2532101   7894078   1901579   1901170   | Stored Interval: 5    ms | Cycle Time: 3541 us
+
+[0;32mI (18977) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18977) NimBLE: att_handle=19
+[0m
+[0;32mI (18978) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7842806   7841649   1903362   7841536   4745456   2699423   2644923   7840991   
+            | ADC2: 1889299   1889126   1889160   7839901   2533595   7843153   1889329   1891381   | Stored Interval: 5    ms | Cycle Time: 3498 us
+
+[0;32mI (18983) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (18983) NimBLE: att_handle=16
+[0m
+Source: 4  | ADC1: 7887209   7900949   1917599   7897765   4732595   2695899   2643254   7885879   
+            | ADC2: 1900405   1903157   1903253   7900761   2532943   7888373   1900155   1899968   | Stored Interval: 5    ms | Cycle Time: 3519 us
+
+[0;32mI (18984) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7831451   7829761   1899962   7829577   4746692   2700732   2645730   7829521   
+            | ADC2: 1886898   1886250   1886055   7830602   2533625   7831996   1886655   1885751   | Stored Interval: 5    ms | Cycle Time: 3483 us
+
+[0;32mI (18990) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2046678   8388607   4735531   2694979   2643013   8376260   
+            | ADC2: 2036390   2038685   2033329   8388607   2533413   8388607   2020582   2019357   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 7  | ADC1: 7774186   7804907   1895696   7809666   4748626   2698010   2643873   7804984   
+            | ADC2: 1879764   1881212   1881615   7812344   2533976   7807771   1880081   1880151   | Stored Interval: 6    ms | Cycle Time: 3421 us
+
+Source: 8  | ADC1: 7885891   7892495   1916972   7894248   7895953   2715514   2647197   7882736   
+            | ADC2: 1899748   1902079   1902179   7896399   2533435   7886377   1898509   1898111   | Stored Interval: 5    ms | Cycle Time: 3446 us
+
+Source: 9  | ADC1: 7825827   7824977   1899022   7822125   7533890   2720031   2645450   7820091   
+            | ADC2: 1885026   1884892   1884881   7823478   2534149   7825050   1884773   1884308   | Stored Interval: 5    ms | Cycle Time: 3419 us
+
+Source: 10 | ADC1: 8388607   8388607   2043808   8388607   4735094   2696069   2642835   8372006   
+            | ADC2: 2034673   2032175   2027610   8388607   2534238   8382089   2019041   2018059   | Stored Interval: 5    ms | Cycle Time: 3399 us
+
+Source: 11 | ADC1: 7820241   7841086   1902736   7838397   4970528   2942566   3043673   7839124   
+            | ADC2: 1888640   1888262   1888011   7836879   2534799   7850957   1891460   1888981   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 12 | ADC1: 8388607   8388607   2045564   8388607   4734254   2694012   2644085   8375585   
+            | ADC2: 2035745   2033503   2030628   8388607   2534007   8388607   2020570   2017737   | Stored Interval: 5    ms | Cycle Time: 3462 us
+
+Source: 13 | ADC1: 7800591   7833176   1899535   7826632   6950195   4620470   2716334   7830783   
+            | ADC2: 1886779   1886566   1886783   7831273   2534321   7833276   1886555   1885987   | Stored Interval: 5    ms | Cycle Time: 3409 us
+
+Source: 14 | ADC1: 7858053   7858148   1909821   7866978   5838745   2699372   2649207   7857482   
+            | ADC2: 1896043   1899616   1895835   7868258   2534689   7858987   1892937   1892955   | Stored Interval: 6    ms | Cycle Time: 3382 us
+
+Source: 15 | ADC1: 7800927   7801390   1894975   7807503   6102672   2698360   2647875   7799899   
+            | ADC2: 1879378   1880432   1881300   7809809   2534010   7803712   1879637   1879209   | Stored Interval: 5    ms | Cycle Time: 3386 us
+
+Source: 16 | ADC1: 7921233   8388607   2047642   8388607   4722863   2691089   2644727   8373305   
+            | ADC2: 2001056   2033948   2030772   8388607   2529502   8388607   2019356   2016266   | Stored Interval: 5    ms | Cycle Time: 3383 us
+
+Source: 17 | ADC1: 8352931   8353178   2030253   8361531   4744225   2693228   2642415   8353044   
+            | ADC2: 2014170   2015355   2015031   8358103   2533751   8354102   2013359   2013903   | Stored Interval: 5    ms | Cycle Time: 3423 us
+
+Source: 18 | ADC1: 8355814   8358390   2031226   8361085   4732010   2696490   2644167   8352589   
+            | ADC2: 2014868   2015881   2016312   8364782   2533757   8356351   2013741   2013476   | Stored Interval: 5    ms | Cycle Time: 3382 us
+
+Source: 19 | ADC1: 8329827   8356135   2030230   8356562   4730308   2696800   2643092   8350879   
+            | ADC2: 2012579   2014970   2013461   8353113   2532940   8352561   2013121   2013036   | Stored Interval: 5    ms | Cycle Time: 3445 us
+
+Source: 20 | ADC1: 8348473   8346695   2029955   8352112   4734093   2694851   2643783   8348318   
+            | ADC2: 2012935   2013127   2014211   8353534   2534048   8350056   2012309   2011919   | Stored Interval: 5    ms | Cycle Time: 3458 us
+
+Source: 21 | ADC1: 8347658   2033328   2033122   8367072   4733806   2692282   2641620   8345619   
+            | ADC2: 2017762   2017925   2017441   8366683   2530821   8350626   2010765   2009952   | Stored Interval: 6    ms | Cycle Time: 3560 us
+
+Source: 22 | ADC1: 8337391   8338983   2027078   8338596   4737204   2693035   2642943   8354794   
+            | ADC2: 2015384   2010723   2012269   8338599   2535735   8340050   2011207   2012659   | Stored Interval: 5    ms | Cycle Time: 3442 us
+
+Source: 23 | ADC1: 8345806   8365415   2032336   8364460   4732302   2695467   2644679   8360191   
+            | ADC2: 2017052   2017685   2017361   8366437   2538130   8362192   2015669   2015423   | Stored Interval: 5    ms | Cycle Time: 3385 us
+
+Source: 24 | ADC1: 8357736   8360329   2032351   8362312   4737859   2696818   2645309   8359182   
+            | ADC2: 2015514   2016009   2016032   8362356   2534221   8353570   2013874   2012945   | Stored Interval: 5    ms | Cycle Time: 3402 us
+
+Source: 25 | ADC1: 8340152   8365067   2033029   8380733   4728480   2695918   2643734   8360861   
+            | ADC2: 2016769   2017212   2017561   8367976   2534173   8361803   2015566   2015532   | Stored Interval: 5    ms | Cycle Time: 3371 us
+
+Source: 26 | ADC1: 8358643   8361293   2032310   8363728   4732136   2696738   2645138   8361232   
+            | ADC2: 2015843   2016364   2016959   8366473   2534111   8361078   2015538   2015531   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 27 | ADC1: 8335894   8365383   2032363   8364592   4731363   2695484   2644971   8359379   
+            | ADC2: 2015785   2015729   2014916   8365052   2541346   8362026   2015254   2015444   | Stored Interval: 5    ms | Cycle Time: 3396 us
+
+Source: 28 | ADC1: 8353452   8361341   2031821   8362217   4730320   2693534   2645348   8359723   
+            | ADC2: 2015669   2015980   2016761   8365745   2533752   8361367   2015431   2014717   | Stored Interval: 5    ms | Cycle Time: 3375 us
+
+Source: 29 | ADC1: 8336291   8365715   2032697   8367413   4732567   2698013   2644842   8360168   
+            | ADC2: 2015615   2017002   2017178   8366784   2534212   8360954   2015147   2015380   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 30 | ADC1: 8359096   8356016   2031102   8360704   4737413   2695789   2646104   8364704   
+            | ADC2: 2015294   2015076   2015596   8363887   2534420   8359080   2015287   2015100   | Stored Interval: 6    ms | Cycle Time: 3374 us
+
+Source: 31 | ADC1: 8337295   8367945   2033023   8366449   4731761   2695365   2644634   8359932   
+            | ADC2: 2016080   2017368   2017512   8370554   2534079   8361662   2015343   2015520   | Stored Interval: 5    ms | Cycle Time: 3369 us
+
+Source: 32 | ADC1: 8357460   8376377   2034424   8372852   4729898   2698036   2644695   8363455   
+            | ADC2: 2014579   2019283   2018718   8371653   2532819   8360061   2015004   2013675   | Stored Interval: 5    ms | Cycle Time: 3254 us
+
+[0;32mI (19128) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19128) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19128) NimBLE: att_handle=16
+[0m
+[0;32mI (19129) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8341998   7861931   1915293   7878239   2699684   2705292   2641719   7874598   
+            | ADC2: 1908081   1898958   1900503   7889447   2533249   7875752   1896666   1898983   | Stored Interval: 5    ms | Cycle Time: 3705 us
+
+[0;32mI (19135) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19135) NimBLE: att_handle=19
+[0m
+[0;32mI (19135) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046497   8388607   4733809   2696588   2644240   8377265   
+            | ADC2: 2036498   2032423   2030487   8388607   2533701   8388607   2020693   2019717   | Stored Interval: 5    ms | Cycle Time: 3422 us
+
+[0;32mI (19141) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19141) NimBLE: att_handle=19
+[0m
+[0;32mI (19142) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7893316   7896146   1918694   7904493   4731461   2692241   2645228   7891499   
+            | ADC2: 1900175   1902520   1903773   7931049   2534844   7894917   1901934   1901449   | Stored Interval: 5    ms | Cycle Time: 3492 us
+
+[0;32mI (19147) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19147) NimBLE: att_handle=19
+[0m
+Source: 3  | ADC1: 7842848   7842750   1903622   7839977   4739963   2708767   2643886   7842211   
+            | ADC2: 1889372   1889186   1888705   7843848   2534304   [0;32mI (19148) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+7843654   1888546   1890601   | Stored Interval: 5    ms | Cycle Time: 3503 us
+
+Source: 4  | ADC1: [0;32mI (19153) NimBLE: GATT procedure initiated: notify; [0m
+7888703   7889768   1917849   7899306   4734205   2693680   2646216   7887655   
+            | ADC2: 1900814   1902636   1903338   7901210   2534519   7888378   1900153   1899987   | Stored Interval: 6    ms | Cycle Time: 3505 us
+
+[0;32mI (19153) NimBLE: att_handle=16
+[0m
+[0;32mI (19154) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7832126   7830073   1900780   7829469   4742965   2701243   2652998   7827563   
+            | ADC2: 1886942   1885993   1886200   7830041   2534202   7832312   1886297   1886167   | Stored Interval: 5    ms | Cycle Time: 3528 us
+
+[0;32mI (19160) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2044852   8388607   4731594   2698522   2646302   8363729   
+            | ADC2: 2035334   2031871   2028830   8388607   2533327   8375876   2017920   2015772   | Stored Interval: 5    ms | Cycle Time: 3420 us
+
+Source: 7  | ADC1: 7782169   7807426   1895841   7810192   4743219   2698645   2646170   7803238   
+            | ADC2: 1879664   1880781   1881560   7808858   2533399   7804147   1880324   1885119   | Stored Interval: 5    ms | Cycle Time: 3481 us
+
+Source: 8  | ADC1: 7885951   7895108   1916843   7869101   7894484   2716523   2652291   7882003   
+            | ADC2: 1899708   1900682   1902492   7897085   2534564   7886077   1899256   1899262   | Stored Interval: 5    ms | Cycle Time: 3401 us
+
+Source: 9  | ADC1: 7825625   7823354   1898818   7822383   7530391   2646526   2646102   7824430   
+            | ADC2: 1885309   1884373   1884590   7823708   2534374   7824131   1884776   1884074   | Stored Interval: 5    ms | Cycle Time: 3550 us
+
+Source: 10 | ADC1: 8388607   8388607   2045925   8388607   4734484   2695991   2644962   8366264   
+            | ADC2: 2035436   2029744   2034909   8388607   2534749   8378538   2018861   2017032   | Stored Interval: 5    ms | Cycle Time: 3441 us
+
+Source: 11 | ADC1: 7815591   7838209   1902858   7803036   4967739   3042688   3042292   7838990   
+            | ADC2: 1888988   1888663   1888647   7840167   2534961   7841924   1888333   1888699   | Stored Interval: 6    ms | Cycle Time: 3557 us
+
+Source: 12 | ADC1: 8388607   8388607   2046216   8388607   4732547   2643496   2645940   8365155   
+            | ADC2: 2035553   2031911   2028908   8388607   2534597   8375922   2017124   2016349   | Stored Interval: 5    ms | Cycle Time: 3577 us
+
+Source: 13 | ADC1: 7821477   7831489   1900348   7828433   6943468   4618914   2725192   7825574   
+            | ADC2: 1886778   1886549   1886111   7831022   2534542   7832538   1886742   1886310   | Stored Interval: 5    ms | Cycle Time: 3419 us
+
+Source: 14 | ADC1: 7859071   7857723   1909711   7867019   5837124   2651327   2654498   7858090   
+            | ADC2: 1893132   1892566   1895569   7869385   2534855   7858434   1893050   1892778   | Stored Interval: 5    ms | Cycle Time: 3528 us
+
+Source: 15 | ADC1: 7799681   7801860   1895179   7806556   6098721   2701598   2649894   7800224   
+            | ADC2: 1879246   1879291   1880674   7807923   2533992   7794051   1880120   1879162   | Stored Interval: 5    ms | Cycle Time: 3434 us
+
+Source: 16 | ADC1: 8014790   8388607   2046409   8388607   4721743   2685451   2643760   8371044   
+            | ADC2: 2020545   2033111   2030620   8388607   2530590   8387065   2019225   2018000   | Stored Interval: 5    ms | Cycle Time: 3436 us
+
+Source: 17 | ADC1: 8359421   8360885   2031937   8362967   4730411   2697030   2645033   8358662   
+            | ADC2: 2015436   2015840   2016797   8365331   2534669   8360891   2015351   2015217   | Stored Interval: 5    ms | Cycle Time: 3386 us
+
+Source: 18 | ADC1: 8346481   8347147   2029102   8350187   4732267   2695236   2644363   8352678   
+            | ADC2: 2012776   2015243   2020296   8354556   2533310   8350312   2013252   2013725   | Stored Interval: 5    ms | Cycle Time: 3433 us
+
+Source: 19 | ADC1: 8342143   8364026   2032634   8363800   4730905   2696254   2644808   8359641   
+            | ADC2: 2016335   2017038   2017567   8368576   2533979   8361257   2015767   2016107   | Stored Interval: 5    ms | Cycle Time: 3396 us
+
+Source: 20 | ADC1: 8358870   8360544   2032068   8363018   4730648   2696680   2644691   8355908   
+            | ADC2: 2015339   2015345   2015957   8364490   2533926   8359715   2015007   2015038   | Stored Interval: 6    ms | Cycle Time: 3375 us
+
+Source: 21 | ADC1: 8337171   8365527   2032789   8365847   4730757   2643396   2644765   8356157   
+            | ADC2: 2015688   2017057   2017683   8368518   2534061   8363300   2015678   2015279   | Stored Interval: 5    ms | Cycle Time: 3528 us
+
+Source: 22 | ADC1: 8358181   8360930   2031870   8362678   4730641   2696858   2645255   8359938   
+            | ADC2: 2015937   2015936   2017759   8364916   2533765   8360196   2015206   2015551   | Stored Interval: 5    ms | Cycle Time: 3372 us
+
+Source: 23 | ADC1: 8335969   8365564   2032859   8366356   4729704   2696117   2643667   8356934   
+            | ADC2: 2015524   2016528   2017040   8362847   2533873   8360506   2018741   2015030   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 24 | ADC1: 8388607   8353357   2030814   8364117   4737325   2695061   2644405   8358846   
+            | ADC2: 2015511   2015481   2016672   8367169   2534140   8359533   2015385   2015591   | Stored Interval: 5    ms | Cycle Time: 3377 us
+
+Source: 25 | ADC1: 8335451   8366524   2032931   8366874   4731356   2696810   2645214   8359457   
+            | ADC2: 2015661   2016993   2017372   8367886   2532671   8361676   2015226   2015099   | Stored Interval: 5    ms | Cycle Time: 3382 us
+
+Source: 26 | ADC1: 8359691   8361529   2032095   8363524   4730888   2696804   2643685   8356803   
+            | ADC2: 2015763   2016075   2017088   8364607   2534146   8359278   2014889   2015235   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 27 | ADC1: 8333536   8365056   2032429   8365937   4730142   2696278   2645558   8360270   
+            | ADC2: 2015326   2016428   2017440   8367417   2533846   8362524   2015633   2015494   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 28 | ADC1: 8358610   8360574   2032668   8364463   4729837   2696907   2644732   8358785   
+            | ADC2: 2015761   2015666   2016408   8365065   2533209   8358914   2014624   2013598   | Stored Interval: 6    ms | Cycle Time: 3371 us
+
+Source: 29 | ADC1: 8334960   8364758   2032389   8366359   4732071   2668851   2644087   8355186   
+            | ADC2: 2015368   2016590   2017610   8367342   2534529   8361270   2015155   2015362   | Stored Interval: 5    ms | Cycle Time: 3385 us
+
+Source: 30 | ADC1: 8358806   8358646   2031544   8362577   4736746   2641456   2644126   8358561   
+            | ADC2: 2015191   2015956   2016377   8363826   2533862   8359745   2015290   2014993   | Stored Interval: 5    ms | Cycle Time: 3528 us
+
+Source: 31 | ADC1: 8336166   8366946   2033047   8367267   4730292   2696289   2645067   8360093   
+            | ADC2: 2016641   2016224   2017970   8361192   2533107   8388607   2015901   2015352   | Stored Interval: 5    ms | Cycle Time: 3373 us
+
+Source: 32 | ADC1: 8351841   8373709   2034601   8388607   4730851   2696121   2643254   8363246   
+            | ADC2: 2014853   2019374   2018841   8369909   2534708   8366203   2016141   2016101   | Stored Interval: 5    ms | Cycle Time: 3247 us
+
+[0;32mI (19297) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19297) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19297) NimBLE: att_handle=16
+[0m
+[0;32mI (19298) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8042272   7841177   1914996   7887607   4744175   2645977   2646788   7875815   
+            | ADC2: 1862659   1897982   1900385   7901030   2535057   7876069   1897198   1896940   | Stored Interval: 5    ms | Cycle Time: 3659 us
+
+[0;32mI (19304) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19304) NimBLE: att_handle=19
+[0m
+[0;32mI (19304) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046541   8388607   4731390   2696542   2644318   8388607   
+            | ADC2: 2042739   2032543   2030257   8388607   2533844   8388607   2020497   2019327   | Stored Interval: 5    ms | Cycle Time: 3440 us
+
+[0;32mI (19310) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19310) NimBLE: att_handle=19
+[0m
+[0;32mI (19311) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7869943   7892601   1918435   7903391   4732265   2646347   2647546   7891446   
+            | ADC2: 1901884   1901588   1904364   7902944   2538495   7895459   1900221   1901062   | Stored Interval: 6    ms | Cycle Time: 3644 us
+
+[0;32mI (19316) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19316) NimBLE: att_handle=19
+[0m
+[0;32mI (19317) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7840393   7841870   1902603   7841575   4739047   2643436   2647243   7840282   
+            | ADC2: 1888910   1888894   1887975   7841793   2536803   7843013   1887691   1888445   | Stored Interval: 5    ms | Cycle Time: 3666 us
+
+[0;32mI (19322) NimBLE: GATT procedure initiated: notify; [0m
+Source: 4  | ADC1: 7887876   7887961   1918078   7909902   4729969   2694961   2646750   7884360   
+            | ADC2: 1900491   1901162   1903247   7900804   2534668   7890959   1900114   1900267   | Stored Interval: 5    ms | Cycle Time: 3505 us
+
+[0;32mI (19322) NimBLE: att_handle=16
+[0m
+[0;32mI (19323) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7829220   7830486   1900090   7830045   4739790   2700541   2645280   7829532   
+            | ADC2: 1886125   1886664   1885609   7830354   2533957   7831618   1886762   1885944   | Stored Interval: 5    ms | Cycle Time: 3531 us
+
+[0;32mI (19329) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2043816   8388607   4732977   2696059   2643490   8354111   
+            | ADC2: 2034709   2028475   2024385   8369931   2534745   8368521   2014493   2014574   | Stored Interval: 5    ms | Cycle Time: 3561 us
+
+Source: 7  | ADC1: 7748384   7804846   1896007   7810458   4743027   2697397   2644644   7805665   
+            | ADC2: 1879429   1880281   1881549   7811742   2534905   7810649   1880448   1880057   | Stored Interval: 5    ms | Cycle Time: 3403 us
+
+Source: 8  | ADC1: 7886211   7883316   1916823   7894372   7896219   2718798   2649542   7882115   
+            | ADC2: 1900212   1899148   1902453   7895417   2535670   7885779   1898707   1899147   | Stored Interval: 5    ms | Cycle Time: 3441 us
+
+Source: 9  | ADC1: 7822624   7824390   1898304   7823907   7517057   2713990   2648721   7826023   
+            | ADC2: 1884824   1885279   1884418   7824017   2534548   7822703   1884619   1883985   | Stored Interval: 5    ms | Cycle Time: 3425 us
+
+Source: 10 | ADC1: 8388607   8388607   2045083   8388607   4730961   2696455   2644185   8374095   
+            | ADC2: 2034910   2030740   2029092   8388607   2534717   8384890   2019226   2018346   | Stored Interval: 5    ms | Cycle Time: 3401 us
+
+Source: 11 | ADC1: 7809734   7840338   1902496   7839104   4962880   2942245   3042886   7838852   
+            | ADC2: 1887356   1888686   1887488   7838015   2532643   7835312   1887220   1887935   | Stored Interval: 6    ms | Cycle Time: 3425 us
+
+Source: 12 | ADC1: 8388607   8388607   2046421   8383354   4735133   2646991   2642697   8349626   
+            | ADC2: 2034632   2029768   2027137   8388607   2535798   8365730   2012674   2012639   | Stored Interval: 5    ms | Cycle Time: 3655 us
+
+Source: 13 | ADC1: 7780059   7832283   1900689   7831346   6944226   4617265   2716063   7831558   
+            | ADC2: 1886073   1886856   1886505   7832440   2534777   7833835   1886651   1886798   | Stored Interval: 5    ms | Cycle Time: 3386 us
+
+Source: 14 | ADC1: 7857480   7857196   1909569   7866275   5833514   2704084   2647654   7856940   
+            | ADC2: 1893131   1891755   1895812   7869106   2534184   7859567   1892654   1893186   | Stored Interval: 5    ms | Cycle Time: 3434 us
+
+Source: 15 | ADC1: 7798149   7799888   1894858   7802243   6098747   2700741   2647418   7799884   
+            | ADC2: 1879717   1878773   1881108   7806815   2536034   7805628   1878413   1879249   | Stored Interval: 5    ms | Cycle Time: 3411 us
+
+Source: 16 | ADC1: 7890950   8388607   2047941   8388607   4719222   2641149   2644672   8381646   
+            | ADC2: 2008930   2032881   2031793   8388607   2531257   8382837   2020471   2018915   | Stored Interval: 5    ms | Cycle Time: 3590 us
+
+Source: 17 | ADC1: 8343434   2026628   2026774   8346587   4725308   2700079   2649065   8347728   
+            | ADC2: 2012673   2010693   2012656   8339918   2536886   8334013   2010157   2010338   | Stored Interval: 6    ms | Cycle Time: 3566 us
+
+Source: 18 | ADC1: 8354975   8356571   2031111   8360374   4729096   2697071   2643703   8359105   
+            | ADC2: 2014550   2014599   2016126   8362568   2534401   8360349   2014755   2015286   | Stored Interval: 5    ms | Cycle Time: 3408 us
+
+Source: 19 | ADC1: 8345873   8367083   2032765   8365762   4728240   2697019   2644209   8359605   
+            | ADC2: 2016442   2016909   2017202   8367094   2542000   8364060   2013200   2017671   | Stored Interval: 5    ms | Cycle Time: 3372 us
+
+Source: 20 | ADC1: 8356583   8358409   2031571   8355535   4728161   2698311   2642437   8357238   
+            | ADC2: 2014745   2014988   2016424   8364521   2534695   8362685   2014921   2015395   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 21 | ADC1: 8338813   8366194   2032946   8366773   4728037   2696739   2643314   8360472   
+            | ADC2: 2016272   2016725   2017696   8368169   2534296   8364235   2015568   2015594   | Stored Interval: 5    ms | Cycle Time: 3369 us
+
+Source: 22 | ADC1: 8357773   8361619   2031625   8364192   4728428   2697272   2643182   8358318   
+            | ADC2: 2013921   2013777   2017044   8384691   2534539   8361626   2015444   2015286   | Stored Interval: 5    ms | Cycle Time: 3396 us
+
+Source: 23 | ADC1: 8339197   8364748   2032265   8361938   4727060   2698050   2642744   8359449   
+            | ADC2: 2016399   2016524   2017408   8368521   2534949   8364847   2015273   2015415   | Stored Interval: 5    ms | Cycle Time: 3376 us
+
+Source: 24 | ADC1: 8358488   8362683   2032129   8364287   4732432   2697837   2643707   8359376   
+            | ADC2: 2015578   2015849   2016879   8365015   2533902   8362956   2015358   2015000   | Stored Interval: 5    ms | Cycle Time: 3374 us
+
+Source: 25 | ADC1: 8335651   8366813   2032384   8365238   4729156   2700086   2645939   8355974   
+            | ADC2: 2016005   2016872   2017467   8368231   2534551   8364023   2015350   2014729   | Stored Interval: 5    ms | Cycle Time: 3386 us
+
+Source: 26 | ADC1: 8358596   8360655   2031597   8362984   4727760   2697445   2642988   8359747   
+            | ADC2: 2015655   2015555   2017186   8365156   2533874   8363784   2015452   2015562   | Stored Interval: 5    ms | Cycle Time: 3379 us
+
+Source: 27 | ADC1: 8336471   8366580   2032274   8366104   4727158   2697493   2643440   8359566   
+            | ADC2: 2015286   2016545   2017130   8363160   2534561   8359403   2015135   2021307   | Stored Interval: 6    ms | Cycle Time: 3369 us
+
+Source: 28 | ADC1: 8372711   8360737   2031877   8365324   4725913   2712893   2641487   8357443   
+            | ADC2: 2015636   2015744   2016616   8367011   2533868   8364447   2015055   2015123   | Stored Interval: 5    ms | Cycle Time: 3381 us
+
+Source: 29 | ADC1: 8337605   8365513   2032290   8365261   4729027   2698046   2643027   8358379   
+            | ADC2: 2015648   2016661   2017372   8368169   2534724   8364726   2015360   2015672   | Stored Interval: 5    ms | Cycle Time: 3369 us
+
+Source: 30 | ADC1: 8358097   8357546   2031000   8362659   4736051   2697300   2643676   8358676   
+            | ADC2: 2013009   2014999   2022490   8363995   2534244   8362176   2015268   2015263   | Stored Interval: 5    ms | Cycle Time: 3378 us
+
+Source: 31 | ADC1: 8334116   8365509   2032688   8366590   4728218   2697817   2642354   8359465   
+            | ADC2: 2016238   2017069   2017774   8370339   2533773   8364054   2015245   2016149   | Stored Interval: 5    ms | Cycle Time: 3352 us
+
+Source: 32 | ADC1: 8357561   8377962   2034331   8373045   4726129   2697776   2640933   8362811   
+            | ADC2: 2014580   2018989   2018743   8373487   2534318   8370521   2016337   2016505   | Stored Interval: 5    ms | Cycle Time: 3248 us
+
+[0;32mI (19466) NIRduino: Data packet ready. Starting broadcast...[0m
+[0;32mI (19466) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19466) NimBLE: att_handle=16
+[0m
+[0;32mI (19467) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 0  | ADC1: 8105475   7840785   1914531   7886723   4745260   2608575   2611375   7871999   
+            | ADC2: 1863803   1896718   1900460   7888919   2533922   7877576   1897183   1896907   | Stored Interval: 6    ms | Cycle Time: 3665 us
+
+[0;32mI (19473) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19473) NimBLE: att_handle=19
+[0m
+[0;32mI (19474) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 1  | ADC1: 8388607   8388607   2046092   8388607   4727160   2699421   2640183   8367826   
+            | ADC2: 2036355   2032503   2030786   8388607   2533265   8385957   2017918   2016575   | Stored Interval: 5    ms | Cycle Time: 3446 us
+
+[0;32mI (19479) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19479) NimBLE: att_handle=19
+[0m
+[0;32mI (19480) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 2  | ADC1: 7893797   7893395   1918516   7903143   4729926   2695537   2644662   7892283   
+            | ADC2: 1901887   1901896   1904337   7915908   2525328   7895396   1901917   1901307   | Stored Interval: 5    ms | Cycle Time: 3595 us
+
+[0;32mI (19485) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (19485) NimBLE: att_handle=19
+[0m
+[0;32mI (19486) NIRduino: Notification sent successfully. Size: 480 bytes[0m
+Source: 3  | ADC1: 7842300   7835719   1903394   7837426   4740004   2697513   2644082   7840393   
+            | ADC2: 1889491   1889094   1888989   7842500   2535002   7843647   1889647   1889014   | Stored Interval: 5    ms | Cycle Time: 3507 us
+
+[0;32mI (19491) NimBLE: GATT procedure initiated: notify; [0m
+Source: 4  | ADC1: 7889066   7889792   1917117   7895697   4730876   2699103   2642697   7887307   
+            | ADC2: 1900772   1900709   1903260   7901279   2534387   7892745   1899964   1899987   | Stored Interval: 5    ms | Cycle Time: 3510 us
+
+[0;32mI (19491) NimBLE: att_handle=16
+[0m
+[0;32mI (19493) NIRduino: Notification sent successfully. Size: 344 bytes[0m
+Source: 5  | ADC1: 7830469   7829367   1900362   7827502   4741565   2698070   2644865   7828249   
+            | ADC2: 1886374   1889523   1886603   7830108   2534877   7832241   1886558   1886255   | Stored Interval: 5    ms | Cycle Time: 3528 us
+
+[0;32mI (19498) NIRduino: Full data packet sent. Task will now wait for the next signal.[0m
+Source: 6  | ADC1: 8388607   8388607   2045263   8388607   4727639   2696683   2642359   8371819   
+            | ADC2: 2035662   2031849   2029319   8388607   2533289   8385910   2019683   2018629   | Stored Interval: 5    ms | Cycle Time: 3412 us
+
+Source: 7  | ADC1: 7791780   7806776   1895125   7810491   4741693   2699240   2643368   7804864   
+            | ADC2: 1880849   1880991   1881087   7811636   2533984   7814757   1880643   1880334   | Stored Interval: 5    ms | Cycle Time: 3396 us
+
+Source: 8  | ADC1: 7885359   7885867   1914615   7896781   7897371   2720772   2641380   7879911   
+            | ADC2: 1899958   1899844   1901999   7897935   2533734   7896564   1899402   1899353   | Stored Interval: 5    ms | Cycle Time: 3387 us
+
+Source: 9  | ADC1: 7825418   7823449   1899176   7823132   7519566   2715581   2647031   7824022   
+            | ADC2: 1885062   1885264   1885074   7823427   2534151   7823275   1884717   1884596   | Stored Interval: 6    ms | Cycle Time: 3396 us
+
+Source: 10 | ADC1: 8388607   8388607   2045664   8388607   4730645   2696834   2642704   8367800   
+            | ADC2: 2035239   2031596   2029740   8388607   2531170   8382659   2021046   2016875   | Stored Interval: 5    ms | Cycle Time: 3477 us
+
+Source: 11 | ADC1: 7787302   7837775   1902067   7844183   4962879   3044602   3042942   7839437   
+            | ADC2: 1887551   1888711   1888537   7839704   2534628   7841321   1888394   1888536   | Stored Interval: 5    ms | Cycle Time: 3593 us
+
+Source: 12 | ADC1: 8388607   8388607   2045550   8388607   4729464   2697776   2641321   8375067   
+            | ADC2: 2035581   2031994   2029834   8388607   2534456   8388607   2020072   2018543   | Stored Interval: 5    ms | Cycle Time: 3408 us
+
+Source: 13 | ADC1: 7816035   7831854   1901161   7828998   6943047   4615044   2717136   7830675   
+            | ADC2: 1891645   1886892   1886857   7829620   2534974   7830800   1886963   1886452   | Stored Interval: 5    ms | Cycle Time: 3420 us
+
+Source: 14 | ADC1: 7858110   7857655   1907061   7881899   5830499   2703897   2643851   7856637   
+            | ADC2: 1893091   1893158   1895094   7868803   2533858   7870082   1893900   1892878   | Stored Interval: 5    ms | Cycle Time: 3415 us
+
+Source: 15 | ADC1: 7802982   7800237   1894126   7808418   6094996   2701916   2645671   7801157   
+            | ADC2: 1879306   1879291   1880775   7808825   2534704   7805733   1878929   1877980   | Stored Interval: 5    ms | Cycle Time: 3418 us
+
+Source: 16 | ADC1: 8007843   8388607   2045850   8388607   4725204   2689896   2638916   8366054   
+            | ADC2: 2019809   2032516   2030025   8388607   2530081   8388313   2018135   2016210   | Stored Interval: 5    ms | Cycle Time: 3407 us
+
+Source: 17 | ADC1: 8355272   8360069   2030963   8363381   4725394   2698087   2641659   8358331   
+            | ADC2: 2017531   2015944   2016193   8365137   2533978   8364649   2014976   2014987   | Stored Interval: 6    ms | Cycle Time: 3413 us
+
+Source: 18 | ADC1: 8357573   8358211   2030576   8363358   4726680   2697793   2640871   8358643   
+            | ADC2: 2015150   2015323   2014660   8359582   2531319   8388607   2015330   2015365   | Stored Interval: 5    ms | Cycle Time: 3407 us
+
