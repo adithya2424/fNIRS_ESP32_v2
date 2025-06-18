@@ -15,10 +15,10 @@ This guide provides the steps to clone, build, and flash the NIRDuino-v2 firmwar
 
 Because this project uses other repositories as components (submodules), you must use a special flag when cloning.
 
-Open your terminal and run the following command. **Remember to replace `your-username` with your actual GitHub username.**
+Open your terminal and run the following command:
 
 ```bash
-git clone --recurse-submodules https://github.com/your-username/NIRDuino-v2.git
+git clone --recurse-submodules https://github.com/adithya2424/NIRDuino-v2.git
 ```
 
 > **Why `--recurse-submodules`?** This flag is essential. It tells Git to not only clone this repository but to also automatically download the required components, like `esp-nimble-cpp`. Without it, the project will not compile.
@@ -58,10 +58,6 @@ idf.py -p <PORT> flash monitor
 *Example for Windows:* `idf.py -p COM3 flash monitor`
 
 To exit the serial monitor, press `Ctrl+]`.
-
------
-
-\<br\>
 
 ## Appendix: ESP-IDF Installation Guide
 
