@@ -19,6 +19,10 @@
 #define STORAGE_NAMESPACE "led_storage"
 #define LED_INTENSITIES_KEY "led_intensities"
 
+// Define battery thresholds
+#define LOW_BATT_THRESHOLD 20
+#define CRITICAL_BATT_THRESHOLD 5
+
 SFE_MAX1704X lipo(MAX1704X_MAX17043);
 CD74HC4067 my_mux(s0, s1, s2, s3);
 
@@ -92,6 +96,25 @@ static void IRAM_ATTR drdy_isr_handler(void* arg) {
         portYIELD_FROM_ISR();
     }
 }
+
+/* @brief Sets the RGB LED color.
+ * Assumes a common-anode setup where LOW turns the LED ON.
+*/
+static void setLedColor(int red, int green, int blue) {
+    digitalWrite(PIN_LED_RED,   red > 0 ? LOW : HIGH);
+    digitalWrite(PIN_LED_GREEN, green > 0 ? LOW : HIGH);
+    digitalWrite(PIN_LED_BLUE,  blue > 0 ? LOW : HIGH);
+}
+
+/* @brief Sets the RGB LED color.
+ * Sets PWM values to control led color.
+*/
+static void setRGB(int red, int green, int blue) {
+  analogWrite(redOut, red);
+  analogWrite(greenOut, green);
+  analogWrite(blueOut, blue);
+}
+
 
 static int getLEDIntensity(int sourceNumber){
 
@@ -176,7 +199,7 @@ static void set_source_state(int sourceNumber) {
 
 //------------------------------------------------------------------------ ADC CODE ------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-//--- usin sempahor econtext code here---//
+//--- using sempahore context code here---//
 // --- Application Configuration ---
 #define SAMPLING_FREQUENCY_HZ 251 // Set desired sampling frequency in Hz
 #define SAMPLING_PERIOD_US (1000000 / SAMPLING_FREQUENCY_HZ)
@@ -309,78 +332,6 @@ static void IRAM_ATTR timer_callback(void* arg) {
  * @brief Dedicated task for sampling ADCs when triggered by the timer.
  * @param arg Not used.
  */
-// static void adc_sampling_task(void* arg) {
-//     // Arrays to hold the raw ADC values for one complete cycle
-//     int32_t adc1_values[8];
-//     int32_t adc2_values[8];
-
-//     // The current light source to be activated. Static to persist across calls.
-//     static int sourceNumber = 0;
-    
-//     // Timestamp of the last measurement cycle, in milliseconds.
-//     // Static to persist across calls.
-//     static uint32_t last_cycle_timestamp_ms = 0;
-
-//     // Multiplexer settings for the 8 channels of the ADS1256
-//     uint8_t mux[8] = {0x08, 0x18, 0x28, 0x38, 0x48, 0x58, 0x68, 0x78};
-
-//     ESP_LOGI(TAG, "ADC sampling task started.");
-
-//     while (1) {
-//         // Wait for the semaphore from the timer ISR. This is CPU efficient.
-//         if (xSemaphoreTake(adc_semaphore, portMAX_DELAY) == pdTRUE) {
-//             uint64_t cycle_start_time = esp_timer_get_time();
-
-//             // 1. Activate the correct light source for this measurement cycle
-//             set_source_state(sourceNumber);
-           
-//             // 2. Read all 16 channels (8 from each ADC) as quickly as possible
-//             for (int i = 0; i < 8; i++) {
-//                 adc1_values[i] = ADS1256_read_channel(&adc1_config, mux[i]);
-//                 adc2_values[i] = ADS1256_read_channel(&adc2_config, mux[i]);
-//             }
-            
-//             // 3. Store the collected data directly into the data_packet.
-//             int base_index = sourceNumber * SLOTS_PER_SOURCE;
-//             memcpy(&data_packet[base_index], adc1_values, sizeof(adc1_values));
-//             memcpy(&data_packet[base_index + 8], adc2_values, sizeof(adc2_values));
-
-//             // 4. Calculate and store the time interval since the last measurement.
-//             // uint32_t current_time_ms = (uint32_t)(esp_timer_get_time() / 1000);
-//             uint32_t current_time_ms = (uint32_t)(millis());
-            
-//             if (last_cycle_timestamp_ms == 0) {
-//                 last_cycle_timestamp_ms = current_time_ms;
-//             }
-
-//             uint32_t interval = current_time_ms - last_cycle_timestamp_ms;
-//             data_packet[base_index + DETECTORS_PER_SOURCE] = interval;
-            
-//             last_cycle_timestamp_ms = current_time_ms;
-
-//             #ifdef DEBUG_MODE
-//             uint64_t cycle_duration_us = esp_timer_get_time() - cycle_start_time;
-//             // Print results for debugging purposes for the current source
-//             printf("Source: %-2d | ADC1: ", sourceNumber);
-//             for (int i = 0; i < 8; i++) { printf("%-9ld ", adc1_values[i]); }
-//             printf("\n            | ADC2: ");
-//             for (int i = 0; i < 8; i++) { printf("%-9ld ", adc2_values[i]); }
-//             printf("| Stored Interval: %-4lu ms | Cycle Time: %llu us\n\n", interval, cycle_duration_us);
-//             #endif
-          
-//             // 5. Advance the source number. If a full round is complete,
-//             // copy the data to the send buffer and reset. This matches the Arduino logic.
-//             if (sourceNumber == 32) { // After processing source 32 (the 33rd cycle)
-//                 memcpy(dataPacketToSend, data_packet, sizeof(data_packet));
-//                 xSemaphoreGive(ble_semaphore);
-//                 sourceNumber = 0; // Reset for the next full round
-//             } else {
-//                 sourceNumber++; // Advance to the next source
-//             }
-//         }
-//     }
-// }
-
 static void adc_sampling_task(void* arg) {
     // Arrays to hold the raw ADC values for one complete cycle
     int32_t adc1_values[8];
@@ -826,101 +777,18 @@ class MyServerCallbacks : public NimBLEServerCallbacks {
         ESP_LOGI(TAG, "Negotiated MTU: %d bytes", connInfo.getMTU());
         deviceConnected = true;
         readDataBool = false;
-        // Turn system LED to BLUE
-        digitalWrite(PIN_LED_RED, HIGH);   // Red OFF
-        digitalWrite(PIN_LED_BLUE, LOW);   // Blue ON
-        digitalWrite(PIN_LED_GREEN, HIGH); // Green OFF
+        // Set to GREEN to indicate a successful connection.
+        setLedColor(0, 255, 0); // Solid Green
     };
 
     void onDisconnect(NimBLEServer* pServer, NimBLEConnInfo& connInfo, int reason) override {
         ESP_LOGI(TAG, "Client Disconnected - reason: %d", reason);
         deviceConnected = false;
-        // Turn system LED to RED (disconnected state)
-        digitalWrite(PIN_LED_RED, LOW);    // Red ON
-        digitalWrite(PIN_LED_BLUE, HIGH);  // Blue OFF
-        digitalWrite(PIN_LED_GREEN, HIGH); // Green OFF
+        // Set to CYAN/TEAL to indicate ready to connect again.
+        setLedColor(0, 255, 255); // Solid Cyan/Teal
         NimBLEDevice::startAdvertising();
     }
 } myServerCallbacks;
-
-// class LEDCallbacks : public NimBLECharacteristicCallbacks {
-//     void onWrite(NimBLECharacteristic* pCharacteristic, NimBLEConnInfo& connInfo) override {
-//         std::string rxValue = pCharacteristic->getValue();
-//         if (rxValue.length() == 0) {
-//             ESP_LOGW(TAG, "LEDCallback: Received empty payload");
-//             return;
-//         }
-
-//         // The first byte is the command, the rest is the data payload
-//         uint8_t commandCode = rxValue[0];
-
-//         #ifdef DEBUG_MODE
-//         ESP_LOGI(TAG, "LEDCallback: Received command code %d with %d bytes of data", 
-//                  commandCode, rxValue.length() - 1);
-//         #endif
-
-//         // Update LED intensities if data is provided
-//         if (rxValue.length() > 1) {
-//             // Safety check: ensure we don't copy more bytes than the array can hold
-//             size_t bytesToCopy = std::min((size_t)(rxValue.length() - 1), sizeof(ledIntensities));
-//             memcpy(ledIntensities, &rxValue[1], bytesToCopy);
-            
-//             #ifdef DEBUG_MODE
-//             ESP_LOGI(TAG, "LEDCallback: Updated %d LED intensity values", bytesToCopy / sizeof(int));
-//             #endif
-//         }
-
-//         // Handle commands
-//         switch (commandCode) {
-//             case 1: // START DATA ACQUISITION
-//                 #ifdef DEBUG_MODE
-//                 ESP_LOGI(TAG, "Command: START DATA ACQUISITION");
-//                 #endif
-//                 readDataBool = true; 
-//                 // Queue async save operation to avoid blocking BLE
-//                 {
-//                     int cmd = 1;
-//                     if (xQueueSend(storageQueue, &cmd, 0) != pdTRUE) {
-//                         ESP_LOGW(TAG, "Failed to queue save operation");
-//                     }
-//                 }
-//                 start_adc_sampling();
-//                 sendBatteryLevel();
-//                 break;
-
-//             case 3: // STOP DATA ACQUISITION
-//                 ESP_LOGI(TAG, "Command: STOP DATA ACQUISITION");
-//                 readDataBool = false;
-                
-//                 if (xSemaphoreTake(i2c_mutex, portMAX_DELAY) == pdTRUE) {
-//                 // Turn off DAC
-//                 mcp.setChannelValue(MCP4728_CHANNEL_A, 0);
-//                 xSemaphoreGive(i2c_mutex);
-//                 }
-                
-//                 // Queue async save operation
-//                 {
-//                     int cmd = 1;
-//                     if (xQueueSend(storageQueue, &cmd, 0) != pdTRUE) {
-//                         ESP_LOGW(TAG, "Failed to queue save operation");
-//                     }
-//                 }
-//                 stop_adc_sampling();
-//                 sendBatteryLevel();
-//                 break;
-
-//             case 5: // SEND CURRENT LED SETTINGS
-//                 ESP_LOGI(TAG, "Command: SEND CURRENT LED SETTINGS");
-//                 readDataBool = false;
-//                 sendLEDIntensities();
-//                 break;
-
-//             default:
-//                 ESP_LOGW(TAG, "LEDCallback: Unknown command code %d received", commandCode);
-//                 break;
-//         }
-//     }
-// } ledCallbacks;
 
 class LEDCallbacks : public NimBLECharacteristicCallbacks {
     void onWrite(NimBLECharacteristic* pCharacteristic, NimBLEConnInfo& connInfo) override {
@@ -1052,6 +920,9 @@ static void initBLE() {
     pAdvertising->setAdvertisementData(advert);
     pAdvertising->enableScanResponse(false);
     pAdvertising->start();
+
+    // Ready to conect - BLE Initialized
+    setLedColor(0, 255, 255); // Solid Cyan/Teal
     #ifdef DEBUG_MODE
     ESP_LOGI(TAG, "BLE initialized and advertising started");
     #endif
@@ -1063,11 +934,10 @@ static void gpio_init(void) {
    pinMode(PIN_LED_BLUE, OUTPUT); 
    pinMode(PIN_LED_GREEN, OUTPUT);
    pinMode(PIN_LED_RED, OUTPUT);
-   
-   // Start with RED LED to indicate startup
-   digitalWrite(PIN_LED_BLUE, HIGH);   // Turn OFF blue
-   digitalWrite(PIN_LED_GREEN, HIGH);  // Turn OFF green  
-   digitalWrite(PIN_LED_RED, LOW);     // Turn ON red
+
+   // --- MODIFY THIS SECTION ---
+   // Start with YELLOW to indicate booting up.
+   setLedColor(255, 255, 0); // Solid Yellow
 
    // Initialize the MUX
    pinMode(s0, OUTPUT);
@@ -1148,10 +1018,8 @@ static void initDACs(){
     #ifdef DEBUG_MODE
     ESP_LOGI(TAG, "DAC init successful!");
     #endif
-
   }
 }
-
 
 // --- BLE BROADCAST TASK ---
 /**
@@ -1230,6 +1098,94 @@ void ble_broadcast_task(void *pvParameters) {
     }
 }
 
+/**
+ * @brief A non-interfering, low-priority task to monitor battery status.
+ *
+ * This task runs periodically. It only takes control of the LED if the battery
+ * is low or critical WHILE data acquisition is active. Otherwise, it does nothing,
+ * allowing other parts of the program to control the LED.
+ */
+void led_battery_status_task(void *pvParameters) {
+    #ifdef DEBUG_MODE
+    ESP_LOGI(TAG, "LED Battery Status task started.");
+    #endif
+
+    // An initial delay to let the system stabilize
+    vTaskDelay(pdMS_TO_TICKS(5000));
+
+    while (1) {
+        // --- Loop periodically. A 5-second check is plenty. ---
+        vTaskDelay(pdMS_TO_TICKS(5000));
+
+        // --- Only run checks if data acquisition is active ---
+        if (!readDataBool) {
+            continue; // Do nothing if not acquiring data
+        }
+
+        int batteryLevel = 0;
+        if (xSemaphoreTake(i2c_mutex, pdMS_TO_TICKS(50)) == pdTRUE) {
+            batteryLevel = lipo.getSOC();
+            xSemaphoreGive(i2c_mutex);
+        } else {
+            continue; // Couldn't get mutex, try again next cycle
+        }
+
+        // --- STATE 1: Critical Battery ---
+        if (batteryLevel <= CRITICAL_BATT_THRESHOLD) {
+            #ifdef DEBUG_MODE
+            ESP_LOGE(TAG, "Battery critically low (%d%%)! Halting operations.", batteryLevel);
+            #endif
+
+            // Stop all data acquisition
+            readDataBool = false;
+            stop_adc_sampling();
+            if (xSemaphoreTake(i2c_mutex, portMAX_DELAY) == pdTRUE) {
+                mcp.setChannelValue(MCP4728_CHANNEL_A, 0); // Turn off DAC
+                xSemaphoreGive(i2c_mutex);
+            }
+
+            // Enter a blocking, pulsing red light loop to indicate total failure.
+            // The device will need to be restarted.
+            while (1) {
+                setLedColor(255, 0, 0); // Red ON
+                vTaskDelay(pdMS_TO_TICKS(400));
+                setLedColor(0, 0, 0); // LED OFF
+                vTaskDelay(pdMS_TO_TICKS(400));
+            }
+        }
+        // --- STATE 2: Low Battery ---
+        else if (batteryLevel <= LOW_BATT_THRESHOLD) {
+            #ifdef DEBUG_MODE
+            ESP_LOGW(TAG, "Battery low (%d%%). Pulsing orange warning.", batteryLevel);
+            #endif
+
+            // This loop will "steal" control of the LED to pulse orange.
+            // It will continue as long as the battery is low AND we're still acquiring data.
+            while (readDataBool && batteryLevel <= LOW_BATT_THRESHOLD) {
+                setRGB(255, 165, 0); // Orange ON
+                vTaskDelay(pdMS_TO_TICKS(750));
+                
+                // Check if we should still be pulsing before turning the LED off
+                if (!readDataBool) break;
+
+                setLedColor(0, 0, 0); // LED OFF
+                vTaskDelay(pdMS_TO_TICKS(750));
+
+                // Re-check battery level to see if we should exit the loop
+                if (xSemaphoreTake(i2c_mutex, pdMS_TO_TICKS(50)) == pdTRUE) {
+                    batteryLevel = lipo.getSOC();
+                    xSemaphoreGive(i2c_mutex);
+                }
+            }
+            
+            // After the loop finishes (either by charging or stopping acquisition),
+            // restore the LED to green if we are still operating.
+            if(readDataBool){
+                setLedColor(0, 255, 0);
+            }
+        }
+    }
+}
 
 // --- Main Application ---
 extern "C" void app_main(void) {
@@ -1273,6 +1229,16 @@ extern "C" void app_main(void) {
     initBLE();
 
     init_adc_system();
+
+    // --- Create and start the new LED battery status task ---
+    xTaskCreate(
+        led_battery_status_task,    // Function that implements the task.
+        "led_battery_task",         // Text name for the task.
+        2048,                       // Stack size in words.
+        NULL,                       // Parameter passed into the task.
+        2,                          // Low priority.
+        NULL                        // Task handle.
+    );
 
     // --- Create and start the new BLE broadcast task ---
     xTaskCreate(
