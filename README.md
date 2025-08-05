@@ -1,10 +1,10 @@
-# NIRDuino-v2
+# fNIRS_ESP32_v2
 
-Optimized, low-latency version of the NIRDuino fNIRS system with enhanced timing precision, reduced memory usage, and faster dual-intensity acquisition. Built on Arduino Nano ESP32 and Bluetooth-configurable via Android.
+Optimized, low-latency version of the ESP32 based fNIRS system with enhanced timing precision, reduced memory usage, and faster dual-intensity acquisition. Built on Arduino Nano ESP32 and Bluetooth-configurable via Android.
 
 ## Getting Started: Build & Flash Instructions
 
-This guide provides the steps to clone, build, and flash the NIRDuino-v2 firmware onto your device.
+This guide provides the steps to clone, build, and flash the firmware onto your device.
 
 ### Prerequisites
 
