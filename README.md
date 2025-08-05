@@ -18,7 +18,7 @@ Because this project uses other repositories as components (submodules), you mus
 Open your terminal and run the following command:
 
 ```bash
-git clone --recurse-submodules https://github.com/adithya2424/NIRDuino-v2.git
+git clone --recurse-submodules https://github.com/adithya2424/fNIRS_ESP32_v2.git
 ```
 
 > **Why `--recurse-submodules`?** This flag is essential. It tells Git to not only clone this repository but to also automatically download the required components, like `esp-nimble-cpp`. Without it, the project will not compile.
@@ -34,7 +34,7 @@ git submodule update --init --recursive
 Navigate into the newly cloned project src directory and use the ESP-IDF command-line tool to build the firmware.
 
 ```bash
-cd NIRDuino-v2/src
+cd fNIRS_ESP32_v2/src
 idf.py build
 ```
 
